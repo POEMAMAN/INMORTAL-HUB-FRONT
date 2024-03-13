@@ -18,9 +18,9 @@ const charactersDuneRoutes = require("./src/api/routes/routes.dune/characters.du
 const countriesDuneRoutes = require("./src/api/routes/routes.dune/countries.dune.routes");
 
 // HarryPotter
-
-
-
+const booksHarryPotterRoutes = require("./src/api/routes/routes.HarryPotter/books.HarryPotter.routes");
+const charactersHarryPotterRoutes = require("./src/api/routes/routes.HarryPotter/characters.HarryPotter.routes");
+const moviesHarryPotterRoutes = require(require("./src/api/routes/routes.HarryPotter/movies.HarryPotter.routes"));
 
 // LordOfTheRings
 const booksLordOfTheRingsRoutes = require("./src/api/routes/routes.LordOfTheRings/books.LordOfTheRings.routes");
@@ -33,7 +33,6 @@ const UserRoutes = require('./src/api/users/users.routes.js')
 connect();
 
 const dotenv = require('dotenv');
-const moviesLordOfTheRingsRoutes = require("./src/api/routes/routes.LordOfTheRings/movies.LordOfTheRings.routes.js");
 
 // Ejecutamos método para usar .env
 dotenv.config();
@@ -80,10 +79,9 @@ app.use("/universes/dune/characters", charactersDuneRoutes)
 app.use("/universes/dune/countries", countriesDuneRoutes)
 
 // HarryPotter
-
-
-
-
+app.use("/universes/HarryPotter/books", booksHarryPotterRoutes)
+app.use("/universes/HarryPotter/characters", charactersHarryPotterRoutes)
+app.use("/universes/HarryPotter/movies", moviesHarryPotterRoutes)
 
 // LordOfTheRings
 app.use("/universes/LordOfTheRings/books", booksLordOfTheRingsRoutes)

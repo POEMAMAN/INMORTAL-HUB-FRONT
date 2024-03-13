@@ -4,11 +4,16 @@ const Schema = mongoose.Schema;
 
 const movieSchema = new Schema(
   {
-    name: { type: String, required: true },
-    order: { type: String, required: true },
-    // book: { type: String, required: false },
+    title: { type: String, required: true },
+    picture: { type: String, required: true },
+    director: { type: String, required: false },
+    year: { type: Number, required: false },
+    duration: { type: String, required: false },
+    country: { type: String, required: false },
+    genre: { type: String, required: false },
+    clasification: { type: String, required: false },
+    id: { type: Number, required: true},
     resume: {type:String, required:false},
-    picture: { type: String },
   },
   {
     timestamps: true,

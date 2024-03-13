@@ -1,0 +1,155 @@
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@font-face {
+  font-family: 'Cyborg';
+  src: url('./assets/fonts/cyborg_punk/CyborgPunk.ttf');
+}
+@font-face {
+  font-family: 'Race-guard';
+  src: url('./assets/fonts//race-guard-font//RaceGuard-7BPoE.otf');
+}
+@font-face {
+  font-family: 'Merienda';
+  src: url('./assets/fonts/Merienda/Merienda-VariableFont_wght.ttf');
+}
+@font-face {
+  font-family: 'Congard';
+  src: url('./assets/fonts/congard-font/Congardx18Regular-1G6P2.otf');
+}
+
+h1{
+  font-family: 'Cyborg';
+}
+h2{
+  font-family: 'Race-guard';
+}
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+ul {
+  list-style-type: none;
+}
+
+button:hover {
+  background-color: #45eeee;
+}
+
+.auth-container {
+  max-width: 50%;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+p, h2, label {
+  font: 150 2rem Raleway, sans-serif;
+  text-decoration:solid;
+  color:#6ef2fc;
+  font-style: var(--fill-color);
+  font-weight:900;
+}
+
+
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+html {
+  background: url(https://res.cloudinary.com/dqfaa272n/image/upload/v1708061310/APISCIFI/FONDOS%20PRINCIPALES%20Y%20OBJETOS/BackgroundMainLibrary_egzry6.jpg) no-repeat center center fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+}
+
+ul{
+  list-style-type: none
+}
+
+  li {
+    padding: 6px 0;
+
+    a {
+      --fill-color: #198ce6;
+      position: relative;
+      display: block;
+      padding: 4px 0;
+      font: 700 3rem Raleway, sans-serif;
+      text-decoration: none;
+      text-transform: uppercase;
+      -webkit-text-stroke: 2px var(--fill-color);
+      background: linear-gradient(var(--fill-color) 0 100%) left / 0 no-repeat;
+      color: transparent;
+      background-clip: text;
+      transition: 0.5s linear;
+
+      &:hover {
+        background-size: 100%;
+      }
+    }
+  } */
+
+.library-component {
+  display: flex;
+  flex-direction: row;
+}
+
+.container-library-routes-img {
+  width: 95%;
+  height: 95%;
+}
+.button-library-routes-universos {
+  width: 85%wh;
+  height: 50%;
+
+}
+
+.button-library-routes-universos-img {
+  width: 50%;
+  height: 50%;
+}
+
+input,
+button {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bolder;
+  font-size: large;
+  text-decoration: underline;
+}

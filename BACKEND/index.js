@@ -15,7 +15,7 @@ const userRouter = require("./src/api/users/users.routes.js");
 // Dune
 const booksDuneRoutes = require("./src/api/routes/routes.dune/books.dune.routes");
 const charactersDuneRoutes = require("./src/api/routes/routes.dune/characters.dune.routes");
-const countriesDuneRoutes = require("./src/api/routes/routes.dune/countries.dune.routes");
+const countriesDuneRoutes = require("./src/api/routes/routes.Dune/movies.Dune.routes.js");
 
 // HarryPotter
 const booksHarryPotterRoutes = require("./src/api/routes/routes.HarryPotter/books.HarryPotter.routes");

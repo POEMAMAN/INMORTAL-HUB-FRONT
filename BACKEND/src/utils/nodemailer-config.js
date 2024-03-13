@@ -5,7 +5,7 @@ const nodemailer = require("nodemailer");
         port: 465,
         secure: true, // true for 465, false for other ports
         auth: {
-          user: "luis.david.campos.pousa@gmail.com", // generated ethereal user
+          user: "inmortal.upgrade@gmail.com", // generated ethereal user
           pass: "ibfn wryt nmkq gmne", // generated ethereal password
         },
       });

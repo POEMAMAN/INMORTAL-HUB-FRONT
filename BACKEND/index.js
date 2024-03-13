@@ -16,7 +16,11 @@ const userRouter = require("./src/api/users/users.routes.js");
 const booksDuneRoutes = require("./src/api/routes/routes.dune/books.dune.routes");
 const charactersDuneRoutes = require("./src/api/routes/routes.dune/characters.dune.routes");
 const countriesDuneRoutes = require("./src/api/routes/routes.dune/countries.dune.routes");
-const planetsDuneRoutes = require('./src/api/routes/routes.dune/planets.dune.routes');
+
+// LordOfTheRings
+const booksLordOfTheRingsRoutes = require("./src/api/routes/routes.LordOfTheRings/books.LordOfTheRings.routes");
+const charactersLordOfTheRingsRoutes = require("./src/api/routes/routes.LordOfTheRings/characters.LordOfTheRings.routes");
+const moviesLordOfTheRingsRoutes = require("./src/api/routes/routes.LordOfTheRings/movies.LordOfTheRings.routes");
 
 //
 const UserRoutes = require('./src/api/users/users.routes.js')
@@ -24,6 +28,7 @@ const UserRoutes = require('./src/api/users/users.routes.js')
 connect();
 
 const dotenv = require('dotenv');
+const moviesLordOfTheRingsRoutes = require("./src/api/routes/routes.LordOfTheRings/movies.LordOfTheRings.routes.js");
 
 // Ejecutamos método para usar .env
 dotenv.config();
@@ -68,7 +73,11 @@ app.use('/user', userRouter);
 app.use("/universes/dune/books", booksDuneRoutes)
 app.use("/universes/dune/characters", charactersDuneRoutes)
 app.use("/universes/dune/countries", countriesDuneRoutes)
-app.use('/universes/dune/planets', planetsDuneRoutes)
+
+// LordOfTheRings
+app.use("/universes/LordOfTheRings/books", booksLordOfTheRingsRoutes)
+app.use("/universes/LordOfTheRings/characters", charactersLordOfTheRingsRoutes)
+app.use("/universes/LordOfTheRings/movies", moviesLordOfTheRingsRoutes)
 
 
 const PORT = process.env.PORT || 8084;

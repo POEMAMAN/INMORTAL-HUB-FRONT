@@ -10,12 +10,9 @@ const booksSchema = new Schema(
     author: {type:String, required:true},
     resume: {type:String, required:false},
     picture: {type: String}
-
-},
-{
+}, {
     timestamps: true,
-  }
-);
+});
 
 const BooksLordOfTheRings = mongoose.model('booksLordOfTheRings', booksSchema);
 

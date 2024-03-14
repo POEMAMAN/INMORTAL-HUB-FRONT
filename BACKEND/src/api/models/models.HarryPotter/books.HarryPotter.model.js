@@ -6,7 +6,6 @@ const booksSchema = new Schema({
     title: { type: String, required: true },
     publication_year: { type: Number },
     saga_index: { type: Number },
-    universe: { type: String, required: false },
     author: { type: String, required: true },
     resume: { type: String, required: false },
     picture: { type: String }

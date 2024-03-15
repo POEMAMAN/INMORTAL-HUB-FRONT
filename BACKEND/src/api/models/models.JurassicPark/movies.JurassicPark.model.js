@@ -2,8 +2,7 @@ const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 
-
-const moviesSchema = new Schema(
+const movieSchema = new Schema(
   {
     title: { type: String, required: true },
     picture: { type: String, required: true },
@@ -13,9 +12,10 @@ const moviesSchema = new Schema(
     country: { type: String, required: false },
     genre: { type: String, required: false },
     clasification: { type: String, required: false },
-    books: "",
-    characters: [],
-    id: { type: Number, required: true},
+    books: { type: Schema.ObjectId, ref: 'booksJurassicPark'},
+    characters: [{ type: Schema.ObjectId, ref: 'characterJurassicPark'}],
+          id: { type: Number, required: true},
+
     resume: {type:String, required:false},
   },
   {
@@ -23,6 +23,5 @@ const moviesSchema = new Schema(
   }
 );
 
-const MoviesJurassicPark = mongoose.model('movieJurassicPark', moviesSchema);
-
-module.exports = MoviesJurassicPark;
+const MovieJurassicPark = mongoose.model('movieJurassicPark', movieSchema);
+module.exports = MovieJurassicPark;

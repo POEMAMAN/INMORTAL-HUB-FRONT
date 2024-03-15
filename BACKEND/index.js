@@ -29,7 +29,7 @@ const moviesLordOfTheRingsRoutes = require("./src/api/routes/routes.LordOfTheRin
 
 // Alien
 const booksAlienRoutes = require("./src/api/routes/routes.Alien/books.Alien.routes");
-const charactersalienRoutes = require("./src/api/routes/routes.Alien/characters.Alien.routes");
+const charactersAlienRoutes = require("./src/api/routes/routes.Alien/characters.Alien.routes");
 const moviesAlienRoutes = require("./src/api/routes/routes.Alien/movies.Alien.routes");
 
 // Crepusculo
@@ -54,7 +54,7 @@ const moviesJurassicParkRoutes = require("./src/api/routes/routes.JurassicPark/m
 
 // ImposibleMission
 const booksImposibleMissionRoutes = require("./src/api/routes/routes.ImposibleMission/books.ImposibleMission.routes");
-const charactersJImposibleMissionRoutes = require("./src/api/routes/routes.ImposibleMission/characters.ImposibleMission.routes");
+const charactersImposibleMissionRoutes = require("./src/api/routes/routes.ImposibleMission/characters.ImposibleMission.routes");
 const moviesImposibleMissionRoutes = require("./src/api/routes/routes.ImposibleMission/movies.ImposibleMission.routes");
 
 // ApesPlanet

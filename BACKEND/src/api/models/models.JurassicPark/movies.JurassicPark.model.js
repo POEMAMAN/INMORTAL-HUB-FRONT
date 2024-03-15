@@ -14,6 +14,8 @@ const movieSchema = new Schema(
     clasification: { type: String, required: false },
     books: { type: Schema.ObjectId, ref: 'booksJurassicPark'},
     characters: [{ type: Schema.ObjectId, ref: 'characterJurassicPark'}],
+          id: { type: Number, required: true},
+
     resume: {type:String, required:false},
   },
   {
@@ -21,5 +23,5 @@ const movieSchema = new Schema(
   }
 );
 
-const MovieJurassicPark = mongoose.model('movieJurassicPark', countrySchema);
+const MovieJurassicPark = mongoose.model('movieJurassicPark', movieSchema);
 module.exports = MovieJurassicPark;

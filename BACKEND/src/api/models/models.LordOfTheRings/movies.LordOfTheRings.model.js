@@ -2,18 +2,21 @@ const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 
-const movieSchema = new Schema(
-  {
-    name: { type: String, required: true },
-    order: { type: String, required: true },
-    // book: { type: String, required: false },
+const movieSchema = new Schema({
+    title: { type: String, required: true },
+    picture: { type: String, required: true },
+    director: { type: String, required: false },
+    year: { type: Number, required: false },
+    duration: { type: String, required: false },
+    country: { type: String, required: false },
+    genre: { type: String, required: false },
+    clasification: { type: String, required: false },
+    books: { type: Schema.ObjectId, ref: 'booksLordOfTheRings'},
+    characters: [{ type: Schema.ObjectId, ref: 'characterLordOfTheRings'}],
     resume: {type:String, required:false},
-    picture: { type: String },
-  },
-  {
+}, {
     timestamps: true,
-  }
-);
+});
 
-const MovieLordOfTheRings = mongoose.model('movieLordOfTheRings', countrySchema);
+const MovieLordOfTheRings = mongoose.model('movieLordOfTheRings', movieSchema);
 module.exports = MovieLordOfTheRings;

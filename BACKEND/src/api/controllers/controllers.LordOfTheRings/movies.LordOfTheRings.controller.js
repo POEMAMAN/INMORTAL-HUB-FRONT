@@ -1,4 +1,4 @@
-const MovieLordOfTheRings = require('BACKEND\src\api\models\models.LordOfTheRings\movies.LordOfTheRings.model.js');
+const MovieLordOfTheRings = require('../../models/models.LordOfTheRings/movies.LordOfTheRings.model');
 
 const getMoviesLordOfTheRings = async (req, res) => {
   try {

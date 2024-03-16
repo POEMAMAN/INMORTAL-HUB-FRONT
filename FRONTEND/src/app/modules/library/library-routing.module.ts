@@ -1,12 +1,7 @@
-
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { verifyTokenGuard } from '../auth/guards/verify-token.guard';
 import { LibraryComponent } from './library.component';
-
-
-
-
 
 
 const routes: Routes = [
@@ -16,7 +11,7 @@ const routes: Routes = [
       path: '', canActivate: [verifyTokenGuard], component: LibraryComponent
     },
     {
-      path: 'completeUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./complete-universe/complete-universe.module').then(m => m.CompleteUniverseModule)
+      path: 'duneUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./dune-universe/dune-universe.module').then(m => m.DuneUniverseModule)
     },
     {
       path: '**', redirectTo: 'library', pathMatch: 'full'

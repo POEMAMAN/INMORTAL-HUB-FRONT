@@ -1,4 +1,4 @@
-const MovieJurassicPark = require('BACKEND\src\api\models\models.JurassicPark\movies.JurassicPark.model.js');
+const MovieJurassicPark = require('../../models/models.JurassicPark/movies.JurassicPark.model');
 
 const getMoviesJurassicPark = async (req, res) => {
   try {

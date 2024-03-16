@@ -16,13 +16,13 @@ const userRouter = require("./src/api/users/users.routes.js");
 const booksDuneRoutes = require("./src/api/routes/routes.dune/books.dune.routes");
 const charactersDuneRoutes = require("./src/api/routes/routes.dune/characters.dune.routes");
 const moviesDuneRoutes = require("./src/api/routes/routes.Dune/movies.Dune.routes.js");
-const countriesDuneRoutes = require("./src/api/routes/routes.dune/countries.dune.routes");
-const planetsDuneRoutes = require("./src/api/routes/routes.Dune/planets.Dune.routes.js");
+// const countriesDuneRoutes = require("./src/api/routes/routes.dune/countries.dune.routes");
+// const planetsDuneRoutes = require("./src/api/routes/routes.Dune/planets.Dune.routes.js");
 
 // HarryPotter
 const booksHarryPotterRoutes = require("./src/api/routes/routes.HarryPotter/books.HarryPotter.routes");
 const charactersHarryPotterRoutes = require("./src/api/routes/routes.HarryPotter/characters.HarryPotter.routes");
-const moviesHarryPotterRoutes = require(require("./src/api/routes/routes.HarryPotter/movies.HarryPotter.routes"));
+const moviesHarryPotterRoutes = require("./src/api/routes/routes.HarryPotter/movies.HarryPotter.routes");
 
 // LordOfTheRings
 const booksLordOfTheRingsRoutes = require("./src/api/routes/routes.LordOfTheRings/books.LordOfTheRings.routes");
@@ -30,7 +30,7 @@ const charactersLordOfTheRingsRoutes = require("./src/api/routes/routes.LordOfTh
 const moviesLordOfTheRingsRoutes = require("./src/api/routes/routes.LordOfTheRings/movies.LordOfTheRings.routes");
 
 // Alien
-const booksAlienRoutes = require("./src/api/routes/routes.Alien/books.Alien.routes");
+// const booksAlienRoutes = require("./src/api/routes/routes.Alien/books.Alien.routes");
 const charactersAlienRoutes = require("./src/api/routes/routes.Alien/characters.Alien.routes");
 const moviesAlienRoutes = require("./src/api/routes/routes.Alien/movies.Alien.routes");
 
@@ -55,19 +55,19 @@ const charactersJurassicParkRoutes = require("./src/api/routes/routes.JurassicPa
 const moviesJurassicParkRoutes = require("./src/api/routes/routes.JurassicPark/movies.JurassicPark.routes");
 
 // ImposibleMission
-const booksImposibleMissionRoutes = require("./src/api/routes/routes.ImposibleMission/books.ImposibleMission.routes");
-const charactersImposibleMissionRoutes = require("./src/api/routes/routes.ImposibleMission/characters.ImposibleMission.routes");
-const moviesImposibleMissionRoutes = require("./src/api/routes/routes.ImposibleMission/movies.ImposibleMission.routes");
+// const booksImposibleMissionRoutes = require("./src/api/routes/routes.ImposibleMission/books.ImposibleMission.routes");
+// const charactersImposibleMissionRoutes = require("./src/api/routes/routes.ImposibleMission/characters.ImposibleMission.routes");
+// const moviesImposibleMissionRoutes = require("./src/api/routes/routes.ImposibleMission/movies.ImposibleMission.routes");
 
 // ApesPlanet
-const booksApesPlanetRoutes = require("./src/api/routes/routes.ApesPlanet/books.ApesPlanet.routes");
-const charactersApesPlanetRoutes = require("./src/api/routes/routes.ApesPlanet/characters.ApesPlanet.routes");
-const moviesApesPlanetRoutes = require("./src/api/routes/routes.ApesPlanet/movies.ApesPlanet.routes");
+// const booksApesPlanetRoutes = require("./src/api/routes/routes.ApesPlanet/books.ApesPlanet.routes");
+// const charactersApesPlanetRoutes = require("./src/api/routes/routes.ApesPlanet/characters.ApesPlanet.routes");
+// const moviesApesPlanetRoutes = require("./src/api/routes/routes.ApesPlanet/movies.ApesPlanet.routes");
 
 // StarTrek
-const booksStarTrekRoutes = require("./src/api/routes/routes.StarTrek/books.StarTrek.routes");
-const charactersStarTrekRoutes = require("./src/api/routes/routes.StarTrek/characters.StarTrek.routes");
-const moviesStarTrekRoutes = require("./src/api/routes/routes.StarTrek/movies.StarTrek.routes");
+// const booksStarTrekRoutes = require("./src/api/routes/routes.StarTrek/books.StarTrek.routes");
+// const charactersStarTrekRoutes = require("./src/api/routes/routes.StarTrek/characters.StarTrek.routes");
+// const moviesStarTrekRoutes = require("./src/api/routes/routes.StarTrek/movies.StarTrek.routes");
 
 // StarWars
 const booksStarWarsRoutes = require("./src/api/routes/routes.StarWars/books.StarWars.routes");
@@ -75,9 +75,9 @@ const charactersStarWarsRoutes = require("./src/api/routes/routes.StarWars/chara
 const moviesStarWarsRoutes = require("./src/api/routes/routes.StarWars/movies.StarWars.routes");
 
 // Underworld
-const booksUnderworldRoutes = require("./src/api/routes/routes.Underworld/books.Underworld.routes");
-const charactersUnderworldRoutes = require("./src/api/routes/routes.Underworld/characters.Underworld.routes");
-const moviesUnderworldRoutes = require("./src/api/routes/routes.Underworld/movies.Underworld.routes");
+// const booksUnderworldRoutes = require("./src/api/routes/routes.Underworld/books.Underworld.routes");
+// const charactersUnderworldRoutes = require("./src/api/routes/routes.Underworld/characters.Underworld.routes");
+// const moviesUnderworldRoutes = require("./src/api/routes/routes.Underworld/movies.Underworld.routes");
 
 //
 
@@ -122,15 +122,15 @@ app.use('/api/users', UserRoutes)
 app.use("/public", express.static("public"));
 app.use("/api", (req, res, next) => "im alive");
 
-app.use("/books", booksRouter);
-app.use("/universes", universeRouter)
+// app.use("/books", booksRouter);
+// app.use("/universes", universeRouter)
 app.use('/user', userRouter);
 // Rutas Universos
 // Dune
 app.use("/universes/dune/books", booksDuneRoutes)
 app.use("/universes/dune/characters", charactersDuneRoutes)
-app.use("/universes/dune/planets", planetsDuneRoutes)
-app.use("/universes/dune/countries", countriesDuneRoutes)
+// app.use("/universes/dune/planets", planetsDuneRoutes)
+// app.use("/universes/dune/countries", countriesDuneRoutes)
 app.use("/universes/dune/countries", moviesDuneRoutes)
 
 // HarryPotter
@@ -144,7 +144,7 @@ app.use("/universes/LordOfTheRings/characters", charactersLordOfTheRingsRoutes)
 app.use("/universes/LordOfTheRings/movies", moviesLordOfTheRingsRoutes)
 
 // Alien
-app.use("/universes/Alien/books", booksAlienRoutes)
+// app.use("/universes/Alien/books", booksAlienRoutes)
 app.use("/universes/Alien/characters", charactersAlienRoutes)
 app.use("/universes/Alien/movies", moviesAlienRoutes)
 
@@ -169,19 +169,19 @@ app.use("/universes/JurassicPark/characters", charactersJurassicParkRoutes)
 app.use("/universes/JurassicPark/movies", moviesJurassicParkRoutes)
 
 // ImposibleMission
-app.use("/universes/ImposibleMission/books", booksImposibleMissionRoutes)
-app.use("/universes/ImposibleMission/characters", charactersImposibleMissionRoutes)
-app.use("/universes/ImposibleMission/movies", moviesImposibleMissionRoutes)
+// app.use("/universes/ImposibleMission/books", booksImposibleMissionRoutes)
+// app.use("/universes/ImposibleMission/characters", charactersImposibleMissionRoutes)
+// app.use("/universes/ImposibleMission/movies", moviesImposibleMissionRoutes)
 
 // ApesPlanet
-app.use("/universes/ApesPlanet/books", booksApesPlanetRoutes)
-app.use("/universes/ApesPlanet/characters", charactersApesPlanetRoutes)
-app.use("/universes/ApesPlanet/movies", moviesApesPlanetRoutes)
+// app.use("/universes/ApesPlanet/books", booksApesPlanetRoutes)
+// app.use("/universes/ApesPlanet/characters", charactersApesPlanetRoutes)
+// app.use("/universes/ApesPlanet/movies", moviesApesPlanetRoutes)
 
 // StarTrek
-app.use("/universes/StarTrek/books", booksStarTrekRoutes)
-app.use("/universes/StarTrek/characters", charactersStarTrekRoutes)
-app.use("/universes/StarTrek/movies", moviesStarTrekRoutes)
+// app.use("/universes/StarTrek/books", booksStarTrekRoutes)
+// app.use("/universes/StarTrek/characters", charactersStarTrekRoutes)
+// app.use("/universes/StarTrek/movies", moviesStarTrekRoutes)
 
 // StarWars
 app.use("/universes/StarWars/books", booksStarWarsRoutes)
@@ -189,9 +189,9 @@ app.use("/universes/StarWars/characters", charactersStarWarsRoutes)
 app.use("/universes/StarWars/movies", moviesStarWarsRoutes)
 
 // Underworld
-app.use("/universes/Underworld/books", booksUnderworldRoutes)
-app.use("/universes/Underworld/characters", charactersUnderworldRoutes)
-app.use("/universes/Underworld/movies", moviesUnderworldRoutes)
+// app.use("/universes/Underworld/books", booksUnderworldRoutes)
+// app.use("/universes/Underworld/characters", charactersUnderworldRoutes)
+// app.use("/universes/Underworld/movies", moviesUnderworldRoutes)
 
 //
 const PORT = process.env.PORT || 8084;

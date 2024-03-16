@@ -1,4 +1,4 @@
-const MovieStarWars = require('BACKEND\src\api\models\models.StarWars\movies.StarWars.model.js');
+const MovieStarWars = require('../../models/models.StarWars/movies.StarWars.model');
 
 const getMoviesStarWars = async (req, res) => {
   try {

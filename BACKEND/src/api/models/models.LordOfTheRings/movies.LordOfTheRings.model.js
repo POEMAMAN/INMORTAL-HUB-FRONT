@@ -18,5 +18,5 @@ const movieSchema = new Schema({
     timestamps: true,
 });
 
-const MovieLordOfTheRings = mongoose.model('movieLordOfTheRings', countrySchema);
+const MovieLordOfTheRings = mongoose.model('movieLordOfTheRings', movieSchema);
 module.exports = MovieLordOfTheRings;

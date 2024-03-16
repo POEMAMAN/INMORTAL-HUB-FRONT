@@ -1,4 +1,4 @@
-const MovieHungerGames = require('BACKEND\src\api\models\models.HungerGames\movies.HungerGames.model.js');
+const MovieHungerGames = require('../../models/models.HungerGames/movies.HungerGames.model');
 
 const getMoviesHungerGames = async (req, res) => {
   try {

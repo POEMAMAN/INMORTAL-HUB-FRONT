@@ -1,4 +1,4 @@
-const MovieHarryPotter = require('BACKEND\src\api\models\models.HarryPotter\movies.HarryPotter.model.js');
+const MovieHarryPotter = require('../../models/models.HarryPotter/movies.HarryPotter.model');
 
 const getMoviesHarryPotter = async (req, res) => {
   try {

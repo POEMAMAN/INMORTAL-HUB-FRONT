@@ -1,4 +1,4 @@
-const MovieAlien = require('BACKEND\src\api\models\models.Alien\movies.Alien.model.js');
+const MovieAlien = require('../../models/models.Alien/movies.Alien.model');
 
 const getMoviesAlien = async (req, res) => {
   try {

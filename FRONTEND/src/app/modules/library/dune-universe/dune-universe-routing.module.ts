@@ -20,7 +20,7 @@ const routes: Routes = [
     path: 'movies', canActivate: [verifyTokenGuard],loadChildren: () => import('./duneMovies/duneMovies.module').then(m => m.duneMoviesModule),
   },
   {
-    path: 'planets', canActivate: [verifyTokenGuard],loadChildren: () => import('./duneMarkets/duneMarkets.module').then(m => m.duneMarketsModule),
+    path: 'markets', canActivate: [verifyTokenGuard],loadChildren: () => import('./duneMarkets/duneMarkets.module').then(m => m.duneMarketsModule),
   },
   {
     path: '**', redirectTo: '', pathMatch: 'full',

@@ -1,0 +1,89 @@
+
+.footer {
+	bottom:0;
+	left:0;
+	position:fixed;
+    width: 100%;
+    height: 2em;
+    overflow:hidden;
+    margin:0 auto;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	z-index:999;
+    &:hover {
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	height: 10em;
+    }
+    &-button{
+	width:35px;
+	height:35px;
+	border: darkblue 12px solid;
+	border-radius:35px;
+	margin:0 auto;
+	position:relative;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+        &:hover{
+        width:35px;
+        height:35px;
+        border: darkblue 12px solid;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+        position:relative;
+        }
+    }
+    &-container{
+        margin-top:5px;
+        width:100%;
+        height:100%;
+        position:relative;
+        top:0;
+        left:0;
+        background-image: url("https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710579182/Varios/wp2714490_apci7e.webp");
+        &-cont{
+            position:relative;
+            top:-45px;
+            height:auto;
+            margin:0 auto;
+            &-main{
+                width: 98vw;
+                margin: 0 1% 0 1%;
+                text-align:center;
+                display: flex;
+                align-items: flex-end;
+                &-h4{
+                    font-family: 'Race-guard';
+                    margin-top:50px;
+                    color: #198ce6
+                }
+                &-img{
+                    width: 5%;
+                    height: 5%;
+                    margin-top:50px;
+                }
+                &-ul{
+                    display: flex;
+                    align-items: center;
+                }
+                &-ul a{
+                    font-size: 100%;
+                    font-family: 'Race-guard';
+                    color: black;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+
+<div class="duneMarket-container">
+  <div class="duneMarkets-container-button" *ngIf="isAdmin" style="display: flex; justify-content: flex-end; align-items: center; margin-bottom: 5px; gap: 5px">
+      <button [routerLink]="['/admin/edit-product',duneMarket._id]" >Editar</button>
+      <button [routerLink]="['/admin/delete-product', duneMarket._id]" >Eliminar</button>
+  </div>
+  <div class="duneMarkets-container-img">
+    <img class="duneMarkets-container-img-img" [src]="duneMarket.picture" />
+  </div>
+  <div class="duneMarkets-container-description">
+    <h2 class="duneMarkets-container-h2">{{ duneMarket.name }}</h2>
+    <p class="duneMarkets-container-p">{{ duneMarket.clan }}</p>
+    <p class="duneMarkets-container-p">{{ duneMarket.foundatorSpecie }}</p>
+    <p class="duneMarkets-container-p">{{ duneMarket.clientSpecie}}</p>
+    <p class="duneMarkets-container-resume">{{ duneMarket.resume }}</p>
+  </div>
+</div>
+

@@ -6,3 +6,4 @@ comandosgit.md
 **/.angular
 **/.env
 **/enviroment.ts
+**/node_modules

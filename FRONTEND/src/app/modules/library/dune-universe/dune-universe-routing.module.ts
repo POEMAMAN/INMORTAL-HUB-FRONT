@@ -11,7 +11,7 @@ const routes: Routes = [
     path: '',canActivate: [verifyTokenGuard], component: DuneUniverseComponent,
   },
   {
-    path: 'books', canActivate: [verifyTokenGuard],loadChildren: () => import('../dune-universe/duneBooks/duneBooks.module').then(m => m.duneBooksModule),
+    path: 'books', canActivate: [verifyTokenGuard],loadChildren: () => import('./duneBooks/duneBooks.module').then(m => m.duneBooksModule),
   },
   {
     path: 'characters', canActivate: [verifyTokenGuard],loadChildren: () => import('./duneCharacters/duneCharacters.module').then(m => m.duneCharactersModule),

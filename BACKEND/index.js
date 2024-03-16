@@ -16,6 +16,8 @@ const userRouter = require("./src/api/users/users.routes.js");
 const booksDuneRoutes = require("./src/api/routes/routes.dune/books.dune.routes");
 const charactersDuneRoutes = require("./src/api/routes/routes.dune/characters.dune.routes");
 const moviesDuneRoutes = require("./src/api/routes/routes.Dune/movies.Dune.routes.js");
+const countriesDuneRoutes = require("./src/api/routes/routes.dune/countries.dune.routes");
+const planetsDuneRoutes = require("./src/api/routes/routes.Dune/planets.Dune.routes.js");
 
 // HarryPotter
 const booksHarryPotterRoutes = require("./src/api/routes/routes.HarryPotter/books.HarryPotter.routes");
@@ -127,6 +129,8 @@ app.use('/user', userRouter);
 // Dune
 app.use("/universes/dune/books", booksDuneRoutes)
 app.use("/universes/dune/characters", charactersDuneRoutes)
+app.use("/universes/dune/planets", planetsDuneRoutes)
+app.use("/universes/dune/countries", countriesDuneRoutes)
 app.use("/universes/dune/countries", moviesDuneRoutes)
 
 // HarryPotter

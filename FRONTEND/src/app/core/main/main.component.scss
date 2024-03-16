@@ -56,6 +56,13 @@ body {
       border-radius: 10px;
       padding: 10px;
       transition: all 0.3s ease;
+      &-p{
+        font-size: 100%;
+      }
+      &-h2{
+        display: flex;
+        text-align: center;
+      }
       
       img {
         display: flex;

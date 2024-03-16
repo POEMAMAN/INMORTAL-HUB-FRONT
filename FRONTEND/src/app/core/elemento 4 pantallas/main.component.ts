@@ -11,8 +11,15 @@ export class MainComponent {
   ngAfterViewInit() {
     this.cards.forEach(card => {
       card.nativeElement.addEventListener("click", () => {
-        card.nativeElement.classList.toggle("active");
+        this.removeActiveClass();
+        card.nativeElement.classList.add("active");
       });
+    });
+  }
+
+  removeActiveClass() {
+    this.cards.forEach(card => {
+      card.nativeElement.classList.remove("active");
     });
   }
 }

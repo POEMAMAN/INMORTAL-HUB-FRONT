@@ -10,7 +10,6 @@ import { FooterComponent } from './core/footer/footer.component';
 import { HeaderLogoutComponent } from './core/header-logout/header-logout.component';
 import { MainComponent } from './core/main/main.component';
 import { LibraryComponent } from './modules/library/library.component';
-import { LandingPageComponent } from './core/landing-page/landing-page.component';
 
 
 
@@ -24,7 +23,7 @@ import { LandingPageComponent } from './core/landing-page/landing-page.component
     HeaderLogoutComponent,
     MainComponent,
     LibraryComponent,
-    LandingPageComponent,
+
 
 
   ],

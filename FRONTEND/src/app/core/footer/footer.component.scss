@@ -22,9 +22,9 @@
 	height: 10em;
     }
     &-button{
-	width:35px;
-	height:35px;
-	border: darkblue 12px solid;
+	width:45px;
+	height:45px;
+	border: goldenrod 12px solid;
 	border-radius:35px;
 	margin:0 auto;
 	position:relative;
@@ -34,9 +34,9 @@
     -ms-transition: all 1s ease;
     transition: all 1s ease;
         &:hover{
-        width:35px;
-        height:35px;
-        border: darkblue 12px solid;
+        width:45px;
+        height:45px;
+        border: goldenrod 12px solid;
         -webkit-transition: all 1s ease;
         -moz-transition: all 1s ease;
         -o-transition: all 1s ease;
@@ -63,7 +63,7 @@
                 margin: 0 1% 0 1%;
                 text-align:center;
                 display: flex;
-                align-items: flex-end;
+                align-items: center;
                 &-h4{
                     font-family: 'Race-guard';
                     margin-top:50px;
@@ -87,3 +87,75 @@
         }
     }
 }
+
+@media (max-width: 400px) {
+    .footer-container-cont-main-img{
+        width: 10%;
+        height: 10%;
+        margin-top: 35px;
+    }
+    .footer-container-cont-main-h4{
+        font-size: 60%;
+    }
+    .footer-container-cont-main-ul a{
+        font-size: 90%;
+        margin-top:35px;
+    }
+}
+
+@media (max-width: 800px) {
+    .footer-container-cont-main-h4{
+        font-size: 60%;
+    }
+    .footer-container-cont-main-ul a{
+        font-size: 80%;
+        margin-top:35px;
+    }
+    .footer-container-cont-main-img{
+        width: 50px;
+        height: 50px;
+        margin-top: 35px;
+    }
+}
+
+@media (min-width: 805px){
+    .footer-container-cont-main-img{
+        width: 50px;
+        height: 50px;
+        margin-top: 35px;
+    }
+    .footer-container-cont-main-ul a{
+        font-size: 100%;
+        margin-top:50px;
+    }
+}
+
+/* Tamaño por defecto pantallas (1280-1024) */
+@media all and (min-width: 1024px) and (max-width: 1280px) { 
+ }
+/* Tamaño tablet horizontal (1024-768) */
+@media all and (min-width: 768px) and (max-width: 1024px) { }
+
+/* Tamaño tablet (768-480) */
+@media all and (min-width: 480px) and (max-width: 768px) { }
+
+/* Tamaño teléfonos (480-menos ) */
+@media all and (max-width: 480px) { }
+
+/*  Orientación: Vertical */
+@media screen and (orientation:portrait) { }
+
+/* Orientación: Horizontal  */
+@media screen and (orientation:landscape) { }
+
+/* iPhone - Orientación: Vertical */
+@media screen and (max-device-width: 480px) and (orientation:portrait) { } 
+
+/* iPhone - Orientación: Horizontal  */
+@media screen and (max-device-width: 480px) and (orientation:landscape) { }
+
+/* iPad - Orientación: Vertical */
+@media screen and (min-device-width: 481px) and (orientation:portrait) { }
+
+/* iPad - Orientación: Horizontal  */
+@media screen and (min-device-width: 481px) and (orientation:landscape) { }

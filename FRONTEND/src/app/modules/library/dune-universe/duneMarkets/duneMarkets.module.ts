@@ -3,13 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { duneMarketsRoutingModule } from './duneMarkets-routing.module';
 import { duneMarketsPageComponent } from './pages/duneMarkets-page/duneMarkets-page.component';
-import { duneMarketsComponent } from './components/duneMarkets/duneMarkets.component';
+
 
 
 @NgModule({
   declarations: [
-    duneMarketsPageComponent,
-    duneMarketsComponent
+    duneMarketsPageComponent
+
   ],
   imports: [
     CommonModule,

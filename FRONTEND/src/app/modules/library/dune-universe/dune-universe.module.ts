@@ -11,10 +11,10 @@ import { duneMoviesModule } from './duneMovies/duneMovies.module';
 
 
 
+
 @NgModule({
   declarations: [
-    DuneUniverseComponent
-
+    DuneUniverseComponent,
 
   ],
   imports: [
@@ -24,6 +24,7 @@ import { duneMoviesModule } from './duneMovies/duneMovies.module';
     duneCharactersModule,
     duneMarketsModule,
     duneMoviesModule
+
 
   ]
 })

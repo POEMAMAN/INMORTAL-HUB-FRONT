@@ -8,9 +8,8 @@ body {
     min-height: 100vh;
   }
   
-  .wrapper {
-    width: 100%;
-    max-width: 1240px;
+  .library-container {
+    width: 80vw;
     margin: 0 auto;
     padding: 15px;
     box-sizing: border-box;
@@ -120,4 +119,8 @@ body {
   @keyframes rotate {
     0% {transform: translate(-50%, -50%) rotate(0deg)}
     100% {transform: translate(-50%, -50%) rotate(360deg)}
+  }
+  .card-button{
+    background-color: black;
+    border: none;
   }

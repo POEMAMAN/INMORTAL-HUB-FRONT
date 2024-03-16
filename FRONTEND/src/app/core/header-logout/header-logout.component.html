@@ -10,7 +10,7 @@
       <button class="header-logout-c-button"[routerLink]="'/library'">Volver a Libreria</button>
     </div>
     <div class="header-logout-c" *ngIf="isTokenPresent() && userData">
-        <p class="header-logout-c-p">User Logged IN: {{ userData.email }}</p>
+        <p class="header-logout-c-p">Usuario: {{ userData.email }}</p>
     </div>
   </div>
 </header> 

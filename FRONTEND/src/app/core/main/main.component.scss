@@ -14,18 +14,29 @@ body {
     justify-content: center;
   }
   .main-menu {
+    width: 20vw;
     display: flex;
+    justify-content: space-evenly;
     align-items: baseline;
   }
-
-  .main-parragraph {
+  .main-title{
+    width: 50vw;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: goldenrod;
+    text-decoration: overline;
+    font-size: 300%;
+  }
+  .main-descripcion{
     display: flex;
     justify-content: center;
+    &-p{
+      text-align: center;
+    }
   }
-  
   .wrapper {
-    width: 100%;
-    max-width: 1240px;
+    width: 80vw;
     margin: 0 auto;
     padding: 15px;
     box-sizing: border-box;

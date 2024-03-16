@@ -14,9 +14,9 @@ const routes: Routes = [
 {
   path: 'auth', loadChildren: () => import('./modules/auth/auth.module').then(module => module.AuthModule)
 },
-// {
-//   path: 'library', canActivate: [verifyTokenGuard],loadChildren: () => import('./modules/library/library.module').then(m => m.LibraryModule)
-// },
+{
+  path: 'library', canActivate: [verifyTokenGuard],loadChildren: () => import('./modules/library/library.module').then(m => m.LibraryModule)
+},
 {
   path: '**', redirectTo: 'main', pathMatch: 'full'
 }

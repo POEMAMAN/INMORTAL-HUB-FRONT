@@ -12,6 +12,7 @@
         "booksDuneSeed": "node ./src/seeds/seeds-dune/books.dune.seeds.js",
         "characterDuneSeed": "node ./src/seeds/seeds-dune/characters.dune.seeds.js",
         "countriesDuneSeed": "node ./src/seeds/seeds-dune/countries.dune.seeds.js",
+        "moviesDuneSeed": "",
         "booksLordOfTheRingsSeed": "node ./src/seeds/seeds-LordOfTheRings/books.LordOfTheRings.seeds.js",
         "charactersLordOfTheRingsSeed": "node ./src/seeds/seeds-LordOfTheRings/characters.LordOfTheRings.seeds.js",
         "moviesLordOfTheRingsSeed": "node ./src/seeds/seeds-LordOfTheRings/movies.LordOfTheRings.seeds.js"

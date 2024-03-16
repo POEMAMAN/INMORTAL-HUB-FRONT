@@ -21,5 +21,5 @@ const movieSchema = new Schema(
   }
 );
 
-const MovieCrepusculo = mongoose.model('movieCrepusculo', countrySchema);
+const MovieCrepusculo = mongoose.model('movieCrepusculo', movieSchema);
 module.exports = MovieCrepusculo;

@@ -1,4 +1,4 @@
-const MovieIndianaJones = require('BACKEND\src\api\models\models.IndianaJones\movies.IndianaJones.model.js');
+const MovieIndianaJones = require('../../models/models.IndianaJones/movies.IndianaJones.model');
 
 const getMoviesIndianaJones = async (req, res) => {
   try {

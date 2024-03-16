@@ -21,5 +21,5 @@ const movieSchema = new Schema(
   }
 );
 
-const MovieStarWars = mongoose.model('movieStarWars', countrySchema);
+const MovieStarWars = mongoose.model('movieStarWars', movieSchema);
 module.exports = MovieStarWars;

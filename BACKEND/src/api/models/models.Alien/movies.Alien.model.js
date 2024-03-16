@@ -20,5 +20,5 @@ const movieSchema = new Schema(
   }
 );
 
-const MovieAlien = mongoose.model('movieAlien', countrySchema);
+const MovieAlien = mongoose.model('movieAlien', movieSchema);
 module.exports = MovieAlien;

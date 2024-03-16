@@ -21,5 +21,5 @@ const movieSchema = new Schema(
   }
 );
 
-const MovieHungerGames = mongoose.model('movieHungerGames', countrySchema);
+const MovieHungerGames = mongoose.model('movieHungerGames', movieSchema);
 module.exports = MovieHungerGames;

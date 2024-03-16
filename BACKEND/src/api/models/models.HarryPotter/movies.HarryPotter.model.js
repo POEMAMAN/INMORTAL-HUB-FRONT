@@ -21,5 +21,5 @@ const movieSchema = new Schema(
   }
 );
 
-const MovieHarryPotter = mongoose.model('movieHarryPotter', countrySchema);
+const MovieHarryPotter = mongoose.model('movieHarryPotter', movieSchema);
 module.exports = MovieHarryPotter;

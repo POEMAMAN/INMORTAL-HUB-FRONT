@@ -1,4 +1,4 @@
-const MovieCrepusculo = require('BACKEND\src\api\models\models.Crepusculo\movies.Crepusculo.model.js');
+const MovieCrepusculo = require('../../models/models.Crepusculo/movies.Crepusculo.model');
 
 const getMoviesCrepusculo = async (req, res) => {
   try {

@@ -1,0 +1,17 @@
+<div class="duneMarket-container-list">
+  <button
+  class="duneMarket-container-list-button"
+  [routerLink]="'/library/completeUniverse/dune'"
+>Universo Dune
+</button>
+  <div style="margin-top: 5px;" class="container">
+  </div>
+  <div class="duneMarket-container-list-card">
+      <div *ngFor="let duneMarket of duneMarkets"  class="duneMarket-container-list-card-item">
+        <app-duneMarkets
+        [duneMarket]="duneMarket"></app-duneMarkets>
+      </div>
+    </div>
+  </div>
+
+

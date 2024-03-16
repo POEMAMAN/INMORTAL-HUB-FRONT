@@ -2,7 +2,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LibraryRoutingModule } from './library-routing.module';
-import { CompleteUniverseModule } from './complete-universe/complete-universe.module';
+import { DuneUniverseModule } from './dune-universe/dune-universe.module';
+
 
 
 @NgModule({
@@ -13,11 +14,10 @@ import { CompleteUniverseModule } from './complete-universe/complete-universe.mo
   imports: [
     LibraryRoutingModule,
     CommonModule,
-    CompleteUniverseModule,
-
+    DuneUniverseModule
   ],
   exports: [
-    CompleteUniverseModule
+
   ]
 })
 export class LibraryModule {

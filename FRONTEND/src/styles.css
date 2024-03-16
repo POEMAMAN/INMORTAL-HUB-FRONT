@@ -76,7 +76,7 @@ a:hover {
 p, h2, label {
   font: 150 2rem Raleway, sans-serif;
   text-decoration:solid;
-  color:#6ef2fc;
+  color:#e2eff0;
   font-style: var(--fill-color);
   font-weight:900;
 }
@@ -89,7 +89,7 @@ h1 {
 }
 
 html {
-  background: url(https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710577683/disney_plus_eooz72.webp) no-repeat center center fixed;
+  background: url(https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710579182/Varios/Background-Narrow_xoyab9.jpg) no-repeat center center fixed;
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;

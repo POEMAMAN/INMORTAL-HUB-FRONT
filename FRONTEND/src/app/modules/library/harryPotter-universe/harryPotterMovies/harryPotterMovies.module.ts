@@ -1,19 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { duneMoviesRoutingModule } from './duneMovies-routing.module';
-import { duneMoviesPageComponent } from './pages/duneMovies-page/duneMovies-page.component';
-import { duneMoviesComponent } from './components/duneMovies/duneMovies.component';
+import { harryPotterMoviesRoutingModule } from './harryPotterMovies-routing.module';
+import { harryPotterMoviesPageComponent } from './pages/harryPotterMovies-page/harryPotterMovies-page.component';
+import { harryPotterMoviesComponent } from './components/harryPotterMovies/harryPotterMovies.component';
 
 
 @NgModule({
   declarations: [
-    duneMoviesPageComponent,
-    duneMoviesComponent
+    harryPotterMoviesPageComponent,
+    harryPotterMoviesComponent
   ],
   imports: [
     CommonModule,
-    duneMoviesRoutingModule
+    harryPotterMoviesRoutingModule
   ]
 })
-export class duneMoviesModule { }
+export class harryPotterMoviesModule { }

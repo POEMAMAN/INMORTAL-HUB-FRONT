@@ -44,7 +44,7 @@ mongoose
     })
     .then(async() => {
         const allBooksJurassicPark = await BookJurassicPark.find();
-        if (allJurassicPark.length > 0) {
+        if (allBooksJurassicPark.length > 0) {
             await BookJurassicPark.collection.drop();
             console.log('Libros borrados');
         }

@@ -1,26 +1,27 @@
-import { duneMarketsModule } from './duneMarkets/duneMarkets.module';
+import { harryPotterMarketsModule } from './harryPotterMarkets/harryPotterMarkets.module';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { verifyTokenGuard } from 'src/app/modules/auth/guards/verify-token.guard';
-import { DuneUniverseComponent } from './dune-universe.component';
+import { HarryPotterUniverseComponent } from './harryPotter-universe.component';
+
 
 const routes: Routes = [
   {
     path: '', children: [
   {
-    path: '',canActivate: [verifyTokenGuard], component: DuneUniverseComponent,
+    path: '',canActivate: [verifyTokenGuard], component: HarryPotterUniverseComponent
   },
   {
-    path: 'books', canActivate: [verifyTokenGuard],loadChildren: () => import('./duneBooks/duneBooks.module').then(m => m.duneBooksModule),
+    path: 'books', canActivate: [verifyTokenGuard],loadChildren: () => import('./harryPotterBooks/harryPotterBooks.module').then(m => m.harryPotterBooksModule),
   },
   {
-    path: 'characters', canActivate: [verifyTokenGuard],loadChildren: () => import('./duneCharacters/duneCharacters.module').then(m => m.duneCharactersModule),
+    path: 'characters', canActivate: [verifyTokenGuard],loadChildren: () => import('./harryPotterCharacters/harryPotterCharacters.module').then(m => m.harryPotterCharactersModule),
   },
   {
-    path: 'movies', canActivate: [verifyTokenGuard],loadChildren: () => import('./duneMovies/duneMovies.module').then(m => m.duneMoviesModule),
+    path: 'movies', canActivate: [verifyTokenGuard],loadChildren: () => import('./harryPotterMovies/harryPotterMovies.module').then(m => m.harryPotterMoviesModule),
   },
   {
-    path: 'markets', canActivate: [verifyTokenGuard],loadChildren: () => import('./duneMarkets/duneMarkets.module').then(m => m.duneMarketsModule),
+    path: 'markets', canActivate: [verifyTokenGuard],loadChildren: () => import('./harryPotterMarkets/harryPotterMarkets.module').then(m => m.harryPotterMarketsModule),
   },
   {
     path: '**', redirectTo: '', pathMatch: 'full',
@@ -34,4 +35,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class DuneUniverseRoutingModule { };
+export class HarryPotterUniverseRoutingModule { };

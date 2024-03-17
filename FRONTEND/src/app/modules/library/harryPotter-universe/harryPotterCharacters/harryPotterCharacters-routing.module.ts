@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { duneCharactersPageComponent } from './pages/duneCharacters-page/duneCharacters-page.component';
+import { harryPotterCharactersPageComponent } from './pages/harryPotterCharacters-page/harryPotterCharacters-page.component';
 import { verifyTokenGuard } from 'src/app/modules/auth/guards/verify-token.guard';
 
 const routes: Routes = [
   {
     path: '', children: [
       {
-      path: '', canActivate: [verifyTokenGuard],component: duneCharactersPageComponent
+      path: '', canActivate: [verifyTokenGuard],component: harryPotterCharactersPageComponent
       },
       {
         path: '**', redirectTo: '', pathMatch: 'full'
@@ -20,4 +20,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class duneCharactersRoutingModule { }
+export class harryPotterCharactersRoutingModule { }

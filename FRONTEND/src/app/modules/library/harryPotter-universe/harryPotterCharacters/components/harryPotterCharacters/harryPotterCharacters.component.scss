@@ -1,7 +1,7 @@
 *{
   box-sizing:border-box;
 }
-.duneCharacters-container {
+.harryPotterCharacters-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -51,14 +51,14 @@
     overflow: hidden;
     -webkit-line-clamp: 4;
     font-size: 14px;
-    height: 800px;
+    height: 1000px;
     font-family: 'Merienda';
     margin: 2% 2% 0% 2%;
   }
   &-deck{
     margin:15px;
     width: 425px;
-    height: 850px;
+    height: 1000px;
     position:relative;
     -webkit-perspective: 1000px;
     perspective: 1000px;
@@ -66,7 +66,7 @@
     border-radius:10px;
     &-card{
       width: 425px;
-      height: 850px;
+      height: 1000px;
       -webkit-transform-style: preserve-3d;
       transform-style: preserve-3d;
       -webkit-transition: all .5s linear;
@@ -99,19 +99,21 @@
 	  height: 100%;
 	  z-index: -1;
     background-size:100% 100%;
-	  background: url('https://i.imgur.com/W3tra4F.gif');
+	  background: url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710704127/HarryPotter/200_itk9gn.webp');
 	  -webkit-transform: rotateY(180deg);
 	  -moz-transform: rotateY(180deg);
 	  -ms-transform: rotateY(180deg);
 	  -o-transform: rotateY(180deg);
 	  transform: rotateY(180deg);
+    background-size: cover;
   }
 }
 .front, .back{
   transition: all .5s linear;
 }
 .front{
-  background-image:url('https://i.imgur.com/W3tra4F.gif');
+  background-image:url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710704127/HarryPotter/200_itk9gn.webp');
+  background-size: cover;
   z-index:1;
   box-shadow: 5px 5px 5px #aaa;
   display: flex;

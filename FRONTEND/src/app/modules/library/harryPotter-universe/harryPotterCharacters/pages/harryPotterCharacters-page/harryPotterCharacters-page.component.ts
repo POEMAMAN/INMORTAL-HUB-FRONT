@@ -1,21 +1,21 @@
-import { DuneCharacter } from '../../interfaces/DuneCharacters.interface';
-import { duneCharactersService } from '../../services/duneCharacters.service';
+import { HarryPotterCharacter } from '../../interfaces/HarryPotterCharacters.interface';
+import { harryPotterCharactersService } from '../../services/harryPotterCharacters.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-duneCharacters-page',
-  templateUrl: './duneCharacters-page.component.html',
-  styleUrls: ['./duneCharacters-page.component.scss']
+  selector: 'app-harryPotterCharacters-page',
+  templateUrl: './harryPotterCharacters-page.component.html',
+  styleUrls: ['./harryPotterCharacters-page.component.scss']
 })
-export class duneCharactersPageComponent implements OnInit {
-  duneCharacters: DuneCharacter[] = []
-  constructor(private duneCharactersService: duneCharactersService ) {}
+export class harryPotterCharactersPageComponent implements OnInit {
+  harryPotterCharacters: HarryPotterCharacter[] = []
+  constructor(private harryPotterCharactersService: harryPotterCharactersService ) {}
 
 
   ngOnInit(){
-    this.duneCharactersService.getDuneCharacters().subscribe({
-      next: (duneCharacters: DuneCharacter[]) => {
-        this.duneCharacters = duneCharacters
+    this.harryPotterCharactersService.getHarryPotterCharacters().subscribe({
+      next: (harryPotterCharacters: HarryPotterCharacter[]) => {
+        this.harryPotterCharacters = harryPotterCharacters
       },
       error: () => {}
     })

@@ -1,18 +1,18 @@
 
-<div class="duneMovie-container">
-  <div class="duneMovies-container-button" *ngIf="isAdmin" style="display: flex; justify-content: flex-end; align-items: center; margin-bottom: 5px; gap: 5px">
-      <button [routerLink]="['/admin/edit-product',duneMovie._id]" >Editar</button>
-      <button [routerLink]="['/admin/delete-product', duneMovie._id]" >Eliminar</button>
+<div class="harryPotterMovie-container">
+  <div class="harryPotterMovies-container-button" *ngIf="isAdmin" style="display: flex; justify-content: flex-end; align-items: center; margin-bottom: 5px; gap: 5px">
+      <button [routerLink]="['/admin/edit-product',harryPotterMovie._id]" >Editar</button>
+      <button [routerLink]="['/admin/delete-product', harryPotterMovie._id]" >Eliminar</button>
   </div>
-  <div class="duneMovies-container-img">
-    <img class="duneMovies-container-img-img" [src]="duneMovie.picture" />
+  <div class="harryPotterMovies-container-img">
+    <img class="harryPotterMovies-container-img-img" [src]="harryPotterMovie.picture" />
   </div>
-  <div class="duneMovies-container-description">
-    <h2 class="duneMovies-container-h2">{{ duneMovie.name }}</h2>
-    <p class="duneMovies-container-p">{{ duneMovie.clan }}</p>
-    <p class="duneMovies-container-p">{{ duneMovie.foundatorSpecie }}</p>
-    <p class="duneMovies-container-p">{{ duneMovie.clientSpecie}}</p>
-    <p class="duneMovies-container-resume">{{ duneMovie.resume }}</p>
+  <div class="harryPotterMovies-container-description">
+    <h2 class="harryPotterMovies-container-h2">{{ harryPotterMovie.name }}</h2>
+    <p class="harryPotterMovies-container-p">{{ harryPotterMovie.clan }}</p>
+    <p class="harryPotterMovies-container-p">{{ harryPotterMovie.foundatorSpecie }}</p>
+    <p class="harryPotterMovies-container-p">{{ harryPotterMovie.clientSpecie}}</p>
+    <p class="harryPotterMovies-container-resume">{{ harryPotterMovie.resume }}</p>
   </div>
 </div>
 

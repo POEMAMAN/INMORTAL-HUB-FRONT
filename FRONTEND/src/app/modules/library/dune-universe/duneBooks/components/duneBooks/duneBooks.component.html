@@ -10,7 +10,7 @@
       Eliminar
     </button>
   </div>
-  <div class="duneBooks-container-img">
+  <!-- <div class="duneBooks-container-img">
     <img  class="duneBooks-container-img-img"[src]="duneBook.picture" />
   </div>
   <div class="duneBooks-container-description">
@@ -21,5 +21,23 @@
     <p class="duneBooks-container-p">{{ duneBook.universe }}</p>
     <p class="duneBooks-container-p">{{ duneBook.author }}</p>
     <p class="duneBooks-container-resume">{{ duneBook.resume }}</p>
+  </div>
+</div> -->
+<!----------------  ------------------------------>
+  <div class="container">
+    <div class="deck">
+      <div class="card">
+        <div class="front face" (click)="flip()">
+          <h2 class="duneBooks-container-h2">{{ duneBook.title }}</h2>
+          <img  class="duneBooks-container-img-img"[src]="duneBook.picture" />
+          <p class="duneBooks-container-p">{{ duneBook.publication_year }}</p>
+          <p class="duneBooks-container-p">{{ duneBook.saga_index }}</p>
+          <p class="duneBooks-container-p">{{ duneBook.author }}</p>
+        </div>
+        <div class="back face" (click)="flip()">
+          <p class="duneBooks-container-resume">{{ duneBook.resume }}</p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

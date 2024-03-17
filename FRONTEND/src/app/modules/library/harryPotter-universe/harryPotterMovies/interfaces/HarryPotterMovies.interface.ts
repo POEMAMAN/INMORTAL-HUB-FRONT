@@ -1,4 +1,4 @@
-export interface DuneMovie {
+export interface HarryPotterMovie {
   title: String,
   picture: String,
   director: String,

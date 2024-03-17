@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DuneUniverseRoutingModule } from './dune-universe-routing.module';
-import { DuneUniverseComponent } from './dune-universe.component';
-import { duneBooksModule } from './duneBooks/duneBooks.module';
-import { duneCharactersModule } from './duneCharacters/duneCharacters.module';
-import { duneMarketsModule } from './duneMarkets/duneMarkets.module';
-import { duneMoviesModule } from './duneMovies/duneMovies.module';
+
+import { harryPotterBooksModule } from './harryPotterBooks/harryPotterBooks.module';
+import { HarryPotterUniverseComponent } from './harryPotter-universe.component';
+import { harryPotterBooksRoutingModule } from './harryPotterBooks/harryPotterBooks-routing.module';
+import { harryPotterMoviesModule } from './harryPotterMovies/harryPotterMovies.module';
+import { harryPotterMarketsModule } from './harryPotterMarkets/harryPotterMarkets.module';
+import { harryPotterCharactersModule } from './harryPotterCharacters/harryPotterCharacters.module';
+import { HarryPotterUniverseRoutingModule } from './harryPotter-universe-routing.module';
 
 
 
@@ -14,18 +16,18 @@ import { duneMoviesModule } from './duneMovies/duneMovies.module';
 
 @NgModule({
   declarations: [
-    DuneUniverseComponent,
+    HarryPotterUniverseComponent,
 
   ],
   imports: [
     CommonModule,
-    DuneUniverseRoutingModule,
-    duneBooksModule,
-    duneCharactersModule,
-    duneMarketsModule,
-    duneMoviesModule
+    HarryPotterUniverseRoutingModule,
+    harryPotterBooksModule,
+    harryPotterCharactersModule,
+    harryPotterMarketsModule,
+    harryPotterMoviesModule
 
 
   ]
 })
-export class DuneUniverseModule { };
+export class HarryPotterUniverseModule { };

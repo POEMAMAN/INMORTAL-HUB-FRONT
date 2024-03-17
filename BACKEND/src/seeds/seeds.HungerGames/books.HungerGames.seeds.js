@@ -45,7 +45,7 @@ mongoose
     })
     .then(async() => {
         const allBooksHungerGames = await BookHungerGames.find();
-        if (allHungerGames.length > 0) {
+        if (allBooksHungerGames.length > 0) {
             await BookHungerGames.collection.drop();
             console.log('Libros borrados');
         }

@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { duneCharactersComponent } from './duneCharacters.component';
+import { harryPotterCharactersComponent } from './harryPotterCharacters.component';
 
-describe('duneCharactersComponent', () => {
-  let component: duneCharactersComponent;
-  let fixture: ComponentFixture<duneCharactersComponent>;
+describe('harryPotterCharactersComponent', () => {
+  let component: harryPotterCharactersComponent;
+  let fixture: ComponentFixture<harryPotterCharactersComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [duneCharactersComponent]
+      declarations: [harryPotterCharactersComponent]
     });
-    fixture = TestBed.createComponent(duneCharactersComponent);
+    fixture = TestBed.createComponent(harryPotterCharactersComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

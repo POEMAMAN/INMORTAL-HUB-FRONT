@@ -1,19 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { duneMarketsRoutingModule } from './duneMarkets-routing.module';
-import { duneMarketsPageComponent } from './pages/duneMarkets-page/duneMarkets-page.component';
+import { harryPotterMarketsRoutingModule } from './harryPotterMarkets-routing.module';
+import { harryPotterMarketsPageComponent } from './pages/harryPotterMarkets-page/harryPotterMarkets-page.component';
 
 
 
 @NgModule({
   declarations: [
-    duneMarketsPageComponent
+    harryPotterMarketsPageComponent
 
   ],
   imports: [
     CommonModule,
-    duneMarketsRoutingModule
+    harryPotterMarketsRoutingModule
   ]
 })
-export class duneMarketsModule { }
+export class harryPotterMarketsModule { }

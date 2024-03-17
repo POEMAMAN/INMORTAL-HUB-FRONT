@@ -1,4 +1,4 @@
-export interface DuneBook {
+export interface HarryPotterBook {
   title: string;
   publication_year: string;
   saga_index: string;

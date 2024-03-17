@@ -1,15 +1,15 @@
-<div class="duneMovie-container-list">
+<div class="harryPotterMovie-container-list">
   <button
-  class="duneMovie-container-list-button"
-  [routerLink]="'/library/duneUniverse'"
->Universo Dune
+  class="harryPotterMovie-container-list-button"
+  [routerLink]="'/library/harryPotterUniverse'"
+>Universo Harry Potter
 </button>
   <div style="margin-top: 5px;" class="container">
   </div>
-  <div class="duneMovie-container-list-card">
-      <div *ngFor="let duneMovie of duneMovies"  class="duneMovie-container-list-card-item">
-        <app-duneMovies
-        [duneMovie]="duneMovie"></app-duneMovies>
+  <div class="harryPotterMovie-container-list-card">
+      <div *ngFor="let harryPotterMovie of harryPotterMovies"  class="harryPotterMovie-container-list-card-item">
+        <app-harryPotterMovies
+        [harryPotterMovie]="harryPotterMovie"></app-harryPotterMovies>
       </div>
     </div>
   </div>

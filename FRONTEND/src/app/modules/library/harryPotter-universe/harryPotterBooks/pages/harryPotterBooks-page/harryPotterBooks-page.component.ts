@@ -1,21 +1,22 @@
-import { DuneBook } from '../../interfaces/DuneBooks.interface';
-import { duneBooksService } from '../../services/duneBooks.service';
+import { harryPotterBooksService } from './../../services/harryPotterBooks.service';
+import { HarryPotterBook } from '../../interfaces/HarryPotterBooks.interface';
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-duneBooks-page',
-  templateUrl: './duneBooks-page.component.html',
-  styleUrls: ['./duneBooks-page.component.scss']
+  selector: 'app-harryPotterBooks-page',
+  templateUrl: './harryPotterBooks-page.component.html',
+  styleUrls: ['./harryPotterBooks-page.component.scss']
 })
-export class duneBooksPageComponent implements OnInit {
-  duneBooks: DuneBook[] = []
-  constructor(private duneBooksService: duneBooksService ) {}
+export class harryPotterBooksPageComponent implements OnInit {
+  harryPotterBooks: HarryPotterBook[] = []
+  constructor(private harryPotterBooksService: harryPotterBooksService ) {}
 
 
   ngOnInit(){
-    this.duneBooksService.getDuneBooks().subscribe({
-      next: (duneBooks: DuneBook[]) => {
-        this.duneBooks = duneBooks
+    this.harryPotterBooksService.getHarryPotterBooks().subscribe({
+      next: (harryPotterBooks: HarryPotterBook[]) => {
+        this.harryPotterBooks = harryPotterBooks
       },
       error: () => {}
     })

@@ -80,18 +80,18 @@ mongoose
     const allMoviesHungerGames = await MovieHungerGames.find();
     if (allMoviesHungerGames.length > 0) {
       await MovieHungerGames.collection.drop();
-      console.log('Paises borrados');
+      console.log('películas borradas');
     }
   })
   .catch((err) => {
-    console.log('error borrando los paises', err);
+    console.log('error borrando las películas', err);
   })
   .then(async () => {
     const moviesHungerGamesMap = arrayMoviesHungerGames.map((movie) => new MovieHungerGames(movie));
     await MovieHungerGames.insertMany(moviesHungerGamesMap);
-    console.log('paises insertados');
+    console.log('películas insertados');
   })
   .catch((err) => {
-    console.log('error insertando los paises', err);
+    console.log('error insertando los películas', err);
   })
   .finally(() => mongoose.disconnect());

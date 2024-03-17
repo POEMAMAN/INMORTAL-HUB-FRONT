@@ -13,8 +13,6 @@ const arrayMoviesHungerGames = [
     country: "EEUU",
     genre: 'Ciencia Ficción, Acción, Drama, Distopía',
     clasification: "PG-13",
-    books: "",
-    characters: [],
     resume: 'Cada año, en las ruinas de lo que en su día fue Norteamérica, el Capitolio de la nación de Panem obliga a cada uno de sus doce distritos a enviar un chico o chica adolescente a competir en los Juegos del Hambre. Los Juegos del Hambre, un retorcido castigo por un levantamiento que tuvo lugar en el pasado y una táctica de intimidación gubernamental continuada, son un acontecimiento retransmitido por televisión en todo el país en el que los "Tributos" deben luchar entre sí hasta que sólo quede un superviviente.                                      Katniss Everdeen, de dieciséis años de edad, se presenta como voluntaria en lugar de su hermana para participar en los juegos, y se ve obligada a confiar en su aguzado instinto, así como en los consejos de un antiguo vencedor borracho, Haymitch Abernathy, cuando termina enfrentada a otros Tributos que han sido objeto de un entrenamiento intensivo y que se han estado preparando para estos Juegos durante toda su vida. Si quiere volver a su casa en el Distrito 12, Katniss deberá tomar decisiones imposibles en la arena en las que tendrá que contraponer la supervivencia a la humanidad, y la vida al amor.',
   },
   {

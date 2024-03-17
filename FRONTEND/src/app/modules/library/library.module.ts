@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { LibraryRoutingModule } from './library-routing.module';
 import { DuneUniverseModule } from './dune-universe/dune-universe.module';
 import { AlienUniverseModule } from './alien-universe/alien-universe.module';
+import { HungerGamesUniverseModule } from './hungerGames-universe/hungerGames-universe.module';
 
 
 
@@ -18,8 +19,8 @@ import { AlienUniverseModule } from './alien-universe/alien-universe.module';
     LibraryRoutingModule,
     CommonModule,
     DuneUniverseModule,
-    AlienUniverseModule
-
+    AlienUniverseModule,
+    HungerGamesUniverseModule
   ],
   exports: [
  

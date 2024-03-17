@@ -1,0 +1,22 @@
+<div class="hungerGamesBook-container-list">
+  <button
+  class="hungerGamesBook-container-list-button"
+  [routerLink]="'/library/hungerGamesUniverse'"
+>Universo HungerGames
+</button>
+  <div style="margin-top: 5px;" class="container">
+  </div>
+  <div class="hungerGamesBook-container-list-card">
+      <!-- {{i+1}} {{hungerGamesBook}}  -->
+      <div *ngFor="let hungerGamesBook of hungerGamesBooks"
+      class="hungerGamesBook-container-list-card-item">
+        <app-hungerGamesBooks
+        [hungerGamesBook]="hungerGamesBook">
+        <!-- Object.keys(hungerGamesBooks)[i] -->
+      
+      </app-hungerGamesBooks>
+      </div>
+    </div>
+  </div>
+
+

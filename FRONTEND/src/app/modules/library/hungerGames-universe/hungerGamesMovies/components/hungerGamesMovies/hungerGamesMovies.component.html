@@ -1,0 +1,21 @@
+
+<div class="hungerGamesMovie-container">
+  <div class="hungerGamesMovies-container-button" *ngIf="isAdmin" style="display: flex; justify-content: flex-end; align-items: center; margin-bottom: 5px; gap: 5px">
+      <button [routerLink]="['/admin/edit-product',hungerGamesMovie._id]" >Editar</button>
+      <button [routerLink]="['/admin/delete-product', hungerGamesMovie._id]" >Eliminar</button>
+  </div>
+  <div class="hungerGamesMovies-container-img">
+    <img class="hungerGamesMovies-container-img-img" [src]="hungerGamesMovie.picture" />
+  </div>
+  <div class="hungerGamesMovies-container-description">
+    <h2 class="hungerGamesMovies-container-h2">{{ hungerGamesMovie.title }}</h2>
+    <p class="hungerGamesMovies-container-p">{{ hungerGamesMovie.director }}</p>
+    <p class="hungerGamesMovies-container-p">{{ hungerGamesMovie.year }}</p>
+    <p class="hungerGamesMovies-container-p">{{ hungerGamesMovie.duration}}</p>
+    <p class="hungerGamesMovies-container-p">{{ hungerGamesMovie.country}}</p>
+    <p class="hungerGamesMovies-container-p">{{ hungerGamesMovie.genre}}</p>
+    <p class="hungerGamesMovies-container-p">{{ hungerGamesMovie.clasification}}</p>
+    <p class="hungerGamesMovies-container-resume">{{ hungerGamesMovie.resume }}</p>
+  </div>
+</div>
+

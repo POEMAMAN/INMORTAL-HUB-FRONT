@@ -1,21 +1,38 @@
-
-<div class="duneMovie-container">
-  <div class="duneMovies-container-button" *ngIf="isAdmin" style="display: flex; justify-content: flex-end; align-items: center; margin-bottom: 5px; gap: 5px">
-      <button [routerLink]="['/admin/edit-product',duneMovie._id]" >Editar</button>
-      <button [routerLink]="['/admin/delete-product', duneMovie._id]" >Eliminar</button>
+<div class="duneMovies-container">
+  <div class="duneMovies-container-button"*ngIf="isAdmin"style="
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 5px;
+      gap: 5px;">
+    <button [routerLink]="['/admin/edit-product', duneMovie._id]">Editar</button>
+    <button [routerLink]="['/admin/delete-product', duneMovie._id]">
+      Eliminar
+    </button>
   </div>
-  <div class="duneMovies-container-img">
-    <img class="duneMovies-container-img-img" [src]="duneMovie.picture" />
-  </div>
-  <div class="duneMovies-container-description">
-    <h2 class="duneMovies-container-h2">{{ duneMovie.title }}</h2>
-    <p class="duneMovies-container-p">{{ duneMovie.director }}</p>
-    <p class="duneMovies-container-p">{{ duneMovie.year }}</p>
-    <p class="duneMovies-container-p">{{ duneMovie.duration}}</p>
-    <p class="duneMovies-container-p">{{ duneMovie.country}}</p>
-    <p class="duneMovies-container-p">{{ duneMovie.genre}}</p>
-    <p class="duneMovies-container-p">{{ duneMovie.clasification}}</p>
-    <p class="duneMovies-container-resume">{{ duneMovie.resume }}</p>
+  <div class="duneMovies-container-deck">
+    <div class="duneMovies-container-deck-card" (click)="clickCard()">
+      <div class="front face" >
+        <div>
+          <img  class="duneMovies-container-img-img"[src]="duneMovie.picture" />
+        </div>
+        <div class="front text">
+          <h2 class="duneMovies-container-h2">{{ duneMovie.title }}</h2>
+          <p class="duneMovies-container-p"><span>Director:</span> {{ duneMovie.director }}</p>
+          <p class="duneMovies-container-p"><span>Año:</span> {{ duneMovie.year }}</p>
+          <p class="duneMovies-container-p"><span>Duracion:</span> {{ duneMovie.duration }}</p>
+          <p class="duneMovies-container-p"><span>Pais:</span> {{ duneMovie.country }}</p>
+          <p class="duneMovies-container-p"><span>Genero:</span> {{ duneMovie.genre }}</p>
+          <p class="duneMovies-container-p"><span>Clasificacion:</span> {{ duneMovie.clasification }}</p>
+          <button class="btn btn-outline movie-card__button" type="button">Watch Trailer</button>
+        </div>
+      </div>
+      <div class="back face">
+        <p class="duneMovies-container-resume"><span>Sinopsis:</span> {{ duneMovie.resume }}</p>
+      </div>
+    </div>
   </div>
 </div>
 
+  
+  

@@ -26,7 +26,7 @@ ngOnInit(): void {
 }
 tarjetaVolteada: boolean = false;
 clickCard() {
-  const clickcardElement = this.elementRef.nativeElement.querySelector('.duneCharacters-container-deck-card');
+  const clickcardElement = this.elementRef.nativeElement.querySelector('.duneMovies-container-deck-card');
   if (this.tarjetaVolteada) {
     this.renderer.removeClass(clickcardElement, 'flipped');
   } else {

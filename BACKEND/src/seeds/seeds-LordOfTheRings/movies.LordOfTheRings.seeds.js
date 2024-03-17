@@ -5,12 +5,17 @@ const MovieLordOfTheRings = require('../../api/models/models.LordOfTheRings/Movi
 
 const arrayMoviesLordOfTheRings = [
   {
-    name: '',
-    capital: '',
-    foundation_date: '',
-    resume: '',
-    picture:
-      '',
+    title: "",
+    picture: "",
+    director: "",
+    year: "",
+    duration: "",
+    country: "",
+    genre: "",
+    clasification: "",
+    books: "",
+    characters: "",
+    resume: "",
   },
 ];
 

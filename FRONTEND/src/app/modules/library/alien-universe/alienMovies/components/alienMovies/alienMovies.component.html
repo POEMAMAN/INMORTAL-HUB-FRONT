@@ -8,10 +8,13 @@
     <img class="alienMovies-container-img-img" [src]="alienMovie.picture" />
   </div>
   <div class="alienMovies-container-description">
-    <h2 class="alienMovies-container-h2">{{ alienMovie.name }}</h2>
-    <p class="alienMovies-container-p">{{ alienMovie.clan }}</p>
-    <p class="alienMovies-container-p">{{ alienMovie.foundatorSpecie }}</p>
-    <p class="alienMovies-container-p">{{ alienMovie.clientSpecie}}</p>
+    <h2 class="alienMovies-container-h2">{{ alienMovie.title }}</h2>
+    <p class="alienMovies-container-p">{{ alienMovie.director }}</p>
+    <p class="alienMovies-container-p">{{ alienMovie.year }}</p>
+    <p class="alienMovies-container-p">{{ alienMovie.duration}}</p>
+    <p class="alienMovies-container-p">{{ alienMovie.country}}</p>
+    <p class="alienMovies-container-p">{{ alienMovie.genre}}</p>
+    <p class="alienMovies-container-p">{{ alienMovie.clasification}}</p>
     <p class="alienMovies-container-resume">{{ alienMovie.resume }}</p>
   </div>
 </div>

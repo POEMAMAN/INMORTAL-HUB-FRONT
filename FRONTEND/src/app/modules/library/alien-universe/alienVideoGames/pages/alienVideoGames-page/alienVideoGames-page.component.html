@@ -1,19 +1,16 @@
 <div class="alienVideoGame-container-list">
   <button
   class="alienVideoGame-container-list-button"
-  [routerLink]="'/library/alien'"
+  [routerLink]="'/library/alienUniverse'"
 >Universo alien
 </button>
   <div style="margin-top: 5px;" class="container">
   </div>
   <div class="alienVideoGame-container-list-card">
-      <!-- {{i+1}} {{alienVideoGame}}  -->
       <div *ngFor="let alienVideoGame of alienVideoGames"
       class="alienVideoGame-container-list-card-item">
         <app-alienVideoGames
         [alienVideoGame]="alienVideoGame">
-        <!-- Object.keys(alienVideoGames)[i] -->
-      
       </app-alienVideoGames>
       </div>
     </div>

@@ -1,11 +1,12 @@
 export interface AlienVideoGames {
-  title: string;
-  publication_year: string;
-  saga_index: string;
-  universe: string;
-  author: string;
-  resume: string;
-  picture: string;
+  title: String,
+  picture: String,
+  platform: String,
+  year: String,
+  studio: String,
+  clasification: String,
+  resume: String,
+  trailer: String,
 
 }
 

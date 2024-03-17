@@ -5,7 +5,7 @@ const MovieAlien = require('../../api/models/models.Alien/movies.Alien.model');
 
 const arrayMoviesAlien = [{
         title: 'Alien, el octavo pasajero',
-        picture: 'https://console.cloudinary.com/console/c-19d7767fc54f15bca4427ebedd8a4a/media_library/folders/c71f2330f189430c2e3c40f45b44842b9d/asset/6976635b4ea27d5e55225ef7792bd1c9/manage?view_mode=mosaic&context=manage',
+        picture: 'https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710506451/Alien/Movies/Alien_el_octavo_pasajero.jpg',
         director: 'Ridley Scott',
         year: 1979,
         duration: '117 min',
@@ -17,7 +17,7 @@ const arrayMoviesAlien = [{
     },
     {
         title: 'Aliens: El regreso',
-        picture: 'https://console.cloudinary.com/console/c-19d7767fc54f15bca4427ebedd8a4a/media_library/folders/c71f2330f189430c2e3c40f45b44842b9d/asset/0536e3bbc5791136f170bf64040d5562/manage?view_mode=mosaic&context=manage',
+        picture: 'https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710506543/Alien/Movies/aliens_el_regreso_btbdzf.jpg',
         director: 'James Cameron',
         year: 1986,
         duration: '137 min',
@@ -29,7 +29,7 @@ const arrayMoviesAlien = [{
     },
     {
         title: 'Alien 3',
-        picture: 'https://console.cloudinary.com/console/c-19d7767fc54f15bca4427ebedd8a4a/media_library/folders/c71f2330f189430c2e3c40f45b44842b9d/asset/adbb4984852640208aa982c2580e5836/manage?view_mode=mosaic&context=manage',
+        picture: 'https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710506594/Alien/Movies/alien_3_zxnoqf.jpg',
         director: 'David Fincher',
         year: 1992,
         duration: '114 min',
@@ -41,7 +41,7 @@ const arrayMoviesAlien = [{
     },
     {
         title: 'Alien: Resurrección',
-        picture: 'https://console.cloudinary.com/console/c-19d7767fc54f15bca4427ebedd8a4a/media_library/folders/c71f2330f189430c2e3c40f45b44842b9d/asset/c8413bf564ed9a7067cfef726fb8dd96/manage?view_mode=mosaic&context=manage',
+        picture: 'https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710506840/Alien/Movies/alien_resurreccion_cbysdj.jpg',
         director: 'Jean-Pierre Jeunet',
         year: 1997,
         duration: '109 min',
@@ -53,7 +53,7 @@ const arrayMoviesAlien = [{
     },
     {
         title: 'Alien vs. Predator',
-        picture: 'https://console.cloudinary.com/console/c-19d7767fc54f15bca4427ebedd8a4a/media_library/folders/c71f2330f189430c2e3c40f45b44842b9d/asset/5ef124f4ba138ddae97ce0ff87601f63/manage?view_mode=mosaic&context=manage',
+        picture: 'https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710507033/Alien/Movies/alien_vs_predator_xooeiw.jpg',
         director: 'Paul W. S. Anderson',
         year: 2004,
         duration: '101 min',
@@ -65,7 +65,7 @@ const arrayMoviesAlien = [{
     },
     {
         title: 'Aliens vs. Predator 2',
-        picture: 'https://console.cloudinary.com/console/c-19d7767fc54f15bca4427ebedd8a4a/media_library/folders/c71f2330f189430c2e3c40f45b44842b9d/asset/be289ce0466f7a858e2d7aad9763eecf/manage?view_mode=mosaic&context=manage',
+        picture: 'https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710507044/Alien/Movies/Aliens_vs_Predator_2_p5uobi.jpg',
         director: 'Colin Strause, Greg Strause',
         year: 2007,
         duration: '94 min',
@@ -77,7 +77,7 @@ const arrayMoviesAlien = [{
     },
     {
         title: 'Prometheus',
-        picture: 'https://console.cloudinary.com/console/c-19d7767fc54f15bca4427ebedd8a4a/media_library/folders/c71f2330f189430c2e3c40f45b44842b9d/asset/bd40f398d102c27bfa55bc79a20b0ac3/manage?view_mode=mosaic&context=manage',
+        picture: 'https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710507149/Alien/Movies/prometheus_yuvkvb.jpg',
         director: 'Ridley Scott',
         year: 2012,
         duration: '124 min',
@@ -89,7 +89,7 @@ const arrayMoviesAlien = [{
     },
     {
         title: 'Alien: Covenant',
-        picture: 'https://console.cloudinary.com/console/c-19d7767fc54f15bca4427ebedd8a4a/media_library/folders/c71f2330f189430c2e3c40f45b44842b9d/asset/b8f5527adeb4ae84b3ff80801c3eca9d/manage?view_mode=mosaic&context=manage',
+        picture: 'https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710507184/Alien/Movies/alien_covenant_rdtjn3.jpg',
         director: 'Ridley Scott',
         year: 2017,
         duration: '122 min',

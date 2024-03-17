@@ -1,0 +1,17 @@
+<div class="duneMovie-container-list">
+  <button
+  class="duneMovie-container-list-button"
+  [routerLink]="'/library/duneUniverse'"
+>Universo Dune
+</button>
+  <div style="margin-top: 5px;" class="container">
+  </div>
+  <div class="duneMovie-container-list-card">
+      <div *ngFor="let duneMovie of duneMovies"  class="duneMovie-container-list-card-item">
+        <app-duneMovies
+        [duneMovie]="duneMovie"></app-duneMovies>
+      </div>
+    </div>
+  </div>
+
+

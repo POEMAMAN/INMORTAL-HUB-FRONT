@@ -1,20 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { alienCharactersComponent } from './components/alienCharacters/alienCharacters.component';
+import { alienCharactersPageComponent } from './pages/alienCharacters-page/alienCharacters-page.component';
+import { alienCharactersRoutingModule } from './alienCharacters-routing.module';
 
-import { duneCharactersRoutingModule } from './duneCharacters-routing.module';
-import { duneCharactersPageComponent } from './pages/duneCharacters-page/duneCharacters-page.component';
-import { duneCharactersComponent } from './components/duneCharacters/duneCharacters.component';
 
 
 @NgModule({
   declarations: [
-    duneCharactersComponent,
-    duneCharactersPageComponent
+    alienCharactersComponent,
+    alienCharactersPageComponent
   ],
   imports: [
     CommonModule,
-    duneCharactersRoutingModule,
+    alienCharactersRoutingModule
 
   ]
 })
-export class duneCharactersModule { }
+export class alienCharactersModule { }

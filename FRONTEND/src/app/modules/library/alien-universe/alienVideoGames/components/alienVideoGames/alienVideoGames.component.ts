@@ -3,12 +3,12 @@ import { AuthService } from 'src/app/modules/auth/services/auth.service';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-duneBooks',
-  templateUrl: './duneBooks.component.html',
-  styleUrls: ['./duneBooks.component.scss']
+  selector: 'app-alienVideoGames',
+  templateUrl: './alienVideoGames.component.html',
+  styleUrls: ['./alienVideoGames.component.scss']
 })
-export class duneBooksComponent implements OnInit {
-@Input() duneBook: any
+export class alienVideoGamesComponent implements OnInit {
+@Input() alienVideoGame: any
 isAdmin: boolean = false;
 constructor(private authService: AuthService ){
 

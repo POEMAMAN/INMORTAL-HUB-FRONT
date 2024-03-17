@@ -1,21 +1,21 @@
-import { DuneCharacter } from '../../interfaces/DuneCharacters.interface';
-import { duneCharactersService } from '../../services/duneCharacters.service';
+import { AlienCharacter } from '../../interfaces/AlienCharacters.interface';
+import { alienCharactersService } from '../../services/alienCharacters.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-duneCharacters-page',
-  templateUrl: './duneCharacters-page.component.html',
-  styleUrls: ['./duneCharacters-page.component.scss']
+  selector: 'app-alienCharacters-page',
+  templateUrl: './alienCharacters-page.component.html',
+  styleUrls: ['./alienCharacters-page.component.scss']
 })
-export class duneCharactersPageComponent implements OnInit {
-  duneCharacters: DuneCharacter[] = []
-  constructor(private duneCharactersService: duneCharactersService ) {}
+export class alienCharactersPageComponent implements OnInit {
+  alienCharacters: AlienCharacter[] = []
+  constructor(private alienCharactersService: alienCharactersService ) {}
 
 
   ngOnInit(){
-    this.duneCharactersService.getDuneCharacters().subscribe({
-      next: (duneCharacters: DuneCharacter[]) => {
-        this.duneCharacters = duneCharacters
+    this.alienCharactersService.getAlienCharacters().subscribe({
+      next: (alienCharacters: AlienCharacter[]) => {
+        this.alienCharacters = alienCharacters
       },
       error: () => {}
     })

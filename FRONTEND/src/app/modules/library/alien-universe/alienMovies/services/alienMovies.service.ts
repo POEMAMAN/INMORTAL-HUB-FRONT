@@ -1,5 +1,5 @@
 
-import { DuneMovie } from '../interfaces/DuneMovies.interface';
+import { AlienMovie } from '../interfaces/AlienMovies.interface';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
@@ -7,13 +7,13 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class duneMoviesService {
+export class alienMoviesService {
 
   
 
   constructor(private http: HttpClient) { }
 
-  getDuneMovies(){
-      return this.http.get<DuneMovie[]>('http://localhost:8084/universes/dune/Movies')
+  getAlienMovies(){
+      return this.http.get<AlienMovie[]>('http://localhost:8084/universes/alien/Movies')
   }
 }

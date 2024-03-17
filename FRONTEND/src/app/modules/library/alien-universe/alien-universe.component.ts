@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-dune-universe',
-  templateUrl: './dune-universe.component.html',
-  styleUrls: ['./dune-universe.component.scss']
+  selector: 'app-alien-universe',
+  templateUrl: './alien-universe.component.html',
+  styleUrls: ['./alien-universe.component.scss']
 })
-export class DuneUniverseComponent {
+export class AlienUniverseComponent {
 
 };

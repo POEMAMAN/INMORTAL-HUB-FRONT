@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DuneUniverseRoutingModule } from './dune-universe-routing.module';
-import { DuneUniverseComponent } from './dune-universe.component';
-import { duneBooksModule } from './duneBooks/duneBooks.module';
-import { duneCharactersModule } from './duneCharacters/duneCharacters.module';
-import { duneMarketsModule } from './duneMarkets/duneMarkets.module';
-import { duneMoviesModule } from './duneMovies/duneMovies.module';
+import { AlienUniverseComponent } from './alien-universe.component';
+import { alienVideoGamesComponent } from './alienVideoGames/components/alienVideoGames/alienVideoGames.component';
+import { alienCharactersModule } from './alienCharacters/alienCharacters.module';
+import { alienMarketsModule } from './alienMarkets/alienMarkets.module';
+import { alienMoviesModule } from './alienMovies/alienMovies.module';
+import { alienVideoGamesModule } from './alienVideoGames/alienVideoGames.module';
+import { AlienUniverseRoutingModule } from './alien-universe-routing.module';
 
 
 
@@ -14,18 +15,19 @@ import { duneMoviesModule } from './duneMovies/duneMovies.module';
 
 @NgModule({
   declarations: [
-    DuneUniverseComponent,
+    AlienUniverseComponent
 
   ],
   imports: [
     CommonModule,
-    DuneUniverseRoutingModule,
-    duneBooksModule,
-    duneCharactersModule,
-    duneMarketsModule,
-    duneMoviesModule
+    AlienUniverseRoutingModule,
+    alienCharactersModule,
+    alienMarketsModule,
+    alienMoviesModule,
+    alienVideoGamesModule
+    
 
 
   ]
 })
-export class DuneUniverseModule { };
+export class AlienUniverseModule { };

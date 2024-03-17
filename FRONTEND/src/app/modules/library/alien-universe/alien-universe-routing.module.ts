@@ -1,26 +1,26 @@
-import { duneMarketsModule } from './duneMarkets/duneMarkets.module';
+import { alienMarketsModule } from './alienMarkets/alienMarkets.module';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { verifyTokenGuard } from 'src/app/modules/auth/guards/verify-token.guard';
-import { DuneUniverseComponent } from './dune-universe.component';
+import { AlienUniverseComponent } from './alien-universe.component';
 
 const routes: Routes = [
   {
     path: '', children: [
   {
-    path: '',canActivate: [verifyTokenGuard], component: DuneUniverseComponent,
+    path: '',canActivate: [verifyTokenGuard], component: AlienUniverseComponent,
   },
   {
-    path: 'books', canActivate: [verifyTokenGuard],loadChildren: () => import('./duneBooks/duneBooks.module').then(m => m.duneBooksModule),
+    path: 'videoGames', canActivate: [verifyTokenGuard],loadChildren: () => import('./alienVideoGames/alienVideoGames.module').then(m => m.alienVideoGamesModule),
   },
   {
-    path: 'characters', canActivate: [verifyTokenGuard],loadChildren: () => import('./duneCharacters/duneCharacters.module').then(m => m.duneCharactersModule),
+    path: 'characters', canActivate: [verifyTokenGuard],loadChildren: () => import('./alienCharacters/alienCharacters.module').then(m => m.alienCharactersModule),
   },
   {
-    path: 'movies', canActivate: [verifyTokenGuard],loadChildren: () => import('./duneMovies/duneMovies.module').then(m => m.duneMoviesModule),
+    path: 'movies', canActivate: [verifyTokenGuard],loadChildren: () => import('./alienMovies/alienMovies.module').then(m => m.alienMoviesModule),
   },
   {
-    path: 'markets', canActivate: [verifyTokenGuard],loadChildren: () => import('./duneMarkets/duneMarkets.module').then(m => m.duneMarketsModule),
+    path: 'markets', canActivate: [verifyTokenGuard],loadChildren: () => import('./alienMarkets/alienMarkets.module').then(m => m.alienMarketsModule),
   },
   {
     path: '**', redirectTo: '', pathMatch: 'full',
@@ -34,4 +34,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class DuneUniverseRoutingModule { };
+export class AlienUniverseRoutingModule { };

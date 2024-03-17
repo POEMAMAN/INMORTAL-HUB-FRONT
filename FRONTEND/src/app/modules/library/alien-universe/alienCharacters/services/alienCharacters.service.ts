@@ -1,5 +1,5 @@
 
-import { DuneCharacter } from '../interfaces/DuneCharacters.interface';
+import { AlienCharacter } from '../interfaces/AlienCharacters.interface';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
@@ -7,13 +7,13 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class duneCharactersService {
+export class alienCharactersService {
 
   
 
   constructor(private http: HttpClient) { }
 
-  getDuneCharacters(){
-      return this.http.get<DuneCharacter[]>('http://localhost:8084/universes/dune/characters')
+  getAlienCharacters(){
+      return this.http.get<AlienCharacter[]>('http://localhost:8084/universes/alien/characters')
   }
 }

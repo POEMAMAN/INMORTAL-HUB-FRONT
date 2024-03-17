@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { duneMarketsPageComponent } from './duneMarkets-page.component';
+import { alienMarketsPageComponent } from './alienMarkets-page.component';
 
-describe('duneMarketsPageComponent', () => {
-  let component: duneMarketsPageComponent;
-  let fixture: ComponentFixture<duneMarketsPageComponent>;
+describe('alienMarketsPageComponent', () => {
+  let component: alienMarketsPageComponent;
+  let fixture: ComponentFixture<alienMarketsPageComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [duneMarketsPageComponent]
+      declarations: [alienMarketsPageComponent]
     });
-    fixture = TestBed.createComponent(duneMarketsPageComponent);
+    fixture = TestBed.createComponent(alienMarketsPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

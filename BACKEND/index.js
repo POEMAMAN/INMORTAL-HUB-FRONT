@@ -131,7 +131,7 @@ app.use("/universes/dune/books", booksDuneRoutes)
 app.use("/universes/dune/characters", charactersDuneRoutes)
 // app.use("/universes/dune/planets", planetsDuneRoutes)
 // app.use("/universes/dune/countries", countriesDuneRoutes)
-app.use("/universes/dune/countries", moviesDuneRoutes)
+app.use("/universes/dune/movies", moviesDuneRoutes)
 
 // HarryPotter
 app.use("/universes/HarryPotter/books", booksHarryPotterRoutes)

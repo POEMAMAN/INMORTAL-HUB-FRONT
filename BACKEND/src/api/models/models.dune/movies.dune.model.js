@@ -13,8 +13,8 @@ const moviesSchema = new Schema(
     country: { type: String, required: false },
     genre: { type: String, required: false },
     clasification: { type: String, required: false },
-    books: { type: Schema.ObjectId, ref: 'booksDune'},
-    characters: [{ type: Schema.ObjectId, ref: 'characterDune'}],
+    // books: { type: Schema.ObjectId, ref: 'booksDune'},
+    // characters: [{ type: Schema.ObjectId, ref: 'characterDune'}],
     resume: {type:String, required:false},
   },
   {

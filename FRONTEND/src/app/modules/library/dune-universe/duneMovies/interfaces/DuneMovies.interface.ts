@@ -7,8 +7,8 @@ export interface DuneMovie {
   country:  String,
   genre:  String,
   clasification:   String,
-  books: Object,
-  characters: Object,
+  // books: Object,
+  // characters: Object,
   resume: String,
 
 }

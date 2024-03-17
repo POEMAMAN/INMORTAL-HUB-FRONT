@@ -1,22 +1,22 @@
 
-import { DuneMovie } from '../../interfaces/DuneMovies.interface';
-import { duneMoviesService } from '../../services/duneMovies.service';
+import { AlienMovie } from '../../interfaces/AlienMovies.interface';
+import { alienMoviesService } from '../../services/alienMovies.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-duneMovies-page',
-  templateUrl: './duneMovies-page.component.html',
-  styleUrls: ['./duneMovies-page.component.scss']
+  selector: 'app-alienMovies-page',
+  templateUrl: './alienMovies-page.component.html',
+  styleUrls: ['./alienMovies-page.component.scss']
 })
-export class duneMoviesPageComponent implements OnInit {
-  duneMovies: DuneMovie[] = []
-  constructor(private duneMoviesService: duneMoviesService ) {}
+export class alienMoviesPageComponent implements OnInit {
+  alienMovies: AlienMovie[] = []
+  constructor(private alienMoviesService: alienMoviesService ) {}
 
 
   ngOnInit(){
-    this.duneMoviesService.getDuneMovies().subscribe({
-      next: (duneMovies: DuneMovie[]) => {
-        this.duneMovies = duneMovies
+    this.alienMoviesService.getAlienMovies().subscribe({
+      next: (alienMovies: AlienMovie[]) => {
+        this.alienMovies = alienMovies
       },
       error: () => {}
     })

@@ -1,0 +1,25 @@
+<div class="alienVideoGames-container">
+  <div class="alienVideoGames-container-button"*ngIf="isAdmin"style="
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 5px;
+      gap: 5px;">
+    <button [routerLink]="['/admin/edit-product', alienVideoGame._id]">Editar</button>
+    <button [routerLink]="['/admin/delete-product', alienVideoGame._id]">
+      Eliminar
+    </button>
+  </div>
+  <div class="alienVideoGames-container-img">
+    <img  class="alienVideoGames-container-img-img"[src]="alienVideoGame.picture" />
+  </div>
+  <div class="alienVideoGames-container-description">
+    <h2 class="alienVideoGames-container-h2">{{ alienVideoGame.title }}</h2>
+    <p class="alienVideoGames-container-p">{{ alienVideoGame.publication_year }}</p>
+    <p class="alienVideoGames-container-p">{{ alienVideoGame.saga }}</p>
+    <p class="alienVideoGames-container-p">{{ alienVideoGame.saga_index }}</p>
+    <p class="alienVideoGames-container-p">{{ alienVideoGame.universe }}</p>
+    <p class="alienVideoGames-container-p">{{ alienVideoGame.author }}</p>
+    <p class="alienVideoGames-container-resume">{{ alienVideoGame.resume }}</p>
+  </div>
+</div>

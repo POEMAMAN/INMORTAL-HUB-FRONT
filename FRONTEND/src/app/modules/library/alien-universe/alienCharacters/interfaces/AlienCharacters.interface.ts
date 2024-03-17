@@ -1,4 +1,4 @@
-export interface DuneCharacter {
+export interface AlienCharacter {
   name: String,
   profession: String,
   rank: String,

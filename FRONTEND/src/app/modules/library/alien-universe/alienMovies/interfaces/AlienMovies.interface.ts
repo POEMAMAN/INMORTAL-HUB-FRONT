@@ -1,4 +1,4 @@
-export interface DuneMovie {
+export interface AlienMovie {
   title: String,
   picture: String,
   director: String,

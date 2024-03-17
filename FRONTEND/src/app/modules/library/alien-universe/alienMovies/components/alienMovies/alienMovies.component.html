@@ -1,18 +1,18 @@
 
-<div class="duneMovie-container">
-  <div class="duneMovies-container-button" *ngIf="isAdmin" style="display: flex; justify-content: flex-end; align-items: center; margin-bottom: 5px; gap: 5px">
-      <button [routerLink]="['/admin/edit-product',duneMovie._id]" >Editar</button>
-      <button [routerLink]="['/admin/delete-product', duneMovie._id]" >Eliminar</button>
+<div class="alienMovie-container">
+  <div class="alienMovies-container-button" *ngIf="isAdmin" style="display: flex; justify-content: flex-end; align-items: center; margin-bottom: 5px; gap: 5px">
+      <button [routerLink]="['/admin/edit-product',alienMovie._id]" >Editar</button>
+      <button [routerLink]="['/admin/delete-product', alienMovie._id]" >Eliminar</button>
   </div>
-  <div class="duneMovies-container-img">
-    <img class="duneMovies-container-img-img" [src]="duneMovie.picture" />
+  <div class="alienMovies-container-img">
+    <img class="alienMovies-container-img-img" [src]="alienMovie.picture" />
   </div>
-  <div class="duneMovies-container-description">
-    <h2 class="duneMovies-container-h2">{{ duneMovie.name }}</h2>
-    <p class="duneMovies-container-p">{{ duneMovie.clan }}</p>
-    <p class="duneMovies-container-p">{{ duneMovie.foundatorSpecie }}</p>
-    <p class="duneMovies-container-p">{{ duneMovie.clientSpecie}}</p>
-    <p class="duneMovies-container-resume">{{ duneMovie.resume }}</p>
+  <div class="alienMovies-container-description">
+    <h2 class="alienMovies-container-h2">{{ alienMovie.name }}</h2>
+    <p class="alienMovies-container-p">{{ alienMovie.clan }}</p>
+    <p class="alienMovies-container-p">{{ alienMovie.foundatorSpecie }}</p>
+    <p class="alienMovies-container-p">{{ alienMovie.clientSpecie}}</p>
+    <p class="alienMovies-container-resume">{{ alienMovie.resume }}</p>
   </div>
 </div>
 

@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DuneUniverseComponent } from './dune-universe.component';
+import { AlienUniverseComponent } from './alien-universe.component';
 
-describe('DuneUniverseComponent', () => {
-  let component: DuneUniverseComponent;
-  let fixture: ComponentFixture<DuneUniverseComponent>;
+describe('AlienUniverseComponent', () => {
+  let component: AlienUniverseComponent;
+  let fixture: ComponentFixture<AlienUniverseComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [DuneUniverseComponent]
+      declarations: [AlienUniverseComponent]
     });
-    fixture = TestBed.createComponent(DuneUniverseComponent);
+    fixture = TestBed.createComponent(AlienUniverseComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

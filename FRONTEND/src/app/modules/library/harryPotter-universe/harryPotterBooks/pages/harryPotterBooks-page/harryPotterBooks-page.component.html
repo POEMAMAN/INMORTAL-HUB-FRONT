@@ -1,20 +1,18 @@
-<div class="duneBook-container-list">
+<div class="harryPotterBook-container-list">
   <button
-  class="duneBook-container-list-button"
-  [routerLink]="'/library/duneUniverse'"
->Universo Dune
+  class="harryPotterBook-container-list-button"
+  [routerLink]="'/library/harryPotterUniverse'"
+>Universo Harry Potter
 </button>
   <div style="margin-top: 5px;" class="container">
   </div>
-  <div class="duneBook-container-list-card">
-      <!-- {{i+1}} {{duneBook}}  -->
-      <div *ngFor="let duneBook of duneBooks"
-      class="duneBook-container-list-card-item">
-        <app-duneBooks
-        [duneBook]="duneBook">
-        <!-- Object.keys(duneBooks)[i] -->
+  <div class="harryPotterBook-container-list-card">
+      <div *ngFor="let harryPotterBook of harryPotterBooks"
+      class="harryPotterBook-container-list-card-item">
+        <app-harryPotterBooks
+        [harryPotterBook]="harryPotterBook">
       
-      </app-duneBooks>
+      </app-harryPotterBooks>
       </div>
     </div>
   </div>

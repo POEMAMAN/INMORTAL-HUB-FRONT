@@ -108,7 +108,7 @@ mongoose
     })
     .then(async() => {
         const allBooksIndianaJones = await BookIndianaJones.find();
-        if (allIndianaJones.length > 0) {
+        if (allBooksIndianaJones.length > 0) {
             await BookIndianaJones.collection.drop();
             console.log('Libros borrados');
         }

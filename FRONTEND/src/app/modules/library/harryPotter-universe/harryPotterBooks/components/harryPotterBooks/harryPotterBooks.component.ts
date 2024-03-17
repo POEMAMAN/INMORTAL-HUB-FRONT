@@ -3,13 +3,13 @@ import { AuthService } from 'src/app/modules/auth/services/auth.service';
 import { Component,Input, OnInit,Renderer2, ElementRef } from '@angular/core';
 
 @Component({
-  selector: 'app-duneBooks',
-  templateUrl: './duneBooks.component.html',
-  styleUrls: ['./duneBooks.component.scss']
+  selector: 'app-harryPotterBooks',
+  templateUrl: './harryPotterBooks.component.html',
+  styleUrls: ['./harryPotterBooks.component.scss']
 })
-export class duneBooksComponent implements OnInit {
+export class harryPotterBooksComponent implements OnInit {
  
-  @Input() duneBook: any
+  @Input() harryPotterBook: any
 isAdmin: boolean = false;
   constructor(private renderer: Renderer2, private elementRef: ElementRef, private authService: AuthService) {
 
@@ -29,7 +29,7 @@ isAdmin: boolean = false;
 
   tarjetaVolteada: boolean = false;
   clickCard() {
-    const clickcardElement = this.elementRef.nativeElement.querySelector('.duneBooks-container-deck-card');
+    const clickcardElement = this.elementRef.nativeElement.querySelector('.harryPotterBooks-container-deck-card');
     if (this.tarjetaVolteada) {
       this.renderer.removeClass(clickcardElement, 'flipped');
     } else {

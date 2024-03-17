@@ -2,10 +2,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-duneMarkets-page',
-  templateUrl: './duneMarkets-page.component.html',
-  styleUrls: ['./duneMarkets-page.component.scss']
+  selector: 'app-harryPotterMarkets-page',
+  templateUrl: './harryPotterMarkets-page.component.html',
+  styleUrls: ['./harryPotterMarkets-page.component.scss']
 })
-export class duneMarketsPageComponent{
+export class harryPotterMarketsPageComponent{
 
 }

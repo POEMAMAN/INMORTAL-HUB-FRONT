@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { duneMoviesComponent } from './duneMovies.component';
+import { harryPotterMoviesComponent } from './harryPotterMovies.component';
 
-describe('duneMoviesComponent', () => {
-  let component: duneMoviesComponent;
-  let fixture: ComponentFixture<duneMoviesComponent>;
+describe('harryPotterMoviesComponent', () => {
+  let component: harryPotterMoviesComponent;
+  let fixture: ComponentFixture<harryPotterMoviesComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [duneMoviesComponent]
+      declarations: [harryPotterMoviesComponent]
     });
-    fixture = TestBed.createComponent(duneMoviesComponent);
+    fixture = TestBed.createComponent(harryPotterMoviesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

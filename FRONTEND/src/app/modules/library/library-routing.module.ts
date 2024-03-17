@@ -17,6 +17,9 @@ const routes: Routes = [
       path: 'alienUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./alien-universe/alien-universe.module').then(m => m.AlienUniverseModule)
     },
     {
+      path: 'harryPotterUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./harryPotter-universe/harryPotter-universe.module').then(m => m.HarryPotterUniverseModule)
+    },
+    {
       path: '**', redirectTo: 'library', pathMatch: 'full'
     }
   ]

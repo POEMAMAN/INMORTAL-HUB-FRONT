@@ -91,7 +91,10 @@
     </p>
   </div>
   <div class="card" #card>
-    <img src="https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710441774/JuegosDelHambre/Backgrounds/Background_PajarosSerpientes_diugem.jpg" />
+    <button
+    class="card-button"
+    [routerLink]="'/library/hungerGamesUniverse'"
+  ><img src="https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710441774/JuegosDelHambre/Backgrounds/Background_PajarosSerpientes_diugem.jpg" />
     <h2>Los Juegos del Hambre</h2>
     <span>Pulsa para ver detalle</span>
     <p class="card-button-p">
@@ -100,6 +103,7 @@
       distópica que sigue la lucha de Katniss Everdeen contra un gobierno
       totalitario en un mundo postapocalíptico.
     </p>
+    </button>
   </div>
   <div class="card" #card>
     <img

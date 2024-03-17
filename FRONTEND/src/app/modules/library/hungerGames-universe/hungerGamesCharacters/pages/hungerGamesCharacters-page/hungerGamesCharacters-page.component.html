@@ -1,0 +1,18 @@
+<div class="hungerGamesCharacter-container-list">
+  <button
+        class="hungerGamesCharacter-container-list-button"
+        [routerLink]="'/library/hungerGamesUniverse'"
+      >Universo HungerGames
+    </button>
+  <div style="margin-top: 5px;" class="container">
+  </div>
+  <div class="hungerGamesCharacter-container-list-card">
+      <div *ngFor="let hungerGamesCharacter of hungerGamesCharacters"  class="hungerGamesCharacter-container-list-card-item">
+        <app-hungerGamesCharacters
+        [hungerGamesCharacter]="hungerGamesCharacter"></app-hungerGamesCharacters>
+      </div>
+    </div>
+  </div>
+
+
+

@@ -6,8 +6,6 @@ const { configCloudinary } = require('./src/utils/cloudinary/config.js');
 const { connect } = require("./src/utils/db.js");
 
 //Rutas Componentes Principales
-// const booksRouter = require("./src/api/routes/book.routes.js");
-// const universeRouter = require("./src/api/routes/universes.routes");
 const userRouter = require("./src/api/users/users.routes.js");
 
 // Rutas Componentes hijos (universos)
@@ -30,7 +28,7 @@ const charactersLordOfTheRingsRoutes = require("./src/api/routes/routes.LordOfTh
 const moviesLordOfTheRingsRoutes = require("./src/api/routes/routes.LordOfTheRings/movies.LordOfTheRings.routes");
 
 // Alien
-// const booksAlienRoutes = require("./src/api/routes/routes.Alien/books.Alien.routes");
+const videoGamesAlienRoutes = require("./src/api/routes/routes.Alien/videoGames.Alien.routes");
 const charactersAlienRoutes = require("./src/api/routes/routes.Alien/characters.Alien.routes");
 const moviesAlienRoutes = require("./src/api/routes/routes.Alien/movies.Alien.routes");
 
@@ -122,8 +120,6 @@ app.use('/api/users', UserRoutes)
 app.use("/public", express.static("public"));
 app.use("/api", (req, res, next) => "im alive");
 
-// app.use("/books", booksRouter);
-// app.use("/universes", universeRouter)
 app.use('/user', userRouter);
 // Rutas Universos
 // Dune
@@ -144,7 +140,7 @@ app.use("/universes/LordOfTheRings/characters", charactersLordOfTheRingsRoutes)
 app.use("/universes/LordOfTheRings/movies", moviesLordOfTheRingsRoutes)
 
 // Alien
-// app.use("/universes/Alien/books", booksAlienRoutes)
+app.use("/universes/Alien/videoGames", videoGamesAlienRoutes)
 app.use("/universes/Alien/characters", charactersAlienRoutes)
 app.use("/universes/Alien/movies", moviesAlienRoutes)
 

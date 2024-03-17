@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 dotenv.config();
-const CharacterHarryPotter = require('../../api/models/models.Alien/characters.Alien.model');
+const CharacterAlien = require('../../api/models/models.Alien/characters.Alien.model');
 
 const arrayCharactersAlien = [{
         name: "Ellen Ripley",
@@ -157,7 +157,7 @@ mongoose
         const charactersAlienMap = arrayCharactersAlien.map(
             (character) => new CharacterAlien(character)
         );
-        await CharacterAlien.insertMany(charactersAlienrMap);
+        await CharacterAlien.insertMany(charactersAlienMap);
         console.log('Personajes insertados');
     })
     .catch((err) => {

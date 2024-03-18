@@ -1,0 +1,27 @@
+<div class="starswarsBooks-container">
+    <div class="starswarsBooks-container-button" *ngIf="isAdmin" style="
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 5px;
+      gap: 5px;">
+        <button [routerLink]="['/admin/edit-product', starswarsBook._id]">Editar</button>
+        <button [routerLink]="['/admin/delete-product', starswarsBook._id]">
+      Eliminar
+    </button>
+    </div>
+    <div class="starswarsBooks-container-deck">
+        <div class="starswarsBooks-container-deck-card" (click)="clickCard()">
+            <div class="front face">
+                <h2 class="starswarsBooks-container-h2">{{ starswarsBook.title }}</h2>
+                <img class="starswarsBooks-container-img-img" [src]="starswarsBook.picture" />
+                <p class="starswarsBooks-container-p"><span>Año de publicacion:</span> {{ starswarsBook.publication_year }}</p>
+                <p class="starswarsBooks-container-p"><span>Ubicacion en la saga:</span> {{ starswarsBook.saga_index }}</p>
+                <p class="starswarsBooks-container-p"><span>Autor:</span> {{ starswarsBook.author }}</p>
+            </div>
+            <div class="back face">
+                <p class="starswarsBooks-container-resume"><span>Sinopsis:</span> {{ starswarsBook.resume }}</p>
+            </div>
+        </div>
+    </div>
+</div>

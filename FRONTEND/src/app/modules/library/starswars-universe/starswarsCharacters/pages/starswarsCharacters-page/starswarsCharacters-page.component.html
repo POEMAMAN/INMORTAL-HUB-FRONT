@@ -1,0 +1,11 @@
+<div class="starswarsCharacter-container-list">
+    <button class="starswarsCharacter-container-list-button" [routerLink]="'/library/starswarsUniverse'">Universo starswars
+    </button>
+    <div style="margin-top: 5px;" class="container">
+    </div>
+    <div class="starswarsCharacter-container-list-card">
+        <div *ngFor="let starswarsCharacter of starswarsCharacters" class="starswarsCharacter-container-list-card-item">
+            <app-starswarsCharacters [starswarsCharacter]="starswarsCharacter"></app-starswarsCharacters>
+        </div>
+    </div>
+</div>

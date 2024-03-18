@@ -23,6 +23,9 @@ const routes: Routes = [
       path: 'hungerGamesUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./hungerGames-universe/hungerGames-universe.module').then(m => m.HungerGamesUniverseModule)
     },
     {
+      path: 'starWarsUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./starswars-universe/starswars-universe.module').then(m => m.starswarsUniverseModule)
+    },
+    {
       path: '**', redirectTo: 'library', pathMatch: 'full'
     }
   ]

@@ -12,9 +12,7 @@ const movieSchema = new Schema(
     country: { type: String, required: false },
     genre: { type: String, required: false },
     clasification: { type: String, required: false },
-    books: { type: Schema.ObjectId, ref: 'booksJurassicPark'},
-    characters: [{ type: Schema.ObjectId, ref: 'characterJurassicPark'}],
-          id: { type: Number, required: true},
+    id: { type: Number, required: true},
 
     resume: {type:String, required:false},
   },

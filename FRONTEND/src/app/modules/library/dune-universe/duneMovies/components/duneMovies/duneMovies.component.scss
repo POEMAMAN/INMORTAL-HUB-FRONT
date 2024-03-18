@@ -30,7 +30,7 @@
     overflow: hidden;
     max-height: calc(1.5em * 4);
     -webkit-line-clamp: 4;
-    font-size: 20px;
+    font-size: 19px;
     margin: 5px;
   }
   &-h2 {
@@ -45,6 +45,8 @@
     color: black;
     height: 50px;
     text-align: center;
+    display: flex;
+    align-items: center;
   }
   &-resume {
     display: -webkit-box;

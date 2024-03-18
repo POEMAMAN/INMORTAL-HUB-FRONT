@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 dotenv.config();
 const BookCrepusculo = require('../../api/models/models.Crepusculo/books.Crepusculo.model');
+const BooksCrepusculo = require('../../api/models/models.Crepusculo/books.Crepusculo.model');
 
 
 const arrayBooksCrepusculo = [
@@ -54,7 +55,7 @@ mongoose
         console.log('error borrando los Libros', err);
     })
     .then(async() => {
-        const booksCrespusculo = arrayBooksCrepusculo.map((book) => new BookCrespusculo(book));
+        const booksCrespusculo = arrayBooksCrepusculo.map((book) => new BooksCrepusculo(book));
         await BookCrepusculo.insertMany(booksCrespusculo);
         console.log('Libros insertados');
     })

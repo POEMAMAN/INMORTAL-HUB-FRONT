@@ -1,0 +1,17 @@
+<div class="harryPotterMovie-container-list">
+  <button
+  class="harryPotterMovie-container-list-button"
+  [routerLink]="'/library/harryPotterUniverse'"
+>Universo Harry Potter
+</button>
+  <div style="margin-top: 5px;" class="container">
+  </div>
+  <div class="harryPotterMovie-container-list-card">
+      <div *ngFor="let harryPotterMovie of harryPotterMovies"  class="harryPotterMovie-container-list-card-item">
+        <app-harryPotterMovies
+        [harryPotterMovie]="harryPotterMovie"></app-harryPotterMovies>
+      </div>
+    </div>
+  </div>
+
+

@@ -5,10 +5,9 @@ const Schema = mongoose.Schema;
 const charactersSchema = new Schema({
     name: { type: String, required: true },
     actor: { type: String, required: true },
-    planet: { type: String, required: false },
-    type: { type: String, required: false },
-    picture: { type: String },
+    profession: { type: String, required: true },
     resume: { type: String, required: false },
+    picture: { type: String },
 }, {
     timestamps: true,
 });

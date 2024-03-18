@@ -14,6 +14,6 @@ export class duneMoviesService {
   constructor(private http: HttpClient) { }
 
   getDuneMovies(){
-      return this.http.get<DuneMovie[]>('http://localhost:8084/universes/dune/Movies')
+      return this.http.get<DuneMovie[]>('http://localhost:8084/universes/dune/movies')
   }
 }

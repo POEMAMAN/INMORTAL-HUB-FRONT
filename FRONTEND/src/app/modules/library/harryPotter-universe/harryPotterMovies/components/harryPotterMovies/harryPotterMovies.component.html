@@ -1,0 +1,21 @@
+
+<div class="harryPotterMovie-container">
+  <div class="harryPotterMovies-container-button" *ngIf="isAdmin" style="display: flex; justify-content: flex-end; align-items: center; margin-bottom: 5px; gap: 5px">
+      <button [routerLink]="['/admin/edit-product',harryPotterMovie._id]" >Editar</button>
+      <button [routerLink]="['/admin/delete-product', harryPotterMovie._id]" >Eliminar</button>
+  </div>
+  <div class="harryPotterMovies-container-img">
+    <img class="harryPotterMovies-container-img-img" [src]="harryPotterMovie.picture" />
+  </div>
+  <div class="harryPotterMovies-container-description">
+    <!-- <h2 class="harryPotterMovies-container-h2">{{ harryPotterMovie.title }}</h2> -->
+    <p class="harryPotterMovies-container-p">{{ harryPotterMovie.director }}</p>
+    <p class="harryPotterMovies-container-p">{{ harryPotterMovie.year }}</p>
+    <p class="harryPotterMovies-container-p">{{ harryPotterMovie.duration}}</p>
+    <p class="harryPotterMovies-container-p">{{ harryPotterMovie.country}}</p>
+    <p class="harryPotterMovies-container-p">{{ harryPotterMovie.genre}}</p>
+    <p class="harryPotterMovies-container-p">{{ harryPotterMovie.clasification}}</p>
+    <p class="harryPotterMovies-container-resume">{{ harryPotterMovie.resume }}</p>
+  </div>
+</div>
+

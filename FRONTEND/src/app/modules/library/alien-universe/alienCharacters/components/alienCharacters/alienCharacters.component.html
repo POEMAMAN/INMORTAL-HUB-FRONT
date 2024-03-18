@@ -1,0 +1,22 @@
+
+<div class="alienCharacters-container">
+  <div class="alienCharacters-container-button" *ngIf="isAdmin" style="display: flex; justify-content: flex-end; align-items: center; margin-bottom: 5px; gap: 5px">
+      <button [routerLink]="['/admin/edit-product',alienCharacter._id]" >Editar</button>
+      <button [routerLink]="['/admin/delete-product', alienCharacter._id]" >Eliminar</button>
+  </div>
+  <div class="alienCharacters-container-deck">
+    <div class="alienCharacters-container-deck-card" (click)="clickCard()">
+      <div class="front face" >
+        <h2 class="alienCharacters-container-h2">{{ alienCharacter.name  }}</h2>
+        <img  class="alienCharacters-container-img-img"[src]="alienCharacter.picture" />
+        <p class="alienCharacters-container-p"><span>Actor:</span> {{ alienCharacter.actor }}</p>
+        <p class="alienCharacters-container-p"><span>Profession:</span> {{ alienCharacter.profession }}</p>
+      </div>
+      <div class="back face">
+        <p class="alienCharacters-container-resume"><span>Sinopsis:</span> {{ alienCharacter.resume }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+

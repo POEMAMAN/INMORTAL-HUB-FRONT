@@ -14,6 +14,18 @@ const routes: Routes = [
       path: 'duneUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./dune-universe/dune-universe.module').then(m => m.DuneUniverseModule)
     },
     {
+      path: 'alienUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./alien-universe/alien-universe.module').then(m => m.AlienUniverseModule)
+    },
+    {
+      path: 'harryPotterUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./harryPotter-universe/harryPotter-universe.module').then(m => m.HarryPotterUniverseModule)
+    },
+    {
+      path: 'hungerGamesUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./hungerGames-universe/hungerGames-universe.module').then(m => m.HungerGamesUniverseModule)
+    },
+    {
+      path: 'starWarsUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./starswars-universe/starswars-universe.module').then(m => m.starswarsUniverseModule)
+    },
+    {
       path: '**', redirectTo: 'library', pathMatch: 'full'
     }
   ]

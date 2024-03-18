@@ -1,0 +1,18 @@
+<div class="alienCharacter-container-list">
+  <button
+        class="alienCharacter-container-list-button"
+        [routerLink]="'/library/alienUniverse'"
+      >Universo alien
+    </button>
+  <div style="margin-top: 5px;" class="container">
+  </div>
+  <div class="alienCharacter-container-list-card">
+      <div *ngFor="let alienCharacter of alienCharacters"  class="alienCharacter-container-list-card-item">
+        <app-alienCharacters
+        [alienCharacter]="alienCharacter"></app-alienCharacters>
+      </div>
+    </div>
+  </div>
+
+
+

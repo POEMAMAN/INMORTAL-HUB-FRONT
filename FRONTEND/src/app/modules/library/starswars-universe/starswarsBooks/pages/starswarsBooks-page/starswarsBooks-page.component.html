@@ -1,14 +1,11 @@
 <div class="starswarsBook-container-list">
-    <button class="starswarsBook-container-list-button" [routerLink]="'/library/starswarsUniverse'">Universo starswars
+    <button class="starswarsBook-container-list-button" [routerLink]="'/library/starWarsUniverse'">Universo Starwars
 </button>
     <div style="margin-top: 5px;" class="container">
     </div>
     <div class="starswarsBook-container-list-card">
-        <!-- {{i+1}} {{starswarsBook}}  -->
         <div *ngFor="let starswarsBook of starswarsBooks" class="starswarsBook-container-list-card-item">
             <app-starswarsBooks [starswarsBook]="starswarsBook">
-                <!-- Object.keys(starswarsBooks)[i] -->
-
             </app-starswarsBooks>
         </div>
     </div>

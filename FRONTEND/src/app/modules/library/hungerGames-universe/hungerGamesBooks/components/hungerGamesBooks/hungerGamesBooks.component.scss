@@ -40,8 +40,10 @@
     -webkit-line-clamp: 1;
     font-family: 'Race-guard';
     text-decoration:underline;
-    font-size: 80%;
-    color: rgb(238, 232, 232);
+    font-size: 160%;
+    color: goldenrod;
+    height: 50px;
+    text-align: center;
 
 
   }
@@ -51,10 +53,17 @@
     overflow: hidden;
     -webkit-line-clamp: 4;
     font-size: 16px;
-    height: 625px;
+    height: 610px;
     font-family: 'Merienda';
     margin: 2% 2% 0% 2%;
     color: rgb(11, 116, 236);
+    margin: 1rem auto;
+    border: 1px solid #aaa;
+    overflow:auto;
+    box-sizing: border-box;
+    padding:0 1rem;
+    scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
+    scrollbar-width:thin;
   }
   &-deck{
     margin:15px;

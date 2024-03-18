@@ -42,7 +42,7 @@
     font-size: 125%;
     color: goldenrod;
     text-align: center;
-    height: 8%;
+    height: 60px;
     line-height: 160%;
   }
   &-resume {
@@ -50,10 +50,17 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     -webkit-line-clamp: 4;
-    font-size: 13px;
-    height: 625px;
+    font-size: 16px;
+    height: 610px;
     font-family: 'Merienda';
     margin: 2% 2% 0% 2%;
+    margin: 1rem auto;
+    border: 1px solid #aaa;
+    overflow:auto;
+    box-sizing: border-box;
+    padding:0 1rem;
+    scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
+    scrollbar-width:thin;
   }
   &-deck{
     margin:15px;

@@ -14,6 +14,7 @@ const moviesSchema = new Schema(
     genre: { type: String, required: false },
     clasification: { type: String, required: false },
     resume: {type:String, required:false},
+    trailer: {type:String, required:false},
   },
   {
     timestamps: true,

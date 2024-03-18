@@ -13,8 +13,8 @@
     background-size: contain;
   &-card {
     display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    justify-content: center;
     margin: 20px auto;
       &-item {
       width: 400px;

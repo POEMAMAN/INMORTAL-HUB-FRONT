@@ -1,21 +1,36 @@
-
-<div class="harryPotterMovie-container">
-  <div class="harryPotterMovies-container-button" *ngIf="isAdmin" style="display: flex; justify-content: flex-end; align-items: center; margin-bottom: 5px; gap: 5px">
-      <button [routerLink]="['/admin/edit-product',harryPotterMovie._id]" >Editar</button>
-      <button [routerLink]="['/admin/delete-product', harryPotterMovie._id]" >Eliminar</button>
+<div class="harryPotterMovies-container">
+  <div class="harryPotterMovies-container-button"*ngIf="isAdmin"style="
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 5px;
+      gap: 5px;">
+    <button [routerLink]="['/admin/edit-product', harryPotterMovie._id]">Editar</button>
+    <button [routerLink]="['/admin/delete-product', harryPotterMovie._id]">
+      Eliminar
+    </button>
   </div>
-  <div class="harryPotterMovies-container-img">
-    <img class="harryPotterMovies-container-img-img" [src]="harryPotterMovie.picture" />
+  <div class="harryPotterMovies-container-deck">
+    <div class="harryPotterMovies-container-deck-card" (click)="clickCard()">
+      <div class="front face" >
+        <img  class="harryPotterMovies-container-img-img"[src]="harryPotterMovie.picture" />
+        <div class="harryPotterMovies-container-text">
+          <h2 class="harryPotterMovies-container-h2">{{ harryPotterMovie.title }}</h2>
+          <p class="harryPotterMovies-container-p"><span>Director:</span> {{ harryPotterMovie.director }}</p>
+          <p class="harryPotterMovies-container-p"><span>Año:</span> {{ harryPotterMovie.year }}</p>
+          <p class="harryPotterMovies-container-p"><span>Duracion:</span> {{ harryPotterMovie.duration }}</p>
+          <p class="harryPotterMovies-container-p"><span>Pais:</span> {{ harryPotterMovie.country }}</p>
+          <p class="harryPotterMovies-container-p"><span>Genero:</span> {{ harryPotterMovie.genre}}</p>
+          <p class="harryPotterMovies-container-p"><span>Clasificacion:</span> {{ harryPotterMovie.clasificarion }}</p>
+          <p class="harryPotterMovies-container-p"><span>Clasificacion:</span> {{ harryPotterMovie.trailer }}</p>
+        </div>
+      </div>
+      <div class="back face">
+        <p class="harryPotterMovies-container-resume"><span>Sinopsis:</span> {{ harryPotterMovie.resume }}</p>
+      </div>
+    </div>
   </div>
-  <div class="harryPotterMovies-container-description">
-    <!-- <h2 class="harryPotterMovies-container-h2">{{ harryPotterMovie.title }}</h2> -->
-    <p class="harryPotterMovies-container-p">{{ harryPotterMovie.director }}</p>
-    <p class="harryPotterMovies-container-p">{{ harryPotterMovie.year }}</p>
-    <p class="harryPotterMovies-container-p">{{ harryPotterMovie.duration}}</p>
-    <p class="harryPotterMovies-container-p">{{ harryPotterMovie.country}}</p>
-    <p class="harryPotterMovies-container-p">{{ harryPotterMovie.genre}}</p>
-    <p class="harryPotterMovies-container-p">{{ harryPotterMovie.clasification}}</p>
-    <p class="harryPotterMovies-container-resume">{{ harryPotterMovie.resume }}</p>
-  </div>
+  <button class="btn btn-outline movie-card__button" type="button">Watch Trailer</button>
 </div>
+
 

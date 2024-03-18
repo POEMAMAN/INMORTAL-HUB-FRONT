@@ -34,7 +34,7 @@
     overflow: hidden;
     max-height: calc(1.5em * 4);
     -webkit-line-clamp: 4;
-    font-size: 15px;
+    font-size: 30px;
     margin: 15px;  //  
   }
   &-h2 {
@@ -45,7 +45,9 @@
     -webkit-line-clamp: 1;
     font-family: 'Race-guard';
     text-decoration:overline;
-    font-size: 140%;
+    font-size: 160%;
+    text-align: center;
+    height: 60px;
   }
   &-resume {
     display: -webkit-box;
@@ -53,7 +55,7 @@
     overflow: hidden;
     -webkit-line-clamp: 4;
     font-size: 20px;
-    height: 1500px;//
+    height: 625px;//
     font-family: 'Merienda';
     margin: 2% 2% 0% 2%;
     margin: 1rem auto;//
@@ -108,7 +110,7 @@
 	  height: 100%;
 	  z-index: -1;
     background-size:100% 100%;
-	  background: url('https://i.imgur.com/W3tra4F.gif');
+	  background: url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710693063/Alien/Background/giphy_oj6nvu.gif');
     background-size: cover;
 	  -webkit-transform: rotateY(180deg);
 	  -moz-transform: rotateY(180deg);
@@ -121,7 +123,7 @@
   transition: all .5s linear;
 }
 .front{
-  background-image:url('https://i.imgur.com/W3tra4F.gif');
+  background-image:url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710693063/Alien/Background/giphy_oj6nvu.gif');
   background-size: cover;
   z-index:1;
   box-shadow: 5px 5px 5px #aaa;

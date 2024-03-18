@@ -11,9 +11,7 @@ const movieSchema = new Schema(
     duration: { type: String, required: false },
     country: { type: String, required: false },
     genre: { type: String, required: false },
-    // clasification: { type: String, required: false },
-    // books: { type: Schema.ObjectId, ref: 'booksHarryPotter'},
-    characters: [{ type: Schema.ObjectId, ref: 'characterHarryPotter'}],
+    clasification: { type: String, required: false },
     resume: {type:String, required:false},
   },
   {

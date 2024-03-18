@@ -1,21 +1,33 @@
-
-<div class="alienMovie-container">
-  <div class="alienMovies-container-button" *ngIf="isAdmin" style="display: flex; justify-content: flex-end; align-items: center; margin-bottom: 5px; gap: 5px">
-      <button [routerLink]="['/admin/edit-product',alienMovie._id]" >Editar</button>
-      <button [routerLink]="['/admin/delete-product', alienMovie._id]" >Eliminar</button>
+<div class="alienMovies-container">
+  <div class="alienMovies-container-button"*ngIf="isAdmin"style="
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 5px;
+      gap: 5px;">
+    <button [routerLink]="['/admin/edit-product', alienMovie._id]">Editar</button>
+    <button [routerLink]="['/admin/delete-product', alienMovie._id]">
+      Eliminar
+    </button>
   </div>
-  <div class="alienMovies-container-img">
-    <img class="alienMovies-container-img-img" [src]="alienMovie.picture" />
+  <div class="alienMovies-container-deck">
+    <div class="alienMovies-container-deck-card" (click)="clickCard()">
+      <div class="front face" >
+        <img  class="alienMovies-container-img-img"[src]="alienMovie.picture" />
+        <div class="alienMovies-container-text">
+          <h2 class="alienMovies-container-h2">{{ alienMovie.title }}</h2>
+          <p class="alienMovies-container-p"><span>Director:</span> {{ alienMovie.director }}</p>
+          <p class="alienMovies-container-p"><span>Año:</span> {{ alienMovie.year }}</p>
+          <p class="alienMovies-container-p"><span>Duracion:</span> {{ alienMovie.duration }}</p>
+          <p class="alienMovies-container-p"><span>Pais:</span> {{ alienMovie.country }}</p>
+          <p class="alienMovies-container-p"><span>Genero:</span> {{ alienMovie.genre}}</p>
+          <p class="alienMovies-container-p"><span>Clasificacion:</span> {{ alienMovie.clasificarion }}</p>
+        </div>
+      </div>
+      <div class="back face">
+        <p class="alienMovies-container-resume"><span>Sinopsis:</span> {{ alienMovie.resume }}</p>
+      </div>
+    </div>
   </div>
-  <div class="alienMovies-container-description">
-    <h2 class="alienMovies-container-h2">{{ alienMovie.title }}</h2>
-    <p class="alienMovies-container-p">{{ alienMovie.director }}</p>
-    <p class="alienMovies-container-p">{{ alienMovie.year }}</p>
-    <p class="alienMovies-container-p">{{ alienMovie.duration}}</p>
-    <p class="alienMovies-container-p">{{ alienMovie.country}}</p>
-    <p class="alienMovies-container-p">{{ alienMovie.genre}}</p>
-    <p class="alienMovies-container-p">{{ alienMovie.clasification}}</p>
-    <p class="alienMovies-container-resume">{{ alienMovie.resume }}</p>
-  </div>
+  <button class="btn btn-outline movie-card__button" type="button">Watch Trailer</button>
 </div>
-

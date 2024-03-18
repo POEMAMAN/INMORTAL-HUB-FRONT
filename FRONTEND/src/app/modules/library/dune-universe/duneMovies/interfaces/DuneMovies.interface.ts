@@ -8,6 +8,7 @@ export interface DuneMovie {
   genre:  String,
   clasification:   String,
   resume: String,
+  trailer: String,
 
 }
 

@@ -30,7 +30,10 @@
         "moviesIndianaJonesSeed": "node ./src/seeds/seeds.IndianaJones/movies.IndianaJones.seeds.js",
         "booksJurassicParkSeed": "node ./src/seeds/seeds.JurassicPark/books.JurassicPark.seeds.js",
         "charactersJurassicParkSeed": "node ./src/seeds/seeds.JurassicPark/characters.JurassicPark.seeds.js",
-        "moviesJurassicParkSeed": "node ./src/seeds/seeds.JurassicPark/movies.JurassicPark.seeds.js"
+        "moviesJurassicParkSeed": "node ./src/seeds/seeds.JurassicPark/movies.JurassicPark.seeds.js",
+        "booksstarWarsSeed": "node ./src/seeds/seeds-starwars/books.starswars.seeds.js",
+        "characterstarWarsSeed": "node ./src/seeds/seeds-starwars/characters.starswars.seeds.js",
+        "moviesstarWarsSeed": "node ./src/seeds/seeds-starwars/movies.starswars.seeds.js"
     },
     "keywords": [
         "Node",

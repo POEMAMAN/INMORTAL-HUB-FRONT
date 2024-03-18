@@ -80,18 +80,18 @@ mongoose
     const allMoviesIndianaJones = await MovieIndianaJones.find();
     if (allMoviesIndianaJones.length > 0) {
       await MovieIndianaJones.collection.drop();
-      console.log('Paises borrados');
+      console.log('Películas borrados');
     }
   })
   .catch((err) => {
-    console.log('error borrando los paises', err);
+    console.log('error borrando los Películas', err);
   })
   .then(async () => {
     const moviesIndianaJonesMap = arrayMoviesIndianaJones.map((movie) => new MovieIndianaJones(movie));
     await MovieIndianaJones.insertMany(moviesIndianaJonesMap);
-    console.log('paises insertados');
+    console.log('Películas insertados');
   })
   .catch((err) => {
-    console.log('error insertando los paises', err);
+    console.log('error insertando los Películas', err);
   })
   .finally(() => mongoose.disconnect());

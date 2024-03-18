@@ -11,8 +11,6 @@ const movieSchema = new Schema({
     country: { type: String, required: false },
     genre: { type: String, required: false },
     clasification: { type: String, required: false },
-    // books: { type: Schema.ObjectId, ref: 'booksStarWars'},
-    // characters: [{ type: Schema.ObjectId, ref: 'characterStarWars'}],
     resume: { type: String, required: false },
 }, {
     timestamps: true,

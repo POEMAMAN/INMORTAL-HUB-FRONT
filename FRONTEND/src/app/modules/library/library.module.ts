@@ -7,6 +7,7 @@ import { AlienUniverseModule } from './alien-universe/alien-universe.module';
 import { HungerGamesUniverseModule } from './hungerGames-universe/hungerGames-universe.module';
 import { ApesPlanetUniverseModule } from './apesPlanet-universe/apesPlanet-universe.module';
 import { CrepusculoUniverseModule } from './crepusculo-universe/crepusculo-universe.module';
+import { starWarsUniverseModule } from './starWars-universe/starWars-universe.module';
 
 
 
@@ -24,7 +25,8 @@ import { CrepusculoUniverseModule } from './crepusculo-universe/crepusculo-unive
     AlienUniverseModule,
     HungerGamesUniverseModule,
     ApesPlanetUniverseModule,
-    CrepusculoUniverseModule
+    CrepusculoUniverseModule,
+    starWarsUniverseModule
     
   ],
   exports: [

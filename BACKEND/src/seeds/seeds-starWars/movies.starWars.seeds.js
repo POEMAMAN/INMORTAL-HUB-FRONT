@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 dotenv.config();
-const MovieStarsWars = require('../../api/models/models.StarWars/movies.StarWars.model');
+const MovieStarWars = require('../../api/models/models.StarWars/movies.StarWars.model');
 
-const arrayMoviesStarsWars = [{
+const arrayMoviesStarWars = [{
         title: 'Star Wars: Episodio I - La amenaza fantasma',
-        picture: 'https://console.cloudinary.com/console/c-19d7767fc54f15bca4427ebedd8a4a/media_library/folders/c7270fd8e909225ed92a15e163ca773000/asset/9bf5ee2060dbdf33b572c36307e7c4fc/manage?view_mode=mosaic&context=manage',
+        picture: 'https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710707863/Star%20Wars/Movies/movies/starswars1_iepfh2.jpg',
         director: 'George Lucas',
         year: 1999,
         duration: '136 minutos',
@@ -16,7 +16,7 @@ const arrayMoviesStarsWars = [{
     },
     {
         title: 'Star Wars: Episodio II - El ataque de los clones',
-        picture: 'https://console.cloudinary.com/console/c-19d7767fc54f15bca4427ebedd8a4a/media_library/folders/c7270fd8e909225ed92a15e163ca773000/asset/4790ed5c6aaece8b113eb49a55e20d63/manage?view_mode=mosaic&context=manage',
+        picture: 'https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710707869/Star%20Wars/Movies/movies/starswars2_qvu33g.jpg',
         director: 'George Lucas',
         year: 2002,
         duration: '142 minutos',
@@ -27,7 +27,7 @@ const arrayMoviesStarsWars = [{
     },
     {
         title: 'Star Wars: Episodio III - La venganza de los Sith',
-        picture: 'https://console.cloudinary.com/console/c-19d7767fc54f15bca4427ebedd8a4a/media_library/folders/c7270fd8e909225ed92a15e163ca773000/asset/c27aba0443d946e7ebffc77f0daa4967/manage?view_mode=mosaic&context=manage',
+        picture: 'https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710707875/Star%20Wars/Movies/movies/starswars3_rzmmzj.jpg',
         director: 'George Lucas',
         year: 2005,
         duration: '140 minutos',
@@ -38,7 +38,7 @@ const arrayMoviesStarsWars = [{
     },
     {
         title: 'Star Wars: Episodio IV - Una nueva esperanza',
-        picture: 'https://console.cloudinary.com/console/c-19d7767fc54f15bca4427ebedd8a4a/media_library/folders/c7270fd8e909225ed92a15e163ca773000/asset/b555b7f67dd55580f6d4510dc79be0db/manage?view_mode=mosaic&context=manage',
+        picture: 'https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710707882/Star%20Wars/Movies/movies/starswars4_yly4wg.jpg',
         director: 'George Lucas',
         year: 1977,
         duration: '121 minutos',
@@ -49,7 +49,7 @@ const arrayMoviesStarsWars = [{
     },
     {
         title: 'Star Wars: Episodio V - El imperio contraataca',
-        picture: 'https://console.cloudinary.com/console/c-19d7767fc54f15bca4427ebedd8a4a/media_library/folders/c7270fd8e909225ed92a15e163ca773000/asset/48cf53fcbcd7f1c3d7bd2352f4c05e75/manage?view_mode=mosaic&context=manage',
+        picture: 'https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710707888/Star%20Wars/Movies/movies/starswars5_wwyksi.jpg',
         director: 'Irvin Kershner',
         year: 1980,
         duration: '124 minutos',
@@ -60,7 +60,7 @@ const arrayMoviesStarsWars = [{
     },
     {
         title: 'Star Wars: Episodio VI - El retorno del Jedi',
-        picture: 'https://console.cloudinary.com/console/c-19d7767fc54f15bca4427ebedd8a4a/media_library/folders/c7270fd8e909225ed92a15e163ca773000/asset/56173840a08e003b097a92afba2ad211/manage?view_mode=mosaic&context=manage',
+        picture: 'https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710707894/Star%20Wars/Movies/movies/starswars6_bgrxdh.jpg',
         director: 'Richard Marquand',
         year: 1983,
         duration: '131 minutos',
@@ -71,7 +71,7 @@ const arrayMoviesStarsWars = [{
     },
     {
         title: 'Star Wars: Episodio VII - El despertar de la fuerza',
-        picture: 'https://console.cloudinary.com/console/c-19d7767fc54f15bca4427ebedd8a4a/media_library/folders/c7270fd8e909225ed92a15e163ca773000/asset/4ddb0cf530525eecf941ba3e505dde56/manage?view_mode=mosaic&context=manage',
+        picture: 'https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710707851/Star%20Wars/Movies/movies/starswars7_kor9bi.jpg',
         director: 'J.J. Abrams',
         year: 2015,
         duration: '138 minutos',
@@ -82,7 +82,7 @@ const arrayMoviesStarsWars = [{
     },
     {
         title: 'Star Wars: Episodio VIII - Los últimos Jedi',
-        picture: 'https://console.cloudinary.com/console/c-19d7767fc54f15bca4427ebedd8a4a/media_library/folders/c7270fd8e909225ed92a15e163ca773000/asset/eb34d325e5e625b8dfc10f679369387e/manage?view_mode=mosaic&context=manage',
+        picture: 'https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710707845/Star%20Wars/Movies/movies/starswars8_whzaxx.jpg',
         director: 'Rian Johnson',
         year: 2017,
         duration: '152 minutos',
@@ -93,7 +93,7 @@ const arrayMoviesStarsWars = [{
     },
     {
         title: 'Star Wars: Episodio IX - El ascenso de Skywalker',
-        picture: 'https://console.cloudinary.com/console/c-19d7767fc54f15bca4427ebedd8a4a/media_library/folders/c7270fd8e909225ed92a15e163ca773000/asset/b3fa1a4151a17f5a3edabdd0efc29a56/manage?view_mode=mosaic&context=manage',
+        picture: 'https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710707857/Star%20Wars/Movies/movies/starswars9_nin65p.jpg',
         director: 'J.J. Abrams',
         year: 2019,
         duration: '142 minutos',
@@ -110,9 +110,9 @@ mongoose
         useUnifiedTopology: true,
     })
     .then(async() => {
-        const allMoviesStarsWars = await MovieStarsWars.find();
-        if (allMoviesStarsWars.length > 0) {
-            await MovieStarsWars.collection.drop();
+        const allMoviesStarWars = await MovieStarWars.find();
+        if (allMoviesStarWars.length > 0) {
+            await MovieStarWars.collection.drop();
             console.log('Películas borradas');
         }
     })
@@ -120,8 +120,8 @@ mongoose
         console.log('error borrando las películas', err);
     })
     .then(async() => {
-        const moviesStarsWarsMap = arrayMoviesStarsWars.map((movie) => new MovieStarsWars(movie));
-        await MovieStarsWars.insertMany(moviesStarsWarsMap);
+        const moviesStarWarsMap = arrayMoviesStarWars.map((movie) => new MovieStarWars(movie));
+        await MovieStarWars.insertMany(moviesStarWarsMap);
         console.log('películas insertadas');
     })
     .catch((err) => {

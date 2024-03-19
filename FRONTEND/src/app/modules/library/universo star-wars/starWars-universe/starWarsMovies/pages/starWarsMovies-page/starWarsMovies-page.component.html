@@ -1,0 +1,11 @@
+<div class="starWarsMovie-container-list">
+    <button class="starWarsMovie-container-list-button" [routerLink]="'/library/starWarsUniverse'">Universo Starwars
+</button>
+    <div style="margin-top: 5px;" class="container">
+    </div>
+    <div class="starWarsMovie-container-list-card">
+        <div *ngFor="let starWarsMovie of starWarsMovies" class="starWarsMovie-container-list-card-item">
+            <app-starWarsMovies [starWarsMovie]="starWarsMovie"></app-starWarsMovies>
+        </div>
+    </div>
+</div>

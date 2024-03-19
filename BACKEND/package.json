@@ -13,7 +13,7 @@
         "moviesAlienSeed": "node ./src/seeds/seeds-Alien/movies.Alien.seeds.js",
         "videoGamesAlienSeed": "node ./src/seeds/seeds-Alien/videoGames.Alien.seeds.js",
 
-        "booksApesPlanetSeed": "node ./src/seeds/seeds-apesPlanet/books.apesPlanet.seeds.js",
+        "videoGamesApesPlanetSeed": "node ./src/seeds/seeds-apesPlanet/videoGames.apesPlanet.seeds.js",
         "charactersApesPlanetSeed": "node ./src/seeds/seeds-apesPlanet/characters.apesPlanet.seeds.js",
         "moviesApesPlanetSeed": "node ./src/seeds/seeds-apesPlanet/movies.apesPlanet.seeds.js",
 
@@ -46,7 +46,7 @@
         "charactersLordOfTheRingsSeed": "node ./src/seeds/seeds-LordOfTheRings/characters.LordOfTheRings.seeds.js",
         "moviesLordOfTheRingsSeed": "node ./src/seeds/seeds-LordOfTheRings/movies.LordOfTheRings.seeds.js",
 
-        "booksMissionImposibleSeed": "node ./src/seeds/seeds-missionImposible/books.missionImposible.seeds.js",
+        "videoGamesMissionImposibleSeed": "node ./src/seeds/seeds-missionImposible/videoGames.missionImposible.seeds.js",
         "charactersMissionImposibleSeed": "node ./src/seeds/seeds-missionImposible/characters.missionImposible.seeds.js",
         "moviesMissionImposibleSeed": "node ./src/seeds/seeds-missionImposible/movies.missionImposible.seeds.js",
 

@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 dotenv.config();
-const VideoMissionImposible = require('../../api/models/models.MissionImposible/videoGames.MissionImposible.model.js');
+const VideoGameMissionImposible = require('../../api/models/models.MissionImposible/videoGames.MissionImposible.model.js');
 
 
-const arrayVideoGamesAlien = [
+const arrayVideoGamesMissionImposible = [
     {
         title: "Mission: Impossible - Operation Surma",
         picture: "https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710835999/misionImposible/VideoGames/mission-impossible-operation-surma-201433115369_1_fnxrb8.jpg",
@@ -84,9 +84,9 @@ mongoose
         useUnifiedTopology: true,
     })
     .then(async() => {
-        const allVideoGamesAlien = await VideoMissionImposible.find();
-        if (allVideoGamesAlien.length > 0) {
-            await VideoMissionImposible.collection.drop();
+        const allVideoGamesMissionImposible = await VideoGameMissionImposible.find();
+        if (allVideoGamesMissionImposible.length > 0) {
+            await VideoGameMissionImposible.collection.drop();
             console.log('Videojuegos borrados');
         }
     })
@@ -94,8 +94,8 @@ mongoose
         console.log('error borrando los Videojuegos', err);
     })
     .then(async() => {
-        const VideoGamesAlienMap = arrayVideoGamesAlien.map((VideoGame) => new VideoMissionImposible(VideoGame));
-        await VideoMissionImposible.insertMany(VideoGamesAlienMap);
+        const VideoGamesMissionImposibleMap = arrayVideoGamesMissionImposible.map((VideoGame) => new VideoGameMissionImposible(VideoGame));
+        await VideoGameMissionImposible.insertMany(VideoGamesMissionImposibleMap);
         console.log('Videojuegos insertados');
     })
     .catch((err) => {

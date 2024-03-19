@@ -5,7 +5,7 @@ const Schema = mongoose.Schema;
 const videoGameSchema = new Schema(
   {
     title: { type: String, required: true },
-    picture: { type: String, required: false },
+    picture: { type: String, required: true },
     platform: { type: String, required: false },
     year: { type: Number, required: false },
     studio: { type: String, required: false },
@@ -17,5 +17,5 @@ const videoGameSchema = new Schema(
   }
 );
 
-const VideoGameMissionImposible = mongoose.model('videoGameMissionImposible', videoGameSchema);
-module.exports = VideoGameMissionImposible;
+const VideoGameApesPlanet = mongoose.model('videoGameApesPlanet', videoGameSchema);
+module.exports = VideoGameApesPlanet;

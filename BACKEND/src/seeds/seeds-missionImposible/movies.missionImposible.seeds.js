@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 dotenv.config();
-const MovieMisionImposible = require('../../api/models/models.MisionImposible/movies.MisionImposible.model');
+const MovieMisionImposible = require('../../api/models/models.MissionImposible/movies.MissionImposible.model');
 
 const arrayMoviesMisionImposible = [
   {

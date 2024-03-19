@@ -27,6 +27,11 @@ const booksLordOfTheRingsRoutes = require("./src/api/routes/routes.LordOfTheRing
 const charactersLordOfTheRingsRoutes = require("./src/api/routes/routes.LordOfTheRings/characters.LordOfTheRings.routes");
 const moviesLordOfTheRingsRoutes = require("./src/api/routes/routes.LordOfTheRings/movies.LordOfTheRings.routes");
 
+// ApesPlanet
+// const videoGamesApesPlanetRoutes = require("./src/api/routes/routes.ApesPlanet/videoGames.ApesPlanet.routes");
+const charactersApesPlanetRoutes = require("./src/api/routes/routes.ApesPlanet/characters.ApesPlanet.routes");
+const moviesApesPlanetRoutes = require("./src/api/routes/routes.ApesPlanet/movies.ApesPlanet.routes");
+
 // Alien
 const videoGamesAlienRoutes = require("./src/api/routes/routes.Alien/videoGames.Alien.routes");
 const charactersAlienRoutes = require("./src/api/routes/routes.Alien/characters.Alien.routes");
@@ -122,6 +127,17 @@ app.use("/api", (req, res, next) => "im alive");
 
 app.use('/user', userRouter);
 // Rutas Universos
+
+// ApesPlanet
+// app.use("/universes/apesPlanet/videoGames", videoGamesApesPlanetRoutes)
+app.use("/universes/apesPlanet/characters", charactersApesPlanetRoutes)
+app.use("/universes/apesPlanet/movies", moviesApesPlanetRoutes)
+
+// Alien
+app.use("/universes/Alien/videoGames", videoGamesAlienRoutes)
+app.use("/universes/Alien/characters", charactersAlienRoutes)
+app.use("/universes/Alien/movies", moviesAlienRoutes)
+
 // Dune
 app.use("/universes/dune/books", booksDuneRoutes)
 app.use("/universes/dune/characters", charactersDuneRoutes)
@@ -138,11 +154,6 @@ app.use("/universes/HarryPotter/movies", moviesHarryPotterRoutes)
 app.use("/universes/LordOfTheRings/books", booksLordOfTheRingsRoutes)
 app.use("/universes/LordOfTheRings/characters", charactersLordOfTheRingsRoutes)
 app.use("/universes/LordOfTheRings/movies", moviesLordOfTheRingsRoutes)
-
-// Alien
-app.use("/universes/Alien/videoGames", videoGamesAlienRoutes)
-app.use("/universes/Alien/characters", charactersAlienRoutes)
-app.use("/universes/Alien/movies", moviesAlienRoutes)
 
 // Crepusculo
 app.use("/universes/Crepusculo/books", booksCrepusculoRoutes)
@@ -168,11 +179,6 @@ app.use("/universes/JurassicPark/movies", moviesJurassicParkRoutes)
 // app.use("/universes/ImposibleMission/books", booksImposibleMissionRoutes)
 // app.use("/universes/ImposibleMission/characters", charactersImposibleMissionRoutes)
 // app.use("/universes/ImposibleMission/movies", moviesImposibleMissionRoutes)
-
-// ApesPlanet
-// app.use("/universes/ApesPlanet/books", booksApesPlanetRoutes)
-// app.use("/universes/ApesPlanet/characters", charactersApesPlanetRoutes)
-// app.use("/universes/ApesPlanet/movies", moviesApesPlanetRoutes)
 
 // StarTrek
 // app.use("/universes/StarTrek/books", booksStarTrekRoutes)

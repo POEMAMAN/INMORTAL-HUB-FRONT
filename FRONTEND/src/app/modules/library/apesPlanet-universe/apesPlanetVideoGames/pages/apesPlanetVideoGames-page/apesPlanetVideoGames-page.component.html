@@ -1,0 +1,19 @@
+<div class="apesPlanetVideoGame-container-list">
+  <button
+  class="apesPlanetVideoGame-container-list-button"
+  [routerLink]="'/library/apesPlanetUniverse'"
+>Universo apesPlanet
+</button>
+  <div style="margin-top: 5px;" class="container">
+  </div>
+  <div class="apesPlanetVideoGame-container-list-card">
+      <div *ngFor="let apesPlanetVideoGame of apesPlanetVideoGames"
+      class="apesPlanetVideoGame-container-list-card-item">
+        <app-apesPlanetVideoGames
+        [apesPlanetVideoGame]="apesPlanetVideoGame">
+      </app-apesPlanetVideoGames>
+      </div>
+    </div>
+  </div>
+
+

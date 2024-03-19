@@ -30,7 +30,7 @@
     overflow: hidden;
     max-height: calc(1.5em * 4);
     -webkit-line-clamp: 4;
-    font-size: 19px;
+    font-size: 18px;
     margin: 5px;
   }
   &-h2 {
@@ -41,10 +41,12 @@
     -webkit-line-clamp: 1;
     font-family: 'Race-guard';
     text-decoration:underline;
-    font-size: 130%;
+    font-size: 120%;
     color: black;
-    height: 50px;
+    height: 85px;
     text-align: center;
+    display: flex;
+    align-items: center;
   }
   &-resume {
     display: -webkit-box;

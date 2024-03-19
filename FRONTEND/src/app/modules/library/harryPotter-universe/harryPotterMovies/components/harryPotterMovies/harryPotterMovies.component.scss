@@ -30,7 +30,7 @@
     overflow: hidden;
     max-height: calc(1.5em * 4);
     -webkit-line-clamp: 4;
-    font-size: 20px;
+    font-size: 19px;
     margin: 5px;
   }
   &-h2 {
@@ -41,10 +41,12 @@
     -webkit-line-clamp: 1;
     font-family: 'Race-guard';
     text-decoration:underline;
-    font-size: 150%;
+    font-size: 130%;
     color: black;
-    height: 50px;
+    height: 90px;
     text-align: center;
+    display: flex;
+    align-items: center;
   }
   &-resume {
     display: -webkit-box;
@@ -144,7 +146,7 @@
 span{
   color: goldenrod;
 }
-.duneMovies-container-text{
+.harryPotterMovies-container-text{
   display: flex;
   flex-direction: column;
   width: 40vw;

@@ -1,0 +1,19 @@
+<div class="starWarsMovie-container">
+    <div class="starWarsMovies-container-button" *ngIf="isAdmin" style="display: flex; justify-content: flex-end; align-items: center; margin-bottom: 5px; gap: 5px">
+        <button [routerLink]="['/admin/edit-product',starWarsMovie._id]">Editar</button>
+        <button [routerLink]="['/admin/delete-product', starWarsMovie._id]">Eliminar</button>
+    </div>
+    <div class="starWarsMovies-container-img">
+        <img class="starWarsMovies-container-img-img" [src]="starWarsMovie.picture" />
+    </div>
+    <div class="starWarsMovies-container-description">
+        <h2 class="starWarsMovies-container-h2">{{ starWarsMovie.title }}</h2>
+        <p class="starWarsMovies-container-p">{{ starWarsMovie.director }}</p>
+        <p class="starWarsMovies-container-p">{{ starWarsMovie.year }}</p>
+        <p class="starWarsMovies-container-p">{{ starWarsMovie.duration}}</p>
+        <p class="starWarsMovies-container-p">{{ starWarsMovie.country}}</p>
+        <p class="starWarsMovies-container-p">{{ starWarsMovie.genre}}</p>
+        <p class="starWarsMovies-container-p">{{ starWarsMovie.clasification}}</p>
+        <p class="starWarsMovies-container-resume">{{ starWarsMovie.resume }}</p>
+    </div>
+</div>

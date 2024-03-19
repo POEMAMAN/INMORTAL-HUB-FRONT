@@ -1,0 +1,36 @@
+<div class="indianaJonesMovies-container">
+  <div class="indianaJonesMovies-container-button"*ngIf="isAdmin"style="
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 5px;
+      gap: 5px;">
+    <button [routerLink]="['/admin/edit-product', indianaJonesMovie._id]">Editar</button>
+    <button [routerLink]="['/admin/delete-product', indianaJonesMovie._id]">
+      Eliminar
+    </button>
+  </div>
+  <div class="indianaJonesMovies-container-deck">
+    <div class="indianaJonesMovies-container-deck-card" (click)="clickCard()">
+      <div class="front face" >
+        <img  class="indianaJonesMovies-container-img-img"[src]="indianaJonesMovie.picture" />
+        <div class="indianaJonesMovies-container-text">
+          <h2 class="indianaJonesMovies-container-h2">{{ indianaJonesMovie.title }}</h2>
+          <p class="indianaJonesMovies-container-p"><span>Director:</span> {{ indianaJonesMovie.director }}</p>
+          <p class="indianaJonesMovies-container-p"><span>Año:</span> {{ indianaJonesMovie.year }}</p>
+          <p class="indianaJonesMovies-container-p"><span>Duracion:</span> {{ indianaJonesMovie.duration }}</p>
+          <p class="indianaJonesMovies-container-p"><span>Pais:</span> {{ indianaJonesMovie.country }}</p>
+          <p class="indianaJonesMovies-container-p"><span>Genero:</span> {{ indianaJonesMovie.genre}}</p>
+          <p class="indianaJonesMovies-container-p"><span>Clasificacion:</span> {{ indianaJonesMovie.clasificarion }}</p>
+          <p class="indianaJonesMovies-container-p"><span>Clasificacion:</span> {{ indianaJonesMovie.trailer }}</p>
+        </div>
+      </div>
+      <div class="back face">
+        <p class="indianaJonesMovies-container-resume"><span>Sinopsis:</span> {{ indianaJonesMovie.resume }}</p>
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-outline movie-card__button" type="button">Watch Trailer</button>
+</div>
+
+

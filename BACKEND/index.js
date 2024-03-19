@@ -10,6 +10,21 @@ const userRouter = require("./src/api/users/users.routes.js");
 
 // Rutas Componentes hijos (universos)
 
+// ApesPlanet
+// const videoGamesApesPlanetRoutes = require("./src/api/routes/routes.ApesPlanet/videoGames.ApesPlanet.routes");
+const charactersApesPlanetRoutes = require("./src/api/routes/routes.ApesPlanet/characters.ApesPlanet.routes");
+const moviesApesPlanetRoutes = require("./src/api/routes/routes.ApesPlanet/movies.ApesPlanet.routes");
+
+// Alien
+const videoGamesAlienRoutes = require("./src/api/routes/routes.Alien/videoGames.Alien.routes");
+const charactersAlienRoutes = require("./src/api/routes/routes.Alien/characters.Alien.routes");
+const moviesAlienRoutes = require("./src/api/routes/routes.Alien/movies.Alien.routes");
+
+// Crepusculo
+const booksCrepusculoRoutes = require("./src/api/routes/routes.Crepusculo/books.Crepusculo.routes");
+const charactersCrepusculoRoutes = require("./src/api/routes/routes.Crepusculo/characters.Crepusculo.routes");
+const moviesCrepusculoRoutes = require("./src/api/routes/routes.Crepusculo/movies.Crepusculo.routes");
+
 // Dune
 const booksDuneRoutes = require("./src/api/routes/routes.dune/books.dune.routes");
 const charactersDuneRoutes = require("./src/api/routes/routes.dune/characters.dune.routes");
@@ -27,20 +42,6 @@ const booksLordOfTheRingsRoutes = require("./src/api/routes/routes.LordOfTheRing
 const charactersLordOfTheRingsRoutes = require("./src/api/routes/routes.LordOfTheRings/characters.LordOfTheRings.routes");
 const moviesLordOfTheRingsRoutes = require("./src/api/routes/routes.LordOfTheRings/movies.LordOfTheRings.routes");
 
-// ApesPlanet
-// const videoGamesApesPlanetRoutes = require("./src/api/routes/routes.ApesPlanet/videoGames.ApesPlanet.routes");
-const charactersApesPlanetRoutes = require("./src/api/routes/routes.ApesPlanet/characters.ApesPlanet.routes");
-const moviesApesPlanetRoutes = require("./src/api/routes/routes.ApesPlanet/movies.ApesPlanet.routes");
-
-// Alien
-const videoGamesAlienRoutes = require("./src/api/routes/routes.Alien/videoGames.Alien.routes");
-const charactersAlienRoutes = require("./src/api/routes/routes.Alien/characters.Alien.routes");
-const moviesAlienRoutes = require("./src/api/routes/routes.Alien/movies.Alien.routes");
-
-// Crepusculo
-const booksCrepusculoRoutes = require("./src/api/routes/routes.Crepusculo/books.Crepusculo.routes");
-const charactersCrepusculoRoutes = require("./src/api/routes/routes.Crepusculo/characters.Crepusculo.routes");
-const moviesCrepusculoRoutes = require("./src/api/routes/routes.Crepusculo/movies.Crepusculo.routes");
 
 // IndianaJones
 const booksIndianaJonesRoutes = require("./src/api/routes/routes.IndianaJones/books.IndianaJones.routes");

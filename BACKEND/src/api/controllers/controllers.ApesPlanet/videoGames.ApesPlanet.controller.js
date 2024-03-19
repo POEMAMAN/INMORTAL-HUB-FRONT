@@ -1,62 +1,62 @@
-const VideoGamesMissionImposible = require('../../models/models.MissionImposible/videoGames.MissionImposible.model');
+const VideoGamesApesPlanet = require('../../models/models.ApesPlanet/videoGames.ApesPlanet.model');
 
-const getVideoGamesMissionImposible = async (req, res) => {
+const getVideoGamesApesPlanet = async (req, res) => {
   try {
-    const allVideoGamesMissionImposible = await VideoGamesMissionImposible.find();
-    return res.status(200).json(allVideoGamesMissionImposible);
+    const allVideoGamesApesPlanet = await VideoGamesApesPlanet.find();
+    return res.status(200).json(allVideoGamesApesPlanet);
   } catch (error) {
     return res.status(500).json(error);
   }
 };
 
-const getOneVideoGameMissionImposible = async (req, res) => {
+const getOneVideoGameApesPlanet = async (req, res) => {
   try {
     const { id } = req.params;
-    const oneVideoGameMissionImposible = await VideoGamesMissionImposible.findById(id);
-    return res.status(200).json(oneVideoGameMissionImposible);
+    const oneVideoGameApesPlanet = await VideoGamesApesPlanet.findById(id);
+    return res.status(200).json(oneVideoGameApesPlanet);
   } catch (error) {
     return res.status(500).json(error);
   }
 };
 
-const postVideoGameMissionImposible = async (req, res) => {
+const postVideoGameApesPlanet = async (req, res) => {
   try {
-    const newVideoGameMissionImposible = new VideoGamesMissionImposible(req.body);
-    const createdVideoGameMissionImposible = await newVideoGameMissionImposible.save();
-    return res.status(201).json(createdVideoGameMissionImposible);
+    const newVideoGameApesPlanet = new VideoGamesApesPlanet(req.body);
+    const createdVideoGameApesPlanet = await newVideoGameApesPlanet.save();
+    return res.status(201).json(createdVideoGameApesPlanet);
   } catch (error) {
     return res.status(500).json(error);
   }
 };
 
-const putVideoGameMissionImposible = async (req, res) => {
+const putVideoGameApesPlanet = async (req, res) => {
   try {
     const { id } = req.params;
-    const putVideoGamesMissionImposible = new VideoGamesMissionImposible(req.body);
+    const putVideoGamesApesPlanet = new VideoGamesApesPlanet(req.body);
     putvs._id = id;
-    const updateVideoGamesMissionImposible = await VideoGamesMissionImposible.findByIdAndUpdate(id, putVideoGamesMissionImposible, {
+    const updateVideoGamesApesPlanet = await VideoGamesApesPlanet.findByIdAndUpdate(id, putVideoGamesApesPlanet, {
       new: true,
     });
-    if (!updateVideoGamesMissionImposible) {
+    if (!updateVideoGamesApesPlanet) {
       return res.status(404).json({ message: 'VideoGame not found' });
     }
-    return res.status(200).json(updateVideoGamesMissionImposible);
+    return res.status(200).json(updateVideoGamesApesPlanet);
   } catch (error) {
     return res.status(500).json(error);
   }
 };
 
-const deleteVideoGameMissionImposible = async (req, res) => {
+const deleteVideoGameApesPlanet = async (req, res) => {
   try {
     const { id } = req.params;
-    const deleteVideoGameMissionImposible = await VideoGamesMissionImposible.findByIdAndDelete(id);
-    if (!deleteVideoGameMissionImposible) {
+    const deleteVideoGameApesPlanet = await VideoGamesApesPlanet.findByIdAndDelete(id);
+    if (!deleteVideoGameApesPlanet) {
       return res.status(404).json({ message: 'VideoGame not found' });
     }
-    return res.status(200).json(deleteVideoGameMissionImposible);
+    return res.status(200).json(deleteVideoGameApesPlanet);
   } catch (error) {
     return res.status(500).json(error);
   }
 };
 
-module.exports = { getVideoGamesMissionImposible, getOneVideoGameMissionImposible, postVideoGameMissionImposible, putVideoGameMissionImposible, deleteVideoGameMissionImposible };
+module.exports = { getVideoGamesApesPlanet, getOneVideoGameApesPlanet, postVideoGameApesPlanet, putVideoGameApesPlanet, deleteVideoGameApesPlanet };

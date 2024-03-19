@@ -30,6 +30,9 @@ const routes: Routes = [
       path: 'starWarsUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./starswars-universe/starswars-universe.module').then(m => m.starswarsUniverseModule)
     },
     {
+      path: 'crepusculoUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./crepusculo-universe/crepusculo-universe.module').then(m => m.CrepusculoUniverseModule)
+    },
+    {
       path: '**', redirectTo: 'library', pathMatch: 'full'
     }
   ]

@@ -1,12 +1,9 @@
 export interface HungerGamesCharacter {
   name: String,
-  profession: String,
-  rank: String,
-  birthday: String,
-  planet: String,
-  country: String,
-  resume: String,
+  actor: String,
+  district: String,
   picture: String,
+  resume: String,
 
 }
 

@@ -1,0 +1,18 @@
+<div class="apesPlanetCharacter-container-list">
+  <button
+        class="apesPlanetCharacter-container-list-button"
+        [routerLink]="'/library/apesPlanetUniverse'"
+      >Universo apesPlanet
+    </button>
+  <div style="margin-top: 5px;" class="container">
+  </div>
+  <div class="apesPlanetCharacter-container-list-card">
+      <div *ngFor="let apesPlanetCharacter of apesPlanetCharacters"  class="apesPlanetCharacter-container-list-card-item">
+        <app-apesPlanetCharacters
+        [apesPlanetCharacter]="apesPlanetCharacter"></app-apesPlanetCharacters>
+      </div>
+    </div>
+  </div>
+
+
+

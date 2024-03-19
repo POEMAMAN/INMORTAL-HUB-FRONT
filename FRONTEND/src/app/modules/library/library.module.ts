@@ -5,6 +5,7 @@ import { LibraryRoutingModule } from './library-routing.module';
 import { DuneUniverseModule } from './dune-universe/dune-universe.module';
 import { AlienUniverseModule } from './alien-universe/alien-universe.module';
 import { HungerGamesUniverseModule } from './hungerGames-universe/hungerGames-universe.module';
+import { ApesPlanetUniverseModule } from './apesPlanet-universe/apesPlanet-universe.module';
 
 
 
@@ -20,7 +21,9 @@ import { HungerGamesUniverseModule } from './hungerGames-universe/hungerGames-un
     CommonModule,
     DuneUniverseModule,
     AlienUniverseModule,
-    HungerGamesUniverseModule
+    HungerGamesUniverseModule,
+    ApesPlanetUniverseModule
+    
   ],
   exports: [
  

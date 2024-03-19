@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { verifyTokenGuard } from '../auth/guards/verify-token.guard';
@@ -11,10 +12,13 @@ const routes: Routes = [
       path: '', canActivate: [verifyTokenGuard], component: LibraryComponent
     },
     {
-      path: 'duneUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./dune-universe/dune-universe.module').then(m => m.DuneUniverseModule)
+      path: 'apesPlanetUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./apesPlanet-universe/apesPlanet-universe.module').then(m => m.ApesPlanetUniverseModule)
     },
     {
       path: 'alienUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./alien-universe/alien-universe.module').then(m => m.AlienUniverseModule)
+    },
+    {
+      path: 'duneUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./dune-universe/dune-universe.module').then(m => m.DuneUniverseModule)
     },
     {
       path: 'harryPotterUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./harryPotter-universe/harryPotter-universe.module').then(m => m.HarryPotterUniverseModule)

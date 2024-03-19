@@ -1,0 +1,34 @@
+<div class="apesPlanetMovies-container">
+  <div class="apesPlanetMovies-container-button"*ngIf="isAdmin"style="
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 5px;
+      gap: 5px;">
+    <button [routerLink]="['/admin/edit-product', apesPlanetMovie._id]">Editar</button>
+    <button [routerLink]="['/admin/delete-product', apesPlanetMovie._id]">
+      Eliminar
+    </button>
+  </div>
+  <div class="apesPlanetMovies-container-deck">
+    <div class="apesPlanetMovies-container-deck-card" (click)="clickCard()">
+      <div class="front face" >
+        <img  class="apesPlanetMovies-container-img-img"[src]="apesPlanetMovie.picture" />
+        <div class="apesPlanetMovies-container-text">
+          <h2 class="apesPlanetMovies-container-h2">{{ apesPlanetMovie.title }}</h2>
+          <p class="apesPlanetMovies-container-p"><span>Director:</span> {{ apesPlanetMovie.director }}</p>
+          <p class="apesPlanetMovies-container-p"><span>Año:</span> {{ apesPlanetMovie.year }}</p>
+          <p class="apesPlanetMovies-container-p"><span>Duracion:</span> {{ apesPlanetMovie.duration }}</p>
+          <p class="apesPlanetMovies-container-p"><span>Pais:</span> {{ apesPlanetMovie.country }}</p>
+          <p class="apesPlanetMovies-container-p"><span>Genero:</span> {{ apesPlanetMovie.genre}}</p>
+          <p class="apesPlanetMovies-container-p"><span>Clasificacion:</span> {{ apesPlanetMovie.clasificarion }}</p>
+        </div>
+      </div>
+      <div class="back face">
+        <p class="apesPlanetMovies-container-resume"><span>Sinopsis:</span> {{ apesPlanetMovie.resume }}</p>
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-outline movie-card__button" type="button">Watch Trailer</button>
+</div>
+

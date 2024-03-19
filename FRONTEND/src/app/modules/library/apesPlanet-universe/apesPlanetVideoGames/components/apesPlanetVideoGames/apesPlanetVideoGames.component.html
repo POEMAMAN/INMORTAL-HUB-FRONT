@@ -1,0 +1,22 @@
+
+<div class="apesPlanetVideoGames-container">
+  <div class="apesPlanetVideoGames-container-button" *ngIf="isAdmin" style="display: flex; justify-content: flex-end; align-items: center; margin-bottom: 5px; gap: 5px">
+      <button [routerLink]="['/admin/edit-product',apesPlanetVideoGame._id]" >Editar</button>
+      <button [routerLink]="['/admin/delete-product', apesPlanetVideoGame._id]" >Eliminar</button>
+  </div>
+  <div class="apesPlanetVideoGames-container-deck">
+    <div class="apesPlanetVideoGames-container-deck-card" (click)="clickCard()">
+      <div class="front face" >
+        <h2 class="apesPlanetVideoGames-container-h2">{{ apesPlanetVideoGame.title  }}</h2>
+        <img  class="apesPlanetVideoGames-container-img-img"[src]="apesPlanetVideoGame.picture" />
+        <p class="apesPlanetVideoGames-container-p"><span>Platform:</span> {{ apesPlanetVideoGame.platform }}</p>
+        <p class="apesPlanetVideoGames-container-p"><span>Año de Lanzamiento:</span> {{ apesPlanetVideoGame.year }}</p>
+        <p class="apesPlanetVideoGames-container-p"><span>Estudio de desarrollo:</span> {{ apesPlanetVideoGame.studio }}</p>
+        <p class="apesPlanetVideoGames-container-p"><span>Año de Clasificacion:</span> {{ apesPlanetVideoGame.clasification }}</p>
+      </div>
+      <div class="back face">
+        <p class="apesPlanetVideoGames-container-resume"><span>Sinopsis:</span> {{ apesPlanetVideoGame.resume }}</p>
+      </div>
+    </div>
+  </div>
+</div>

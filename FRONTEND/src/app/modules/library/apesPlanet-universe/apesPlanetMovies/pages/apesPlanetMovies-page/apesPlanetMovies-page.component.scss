@@ -1,0 +1,33 @@
+.apesPlanetMovie-container-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem auto;
+  border: 1px solid #aaa;
+  overflow:auto;
+  box-sizing: border-box;
+  padding:0 1rem;
+  scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
+  scrollbar-width:thin;
+  background-image: url("https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710572070/apesPlanet/Background/e7c3a771931497289bb2de3ea6947154_vpu1y3.jpg");
+  background-size: contain;
+  &-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px auto;
+      &-item {
+      width: 600px;
+      margin: 10px;
+      border-radius: 8px;
+      padding: 15px;
+      box-sizing: border-box;
+    }
+  }
+}
+@media (min-width: 2200px)  {
+  .apesPlanetMovie-container-list-button{
+    font-size: 300%;
+  }
+  }
+

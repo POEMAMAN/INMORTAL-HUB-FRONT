@@ -6,6 +6,7 @@ import { DuneUniverseModule } from './dune-universe/dune-universe.module';
 import { AlienUniverseModule } from './alien-universe/alien-universe.module';
 import { HungerGamesUniverseModule } from './hungerGames-universe/hungerGames-universe.module';
 import { ApesPlanetUniverseModule } from './apesPlanet-universe/apesPlanet-universe.module';
+import { CrepusculoUniverseModule } from './crepusculo-universe/crepusculo-universe.module';
 
 
 
@@ -22,7 +23,8 @@ import { ApesPlanetUniverseModule } from './apesPlanet-universe/apesPlanet-unive
     DuneUniverseModule,
     AlienUniverseModule,
     HungerGamesUniverseModule,
-    ApesPlanetUniverseModule
+    ApesPlanetUniverseModule,
+    CrepusculoUniverseModule
     
   ],
   exports: [

@@ -1,0 +1,24 @@
+
+<div class="indianaJonesCharacters-container">
+  <div class="indianaJonesCharacters-container-button" *ngIf="isAdmin" style="display: flex; justify-content: flex-end; align-items: center; margin-bottom: 5px; gap: 5px">
+      <button [routerLink]="['/admin/edit-product',indianaJonesCharacter._id]" >Editar</button>
+      <button [routerLink]="['/admin/delete-product', indianaJonesCharacter._id]" >Eliminar</button>
+  </div>
+  <div class="indianaJonesCharacters-container-deck">
+    <div class="indianaJonesCharacters-container-deck-card" (click)="clickCard()">
+      <div class="front face" >
+        <h2 class="indianaJonesCharacters-container-h2">{{ indianaJonesCharacter.name  }}</h2>
+        <img  class="indianaJonesCharacters-container-img-img"[src]="indianaJonesCharacter.picture" />
+        <p class="indianaJonesCharacters-container-p"><span>Profesion:</span> {{ indianaJonesCharacter.profession }}</p>
+        <p class="indianaJonesCharacters-container-p"><span>Rango:</span> {{ indianaJonesCharacter.rank }}</p>
+        <p class="indianaJonesCharacters-container-p"><span>Nacimiento:</span> {{ indianaJonesCharacter.birthday }}</p>
+        <p class="indianaJonesCharacters-container-p"><span>Planeta:</span> {{ indianaJonesCharacter.planet  }}</p>
+        <p class="indianaJonesCharacters-container-p"><span>Pais:</span> {{ indianaJonesCharacter.country }}</p>
+      </div>
+      <div class="back face">
+        <p class="indianaJonesCharacters-container-resume"><span>Sinopsis:</span> {{ indianaJonesCharacter.resume }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+

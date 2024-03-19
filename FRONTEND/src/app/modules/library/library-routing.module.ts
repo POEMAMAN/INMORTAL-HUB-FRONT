@@ -27,6 +27,9 @@ const routes: Routes = [
       path: 'hungerGamesUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./hungerGames-universe/hungerGames-universe.module').then(m => m.HungerGamesUniverseModule)
     },
     {
+      path: 'indianaJonesUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./indianaJones-universe/indianaJones-universe.module').then(m => m.indianaJonesUniverseModule)
+    },
+    {
       path: 'starWarsUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./starWars-universe/starWars-universe.module').then(m => m.starWarsUniverseModule)
     },
     {

@@ -1,0 +1,17 @@
+<div class="indianaJonesMovie-container-list">
+  <button
+  class="indianaJonesMovie-container-list-button"
+  [routerLink]="'/library/indianaJonesUniverse'"
+>Universo indianaJones
+</button>
+  <div style="margin-top: 5px;" class="container">
+  </div>
+  <div class="indianaJonesMovie-container-list-card">
+      <div *ngFor="let indianaJonesMovie of indianaJonesMovies"  class="indianaJonesMovie-container-list-card-item">
+        <app-indianaJonesMovies
+        [indianaJonesMovie]="indianaJonesMovie"></app-indianaJonesMovies>
+      </div>
+    </div>
+  </div>
+
+

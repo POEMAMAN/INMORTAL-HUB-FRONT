@@ -1,23 +1,27 @@
 *{
   box-sizing:border-box;
 }
-.apesPlanetMovies-container {
+.indianaJonesCharacters-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  &-img {
+  &-img{
     display: flex;
-    justify-content: center;
-      &-img {
-    width: 200px;
-    height: 300px;
-    margin: 15px;
+    &-img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50px;//
     }
   }
   &-description {
     text-align: center;
     color: #ffffff;
+  }
+  &-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   &-button {
     display: flex;
@@ -30,8 +34,8 @@
     overflow: hidden;
     max-height: calc(1.5em * 4);
     -webkit-line-clamp: 4;
-    font-size: 19px;
-    margin: 5px;
+    font-size: 15px;
+    margin: 15px;  //  
   }
   &-h2 {
     display: -webkit-box;
@@ -40,43 +44,38 @@
     max-height: calc(1.5em * 4);
     -webkit-line-clamp: 1;
     font-family: 'Race-guard';
-    text-decoration:underline;
-    font-size: 130%;
-    color: goldenrod;
-    height: 70px;
-    text-align: center;
-    display: flex;
-    align-items: center;
+    text-decoration:overline;
+    font-size: 140%;
   }
   &-resume {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
     -webkit-line-clamp: 4;
-    font-size: 16px;
-    height: 375px;//
+    font-size: 20px;
+    height: 625px;//
     font-family: 'Merienda';
     margin: 2% 2% 0% 2%;
-    margin: 1rem auto;
-    border: 1px solid #aaa;
-    overflow:auto;
-    box-sizing: border-box;
-    padding:0 1rem;
-    scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
-    scrollbar-width:thin;
+    margin: 1rem auto;//
+    border: 1px solid #aaa;//
+    overflow:auto;//
+    box-sizing: border-box;//
+    padding:0 1rem;//
+    scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);//
+    scrollbar-width:thin;//
   }
   &-deck{
     margin:15px;
-    width: 600px;
-    height: 400px;
+    width: 425px;
+    height: 650px;//
     position:relative;
     -webkit-perspective: 1000px;
     perspective: 1000px;
     font-family:verdana;
     border-radius:10px;
     &-card{
-      width: 600px;
-      height: 400px;
+      width: 425px;
+      height: 650px;//
       -webkit-transform-style: preserve-3d;
       transform-style: preserve-3d;
       -webkit-transition: all .5s linear;
@@ -92,7 +91,7 @@
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  background-color:rgb(196, 14, 14);  
+  background-color:whitesmoke;  
   border-radius:10px;
 }
 .back {
@@ -109,7 +108,7 @@
 	  height: 100%;
 	  z-index: -1;
     background-size:100% 100%;
-	  background: url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710768403/ApesPlanet/clips/paisaje_cdvzzq.webp');
+	  background: url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710888635/IndianaJones/clips/giphy_o3y2iv.webp');
     background-size: cover;
 	  -webkit-transform: rotateY(180deg);
 	  -moz-transform: rotateY(180deg);
@@ -122,11 +121,12 @@
   transition: all .5s linear;
 }
 .front{
-  background-image:url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710768403/ApesPlanet/clips/paisaje_cdvzzq.webp');
+  background-image:url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710888635/IndianaJones/clips/giphy_o3y2iv.webp');
   background-size: cover;
   z-index:1;
   box-shadow: 5px 5px 5px #aaa;
   display: flex;
+  flex-direction: column;
   text-align: center;
   align-items: center;
 }
@@ -146,15 +146,6 @@
 span{
   color: goldenrod;
 }
-.apesPlanetMovies-container-text{
-  display: flex;
-  flex-direction: column;
-  width: 40vw;
-  text-align: center;
-  align-items: stretch;
-}
-
-
 @media (min-width: 400px)  {
 
 }
@@ -182,36 +173,4 @@ span{
 
 @media (min-width: 2000px)  {
 
-button {
-  font-family: inherit;
-  border: 0;
-  cursor: pointer;
-  &:focus {
-    outline: 0;
-  }
-}
-}
-.btn {
-  padding: .5rem 2rem;
-  background-color: rgba(255,255,255,.4);
-  color: rgba(255,255,255,1);
-}
-
-.btn-outline {
-  background-color: transparent;
-  border: 3px solid #ffffff;
-  background-image:url('https://i.imgur.com/W3tra4F.gif');
-}
-.btn::before {
-  font-family: 'Material Icons';
-  content:'\e037';
-  vertical-align: middle;
-  font-size: 1.5em;
-  padding-right:.5em;
-}
-
-.btn-outline:hover {
-  border-color: goldenrod;
-  color: goldenrod;
-  box-shadow: 0px 1px 8px 0px rgba(245,199,0,.2);
 }

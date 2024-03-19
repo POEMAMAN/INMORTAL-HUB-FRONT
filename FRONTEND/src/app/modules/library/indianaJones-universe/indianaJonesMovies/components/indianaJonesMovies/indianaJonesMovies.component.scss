@@ -1,7 +1,7 @@
 *{
   box-sizing:border-box;
 }
-.apesPlanetMovies-container {
+.indianaJonesMovies-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,9 +41,9 @@
     -webkit-line-clamp: 1;
     font-family: 'Race-guard';
     text-decoration:underline;
-    font-size: 130%;
-    color: goldenrod;
-    height: 70px;
+    font-size: 150%;
+    color: black;
+    height: 50px;
     text-align: center;
     display: flex;
     align-items: center;
@@ -92,7 +92,7 @@
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  background-color:rgb(196, 14, 14);  
+  background-color:whitesmoke;  
   border-radius:10px;
 }
 .back {
@@ -109,7 +109,7 @@
 	  height: 100%;
 	  z-index: -1;
     background-size:100% 100%;
-	  background: url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710768403/ApesPlanet/clips/paisaje_cdvzzq.webp');
+	  background: url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710768751/IndianaJones/clips/bola_mnrnvc.webp');
     background-size: cover;
 	  -webkit-transform: rotateY(180deg);
 	  -moz-transform: rotateY(180deg);
@@ -122,7 +122,7 @@
   transition: all .5s linear;
 }
 .front{
-  background-image:url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710768403/ApesPlanet/clips/paisaje_cdvzzq.webp');
+  background-image:url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710768751/IndianaJones/clips/bola_mnrnvc.webp');
   background-size: cover;
   z-index:1;
   box-shadow: 5px 5px 5px #aaa;
@@ -146,7 +146,7 @@
 span{
   color: goldenrod;
 }
-.apesPlanetMovies-container-text{
+.indianaJonesMovies-container-text{
   display: flex;
   flex-direction: column;
   width: 40vw;
@@ -215,3 +215,9 @@ button {
   color: goldenrod;
   box-shadow: 0px 1px 8px 0px rgba(245,199,0,.2);
 }
+
+
+
+
+
+

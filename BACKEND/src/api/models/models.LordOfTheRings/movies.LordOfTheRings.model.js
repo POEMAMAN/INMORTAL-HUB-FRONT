@@ -11,9 +11,7 @@ const movieSchema = new Schema({
     country: { type: String, required: false },
     genre: { type: String, required: false },
     clasification: { type: String, required: false },
-    books: { type: Schema.ObjectId, ref: 'booksLordOfTheRings'},
-    characters: [{ type: Schema.ObjectId, ref: 'characterLordOfTheRings'}],
-    resume: {type:String, required:false},
+    resume: { type: String, required: false },
 }, {
     timestamps: true,
 });

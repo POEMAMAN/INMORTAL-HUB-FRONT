@@ -6,9 +6,7 @@
       margin-bottom: 5px;
       gap: 5px;">
     <button [routerLink]="['/admin/edit-product', duneBook._id]">Editar</button>
-    <button [routerLink]="['/admin/delete-product', duneBook._id]">
-      Eliminar
-    </button>
+    <button [routerLink]="['/admin/delete-product', duneBook._id]">Eliminar</button>
   </div>
   <div class="duneBooks-container-deck">
     <div class="duneBooks-container-deck-card" (click)="clickCard()">
@@ -22,6 +20,10 @@
       <div class="back face">
         <p class="duneBooks-container-resume"><span>Sinopsis:</span> {{ duneBook.resume }}</p>
       </div>
+    </div>
+    <div class="container-button-favorites">
+      <button class="button-favorites" (click)="addToFavorites(duneBook)"><img src="https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710906682/Varios/corazon_ng7htm.gif"></button>
+      <button class="unbutton-favorites"(click)="removeFromFavorites(duneBook)"><img src="https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710906683/Varios/corazon_roto_h3czfh.gif"></button>
     </div>
   </div>
 </div>

@@ -1,7 +1,4 @@
 <header class="header">
-  <div  class="header-title">
-    <h1></h1>
-  </div>
   <div class="header-logout">
     <form class="header-logout-c"(ngSubmit)="logout()" *ngIf="isTokenPresent()">
       <button class="header-logout-c-button"type="submit">Logout</button>
@@ -9,8 +6,9 @@
     <div class="header-logout-c" *ngIf="isTokenPresent()"> 
       <button class="header-logout-c-button"[routerLink]="'/library'">Volver a Libreria</button>
     </div>
-    <div class="header-logout-c" *ngIf="isTokenPresent() && userData">
-        <p class="header-logout-c-p">Usuario: {{ userData.email }}</p>
-    </div>
+  </div>
+  <div class="header-logout-c" *ngIf="isTokenPresent() && userData">
+    <button class="header-logout-c-p" [routerLink]="'/library/favorites'">Usuario: {{ userData.email }}</button>
+    <app-avatar></app-avatar>
   </div>
 </header> 

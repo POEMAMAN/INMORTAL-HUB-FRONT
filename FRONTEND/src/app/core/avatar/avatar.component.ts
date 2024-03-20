@@ -24,4 +24,9 @@ onFileSelected(event: Event): void {
     reader.readAsDataURL(file);
   }
 }
+onChangeAvatar(): void {
+  // Lógica para cambiar el avatar
+  // Por ejemplo, podrías reiniciar avatarUrl para permitir seleccionar una nueva imagen
+  this.avatarUrl = '';
+  }
 }

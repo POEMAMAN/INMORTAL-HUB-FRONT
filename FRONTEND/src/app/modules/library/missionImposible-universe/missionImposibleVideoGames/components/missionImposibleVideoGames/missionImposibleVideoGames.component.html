@@ -1,0 +1,22 @@
+
+<div class="missionImposibleVideoGames-container">
+  <div class="missionImposibleVideoGames-container-button" *ngIf="isAdmin" style="display: flex; justify-content: flex-end; align-items: center; margin-bottom: 5px; gap: 5px">
+      <button [routerLink]="['/admin/edit-product',missionImposibleVideoGame._id]" >Editar</button>
+      <button [routerLink]="['/admin/delete-product', missionImposibleVideoGame._id]" >Eliminar</button>
+  </div>
+  <div class="missionImposibleVideoGames-container-deck">
+    <div class="missionImposibleVideoGames-container-deck-card" (click)="clickCard()">
+      <div class="front face" >
+        <h2 class="missionImposibleVideoGames-container-h2">{{ missionImposibleVideoGame.title  }}</h2>
+        <img  class="missionImposibleVideoGames-container-img-img"[src]="missionImposibleVideoGame.picture" />
+        <p class="missionImposibleVideoGames-container-p"><span>Platform:</span> {{ missionImposibleVideoGame.platform }}</p>
+        <p class="missionImposibleVideoGames-container-p"><span>Año de Lanzamiento:</span> {{ missionImposibleVideoGame.year }}</p>
+        <p class="missionImposibleVideoGames-container-p"><span>Estudio de desarrollo:</span> {{ missionImposibleVideoGame.studio }}</p>
+        <p class="missionImposibleVideoGames-container-p"><span>Año de Clasificacion:</span> {{ missionImposibleVideoGame.clasification }}</p>
+      </div>
+      <div class="back face">
+        <p class="missionImposibleVideoGames-container-resume"><span>Sinopsis:</span> {{ missionImposibleVideoGame.resume }}</p>
+      </div>
+    </div>
+  </div>
+</div>

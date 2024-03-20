@@ -1,0 +1,17 @@
+<div class="missionImposibleMovie-container-list">
+  <button
+  class="missionImposibleMovie-container-list-button"
+  [routerLink]="'/library/missionImposibleUniverse'"
+>Universo missionImposible
+</button>
+  <div style="margin-top: 5px;" class="container">
+  </div>
+  <div class="missionImposibleMovie-container-list-card">
+      <div *ngFor="let missionImposibleMovie of missionImposibleMovies"  class="missionImposibleMovie-container-list-card-item">
+        <app-missionImposibleMovies
+        [missionImposibleMovie]="missionImposibleMovie"></app-missionImposibleMovies>
+      </div>
+    </div>
+  </div>
+
+

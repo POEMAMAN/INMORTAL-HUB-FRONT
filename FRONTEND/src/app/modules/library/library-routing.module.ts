@@ -39,6 +39,9 @@ const routes: Routes = [
     {
       path: 'crepusculoUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./crepusculo-universe/crepusculo-universe.module').then(m => m.CrepusculoUniverseModule)
     },
+    {
+      path: 'missionImposibleUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./missionImposible-universe/missionImposible-universe.module').then(m => m.MissionImposibleUniverseModule)
+    },
     { path: 'favorites', component: FavoritesComponent },
     {
       path: '**', redirectTo: 'library', pathMatch: 'full'

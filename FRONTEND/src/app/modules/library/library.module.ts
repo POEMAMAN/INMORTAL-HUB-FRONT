@@ -10,6 +10,7 @@ import { CrepusculoUniverseModule } from './crepusculo-universe/crepusculo-unive
 import { starWarsUniverseModule } from './starWars-universe/starWars-universe.module';
 import { AvatarComponent } from 'src/app/core/avatar/avatar.component';
 import { HeaderLogoutComponent } from 'src/app/core/header-logout/header-logout.component';
+import { MissionImposibleUniverseModule } from './missionImposible-universe/missionImposible-universe.module';
 
 
 
@@ -27,7 +28,8 @@ import { HeaderLogoutComponent } from 'src/app/core/header-logout/header-logout.
     HungerGamesUniverseModule,
     ApesPlanetUniverseModule,
     CrepusculoUniverseModule,
-    starWarsUniverseModule
+    starWarsUniverseModule,
+    MissionImposibleUniverseModule
   
     
   ],

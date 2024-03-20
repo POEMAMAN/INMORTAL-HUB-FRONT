@@ -1,0 +1,21 @@
+
+<div class="missionImposibleCharacters-container">
+  <div class="missionImposibleCharacters-container-button" *ngIf="isAdmin" style="display: flex; justify-content: flex-end; align-items: center; margin-bottom: 5px; gap: 5px">
+      <button [routerLink]="['/admin/edit-product',missionImposibleCharacter._id]" >Editar</button>
+      <button [routerLink]="['/admin/delete-product', missionImposibleCharacter._id]" >Eliminar</button>
+  </div>
+  <div class="missionImposibleCharacters-container-deck">
+    <div class="missionImposibleCharacters-container-deck-card" (click)="clickCard()">
+      <div class="front face" >
+        <h2 class="missionImposibleCharacters-container-h2">{{ missionImposibleCharacter.name  }}</h2>
+        <img  class="missionImposibleCharacters-container-img-img"[src]="missionImposibleCharacter.picture" />
+        <p class="missionImposibleCharacters-container-p"><span>Actor:</span> {{ missionImposibleCharacter.actor }}</p>
+      </div>
+      <div class="back face">
+        <p class="missionImposibleCharacters-container-resume"><span>Sinopsis:</span> {{ missionImposibleCharacter.resume }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+

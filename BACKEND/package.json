@@ -17,6 +17,10 @@
         "charactersApesPlanetSeed": "node ./src/seeds/seeds-apesPlanet/characters.apesPlanet.seeds.js",
         "moviesApesPlanetSeed": "node ./src/seeds/seeds-apesPlanet/movies.apesPlanet.seeds.js",
 
+        "booksBladeSeed": "node ./src/seeds/seeds-blade/books.blade.seeds.js", 
+        "charactersBladeSeed": "node ./src/seeds/seeds-blade/characters.blade.seeds.js",
+        "moviesBladeSeed": "node ./src/seeds/seeds-blade/movies.blade.seeds.js",
+
         "booksCrepusculoSeed": "node ./src/seeds/seeds-crepusculo/books.crepusculo.seeds.js", 
         "charactersCrepusculoSeed": "node ./src/seeds/seeds-crepusculo/characters.crepusculo.seeds.js",
         "moviesCrepusculoSeed": "node ./src/seeds/seeds-crepusculo/movies.crepusculo.seeds.js",

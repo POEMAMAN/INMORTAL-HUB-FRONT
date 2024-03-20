@@ -1,19 +1,34 @@
-<div class="starWarsMovie-container">
-    <div class="starWarsMovies-container-button" *ngIf="isAdmin" style="display: flex; justify-content: flex-end; align-items: center; margin-bottom: 5px; gap: 5px">
-        <button [routerLink]="['/admin/edit-product',starWarsMovie._id]">Editar</button>
-        <button [routerLink]="['/admin/delete-product', starWarsMovie._id]">Eliminar</button>
+<div class="starWarsMovies-container">
+    <div class="starWarsMovies-container-button"*ngIf="isAdmin"style="
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 5px;
+        gap: 5px;">
+      <button [routerLink]="['/admin/edit-product', starWarsMovie._id]">Editar</button>
+      <button [routerLink]="['/admin/delete-product', starWarsMovie._id]">
+        Eliminar
+      </button>
     </div>
-    <div class="starWarsMovies-container-img">
-        <img class="starWarsMovies-container-img-img" [src]="starWarsMovie.picture" />
+    <div class="starWarsMovies-container-deck">
+      <div class="starWarsMovies-container-deck-card" (click)="clickCard()">
+        <div class="front face" >
+          <img  class="starWarsMovies-container-img-img"[src]="starWarsMovie.picture" />
+          <div class="starWarsMovies-container-text">
+            <h2 class="starWarsMovies-container-h2">{{ starWarsMovie.title }}</h2>
+            <p class="starWarsMovies-container-p"><span>Director:</span> {{ starWarsMovie.director }}</p>
+            <p class="starWarsMovies-container-p"><span>Año:</span> {{ starWarsMovie.year }}</p>
+            <p class="starWarsMovies-container-p"><span>Duracion:</span> {{ starWarsMovie.duration }}</p>
+            <p class="starWarsMovies-container-p"><span>Pais:</span> {{ starWarsMovie.country }}</p>
+            <p class="starWarsMovies-container-p"><span>Genero:</span> {{ starWarsMovie.genre}}</p>
+            <p class="starWarsMovies-container-p"><span>Clasificacion:</span> {{ starWarsMovie.clasificarion }}</p>
+            <p class="starWarsMovies-container-p"><span>Clasificacion:</span> {{ starWarsMovie.trailer }}</p>
+          </div>
+        </div>
+        <div class="back face">
+          <p class="starWarsMovies-container-resume"><span>Sinopsis:</span> {{ starWarsMovie.resume }}</p>
+        </div>
+      </div>
     </div>
-    <div class="starWarsMovies-container-description">
-        <h2 class="starWarsMovies-container-h2">{{ starWarsMovie.title }}</h2>
-        <p class="starWarsMovies-container-p">{{ starWarsMovie.director }}</p>
-        <p class="starWarsMovies-container-p">{{ starWarsMovie.year }}</p>
-        <p class="starWarsMovies-container-p">{{ starWarsMovie.duration}}</p>
-        <p class="starWarsMovies-container-p">{{ starWarsMovie.country}}</p>
-        <p class="starWarsMovies-container-p">{{ starWarsMovie.genre}}</p>
-        <p class="starWarsMovies-container-p">{{ starWarsMovie.clasification}}</p>
-        <p class="starWarsMovies-container-resume">{{ starWarsMovie.resume }}</p>
-    </div>
-</div>
+    <button class="btn btn-outline movie-card__button" type="button">Watch Trailer</button>
+  </div>

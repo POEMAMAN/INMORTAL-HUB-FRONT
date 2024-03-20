@@ -48,14 +48,22 @@
     overflow: hidden;
     -webkit-line-clamp: 4;
     font-size: 16px;
-    height: 490px;
+    height: 590px;
     font-family: 'Merienda';
     margin: 2% 2% 0% 2%;
+    margin: 1rem auto;//
+    border: 1px solid #aaa;//
+    overflow:auto;//
+    box-sizing: border-box;//
+    padding:0 1rem;//
+    scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);//
+    scrollbar-width:thin;//
+    color: goldenrod;
   }
   &-deck{
     margin:15px;
     width: 350px;
-    height: 550px;
+    height: 600px;
     position:relative;
     -webkit-perspective: 1000px;
     perspective: 1000px;
@@ -63,7 +71,7 @@
     border-radius:10px;
     &-card{
       width: 350px;
-      height: 550px;
+      height: 600px;
       -webkit-transform-style: preserve-3d;
       transform-style: preserve-3d;
       -webkit-transition: all .5s linear;
@@ -96,7 +104,7 @@
 	  height: 100%;
 	  z-index: -1;
     background-size:100% 100%;
-	  background: url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710916683/Crepusculo/Backgrounds/crepusculo_ffrvcw.webp');
+	  background: url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710918066/Crepusculo/Backgrounds/1668398161612_w5lqrd.jpg');
 	  -webkit-transform: rotateY(180deg);
 	  -moz-transform: rotateY(180deg);
 	  -ms-transform: rotateY(180deg);
@@ -109,6 +117,7 @@
 }
 .front{
   background-image:url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710768418/Crepusculo/clips/besovampiro_ostkvp.webp');
+  background-size: contain;
   z-index:1;
   box-shadow: 5px 5px 5px #aaa;
   display: flex;

@@ -42,7 +42,7 @@
     font-family: 'Race-guard';
     text-decoration:underline;
     font-size: 150%;
-    color: black;
+    color: rgb(243, 234, 234);
     height: 50px;
     text-align: center;
     display: flex;
@@ -64,6 +64,9 @@
     padding:0 1rem;
     scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
     scrollbar-width:thin;
+    color: goldenrod;
+    text-decoration: solid;
+    text-decoration: wavy;
   }
   &-deck{
     margin:15px;
@@ -109,7 +112,7 @@
 	  height: 100%;
 	  z-index: -1;
     background-size:100% 100%;
-    background-image:url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710446576/Crepusculo/Backgrounds/Backgroound_Forest_qf0ujj.jpg');
+    background-image:url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710918693/Crepusculo/Backgrounds/bosque-oscuro-lleno-sonidos-espeluznantes-sombras_849761-9722_yxbquz.avif');
     background-size: cover;
 	  -webkit-transform: rotateY(180deg);
 	  -moz-transform: rotateY(180deg);

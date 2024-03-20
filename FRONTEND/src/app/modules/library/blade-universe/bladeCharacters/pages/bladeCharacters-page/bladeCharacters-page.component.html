@@ -1,0 +1,18 @@
+<div class="bladeCharacter-container-list">
+  <button
+        class="bladeCharacter-container-list-button"
+        [routerLink]="'/library/bladeUniverse'"
+      >Universo Blade
+    </button>
+  <div style="margin-top: 5px;" class="container">
+  </div>
+  <div class="bladeCharacter-container-list-card">
+      <div *ngFor="let bladeCharacter of bladeCharacters"  class="bladeCharacter-container-list-card-item">
+        <app-bladeCharacters
+        [bladeCharacter]="bladeCharacter"></app-bladeCharacters>
+      </div>
+    </div>
+  </div>
+
+
+

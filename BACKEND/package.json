@@ -17,7 +17,7 @@
         "charactersApesPlanetSeed": "node ./src/seeds/seeds-apesPlanet/characters.apesPlanet.seeds.js",
         "moviesApesPlanetSeed": "node ./src/seeds/seeds-apesPlanet/movies.apesPlanet.seeds.js",
 
-        "booksBladeSeed": "node ./src/seeds/seeds-blade/books.blade.seeds.js", 
+        "videoGamesBladeSeed": "node ./src/seeds/seeds-blade/videoGames.blade.seeds.js", 
         "charactersBladeSeed": "node ./src/seeds/seeds-blade/characters.blade.seeds.js",
         "moviesBladeSeed": "node ./src/seeds/seeds-blade/movies.blade.seeds.js",
 

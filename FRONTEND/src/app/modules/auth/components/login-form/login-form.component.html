@@ -9,7 +9,10 @@
     <label for="password">Contraseña:</label>
     <input type="password" id="password" name="password" [(ngModel)]="password" required>
   </div>
-  <button type="submit">Iniciar sesión</button>
+  <div class="button-container">
+    <button class="button-session" type="submit">Iniciar sesión</button>
+    <button class="button-session" [routerLink]="'/main'">Volver</button>
+  </div>
 <br>
 <br>
 </form>

@@ -1,14 +1,17 @@
-<header class="header">
-  <div class="header-logout">
-    <form class="header-logout-c"(ngSubmit)="logout()" *ngIf="isTokenPresent()">
-      <button class="header-logout-c-button"type="submit">Logout</button>
+<header class="header" *ngIf="isTokenPresent()">
+  <h2 class="header-title">Inmortal`s Movies Hub</h2>
+  <div  class="header-container">
+    <div class="header-container-logout">
+    <form class="header-container-logout-c"(ngSubmit)="logout()" *ngIf="isTokenPresent()">
+      <button class="header-container-logout-c-button"type="submit">Logout</button>
     </form>
-    <div class="header-logout-c" *ngIf="isTokenPresent()"> 
-      <button class="header-logout-c-button"[routerLink]="'/library'">Volver a Libreria</button>
+    <div class="header-container-logout-c" *ngIf="isTokenPresent()"> 
+      <button class="header-container-logout-c-button"[routerLink]="'/library'">Volver a Libreria</button>
     </div>
   </div>
-  <div class="header-logout-c" *ngIf="isTokenPresent() && userData">
-    <button class="header-logout-c-p" [routerLink]="'/library/favorites'">Menu Personal: {{ userData.email }}</button>
+  <div class="header-container-logout-c" *ngIf="isTokenPresent() && userData">
+    <button class="header-container-logout-c-p" [routerLink]="'/library/favorites'">Menu Personal: {{ userData.email }}</button>
     <app-avatar></app-avatar>
+  </div>
   </div>
 </header> 

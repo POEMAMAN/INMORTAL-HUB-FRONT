@@ -7,6 +7,8 @@ const { connect } = require("./src/utils/db.js");
 
 //Rutas Componentes Principales
 const userRouter = require("./src/api/users/users.routes.js");
+const uploadRoutes = require('./src/api/avatar/uploadRoutes.js');
+const UserRoutes = require('./src/api/users/users.routes.js')
 
 // Rutas Componentes hijos (universos)
 
@@ -63,11 +65,6 @@ const moviesJurassicParkRoutes = require("./src/api/routes/routes.JurassicPark/m
 // const charactersImposibleMissionRoutes = require("./src/api/routes/routes.ImposibleMission/characters.ImposibleMission.routes");
 // const moviesImposibleMissionRoutes = require("./src/api/routes/routes.ImposibleMission/movies.ImposibleMission.routes");
 
-// ApesPlanet
-// const booksApesPlanetRoutes = require("./src/api/routes/routes.ApesPlanet/books.ApesPlanet.routes");
-// const charactersApesPlanetRoutes = require("./src/api/routes/routes.ApesPlanet/characters.ApesPlanet.routes");
-// const moviesApesPlanetRoutes = require("./src/api/routes/routes.ApesPlanet/movies.ApesPlanet.routes");
-
 // StarTrek
 // const booksStarTrekRoutes = require("./src/api/routes/routes.StarTrek/books.StarTrek.routes");
 // const charactersStarTrekRoutes = require("./src/api/routes/routes.StarTrek/characters.StarTrek.routes");
@@ -84,8 +81,6 @@ const moviesStarWarsRoutes = require("./src/api/routes/routes.StarWars/movies.St
 // const moviesUnderworldRoutes = require("./src/api/routes/routes.Underworld/movies.Underworld.routes");
 
 //
-
-const UserRoutes = require('./src/api/users/users.routes.js')
 
 connect();
 
@@ -107,12 +102,6 @@ app.use((req, res, next) => {
   next();
 });
 
-// app.use("*", (req, res, next) => {
-//   const error = new Error();
-//   error.status = 404;
-//   error.message = "Route not found";
-//   return next(error);
-// });
 
 app.use(
   cors({
@@ -125,6 +114,7 @@ app.use(
 app.use('/api/users', UserRoutes)
 app.use("/public", express.static("public"));
 app.use("/api", (req, res, next) => "im alive");
+app.use('/api', uploadRoutes);
 
 app.use('/user', userRouter);
 // Rutas Universos

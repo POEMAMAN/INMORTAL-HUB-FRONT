@@ -8,7 +8,7 @@
     </div>
   </div>
   <div class="header-logout-c" *ngIf="isTokenPresent() && userData">
-    <button class="header-logout-c-p" [routerLink]="'/library/favorites'">Usuario: {{ userData.email }}</button>
+    <button class="header-logout-c-p" [routerLink]="'/library/favorites'">Menu Personal: {{ userData.email }}</button>
     <app-avatar></app-avatar>
   </div>
 </header> 

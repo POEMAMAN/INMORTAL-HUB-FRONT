@@ -1,4 +1,4 @@
-
+import { AudioService } from '../../../bladeSoundtrack/soundtrack.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,5 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bladeMarkets-page.component.scss']
 })
 export class bladeMarketsPageComponent{
+  constructor(private audioService: AudioService) {}
+  playSound(): void {
+    this.audioService.playSound();
+  }
+  stopSound(): void {
+    this.audioService.stopSound();
+  }
+};
 
-}
+

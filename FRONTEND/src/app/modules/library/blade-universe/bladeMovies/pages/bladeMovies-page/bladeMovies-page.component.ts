@@ -2,6 +2,7 @@
 import { BladeMovie } from '../../interfaces/BladeMovies.interface';
 import { bladeMoviesService } from '../../services/bladeMovies.service';
 import { Component, OnInit } from '@angular/core';
+import { AudioService } from '../../../bladeSoundtrack/soundtrack.service';
 
 @Component({
   selector: 'app-bladeMovies-page',
@@ -10,7 +11,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class bladeMoviesPageComponent implements OnInit {
   bladeMovies: BladeMovie[] = []
-  constructor(private bladeMoviesService: bladeMoviesService ) {}
+  constructor(private bladeMoviesService: bladeMoviesService, private audioService: AudioService ) {}
 
 
   ngOnInit(){
@@ -21,5 +22,10 @@ export class bladeMoviesPageComponent implements OnInit {
       error: () => {}
     })
   }
-
-}
+  playSound(): void {
+    this.audioService.playSound();
+  }
+  stopSound(): void {
+    this.audioService.stopSound();
+  }
+};

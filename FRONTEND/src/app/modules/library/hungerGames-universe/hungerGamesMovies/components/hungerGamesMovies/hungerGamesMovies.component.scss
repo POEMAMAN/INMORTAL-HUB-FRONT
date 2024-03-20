@@ -32,6 +32,7 @@
     -webkit-line-clamp: 4;
     font-size: 18px;
     margin: 5px;
+    color: black;
   }
   &-h2 {
     display: -webkit-box;
@@ -109,7 +110,7 @@
 	  height: 100%;
 	  z-index: -1;
     background-size:100% 100%;
-	  background: url('https://i.imgur.com/W3tra4F.gif');
+	  background: url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710441763/JuegosDelHambre/Backgrounds/Background_Sinsajo_oohaoy.jpg');
     background-size: cover;
 	  -webkit-transform: rotateY(180deg);
 	  -moz-transform: rotateY(180deg);
@@ -122,7 +123,7 @@
   transition: all .5s linear;
 }
 .front{
-  background-image:url('https://i.imgur.com/W3tra4F.gif');
+  background-image:url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710762886/JuegosDelHambre/clips/fuego_xctow1.webp');
   background-size: cover;
   z-index:1;
   box-shadow: 5px 5px 5px #aaa;
@@ -144,7 +145,7 @@
   }
 }
 span{
-  color: goldenrod;
+  color:white;
 }
 .hungerGamesMovies-container-text{
   display: flex;

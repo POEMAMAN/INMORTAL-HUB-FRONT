@@ -22,6 +22,11 @@ const videoGamesAlienRoutes = require("./src/api/routes/routes.Alien/videoGames.
 const charactersAlienRoutes = require("./src/api/routes/routes.Alien/characters.Alien.routes");
 const moviesAlienRoutes = require("./src/api/routes/routes.Alien/movies.Alien.routes");
 
+// Blade
+const booksBladeRoutes = require("./src/api/routes/routes.Blade/books.Blade.routes.js");
+const charactersBladeRoutes = require("./src/api/routes/routes.Blade/characters.Blade.routes.js");
+const moviesBladeRoutes = require("./src/api/routes/routes.Blade/movies.Blade.routes.js");
+
 // Crepusculo
 const booksCrepusculoRoutes = require("./src/api/routes/routes.Crepusculo/books.Crepusculo.routes");
 const charactersCrepusculoRoutes = require("./src/api/routes/routes.Crepusculo/characters.Crepusculo.routes");
@@ -128,6 +133,11 @@ app.use("/universes/apesPlanet/movies", moviesApesPlanetRoutes)
 app.use("/universes/Alien/videoGames", videoGamesAlienRoutes)
 app.use("/universes/Alien/characters", charactersAlienRoutes)
 app.use("/universes/Alien/movies", moviesAlienRoutes)
+
+// Blade
+app.use("/universes/Blade/books", booksBladeRoutes)
+app.use("/universes/Blade/characters", charactersBladeRoutes)
+app.use("/universes/Blade/movies", moviesBladeRoutes)
 
 // Dune
 app.use("/universes/dune/books", booksDuneRoutes)

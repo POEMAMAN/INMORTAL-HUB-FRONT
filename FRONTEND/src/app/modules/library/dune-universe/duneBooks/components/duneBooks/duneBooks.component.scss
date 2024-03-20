@@ -161,6 +161,19 @@ span{
 @media (min-width: 2000px)  {
 
 }
+.container-button-favorites{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.button-favorites, .unbutton-favorites{
+  background-color: none;
+}
+.button-favorites img, .unbutton-favorites img{
+height: 30px;
+width: 30px;
+
+}
 
 
 

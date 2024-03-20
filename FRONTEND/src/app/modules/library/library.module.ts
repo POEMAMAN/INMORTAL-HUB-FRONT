@@ -8,6 +8,8 @@ import { HungerGamesUniverseModule } from './hungerGames-universe/hungerGames-un
 import { ApesPlanetUniverseModule } from './apesPlanet-universe/apesPlanet-universe.module';
 import { CrepusculoUniverseModule } from './crepusculo-universe/crepusculo-universe.module';
 import { starWarsUniverseModule } from './starWars-universe/starWars-universe.module';
+import { AvatarComponent } from 'src/app/core/avatar/avatar.component';
+import { HeaderLogoutComponent } from 'src/app/core/header-logout/header-logout.component';
 
 
 
@@ -15,7 +17,6 @@ import { starWarsUniverseModule } from './starWars-universe/starWars-universe.mo
 
 @NgModule({
   declarations: [
-  
 
   ],
   imports: [
@@ -27,10 +28,11 @@ import { starWarsUniverseModule } from './starWars-universe/starWars-universe.mo
     ApesPlanetUniverseModule,
     CrepusculoUniverseModule,
     starWarsUniverseModule
+  
     
   ],
   exports: [
- 
+
   ]
 })
 export class LibraryModule {

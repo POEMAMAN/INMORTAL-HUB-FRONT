@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { verifyTokenGuard } from '../auth/guards/verify-token.guard';
 import { LibraryComponent } from './library.component';
+import { FavoritesComponent } from 'src/app/core/favorites/favorites.component';
 
 
 const routes: Routes = [
@@ -35,6 +36,7 @@ const routes: Routes = [
     {
       path: 'crepusculoUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./crepusculo-universe/crepusculo-universe.module').then(m => m.CrepusculoUniverseModule)
     },
+    { path: 'favorites', component: FavoritesComponent },
     {
       path: '**', redirectTo: 'library', pathMatch: 'full'
     }

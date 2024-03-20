@@ -6,6 +6,7 @@ import { verifyTokenGuard } from './modules/auth/guards/verify-token.guard';
 import { MainComponent } from './core/main/main.component';
 
 
+
 const routes: Routes = [
 
 {

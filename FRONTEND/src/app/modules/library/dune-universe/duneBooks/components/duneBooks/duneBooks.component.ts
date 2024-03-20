@@ -1,6 +1,6 @@
+import { FavoriteService } from './../../../../../../core/favorites/favorite.service';
+import { Component, Input, OnInit, Renderer2, ElementRef } from '@angular/core';
 
-import { AuthService } from 'src/app/modules/auth/services/auth.service';
-import { Component,Input, OnInit,Renderer2, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-duneBooks',
@@ -9,25 +9,21 @@ import { Component,Input, OnInit,Renderer2, ElementRef } from '@angular/core';
 })
 export class duneBooksComponent implements OnInit {
  
-  @Input() duneBook: any
-isAdmin: boolean = false;
-  constructor(private renderer: Renderer2, private elementRef: ElementRef, private authService: AuthService) {
+  @Input() duneBook: any;
+  isAdmin: boolean = false;
 
-  }
-  
+  constructor(
+    private renderer: Renderer2,
+    private elementRef: ElementRef,
+    private FavoriteService: FavoriteService 
+  ) { }
+
   ngOnInit(): void {
-    this.authService.isAdmin().subscribe({
-      next:(isAdmin: boolean) => {
-        console.log(isAdmin)
-        this.isAdmin = isAdmin;
-      }, 
-      error: (e) => {
-        this.isAdmin = false;
-      }
-    })
+    // Lógica para verificar si el usuario es administrador
   }
 
   tarjetaVolteada: boolean = false;
+  
   clickCard() {
     const clickcardElement = this.elementRef.nativeElement.querySelector('.duneBooks-container-deck-card');
     if (this.tarjetaVolteada) {
@@ -36,6 +32,16 @@ isAdmin: boolean = false;
       this.renderer.addClass(clickcardElement, 'flipped');
     }
     this.tarjetaVolteada = !this.tarjetaVolteada;
+  }
+
+  // Método para añadir un libro a los favoritos
+  addToFavorites(book: any): void {
+    this.FavoriteService.addToFavorites(book);
+  }
+
+  // Método para eliminar un libro de los favoritos
+  removeFromFavorites(book: any): void {
+    this.FavoriteService.removeFromFavorites(book);
   }
 }
 

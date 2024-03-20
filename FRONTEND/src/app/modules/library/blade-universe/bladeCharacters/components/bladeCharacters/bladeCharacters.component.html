@@ -1,0 +1,23 @@
+
+<div class="bladeCharacters-container">
+  <div class="bladeCharacters-container-button" *ngIf="isAdmin" style="display: flex; justify-content: flex-end; align-items: center; margin-bottom: 5px; gap: 5px">
+      <button [routerLink]="['/admin/edit-product',bladeCharacter._id]" >Editar</button>
+      <button [routerLink]="['/admin/delete-product', bladeCharacter._id]" >Eliminar</button>
+  </div>
+  <div class="bladeCharacters-container-deck">
+    <div class="bladeCharacters-container-deck-card" (click)="clickCard()">
+      <div class="front face" >
+        <h2 class="bladeCharacters-container-h2">{{ bladeCharacter.name  }}</h2>
+        <img  class="bladeCharacters-container-img-img"[src]="bladeCharacter.picture" />
+        <p class="bladeCharacters-container-p"><span>Actor:</span> {{ bladeCharacter.acthor }}</p>
+        <p class="bladeCharacters-container-p"><span>Raza:</span> {{ bladeCharacter.race }}</p>
+        <p class="bladeCharacters-container-p"><span>Películas:</span> {{ bladeCharacter.movie }}</p>
+      </div>
+      <div class="back face">
+        <p class="bladeCharacters-container-resume"><span>Sinopsis:</span> {{ bladeCharacter.resume }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+

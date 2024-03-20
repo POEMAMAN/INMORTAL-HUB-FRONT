@@ -19,6 +19,9 @@ const routes: Routes = [
       path: 'alienUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./alien-universe/alien-universe.module').then(m => m.AlienUniverseModule)
     },
     {
+      path: 'bladeUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./blade-universe/blade-universe.module').then(m => m.BladeUniverseModule)
+    },
+    {
       path: 'duneUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./dune-universe/dune-universe.module').then(m => m.DuneUniverseModule)
     },
     {

@@ -1,0 +1,17 @@
+<div class="bladeMovie-container-list">
+  <button
+  class="bladeMovie-container-list-button"
+  [routerLink]="'/library/bladeUniverse'"
+>Universo Blade
+</button>
+  <div style="margin-top: 5px;" class="container">
+  </div>
+  <div class="bladeMovie-container-list-card">
+      <div *ngFor="let bladeMovie of bladeMovies"  class="bladeMovie-container-list-card-item">
+        <app-bladeMovies
+        [bladeMovie]="bladeMovie"></app-bladeMovies>
+      </div>
+    </div>
+  </div>
+
+

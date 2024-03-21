@@ -1,3 +1,4 @@
+import { AudioService } from './../../../../dune-universe/duneSoundtrack/soundtrack.service';
 import { DuneBook } from '../../interfaces/DuneBooks.interface';
 import { duneBooksService } from '../../services/duneBooks.service';
 import { Component, OnInit } from '@angular/core';
@@ -9,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class duneBooksPageComponent implements OnInit {
   duneBooks: DuneBook[] = []
-  constructor(private duneBooksService: duneBooksService ) {}
+  constructor(private duneBooksService: duneBooksService, private audioService: AudioService ) {}
 
 
   ngOnInit(){
@@ -20,6 +21,11 @@ export class duneBooksPageComponent implements OnInit {
       error: () => {}
     })
   }
-  
+  playSound(): void {
+    this.audioService.playSound();
+  }
+  stopSound(): void {
+    this.audioService.stopSound();
+  }
 
 }

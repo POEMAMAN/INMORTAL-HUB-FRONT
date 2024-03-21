@@ -1,7 +1,8 @@
 
-import { CrepusculoMovie } from '../../interfaces/CrepusculoMovies.interface';
+import { CrepusculoMovie } from '../../interfaces/crepusculoMovies.interface';
 import { crepusculoMoviesService } from '../../services/crepusculoMovies.service';
 import { Component, OnInit } from '@angular/core';
+import { AudioService } from '../../../crepusculoSoundtrack/soundtrack.service';
 
 @Component({
   selector: 'app-crepusculoMovies-page',
@@ -10,7 +11,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class crepusculoMoviesPageComponent implements OnInit {
   crepusculoMovies: CrepusculoMovie[] = []
-  constructor(private crepusculoMoviesService: crepusculoMoviesService ) {}
+  constructor(private crepusculoMoviesService: crepusculoMoviesService,private audioService: AudioService  ) {}
 
 
   ngOnInit(){
@@ -21,5 +22,10 @@ export class crepusculoMoviesPageComponent implements OnInit {
       error: () => {}
     })
   }
-
-}
+  playSound(): void {
+    this.audioService.playSound();
+  }
+  stopSound(): void {
+    this.audioService.stopSound();
+  }
+};

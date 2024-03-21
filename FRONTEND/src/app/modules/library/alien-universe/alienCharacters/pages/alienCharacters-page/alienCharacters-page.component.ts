@@ -1,6 +1,7 @@
 import { AlienCharacter } from '../../interfaces/AlienCharacters.interface';
 import { alienCharactersService } from '../../services/alienCharacters.service';
 import { Component, OnInit } from '@angular/core';
+import { AudioService } from '../../../alienSoundtrack/soundtrack.service';
 
 @Component({
   selector: 'app-alienCharacters-page',
@@ -9,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class alienCharactersPageComponent implements OnInit {
   alienCharacters: AlienCharacter[] = []
-  constructor(private alienCharactersService: alienCharactersService ) {}
+  constructor(private alienCharactersService: alienCharactersService, private audioService: AudioService ) {}
 
 
   ngOnInit(){
@@ -20,5 +21,11 @@ export class alienCharactersPageComponent implements OnInit {
       error: () => {}
     })
   }
+  playSound(): void {
+    this.audioService.playSound();
+  }
+  stopSound(): void {
+    this.audioService.stopSound();
+  }
+};
 
-}

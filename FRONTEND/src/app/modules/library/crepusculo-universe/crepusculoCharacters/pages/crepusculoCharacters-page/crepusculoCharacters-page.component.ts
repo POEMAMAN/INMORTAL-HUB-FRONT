@@ -1,6 +1,7 @@
-import { CrepusculoCharacter } from '../../interfaces/CrepusculoCharacters.interface';
+import { CrepusculoCharacter } from '../../interfaces/crepusculoCharacters.interface';
 import { crepusculoCharactersService } from '../../services/crepusculoCharacters.service';
 import { Component, OnInit } from '@angular/core';
+import { AudioService } from '../../../crepusculoSoundtrack/soundtrack.service';
 
 @Component({
   selector: 'app-crepusculoCharacters-page',
@@ -9,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class crepusculoCharactersPageComponent implements OnInit {
   crepusculoCharacters: CrepusculoCharacter[] = []
-  constructor(private crepusculoCharactersService: crepusculoCharactersService ) {}
+  constructor(private crepusculoCharactersService: crepusculoCharactersService,private audioService: AudioService ) {}
 
 
   ngOnInit(){
@@ -20,5 +21,10 @@ export class crepusculoCharactersPageComponent implements OnInit {
       error: () => {}
     })
   }
-
-}
+  playSound(): void {
+    this.audioService.playSound();
+  }
+  stopSound(): void {
+    this.audioService.stopSound();
+  }
+};

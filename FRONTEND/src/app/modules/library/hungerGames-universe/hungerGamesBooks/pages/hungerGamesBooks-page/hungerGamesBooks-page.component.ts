@@ -1,6 +1,7 @@
 import { HungerGamesBook } from '../../interfaces/HungerGamesBooks.interface';
 import { hungerGamesBooksService } from '../../services/hungerGamesBooks.service';
 import { Component, OnInit } from '@angular/core';
+import { AudioService } from '../../../hungerGamesSoundtrack/soundtrack.service';
 
 @Component({
   selector: 'app-hungerGamesBooks-page',
@@ -9,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class hungerGamesBooksPageComponent implements OnInit {
   hungerGamesBooks: HungerGamesBook[] = []
-  constructor(private hungerGamesBooksService: hungerGamesBooksService ) {}
+  constructor(private hungerGamesBooksService: hungerGamesBooksService,private audioService: AudioService ) {}
 
 
   ngOnInit(){
@@ -20,6 +21,10 @@ export class hungerGamesBooksPageComponent implements OnInit {
       error: () => {}
     })
   }
-  
-
-}
+  playSound(): void {
+    this.audioService.playSound();
+  }
+  stopSound(): void {
+    this.audioService.stopSound();
+  }
+};

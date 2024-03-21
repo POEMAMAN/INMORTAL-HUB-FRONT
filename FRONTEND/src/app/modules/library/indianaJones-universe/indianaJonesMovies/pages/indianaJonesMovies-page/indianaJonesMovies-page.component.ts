@@ -1,3 +1,4 @@
+import { AudioService } from './../../../../indianaJones-universe/indianaJonesSoundtrack/soundtrack.service';
 
 import { IndianaJonesMovie } from '../../interfaces/IndianaJonesMovies.interface';
 import { indianaJonesMoviesService } from '../../services/indianaJonesMovies.service';
@@ -10,7 +11,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class indianaJonesMoviesPageComponent implements OnInit {
   indianaJonesMovies: IndianaJonesMovie[] = []
-  constructor(private indianaJonesMoviesService: indianaJonesMoviesService ) {}
+  constructor(private indianaJonesMoviesService: indianaJonesMoviesService, private audioService: AudioService ) {}
 
 
   ngOnInit(){
@@ -21,5 +22,10 @@ export class indianaJonesMoviesPageComponent implements OnInit {
       error: () => {}
     })
   }
-
+  playSound(): void {
+    this.audioService.playSound();
+  }
+  stopSound(): void {
+    this.audioService.stopSound();
+  }
 }

@@ -1,3 +1,4 @@
+import { AudioService } from './../indianaJones-universe/indianaJonesSoundtrack/soundtrack.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./indianaJones-universe.component.scss']
 })
 export class IndianaJonesUniverseComponent {
+  constructor(private audioService: AudioService) {}
 
+  playSound(): void {
+    this.audioService.playSound();
+  }
+  stopSound(): void {
+    this.audioService.stopSound();
+  }
 };

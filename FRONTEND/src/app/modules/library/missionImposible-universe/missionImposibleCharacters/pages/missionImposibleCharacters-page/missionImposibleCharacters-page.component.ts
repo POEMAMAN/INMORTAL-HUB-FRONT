@@ -1,6 +1,7 @@
 import { MissionImposibleCharacter } from '../../interfaces/MissionImposibleCharacters.interface';
 import { missionImposibleCharactersService } from '../../services/missionImposibleCharacters.service';
 import { Component, OnInit } from '@angular/core';
+import { AudioService } from '../../../missionImposibleSoundtrack/soundtrack.service';
 
 @Component({
   selector: 'app-missionImposibleCharacters-page',
@@ -9,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class missionImposibleCharactersPageComponent implements OnInit {
   missionImposibleCharacters: MissionImposibleCharacter[] = []
-  constructor(private missionImposibleCharactersService: missionImposibleCharactersService ) {}
+  constructor(private missionImposibleCharactersService: missionImposibleCharactersService, private audioService: AudioService ) {}
 
 
   ngOnInit(){
@@ -20,5 +21,10 @@ export class missionImposibleCharactersPageComponent implements OnInit {
       error: () => {}
     })
   }
-
-}
+  playSound(): void {
+    this.audioService.playSound();
+  }
+  stopSound(): void {
+    this.audioService.stopSound();
+  }
+};

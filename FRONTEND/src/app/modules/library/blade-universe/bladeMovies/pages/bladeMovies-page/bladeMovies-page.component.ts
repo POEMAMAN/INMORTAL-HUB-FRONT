@@ -11,7 +11,7 @@ import { AudioService } from '../../../bladeSoundtrack/soundtrack.service';
 })
 export class bladeMoviesPageComponent implements OnInit {
   bladeMovies: BladeMovie[] = []
-  constructor(private bladeMoviesService: bladeMoviesService, private audioService: AudioService ) {}
+  constructor(private bladeMoviesService: bladeMoviesService,private audioService: AudioService   ) {}
 
 
   ngOnInit(){

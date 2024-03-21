@@ -1,6 +1,7 @@
 import { HarryPotterCharacter } from '../../interfaces/HarryPotterCharacters.interface';
 import { harryPotterCharactersService } from '../../services/harryPotterCharacters.service';
 import { Component, OnInit } from '@angular/core';
+import { AudioService } from '../../../harryPotterSoundtrack/soundtrack.service';
 
 @Component({
   selector: 'app-harryPotterCharacters-page',
@@ -9,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class harryPotterCharactersPageComponent implements OnInit {
   harryPotterCharacters: HarryPotterCharacter[] = []
-  constructor(private harryPotterCharactersService: harryPotterCharactersService ) {}
+  constructor(private harryPotterCharactersService: harryPotterCharactersService,private audioService: AudioService  ) {}
 
 
   ngOnInit(){
@@ -20,5 +21,10 @@ export class harryPotterCharactersPageComponent implements OnInit {
       error: () => {}
     })
   }
-
-}
+  playSound(): void {
+    this.audioService.playSound();
+  }
+  stopSound(): void {
+    this.audioService.stopSound();
+  }
+};

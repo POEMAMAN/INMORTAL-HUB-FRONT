@@ -1,3 +1,4 @@
+import { starWarsUniverseModule } from './starWars-universe/starWars-universe.module';
 
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -33,9 +34,9 @@ const routes: Routes = [
     {
       path: 'indianaJonesUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./indianaJones-universe/indianaJones-universe.module').then(m => m.indianaJonesUniverseModule)
     },
-    {
-      path: 'starWarsUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./starWars-universe/starWars-universe.module').then(m => m.starWarsUniverseModule)
-    },
+    // {
+    //   path: 'starWarsUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('/starWars-universe/starWars-universe.module').then(m => m.starWarsUniverseModule)
+    // },
     {
       path: 'crepusculoUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./crepusculo-universe/crepusculo-universe.module').then(m => m.CrepusculoUniverseModule)
     },

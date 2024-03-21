@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AudioService } from '../alien-universe/alienSoundtrack/soundtrack.service';//
 
 @Component({
   selector: 'app-alien-universe',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./alien-universe.component.scss']
 })
 export class AlienUniverseComponent {
+  constructor(private audioService: AudioService) {}
+
+
+  playSound(): void {
+    this.audioService.playSound();
+  }
+  stopSound(): void {
+    this.audioService.stopSound();
+  }
 
 };

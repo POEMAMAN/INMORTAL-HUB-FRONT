@@ -1,5 +1,6 @@
 import { harryPotterBooksService } from './../../services/harryPotterBooks.service';
 import { HarryPotterBook } from '../../interfaces/HarryPotterBooks.interface';
+import { AudioService } from '../../../harryPotterSoundtrack/soundtrack.service';
 
 import { Component, OnInit } from '@angular/core';
 
@@ -10,7 +11,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class harryPotterBooksPageComponent implements OnInit {
   harryPotterBooks: HarryPotterBook[] = []
-  constructor(private harryPotterBooksService: harryPotterBooksService ) {}
+  constructor(private harryPotterBooksService: harryPotterBooksService,private audioService: AudioService  ) {}
 
 
   ngOnInit(){
@@ -21,6 +22,10 @@ export class harryPotterBooksPageComponent implements OnInit {
       error: () => {}
     })
   }
-  
-
-}
+  playSound(): void {
+    this.audioService.playSound();
+  }
+  stopSound(): void {
+    this.audioService.stopSound();
+  }
+};

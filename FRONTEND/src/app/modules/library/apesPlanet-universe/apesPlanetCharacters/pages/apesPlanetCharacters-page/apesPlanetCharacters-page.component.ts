@@ -1,6 +1,7 @@
-import { ApesPlanetCharacter } from '../../interfaces/apesPlanetCharacters.interface';
+import { ApesPlanetCharacter } from '../../interfaces/ApesPlanetCharacters.interface';
 import { apesPlanetCharactersService } from '../../services/apesPlanetCharacters.service';
 import { Component, OnInit } from '@angular/core';
+import { AudioService } from '../../../apesPlanetSoundtrack/soundtrack.service';
 
 @Component({
   selector: 'app-apesPlanetCharacters-page',
@@ -9,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class apesPlanetCharactersPageComponent implements OnInit {
   apesPlanetCharacters: ApesPlanetCharacter[] = []
-  constructor(private apesPlanetCharactersService: apesPlanetCharactersService ) {}
+  constructor(private apesPlanetCharactersService: apesPlanetCharactersService, private audioService: AudioService ) {}
 
 
   ngOnInit(){
@@ -20,5 +21,10 @@ export class apesPlanetCharactersPageComponent implements OnInit {
       error: () => {}
     })
   }
-
-}
+  playSound(): void {
+    this.audioService.playSound();
+  }
+  stopSound(): void {
+    this.audioService.stopSound();
+  }
+};

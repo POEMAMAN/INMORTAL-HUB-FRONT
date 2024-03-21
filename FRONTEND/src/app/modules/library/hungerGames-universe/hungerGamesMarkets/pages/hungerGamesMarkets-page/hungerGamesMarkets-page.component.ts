@@ -1,4 +1,4 @@
-
+import { AudioService } from '../../../hungerGamesSoundtrack/soundtrack.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,5 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hungerGamesMarkets-page.component.scss']
 })
 export class hungerGamesMarketsPageComponent{
+  constructor(private audioService: AudioService) {}
+  playSound(): void {
+    this.audioService.playSound();
+  }
+  stopSound(): void {
+    this.audioService.stopSound();
+  }
+};
 
-}

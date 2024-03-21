@@ -1,3 +1,4 @@
+import { AudioService } from './../../../../dune-universe/duneSoundtrack/soundtrack.service';
 import { DuneCharacter } from '../../interfaces/DuneCharacters.interface';
 import { duneCharactersService } from '../../services/duneCharacters.service';
 import { Component, OnInit } from '@angular/core';
@@ -9,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class duneCharactersPageComponent implements OnInit {
   duneCharacters: DuneCharacter[] = []
-  constructor(private duneCharactersService: duneCharactersService ) {}
+  constructor(private duneCharactersService: duneCharactersService, private audioService: AudioService ) {}
 
 
   ngOnInit(){
@@ -20,5 +21,10 @@ export class duneCharactersPageComponent implements OnInit {
       error: () => {}
     })
   }
-
+  playSound(): void {
+    this.audioService.playSound();
+  }
+  stopSound(): void {
+    this.audioService.stopSound();
+  }
 }

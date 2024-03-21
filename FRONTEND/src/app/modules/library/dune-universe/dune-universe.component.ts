@@ -1,3 +1,4 @@
+import { AudioService } from './../dune-universe/duneSoundtrack/soundtrack.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./dune-universe.component.scss']
 })
 export class DuneUniverseComponent {
+  constructor(private audioService: AudioService) {}
 
+  playSound(): void {
+    this.audioService.playSound();
+  }
+  stopSound(): void {
+    this.audioService.stopSound();
+  }
 };

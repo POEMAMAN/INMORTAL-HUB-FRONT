@@ -1,6 +1,7 @@
 import { starWarsBook } from '../../interfaces/starWarsBooks.interface';
 import { starWarsBooksService } from '../../services/starWarsBooks.service';
 import { Component, OnInit } from '@angular/core';
+import { AudioService } from '../../../starWarsSoundtrack/soundtrack.service';
 
 @Component({
   selector: 'app-starWarsBooks-page',
@@ -9,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class starWarsBooksPageComponent implements OnInit {
   starWarsBooks: starWarsBook[] = []
-  constructor(private starWarsBooksService: starWarsBooksService ) {}
+  constructor(private starWarsBooksService: starWarsBooksService, private audioService: AudioService  ) {}
 
   ngOnInit(){
     this.starWarsBooksService.getstarWarsBooks().subscribe({
@@ -19,6 +20,10 @@ export class starWarsBooksPageComponent implements OnInit {
       error: () => {}
     })
   }
-  
-
-}
+  playSound(): void {
+    this.audioService.playSound();
+  }
+  stopSound(): void {
+    this.audioService.stopSound();
+  }
+};

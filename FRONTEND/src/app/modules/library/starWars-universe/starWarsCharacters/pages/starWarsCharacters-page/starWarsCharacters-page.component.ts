@@ -1,6 +1,7 @@
 import { starWarsCharacter } from '../../interfaces/starWarsCharacters.interface';
 import { starWarsCharactersService } from '../../services/starWarsCharacters.service';
 import { Component, OnInit } from '@angular/core';
+import { AudioService } from '../../../starWarsSoundtrack/soundtrack.service';
 
 @Component({
   selector: 'app-starWarsCharacters-page',
@@ -9,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class starWarsCharactersPageComponent implements OnInit {
   starWarsCharacters: starWarsCharacter[] = []
-  constructor(private starWarsCharactersService: starWarsCharactersService ) {}
+  constructor(private starWarsCharactersService: starWarsCharactersService, private audioService: AudioService ) {}
 
 
   ngOnInit(){
@@ -20,5 +21,10 @@ export class starWarsCharactersPageComponent implements OnInit {
       error: () => {}
     })
   }
-
-}
+  playSound(): void {
+    this.audioService.playSound();
+  }
+  stopSound(): void {
+    this.audioService.stopSound();
+  }
+};

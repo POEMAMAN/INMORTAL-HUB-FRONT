@@ -8,6 +8,7 @@ const charactersSchema = new Schema({
     profession: { type: String, required: true },
     resume: { type: String, required: false },
     picture: { type: String },
+    trailer: { type: String }
 }, {
     timestamps: true,
 });

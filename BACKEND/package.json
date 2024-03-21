@@ -60,7 +60,7 @@
 
         "booksStarWarsSeed": "node ./src/seeds/seeds-starwars/books.starswars.seeds.js",
         "characterStarWarsSeed": "node ./src/seeds/seeds-starwars/characters.starswars.seeds.js",
-        "moviesStarWarsSeed": "node ./src/seeds/seeds-starwars/movies.starswars.seeds.js"
+        "moviesStarWarsSeed": "node ./src/seeds/seeds-starWars/movies.starWars.seeds.js"
   
     },
     "keywords": [

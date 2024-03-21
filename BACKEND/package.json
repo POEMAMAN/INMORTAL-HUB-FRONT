@@ -58,9 +58,9 @@
         "charactersStarTrekSeed": "node ./src/seeds/seeds-starTrek/characters.starTrek.seeds.js",
         "moviesStarTrekSeed": "node ./src/seeds/seeds-starTrek/movies.starTrek.seeds.js",
 
-        "booksStarWarsSeed": "node ./src/seeds/seeds-starwars/books.starswars.seeds.js",
-        "characterStarWarsSeed": "node ./src/seeds/seeds-starwars/characters.starswars.seeds.js",
-        "moviesStarWarsSeed": "node ./src/seeds/seeds-starWars/movies.starWars.seeds.js"
+        "booksStarWarsSeed": "node ./src/seeds/seeds-starwars/books.starwars.seeds.js",
+        "characterStarWarsSeed": "node ./src/seeds/seeds-starwars/characters.starwars.seeds.js",
+        "moviesStarWarsSeed": "node ./src/seeds/seeds-starwars/movies.starwars.seeds.js"
   
     },
     "keywords": [

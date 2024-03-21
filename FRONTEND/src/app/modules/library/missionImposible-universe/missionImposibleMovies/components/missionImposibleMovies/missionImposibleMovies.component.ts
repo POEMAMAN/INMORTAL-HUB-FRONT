@@ -1,6 +1,5 @@
 import { AuthService } from 'src/app/modules/auth/services/auth.service';
 import { Component, Input, OnInit,Renderer2, ElementRef } from '@angular/core';
-import { AudioService } from '../../../missionImposibleSoundtrack/soundtrack.service';
 
 @Component({
   selector: 'app-missionImposibleMovies',
@@ -10,7 +9,7 @@ import { AudioService } from '../../../missionImposibleSoundtrack/soundtrack.ser
 export class missionImposibleMoviesComponent implements OnInit {
 @Input() missionImposibleMovie: any
 isAdmin: boolean = false;
-constructor(private renderer: Renderer2, private elementRef: ElementRef,private authService: AuthService, private audioService: AudioService ){
+constructor(private renderer: Renderer2, private elementRef: ElementRef,private authService: AuthService ){
 
 }
 ngOnInit(): void {
@@ -34,12 +33,6 @@ clickCard() {
   }
   this.tarjetaVolteada = !this.tarjetaVolteada;
 }
-playSound(): void {
-  this.audioService.playSound();
 }
-stopSound(): void {
-  this.audioService.stopSound();
-}
-};
   
 

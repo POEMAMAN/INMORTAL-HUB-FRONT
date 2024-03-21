@@ -1,6 +1,7 @@
 import { MissionImposibleVideoGames } from '../../interfaces/MissionImposibleVideoGames.interface';
 import { missionImposibleVideoGamesService } from '../../services/missionImposibleVideoGames.service';
 import { Component, OnInit } from '@angular/core';
+import { AudioService } from '../../../missionImposibleSoundtrack/soundtrack.service';
 
 @Component({
   selector: 'app-missionImposibleVideoGames-page',
@@ -9,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class missionImposibleVideoGamesPageComponent implements OnInit {
   missionImposibleVideoGames: MissionImposibleVideoGames[] = []
-  constructor(private missionImposibleVideoGamesService: missionImposibleVideoGamesService ) {}
+  constructor(private missionImposibleVideoGamesService: missionImposibleVideoGamesService, private audioService: AudioService ) {}
 
 
   ngOnInit(){
@@ -20,6 +21,10 @@ export class missionImposibleVideoGamesPageComponent implements OnInit {
       error: () => {}
     })
   }
-  
-
-}
+  playSound(): void {
+    this.audioService.playSound();
+  }
+  stopSound(): void {
+    this.audioService.stopSound();
+  }
+};

@@ -2,6 +2,7 @@
 import { starWarsMovie } from '../../interfaces/starWarsMovies.interface';
 import { starWarsMoviesService } from '../../services/starWarsMovies.service';
 import { Component, OnInit } from '@angular/core';
+import { AudioService } from '../../../starWarsSoundtrack/soundtrack.service';
 
 @Component({
   selector: 'app-starWarsMovies-page',
@@ -10,7 +11,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class starWarsMoviesPageComponent implements OnInit {
   starWarsMovies: starWarsMovie[] = []
-  constructor(private starWarsMoviesService: starWarsMoviesService ) {}
+  constructor(private starWarsMoviesService: starWarsMoviesService, private audioService: AudioService ) {}
 
 
   ngOnInit(){
@@ -21,5 +22,10 @@ export class starWarsMoviesPageComponent implements OnInit {
       error: () => {}
     })
   }
-
-}
+  playSound(): void {
+    this.audioService.playSound();
+  }
+  stopSound(): void {
+    this.audioService.stopSound();
+  }
+};

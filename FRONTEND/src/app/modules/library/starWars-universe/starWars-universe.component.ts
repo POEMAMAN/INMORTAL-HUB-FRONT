@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AudioService } from '../blade-universe/bladeSoundtrack/soundtrack.service';//
 
 @Component({
   selector: 'app-starWars-universe',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./starWars-universe.component.scss']
 })
 export class starWarsUniverseComponent {
+  constructor(private audioService: AudioService) {}
+
+
+  playSound(): void {
+    this.audioService.playSound();
+  }
+  stopSound(): void {
+    this.audioService.stopSound();
+  }
 
 };

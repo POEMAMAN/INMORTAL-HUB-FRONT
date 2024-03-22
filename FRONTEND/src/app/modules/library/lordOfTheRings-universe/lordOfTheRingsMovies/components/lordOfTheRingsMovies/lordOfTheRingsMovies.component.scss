@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+}
+
+.lordOfTheRingsMovies-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &-img {
+        display: flex;
+        justify-content: center;
+        &-img {
+            width: 200px;
+            height: 300px;
+            margin: 15px;
+        }
+    }
+    &-description {
+        text-align: center;
+        color: #ffffff;
+    }
+    &-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &-p {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        max-height: calc(1.5em * 4);
+        -webkit-line-clamp: 4;
+        font-size: 19px;
+        margin: 5px;
+    }
+    &-h2 {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        max-height: calc(1.5em * 4);
+        -webkit-line-clamp: 1;
+        font-family: 'Race-guard';
+        text-decoration: underline;
+        font-size: 150%;
+        color: black;
+        height: 50px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+    &-resume {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        -webkit-line-clamp: 4;
+        font-size: 16px;
+        height: 375px; //
+        font-family: 'Merienda';
+        margin: 2% 2% 0% 2%;
+        margin: 1rem auto;
+        border: 1px solid #aaa;
+        overflow: auto;
+        box-sizing: border-box;
+        padding: 0 1rem;
+        scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
+        scrollbar-width: thin;
+    }
+    &-deck {
+        margin: 15px;
+        width: 600px;
+        height: 400px;
+        position: relative;
+        -webkit-perspective: 1000px;
+        perspective: 1000px;
+        font-family: verdana;
+        border-radius: 10px;
+        &-card {
+            width: 600px;
+            height: 400px;
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            -webkit-transition: all .5s linear;
+            transition: all .5s linear;
+            border-radius: 10px;
+        }
+    }
+}
+
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+.back {
+    overflow: hidden;
+    z-index: -1;
+    display: block;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    box-sizing: border-box;
+    &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-size: 100% 100%;
+        background: url('https://i.imgur.com/W3tra4F.gif');
+        background-size: cover;
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    }
+}
+
+.front,
+.back {
+    transition: all .5s linear;
+}
+
+.front {
+    background-image: url('https://i.imgur.com/W3tra4F.gif');
+    background-size: cover;
+    z-index: 1;
+    box-shadow: 5px 5px 5px #aaa;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.back {
+    box-shadow: 0 0 0 #aaa;
+}
+
+.flipped,
+.hovercard:hover {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    .front {
+        box-shadow: 0 0 0 #aaa;
+    }
+    .back {
+        box-shadow: 5px 5px 5px #aaa;
+    }
+}
+
+span {
+    color: goldenrod;
+}
+
+.lordOfTheRingsMovies-container-text {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    text-align: center;
+    align-items: stretch;
+}
+
+@media (min-width: 400px) {}
+
+@media (min-width: 600px) {}
+
+@media (min-width: 800px) {}
+
+@media (min-width: 1000px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
+
+@media (min-width: 1600px) {}
+
+@media (min-width: 1800px) {}
+
+@media (min-width: 2000px) {
+    button {
+        font-family: inherit;
+        border: 0;
+        cursor: pointer;
+        &:focus {
+            outline: 0;
+        }
+    }
+}
+
+.btn {
+    padding: .5rem 2rem;
+    background-color: rgba(255, 255, 255, .4);
+    color: rgba(255, 255, 255, 1);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 3px solid #ffffff;
+    background-image: url('https://i.imgur.com/W3tra4F.gif');
+}
+
+.btn::before {
+    font-family: 'Material Icons';
+    content: '\e037';
+    vertical-align: middle;
+    font-size: 1.5em;
+    padding-right: .5em;
+}
+
+.btn-outline:hover {
+    border-color: goldenrod;
+    color: goldenrod;
+    box-shadow: 0px 1px 8px 0px rgba(245, 199, 0, .2);
+}

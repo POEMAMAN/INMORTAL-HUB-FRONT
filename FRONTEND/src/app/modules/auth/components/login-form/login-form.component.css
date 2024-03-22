@@ -22,7 +22,7 @@ input {
   display: flex;
   justify-content: space-between;
 }
-.button-session{
+.button-session, .button-show{
   appearance: none;
   background-color: #FFFFFF;
   border-radius: 40em;

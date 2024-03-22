@@ -20,13 +20,14 @@ input {
   box-sizing: border-box;
   border-radius: 40em;
   height: 40px;
+  background-color: goldenrod;
 }
 .button-container{
   display: flex;
   justify-content: space-between;
 }
 
-.button-register{
+.button-register, .button-show{
   appearance: none;
   background-color: #FFFFFF;
   border-radius: 40em;

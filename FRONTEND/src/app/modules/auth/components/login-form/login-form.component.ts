@@ -40,7 +40,6 @@ handleLogin() {
   }
   hidePassword: boolean = true;
 
-
   togglePasswordVisibility(): void {
     this.hidePassword = !this.hidePassword;
   }

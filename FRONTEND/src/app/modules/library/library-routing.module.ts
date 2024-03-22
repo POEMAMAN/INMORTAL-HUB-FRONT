@@ -1,3 +1,4 @@
+import { lordOfTheRingsUniverseModule } from './lordOfTheRings-universe/lordOfTheRings-universe.module';
 
 
 import { NgModule } from '@angular/core';
@@ -42,6 +43,9 @@ const routes: Routes = [
     },
     {
       path: 'missionImposibleUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./missionImposible-universe/missionImposible-universe.module').then(m => m.MissionImposibleUniverseModule)
+    },
+    {
+      path: 'lordoftheringsUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./lordOfTheRings-universe/lordOfTheRings-universe.module').then(m => m.lordOfTheRingsUniverseModule)
     },
     { path: 'favorites', component: FavoritesComponent },
     {

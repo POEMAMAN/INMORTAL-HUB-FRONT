@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AudioService } from '../blade-universe/bladeSoundtrack/soundtrack.service';//
+import { AudioService } from './starWarsSoundtrack/soundtrack.service';//
 
 @Component({
   selector: 'app-starWars-universe',

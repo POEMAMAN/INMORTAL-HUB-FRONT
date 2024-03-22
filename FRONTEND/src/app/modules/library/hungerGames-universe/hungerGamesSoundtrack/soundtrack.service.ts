@@ -14,7 +14,7 @@ export class AudioService {
 
   playSound(): void {
     // Carga el archivo de audio
-    fetch('https://res.cloudinary.com/dqh5ovfj1/video/upload/v1710977707/segundo%20spring/BLADE/music/blade_grzoel.mp3')
+    fetch('https://res.cloudinary.com/dqh5ovfj1/video/upload/v1710981148/soundtrack/Los-Juegos-Del-Hambre_keisfs.mp3')
       .then(response => response.arrayBuffer())
       .then(buffer => this.audioContext.decodeAudioData(buffer))
       .then(decodedData => {

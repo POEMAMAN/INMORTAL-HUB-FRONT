@@ -1,111 +1,75 @@
 .starWarsBook-container-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710765112/Star%20Wars/Background/starwars_xqapgk.jpg");
+  background-size: contain;
+  margin: 1rem auto;
+  border: 1px solid #aaa;
+  overflow: auto;
+  box-sizing: border-box;
+  padding: 0 1rem;
+  scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
+  scrollbar-width: thin;
+  &-card {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px auto;
+      &-item {
+          width: 400px;
+          margin: 10px;
+          border-radius: 8px;
+          padding: 15px;
+          box-sizing: border-box;
+      }
+  }
+  &-Btn{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url("https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710765112/Star%20Wars/Background/starwars_xqapgk.jpg");
-    background-size: contain;
-    margin: 1rem auto;
-    border: 1px solid #aaa;
-    overflow: auto;
-    box-sizing: border-box;
-    padding: 0 1rem;
-    scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
-    scrollbar-width: thin;
-    &-card {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: 20px auto;
-        &-item {
-            width: 400px;
-            margin: 10px;
-            border-radius: 8px;
-            padding: 15px;
-            box-sizing: border-box;
-        }
-    }
+    flex-direction: row;
     &-button{
-        appearance: none;
-        background-color: #FFFFFF;
-        border-radius: 40em;
-        border-style: none;
-        box-shadow: #ADCFFF 0 -12px 6px inset;
-        box-sizing: border-box;
-        color: #000000;
-        cursor: pointer;
-        display: inline-block;
-        font-family: -apple-system,sans-serif;
-        font-size: 1.2rem;
-        font-weight: 700;
-        letter-spacing: -.24px;
-        margin: 0;
-        outline: none;
-        padding: 1rem 1.3rem;
-        quotes: auto;
-        text-align: center;
-        text-decoration: none;
-        transition: all .15s;
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-        margin-top:5px;
-        &:hover{
-          background-color: #FFC229;
-          box-shadow: #FF6314 0 -6px 8px inset;
-          transform: scale(1.125);
-        }
-        &:active{
-          transform: scale(1.025);
-        }
-      }&-button{
-        appearance: none;
-        background-color: #FFFFFF;
-        border-radius: 40em;
-        border-style: none;
-        box-shadow: #ADCFFF 0 -12px 6px inset;
-        box-sizing: border-box;
-        color: #000000;
-        cursor: pointer;
-        display: inline-block;
-        font-family: -apple-system,sans-serif;
-        font-size: 1.2rem;
-        font-weight: 700;
-        letter-spacing: -.24px;
-        margin: 0;
-        outline: none;
-        padding: 1rem 1.3rem;
-        quotes: auto;
-        text-align: center;
-        text-decoration: none;
-        transition: all .15s;
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-        margin-top:5px;
-        &:hover{
-          background-color: #FFC229;
-          box-shadow: #FF6314 0 -6px 8px inset;
-          transform: scale(1.125);
-        }
-        &:active{
-          transform: scale(1.025);
-        }
+      appearance: none;
+      background-color: #FFFFFF;
+      border-radius: 40em;
+      border-style: none;
+      box-shadow: #ADCFFF 0 -12px 6px inset;
+      box-sizing: border-box;
+      color: #000000;
+      cursor: pointer;
+      display: inline-block;
+      font-family: -apple-system,sans-serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: -.24px;
+      margin: 0;
+      outline: none;
+      padding: 1rem 1.3rem;
+      quotes: auto;
+      text-align: center;
+      text-decoration: none;
+      transition: all .15s;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      margin:5px;
+      &:hover{
+        background-color: #FFC229;
+        box-shadow: #FF6314 0 -6px 8px inset;
+        transform: scale(1.125);
+      }
+      &:active{
+        transform: scale(1.025);
       }
     }
-    @media (max-width: 600px)  {
-      .crepusculoBook-container-list-button{
-        font-size: 15px;
-      }  
   }
-    @media (max-width: 600px)  {
-      .starWarsBook-container-list-button{
-        font-size: 15px;
-      }  
-  }
-
-
+}
+  @media (max-width: 600px)  {
+    .starWarsBook-container-list-button{
+      font-size: 15px;
+    }  
+}
 @media (min-width: 2200px) {
-    .starWarsBooks-container-list-button {
-        font-size: 300%;
-    }
+  .starWarsBooks-container-list-button {
+      font-size: 300%;
+  }
 }

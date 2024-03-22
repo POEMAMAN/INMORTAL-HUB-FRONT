@@ -1,0 +1,22 @@
+<div class="crepusculoCharacter-container-list">
+  <div class="crepusculoCharacter-container-list-Btn">
+    <button class="crepusculoCharacter-container-list-Btn-button" (click)="playSound()">Escuchar Banda Sonora</button>
+    <button class="crepusculoCharacter-container-list-Btn-button" (click)="stopSound()">Stop</button>
+  </div>
+  <button
+        class="crepusculoCharacter-container-list-Btn-button"
+        [routerLink]="'/library/crepusculoUniverse'"
+      >Universo crepusculo
+    </button>
+  <div style="margin-top: 5px;" class="container">
+  </div>
+  <div class="crepusculoCharacter-container-list-card">
+      <div *ngFor="let crepusculoCharacter of crepusculoCharacters"  class="crepusculoCharacter-container-list-card-item">
+        <app-crepusculoCharacters
+        [crepusculoCharacter]="crepusculoCharacter"></app-crepusculoCharacters>
+      </div>
+    </div>
+  </div>
+
+
+

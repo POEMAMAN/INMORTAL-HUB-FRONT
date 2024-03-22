@@ -1,4 +1,4 @@
-import { starWarsUniverseModule } from './starWars-universe/starWars-universe.module';
+
 
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -23,6 +23,9 @@ const routes: Routes = [
       path: 'bladeUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./blade-universe/blade-universe.module').then(m => m.BladeUniverseModule)
     },
     {
+      path: 'crepusculoUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('../library/crepusculo-universe -/crepusculo-universe.module').then(m => m.CrepusculoUniverseModule)
+    },
+    {
       path: 'duneUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./dune-universe/dune-universe.module').then(m => m.DuneUniverseModule)
     },
     {
@@ -34,11 +37,8 @@ const routes: Routes = [
     {
       path: 'indianaJonesUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./indianaJones-universe/indianaJones-universe.module').then(m => m.indianaJonesUniverseModule)
     },
-    // {
-    //   path: 'starWarsUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('/starWars-universe/starWars-universe.module').then(m => m.starWarsUniverseModule)
-    // },
     {
-      path: 'crepusculoUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./crepusculo-universe/crepusculo-universe.module').then(m => m.CrepusculoUniverseModule)
+      path: 'starWarsUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./starWars-universe/starWars-universe.module').then(m => m.starWarsUniverseModule)
     },
     {
       path: 'missionImposibleUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./missionImposible-universe/missionImposible-universe.module').then(m => m.MissionImposibleUniverseModule)

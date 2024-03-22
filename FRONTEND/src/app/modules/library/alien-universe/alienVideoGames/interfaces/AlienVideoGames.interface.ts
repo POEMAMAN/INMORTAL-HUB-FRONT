@@ -6,7 +6,7 @@ export interface AlienVideoGames {
   studio: String,
   clasification: String,
   resume: String,
-  trailer: String,
+
 
 }
 

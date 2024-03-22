@@ -14,6 +14,7 @@ const movieSchema = new Schema(
     clasification: { type: String, required: false },
     characters: [{ type: Schema.ObjectId, ref: 'characterAlien'}],
     resume: {type:String, required:false},
+    trailer: { type: String, required: false },
   },
   {
     timestamps: true,

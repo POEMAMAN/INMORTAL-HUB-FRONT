@@ -1,5 +1,5 @@
 
-import { ApesPlanetCharacter } from '../interfaces/apesPlanetCharacters.interface';
+import { ApesPlanetCharacter } from '../interfaces/ApesPlanetCharacters.interface';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 

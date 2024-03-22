@@ -9,60 +9,64 @@
   padding:0 1rem;
   scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
   scrollbar-width:thin;
-  background-image: url("https://res.cloudinary.com/dqfaa272n/image/upload/v1708459153/DUNE/FONDOS/coptero_pmt1su.jpg");
+  background-image: url("https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710597730/segundo%20spring/dune/BACKGROUND/1366_2000_t5dvkv.jpg");
   background-size: contain;
   &-card {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     margin: 20px auto;
       &-item {
-      width: 700px;
+      width: 600px;
       margin: 10px;
       border-radius: 8px;
       padding: 15px;
       box-sizing: border-box;
     }
   }
-  &-button{
-    appearance: none;
-    background-color: #FFFFFF;
-    border-radius: 40em;
-    border-style: none;
-    box-shadow: #ADCFFF 0 -12px 6px inset;
-    box-sizing: border-box;
-    color: #000000;
-    cursor: pointer;
-    display: inline-block;
-    font-family: -apple-system,sans-serif;
-    font-size: 1.2rem;
-    font-weight: 700;
-    letter-spacing: -.24px;
-    margin: 0;
-    outline: none;
-    padding: 1rem 1.3rem;
-    quotes: auto;
-    text-align: center;
-    text-decoration: none;
-    transition: all .15s;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    margin-top:5px;
-    &:hover{
-      background-color: #FFC229;
-      box-shadow: #FF6314 0 -6px 8px inset;
-      transform: scale(1.125);
-    }
-    &:active{
-      transform: scale(1.025);
+  &-Btn{
+    display: flex;
+    flex-direction: row;
+    &-button{
+      appearance: none;
+      background-color: #FFFFFF;
+      border-radius: 40em;
+      border-style: none;
+      box-shadow: #ADCFFF 0 -12px 6px inset;
+      box-sizing: border-box;
+      color: #000000;
+      cursor: pointer;
+      display: inline-block;
+      font-family: -apple-system,sans-serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: -.24px;
+      margin: 0;
+      outline: none;
+      padding: 1rem 1.3rem;
+      quotes: auto;
+      text-align: center;
+      text-decoration: none;
+      transition: all .15s;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      margin:5px;
+      &:hover{
+        background-color: #FFC229;
+        box-shadow: #FF6314 0 -6px 8px inset;
+        transform: scale(1.125);
+      }
+      &:active{
+        transform: scale(1.025);
+      }
     }
   }
 }
 @media (max-width: 600px)  {
-  .duneMovie-container-list-button{
+  .duneMovie-container-list-Btn-button{
     font-size: 15px;
-  }  
+  }
 }
 
 @media (min-width: 2200px)  {
@@ -70,4 +74,6 @@
     font-size: 300%;
   }
   }
+
+
 

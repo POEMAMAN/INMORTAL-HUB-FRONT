@@ -14,7 +14,7 @@ export class AudioService {
 
   playSound(): void {
     // Carga el archivo de audio
-    fetch('https://res.cloudinary.com/dqh5ovfj1/video/upload/v1710977707/segundo%20spring/BLADE/music/blade_grzoel.mp3')
+    fetch('https://res.cloudinary.com/dqh5ovfj1/video/upload/v1711045467/soundtrack/SOUNDTRACKS___Alien___Alien_el_octavo_pasajero_240p_30fps_H264-96kbit_AAC_c5hly4.mp4')
       .then(response => response.arrayBuffer())
       .then(buffer => this.audioContext.decodeAudioData(buffer))
       .then(decodedData => {

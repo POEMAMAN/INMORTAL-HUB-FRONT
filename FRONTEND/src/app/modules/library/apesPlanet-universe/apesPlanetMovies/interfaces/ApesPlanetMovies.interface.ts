@@ -7,9 +7,8 @@ export interface ApesPlanetMovie {
   country:  String,
   genre:  String,
   clasification:   String,
-  books: Object,
-  characters: Object,
   resume: String,
+  trailer: String;
 
 }
 

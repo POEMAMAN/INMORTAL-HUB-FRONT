@@ -1,6 +1,7 @@
 import { lordOfTheRingsBook } from '../../interfaces/lordOfTheRingsBooks.interface';
 import { lordOfTheRingsBooksService } from '../../services/lordOfTheRingsBooks.service';
 import { Component, OnInit } from '@angular/core';
+import { AudioService } from './../../../../dune-universe/duneSoundtrack/soundtrack.service';
 
 @Component({
   selector: 'app-lordOfTheRingsBooks-page',
@@ -9,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class lordOfTheRingsBooksPageComponent implements OnInit {
   lordOfTheRingsBooks: lordOfTheRingsBook[] = []
-  constructor(private lordOfTheRingsBooksService: lordOfTheRingsBooksService ) {}
+  constructor(private lordOfTheRingsBooksService: lordOfTheRingsBooksService,private audioService: AudioService  ) {}
 
 
   ngOnInit(){
@@ -20,6 +21,10 @@ export class lordOfTheRingsBooksPageComponent implements OnInit {
       error: () => {}
     })
   }
-  
-
+  playSound(): void {
+    this.audioService.playSound();
+  }
+  stopSound(): void {
+    this.audioService.stopSound();
+  }
 }

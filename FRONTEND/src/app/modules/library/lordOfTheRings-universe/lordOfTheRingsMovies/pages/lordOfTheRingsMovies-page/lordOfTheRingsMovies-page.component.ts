@@ -1,4 +1,4 @@
-
+import { AudioService } from './../../../../dune-universe/duneSoundtrack/soundtrack.service';
 import { lordOfTheRingsMovie } from '../../interfaces/lordOfTheRingsMovies.interface';
 import { lordOfTheRingsMoviesService } from '../../services/lordOfTheRingsMovies.service';
 import { Component, OnInit } from '@angular/core';
@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class lordOfTheRingsMoviesPageComponent implements OnInit {
   lordOfTheRingsMovies: lordOfTheRingsMovie[] = []
-  constructor(private lordOfTheRingsMoviesService: lordOfTheRingsMoviesService ) {}
+  constructor(private lordOfTheRingsMoviesService: lordOfTheRingsMoviesService,private audioService: AudioService ) {}
 
 
   ngOnInit(){
@@ -21,5 +21,10 @@ export class lordOfTheRingsMoviesPageComponent implements OnInit {
       error: () => {}
     })
   }
-
+  playSound(): void {
+    this.audioService.playSound();
+  }
+  stopSound(): void {
+    this.audioService.stopSound();
+  }
 }

@@ -14,7 +14,7 @@ export class AudioService {
 
   playSound(): void {
     // Carga el archivo de audio
-    fetch('https://res.cloudinary.com/dqh5ovfj1/video/upload/v1710981167/soundtrack/Dune_yqtnfu.mp3')
+    fetch('https://res.cloudinary.com/dqh5ovfj1/video/upload/v1710980911/soundtrack/Twilight_kgrfll.mp3')
       .then(response => response.arrayBuffer())
       .then(buffer => this.audioContext.decodeAudioData(buffer))
       .then(decodedData => {

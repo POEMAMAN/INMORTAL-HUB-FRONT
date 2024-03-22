@@ -1,7 +1,7 @@
 
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @font-face {
-  font-family: 'Cyborg';
+  
   src: url('./assets/fonts/cyborg_punk/CyborgPunk.ttf');
 }
 @font-face {

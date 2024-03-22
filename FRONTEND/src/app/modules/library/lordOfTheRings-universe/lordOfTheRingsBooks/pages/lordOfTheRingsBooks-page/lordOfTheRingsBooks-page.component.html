@@ -1,0 +1,15 @@
+<div class="lordOfTheRingsBook-container-list">
+    <button class="lordOfTheRingsBook-container-list-button" [routerLink]="'/library/lordOfTheRingsUniverse'">Universo lordOfTheRings
+</button>
+    <div style="margin-top: 5px;" class="container">
+    </div>
+    <div class="lordOfTheRingsBook-container-list-card">
+        <!-- {{i+1}} {{lordOfTheRingsBook}}  -->
+        <div *ngFor="let lordOfTheRingsBook of lordOfTheRingsBooks" class="lordOfTheRingsBook-container-list-card-item">
+            <app-lordOfTheRingsBooks [lordOfTheRingsBook]="lordOfTheRingsBook">
+                <!-- Object.keys(lordOfTheRingsBooks)[i] -->
+
+            </app-lordOfTheRingsBooks>
+        </div>
+    </div>
+</div>

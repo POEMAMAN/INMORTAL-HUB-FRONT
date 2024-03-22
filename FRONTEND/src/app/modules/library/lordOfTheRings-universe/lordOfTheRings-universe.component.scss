@@ -1,0 +1,126 @@
+.lordOfTheRings-container {
+    background-image: url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710336011/LordOfTheRings/background/thering1_w6qdji.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+    display: flex;
+    height: 80vh;
+    padding: 0 0 0 25%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    ///BARRA DESLIZADORA
+    margin: 1rem auto;
+    border: 1px solid #aaa;
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 0 1rem;
+    scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
+    scrollbar-width: thin;
+    ///
+    // &-ul-li-button {
+    //   width: 60%;
+    //   height: 60%;
+    //     &-img {
+    //     width: 95%;
+    //     height: 95%;
+    //   }
+    // }
+}
+
+.lordOfTheRings-container-ul-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-around;
+}
+
+.lordOfTheRings-container-ul-li {
+    width: 280px;
+    height: 300px;
+    border-radius: 15px;
+    padding: 1.5rem;
+    background: white;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    transition: 0.4s ease-out;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+.lordOfTheRings-container-ul-li:hover {
+    transform: translateY(20px);
+}
+
+.lordOfTheRings-container-ul-li:hover:before {
+    opacity: 1;
+}
+
+.lordOfTheRings-container-ul-li:hover .lordOfTheRings-container-ul-li-info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.lordOfTheRings-container-ul-li:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.lordOfTheRings-container-ul-li-img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+}
+
+.lordOfTheRings-container-ul-li .lordOfTheRings-container-ul-li-info {
+    position: relative;
+    z-index: 3;
+    color: white;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s;
+}
+
+.lordOfTheRings-container-ul-li .lordOfTheRings-container-ul-li-info h3 {
+    margin: 0px;
+}
+
+.lordOfTheRings-container-ul-li-button {
+    padding: 0.6rem;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.lordOfTheRings-container-ul-li .lordOfTheRings-container-ul-li-button {
+    background: goldenrod;
+    color: white;
+}
+
+p {
+    font-size: medium;
+    color: white;
+    text-decoration: solid;
+}

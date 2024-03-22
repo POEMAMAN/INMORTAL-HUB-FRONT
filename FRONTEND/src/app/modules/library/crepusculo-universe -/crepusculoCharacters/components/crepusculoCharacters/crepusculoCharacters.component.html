@@ -1,0 +1,24 @@
+
+<div class="crepusculoCharacters-container">
+  <div class="crepusculoCharacters-container-button" *ngIf="isAdmin" style="display: flex; justify-content: flex-end; align-items: center; margin-bottom: 5px; gap: 5px">
+      <button [routerLink]="['/admin/edit-product',crepusculoCharacter._id]" >Editar</button>
+      <button [routerLink]="['/admin/delete-product', crepusculoCharacter._id]" >Eliminar</button>
+  </div>
+  <div class="crepusculoCharacters-container-deck">
+    <div class="crepusculoCharacters-container-deck-card" (click)="clickCard()">
+      <div class="front face" >
+        <h2 class="crepusculoCharacters-container-h2">{{ crepusculoCharacter.name  }}</h2>
+        <img  class="crepusculoCharacters-container-img-img"[src]="crepusculoCharacter.picture" />
+        <p class="crepusculoCharacters-container-p"><span>Profesion:</span> {{ crepusculoCharacter.profession }}</p>
+        <p class="crepusculoCharacters-container-p"><span>Rango:</span> {{ crepusculoCharacter.rank }}</p>
+        <p class="crepusculoCharacters-container-p"><span>Nacimiento:</span> {{ crepusculoCharacter.birthday }}</p>
+        <p class="crepusculoCharacters-container-p"><span>Planeta:</span> {{ crepusculoCharacter.planet  }}</p>
+        <p class="crepusculoCharacters-container-p"><span>Pais:</span> {{ crepusculoCharacter.country }}</p>
+      </div>
+      <div class="back face">
+        <p class="crepusculoCharacters-container-resume"><span>Sinopsis:</span> {{ crepusculoCharacter.resume }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+

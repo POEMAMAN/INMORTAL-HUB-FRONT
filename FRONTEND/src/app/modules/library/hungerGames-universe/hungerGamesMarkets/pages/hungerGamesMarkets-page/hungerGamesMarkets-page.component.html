@@ -1,6 +1,10 @@
 <div class="hungerGames-container">
+  <div class="hungerGames-container-list">
+    <button class="hungerGames-container-list-button" (click)="playSound()">Escuchar Banda Sonora</button>
+    <button class="hungerGames-container-list-button" (click)="stopSound()">Stop</button>
+  </div>
   <button
-  class="hungerGamesBook-container-list-button"
+  class="hungerGames-container-list-button"
   [routerLink]="'/library/hungerGamesUniverse'"
 >Universo Hunger Games
 </button>

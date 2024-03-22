@@ -1,7 +1,11 @@
+import { lordOfTheRingsUniverseModule } from './lordOfTheRings-universe/lordOfTheRings-universe.module';
+
+
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { verifyTokenGuard } from '../auth/guards/verify-token.guard';
 import { LibraryComponent } from './library.component';
+import { FavoritesComponent } from 'src/app/core/favorites/favorites.component';
 
 
 const routes: Routes = [
@@ -11,10 +15,19 @@ const routes: Routes = [
       path: '', canActivate: [verifyTokenGuard], component: LibraryComponent
     },
     {
-      path: 'duneUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./dune-universe/dune-universe.module').then(m => m.DuneUniverseModule)
+      path: 'apesPlanetUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./apesPlanet-universe/apesPlanet-universe.module').then(m => m.ApesPlanetUniverseModule)
     },
     {
       path: 'alienUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./alien-universe/alien-universe.module').then(m => m.AlienUniverseModule)
+    },
+    {
+      path: 'bladeUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./blade-universe/blade-universe.module').then(m => m.BladeUniverseModule)
+    },
+    {
+      path: 'crepusculoUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('../library/crepusculo-universe -/crepusculo-universe.module').then(m => m.CrepusculoUniverseModule)
+    },
+    {
+      path: 'duneUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./dune-universe/dune-universe.module').then(m => m.DuneUniverseModule)
     },
     {
       path: 'harryPotterUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./harryPotter-universe/harryPotter-universe.module').then(m => m.HarryPotterUniverseModule)
@@ -23,8 +36,18 @@ const routes: Routes = [
       path: 'hungerGamesUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./hungerGames-universe/hungerGames-universe.module').then(m => m.HungerGamesUniverseModule)
     },
     {
-      path: 'starWarsUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./starswars-universe/starswars-universe.module').then(m => m.starswarsUniverseModule)
+      path: 'indianaJonesUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./indianaJones-universe/indianaJones-universe.module').then(m => m.indianaJonesUniverseModule)
     },
+    {
+      path: 'starWarsUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./starWars-universe/starWars-universe.module').then(m => m.starWarsUniverseModule)
+    },
+    {
+      path: 'missionImposibleUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./missionImposible-universe/missionImposible-universe.module').then(m => m.MissionImposibleUniverseModule)
+    },
+    {
+      path: 'lordoftheringsUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./lordOfTheRings-universe/lordOfTheRings-universe.module').then(m => m.lordOfTheRingsUniverseModule)
+    },
+    { path: 'favorites', component: FavoritesComponent },
     {
       path: '**', redirectTo: 'library', pathMatch: 'full'
     }

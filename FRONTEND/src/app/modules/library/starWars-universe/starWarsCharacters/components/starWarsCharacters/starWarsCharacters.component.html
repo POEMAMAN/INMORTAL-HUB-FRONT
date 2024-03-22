@@ -1,0 +1,21 @@
+<div class="starWarsCharacters-container">
+    <div class="starWarsCharacters-container-button" *ngIf="isAdmin" style="display: flex; justify-content: flex-end; align-items: center; margin-bottom: 5px; gap: 5px">
+        <button [routerLink]="['/admin/edit-product',starWarsCharacter._id]">Editar</button>
+        <button [routerLink]="['/admin/delete-product', starWarsCharacter._id]">Eliminar</button>
+    </div>
+    <div class="starWarsCharacters-container-deck">
+        <div class="starWarsCharacters-container-deck-card" (click)="clickCard()">
+            <div class="front face">
+                <h2 class="starWarsCharacters-container-h2">{{ starWarsCharacter.name }}</h2>
+                <img class="starWarsCharacters-container-img-img" [src]="starWarsCharacter.picture" />
+                <p class="starWarsCharacters-container-p"><span>Actor:</span> {{ starWarsCharacter.actor }}</p>
+                <p class="starWarsCharacters-container-p"><span>Profesión:</span> {{ starWarsCharacter.profession }}</p>
+                <p class="starWarsCharacters-container-p"><span>Resumen:</span> {{ starWarsCharacter.resume }}</p>
+
+            </div>
+            <div class="back face">
+                <p class="starWarsCharacters-container-resume"><span>Sinopsis:</span> {{ starWarsCharacter.resume }}</p>
+            </div>
+        </div>
+    </div>
+</div>

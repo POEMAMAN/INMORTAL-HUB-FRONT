@@ -7,6 +7,7 @@ import { alienMarketsModule } from './alienMarkets/alienMarkets.module';
 import { alienMoviesModule } from './alienMovies/alienMovies.module';
 import { alienVideoGamesModule } from './alienVideoGames/alienVideoGames.module';
 import { AlienUniverseRoutingModule } from './alien-universe-routing.module';
+import { HeaderLogoutComponent } from 'src/app/core/header-logout/header-logout.component';
 
 
 
@@ -15,7 +16,8 @@ import { AlienUniverseRoutingModule } from './alien-universe-routing.module';
 
 @NgModule({
   declarations: [
-    AlienUniverseComponent
+    AlienUniverseComponent,
+
 
   ],
   imports: [

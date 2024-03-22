@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710327840/HarryPotter/Backgrounds/Background_MaraudersMap_rw28ut.webp");
+  background-image: url("https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710930156/HarryPotter/Backgrounds/4e3565c21c21d2e4aab38a0e42786122_v0nqj3.png");
   background-size: contain;
   margin: 1rem auto;
   border: 1px solid #aaa;
@@ -24,7 +24,51 @@
       box-sizing: border-box;
       }
     }
+    &-Btn{
+      display: flex;
+      flex-direction: row;
+      &-button{
+        appearance: none;
+        background-color: #FFFFFF;
+        border-radius: 40em;
+        border-style: none;
+        box-shadow: #ADCFFF 0 -12px 6px inset;
+        box-sizing: border-box;
+        color: #000000;
+        cursor: pointer;
+        display: inline-block;
+        font-family: -apple-system,sans-serif;
+        font-size: 1.2rem;
+        font-weight: 700;
+        letter-spacing: -.24px;
+        margin: 0;
+        outline: none;
+        padding: 1rem 1.3rem;
+        quotes: auto;
+        text-align: center;
+        text-decoration: none;
+        transition: all .15s;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        margin:5px;
+        &:hover{
+          background-color: #FFC229;
+          box-shadow: #FF6314 0 -6px 8px inset;
+          transform: scale(1.125);
+        }
+        &:active{
+          transform: scale(1.025);
+        }
+      }
+    }
+  }
+  @media (max-width: 600px)  {
+    .harryPotterBook-container-list-button{
+      font-size: 15px;
+    }  
 }
+
 @media (min-width: 2200px)  {
   .harryPotterBooks-container-list-button{
     font-size: 300%;

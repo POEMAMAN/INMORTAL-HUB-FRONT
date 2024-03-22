@@ -1,0 +1,22 @@
+<div class="bladeCharacter-container-list">
+  <div class="bladeCharacter-container-list-Btn">
+    <button class="bladeCharacter-container-list-Btn-button" (click)="playSound()">Escuchar Banda Sonora</button>
+    <button class="bladeCharacter-container-list-Btn-button" (click)="stopSound()">Stop</button>
+  </div>
+  <button
+        class="bladeCharacter-container-list-Btn-button"
+        [routerLink]="'/library/bladeUniverse'"
+      >Universo Blade
+    </button>
+  <div style="margin-top: 5px;" class="container">
+  </div>
+  <div class="bladeCharacter-container-list-card">
+      <div *ngFor="let bladeCharacter of bladeCharacters"  class="bladeCharacter-container-list-card-item">
+        <app-bladeCharacters
+        [bladeCharacter]="bladeCharacter"></app-bladeCharacters>
+      </div>
+    </div>
+  </div>
+
+
+

@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 
 const charactersSchema = new Schema({
     name: { type: String, required: true },
-    acthor: { type: String, required: false },
+    actor: { type: String, required: false },
     type: { type: String, required: false },
     picture: { type: String },
     resume: { type: String, required: false },

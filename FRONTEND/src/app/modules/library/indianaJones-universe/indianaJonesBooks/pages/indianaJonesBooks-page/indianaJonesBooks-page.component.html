@@ -1,0 +1,23 @@
+<div class="indianaJonesBook-container-list">
+  <div class="indianaJonesBook-container-list-Btn">
+    <button class="indianaJonesBook-container-list-Btn-button" (click)="playSound()">Escuchar Banda Sonora</button>
+    <button class="indianaJonesBook-container-list-Btn-button" (click)="stopSound()">Stop</button>
+  </div>
+  <button
+  class="indianaJonesBook-container-list-Btn-button"
+  [routerLink]="'/library/indianaJonesUniverse'"
+>Universo indianaJones
+</button>
+  <div style="margin-top: 5px;" class="container">
+  </div>
+  <div class="indianaJonesBook-container-list-card">
+      <div *ngFor="let indianaJonesBook of indianaJonesBooks"
+      class="indianaJonesBook-container-list-card-item">
+        <app-indianaJonesBooks
+        [indianaJonesBook]="indianaJonesBook">
+      </app-indianaJonesBooks>
+      </div>
+    </div>
+  </div>
+
+

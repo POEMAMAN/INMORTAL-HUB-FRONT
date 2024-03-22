@@ -1,0 +1,22 @@
+
+<div class="apesPlanetCharacters-container">
+  <div class="apesPlanetCharacters-container-button" *ngIf="isAdmin" style="display: flex; justify-content: flex-end; align-items: center; margin-bottom: 5px; gap: 5px">
+      <button [routerLink]="['/admin/edit-product',apesPlanetCharacter._id]" >Editar</button>
+      <button [routerLink]="['/admin/delete-product', apesPlanetCharacter._id]" >Eliminar</button>
+  </div>
+  <div class="apesPlanetCharacters-container-deck">
+    <div class="apesPlanetCharacters-container-deck-card" (click)="clickCard()">
+      <div class="front face" >
+        <h2 class="apesPlanetCharacters-container-h2">{{ apesPlanetCharacter.name  }}</h2>
+        <img  class="apesPlanetCharacters-container-img-img"[src]="apesPlanetCharacter.picture" />
+        <p class="apesPlanetCharacters-container-p"><span>Actor:</span> {{ apesPlanetCharacter.actor }}</p>
+        <p class="apesPlanetCharacters-container-p"><span>Profession:</span> {{ apesPlanetCharacter.profession }}</p>
+      </div>
+      <div class="back face">
+        <p class="apesPlanetCharacters-container-resume"><span>Sinopsis:</span> {{ apesPlanetCharacter.resume }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+

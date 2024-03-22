@@ -1,0 +1,21 @@
+<div class="apesPlanetMovie-container-list">
+  <div class="apesPlanetMovie-container-list-Btn">
+    <button class="apesPlanetMovie-container-list-Btn-button" (click)="playSound()">Escuchar Banda Sonora</button>
+    <button class="apesPlanetMovie-container-list-Btn-button" (click)="stopSound()">Stop</button>
+  </div>
+  <button
+  class="apesPlanetMovie-container-list-Btn-button"
+  [routerLink]="'/library/apesPlanetUniverse'"
+>Universo El Planeta de los Simios
+</button>
+  <div style="margin-top: 5px;" class="container">
+  </div>
+  <div class="apesPlanetMovie-container-list-card">
+      <div *ngFor="let apesPlanetMovie of apesPlanetMovies"  class="apesPlanetMovie-container-list-card-item">
+        <app-apesPlanetMovies
+        [apesPlanetMovie]="apesPlanetMovie"></app-apesPlanetMovies>
+      </div>
+    </div>
+  </div>
+
+

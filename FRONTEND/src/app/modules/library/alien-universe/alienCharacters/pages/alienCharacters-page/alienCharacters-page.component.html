@@ -1,6 +1,10 @@
 <div class="alienCharacter-container-list">
+  <div class="alienCharacter-container-list-Btn">
+    <button class="alienCharacter-container-list-Btn-button" (click)="playSound()">Escuchar Banda Sonora</button>
+    <button class="alienCharacter-container-list-Btn-button" (click)="stopSound()">Stop</button>
+  </div>
   <button
-        class="alienCharacter-container-list-button"
+        class="alienCharacter-container-list-Btn-button"
         [routerLink]="'/library/alienUniverse'"
       >Universo alien
     </button>

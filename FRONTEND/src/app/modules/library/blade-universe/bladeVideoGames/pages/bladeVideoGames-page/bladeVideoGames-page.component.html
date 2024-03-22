@@ -1,0 +1,23 @@
+<div class="bladeVideoGame-container-list">
+  <div class="bladeVideoGame-container-list-Btn">
+    <button class="bladeVideoGame-container-list-Btn-button" (click)="playSound()">Escuchar Banda Sonora</button>
+    <button class="bladeVideoGame-container-list-Btn-button" (click)="stopSound()">Stop</button>
+  </div>
+  <button
+  class="bladeVideoGame-container-list-Btn-button"
+  [routerLink]="'/library/bladeUniverse'"
+>Universo Blade
+</button>
+  <div style="margin-top: 5px;" class="container">
+  </div>
+  <div class="bladeVideoGame-container-list-card">
+      <div *ngFor="let bladeVideoGame of bladeVideoGames"
+      class="bladeVideoGame-container-list-card-item">
+        <app-bladeVideoGames
+        [bladeVideoGame]="bladeVideoGame">
+      </app-bladeVideoGames>
+      </div>
+    </div>
+  </div>
+
+

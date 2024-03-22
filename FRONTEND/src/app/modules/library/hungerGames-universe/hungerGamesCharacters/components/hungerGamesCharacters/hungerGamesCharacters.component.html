@@ -8,9 +8,9 @@
     <div class="hungerGamesCharacters-container-deck-card" (click)="clickCard()">
       <div class="front face" >
         <h2 class="hungerGamesCharacters-container-h2">{{ hungerGamesCharacter.name  }}</h2>
-        <img  class="hungerGamesCharacters-container-img-img"[src]="hungerGamesCharacter.picture" />
         <p class="hungerGamesCharacters-container-p"><span>Actor:</span> {{ hungerGamesCharacter.actor }}</p>
         <p class="hungerGamesCharacters-container-p"><span>Distrito:</span> {{ hungerGamesCharacter.district }}</p>
+        <img  class="hungerGamesCharacters-container-img-img"[src]="hungerGamesCharacter.picture" />
       </div>
       <div class="back face">
         <p class="hungerGamesCharacters-container-resume"><span>Sinopsis:</span> {{ hungerGamesCharacter.resume }}</p>

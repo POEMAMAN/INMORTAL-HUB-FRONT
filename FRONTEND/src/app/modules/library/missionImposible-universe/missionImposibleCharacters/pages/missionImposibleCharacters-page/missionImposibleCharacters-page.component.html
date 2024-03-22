@@ -1,0 +1,22 @@
+<div class="missionImposibleCharacter-container-list">
+  <div class="missionImposibleCharacter-container-list-Btn">
+    <button class="missionImposibleCharacter-container-list-Btn-button" (click)="playSound()">Escuchar Banda Sonora</button>
+    <button class="missionImposibleCharacter-container-list-Btn-button" (click)="stopSound()">Stop</button>
+  </div>
+  <button
+        class="missionImposibleCharacter-container-list-Btn-button"
+        [routerLink]="'/library/missionImposibleUniverse'"
+      >Universo missionImposible
+    </button>
+  <div style="margin-top: 5px;" class="container">
+  </div>
+  <div class="missionImposibleCharacter-container-list-card">
+      <div *ngFor="let missionImposibleCharacter of missionImposibleCharacters"  class="missionImposibleCharacter-container-list-card-item">
+        <app-missionImposibleCharacters
+        [missionImposibleCharacter]="missionImposibleCharacter"></app-missionImposibleCharacters>
+      </div>
+    </div>
+  </div>
+
+
+

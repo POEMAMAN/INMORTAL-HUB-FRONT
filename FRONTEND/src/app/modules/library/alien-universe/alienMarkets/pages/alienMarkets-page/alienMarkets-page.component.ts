@@ -1,4 +1,4 @@
-
+import { AudioService } from '../../../alienSoundtrack/soundtrack.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,5 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./alienMarkets-page.component.scss']
 })
 export class alienMarketsPageComponent{
+  constructor(private audioService: AudioService) {}
+  playSound(): void {
+    this.audioService.playSound();
+  }
+  stopSound(): void {
+    this.audioService.stopSound();
+  }
+};
 
-}

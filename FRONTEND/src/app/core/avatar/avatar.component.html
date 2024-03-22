@@ -1,0 +1,8 @@
+
+<div class="avatar">
+  <input class="avatar-input" *ngIf="!avatarUrl" type="file" (change)="onFileSelected($event)" accept="image/*">
+  <div class="avatar-container">
+     <img class="avatar-container-img" *ngIf="avatarUrl" [src]="avatarUrl || 'https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710898823/Varios/avatar-placeholder_fwkinl.png'" alt="Avatar" width="100">
+  <button *ngIf="avatarUrl" class="avatar-container-btn" (click)="onChangeAvatar()">Cambiar Avatar</button>
+  </div>
+</div>

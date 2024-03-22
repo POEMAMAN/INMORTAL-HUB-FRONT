@@ -1,0 +1,34 @@
+<div class="lordOfTheRingsMovies-container">
+    <div class="lordOfTheRingsMovies-container-button" *ngIf="isAdmin" style="
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 5px;
+      gap: 5px;">
+        <button [routerLink]="['/admin/edit-product', lordOfTheRingsMovie._id]">Editar</button>
+        <button [routerLink]="['/admin/delete-product', lordOfTheRingsMovie._id]">
+      Eliminar
+    </button>
+    </div>
+    <div class="lordOfTheRingsMovies-container-deck">
+        <div class="lordOfTheRingsMovies-container-deck-card" (click)="clickCard()">
+            <div class="front face">
+                <img class="lordOfTheRingsMovies-container-img-img" [src]="lordOfTheRingsMovie.picture" />
+                <div class="lordOfTheRingsMovies-container-text">
+                    <h2 class="lordOfTheRingsMovies-container-h2">{{ lordOfTheRingsMovie.title }}</h2>
+                    <p class="lordOfTheRingsMovies-container-p"><span>Director:</span> {{ lordOfTheRingsMovie.director }}</p>
+                    <p class="lordOfTheRingsMovies-container-p"><span>Año:</span> {{ lordOfTheRingsMovie.year }}</p>
+                    <p class="lordOfTheRingsMovies-container-p"><span>Duracion:</span> {{ lordOfTheRingsMovie.duration }}</p>
+                    <p class="lordOfTheRingsMovies-container-p"><span>Pais:</span> {{ lordOfTheRingsMovie.country }}</p>
+                    <p class="lordOfTheRingsMovies-container-p"><span>Genero:</span> {{ lordOfTheRingsMovie.genre}}</p>
+                    <p class="lordOfTheRingsMovies-container-p"><span>Clasificacion:</span> {{ lordOfTheRingsMovie.clasification }}</p>
+                    <p class="lordOfTheRingsMovies-container-p"><span>Clasificacion:</span> {{ lordOfTheRingsMovie.trailer }}</p>
+                </div>
+            </div>
+            <div class="back face">
+                <p class="lordOfTheRingsMovies-container-resume"><span>Sinopsis:</span> {{ lordOfTheRingsMovie.resume }}</p>
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-outline movie-card__button" type="button">Watch Trailer</button>
+</div>

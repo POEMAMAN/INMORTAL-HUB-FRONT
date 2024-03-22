@@ -1,5 +1,122 @@
-.header-logout {
+.header{
+  height: 30vh;
+}
+.header-title{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: goldenrod;
+  text-decoration: overline;
+  font-size: 25px;
+  margin: 5px;
+}
+.header-container{
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: space-evenly;
 }
+.header-container-logout {
+    display: flex;
+    align-items: center;
+    width: 40vw;
+    justify-content: space-around;
+}
+.header-container-logout-c-button{
+  appearance: none;
+  background-color: #FFFFFF;
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: #ADCFFF 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -.24px;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.3rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.header-container-logout-c-button:hover,.header-container-logout-c-p:hover {
+  background-color: #FFC229;
+  box-shadow: #FF6314 0 -6px 8px inset;
+  transform: scale(1.125);
+}
+
+.header-container-logout-c-button:active, .header-container-logout-c-p:active {
+  transform: scale(1.025);
+}
+
+
+.header-container-logout-c-p{
+    font-size: 20px;
+    box-shadow: 0px 0px 2px 2px goldenrod; 
+    border-radius: 50px; 
+}
+@media (min-width: 100px)  {
+  .header-container-logout-c-button, .header-container-logout-c-p{
+    font-size: 10px;
+    height: 10px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: 600px)  {
+  .header-container-logout-c-button, .header-container-logout-c-p{
+    font-size: 15px;
+    height: 50px;
+    padding: 20px;
+  }
+  .header-title{
+    font-size: 45px;
+  }
+}
+
+@media (min-width: 800px)  {
+
+}
+@media (min-width: 1000px)  {
+  .header-container-logout-c-button, .header-container-logout-c-p{
+    font-size:20px;
+  }
+  .header-title{
+    font-size: 60px;
+  }
+}
+@media (min-width: 1200px)  {
+
+}
+@media (min-width: 1400px)  {
+
+}
+@media (min-width: 1600px)  {
+  .header-container-logout-c-button, .header-container-logout-c-p{
+    font-size: 5px;
+  }
+  .header-title{
+    font-size: 80px;
+  }
+}
+
+@media (min-width: 1800px)  {
+
+}
+
+@media (min-width: 2000px)  {
+/////
+}
+
+
+  

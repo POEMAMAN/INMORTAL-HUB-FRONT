@@ -1,0 +1,16 @@
+<div class="starWarsBook-container-list">
+    <div class="starWarsMovie-container-list-Btn">
+        <button class="starWarsBook-container-list-Btn-button" (click)="playSound()">Escuchar Banda Sonora</button>
+        <button class="starWarsBook-container-list-Btn-button" (click)="stopSound()">Stop</button>
+      </div>
+    <button class="starWarsBook-container-list-Btn-button" [routerLink]="'/library/starWarsUniverse'">Universo Starwars
+</button>
+    <div style="margin-top: 5px;" class="container">
+    </div>
+    <div class="starWarsBook-container-list-card">
+        <div *ngFor="let starWarsBook of starWarsBooks" class="starWarsBook-container-list-card-item">
+            <app-starWarsBooks [starWarsBook]="starWarsBook">
+            </app-starWarsBooks>
+        </div>
+    </div>
+</div>

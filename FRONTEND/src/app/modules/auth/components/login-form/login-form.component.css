@@ -6,24 +6,69 @@
 label {
   display: block;
   margin-bottom: 5px;
+  font-family: 'Merienda';
+  font-size: 25px;
 }
 
 input {
   width: 100%;
   padding: 8px;
   box-sizing: border-box;
+  border-radius: 40em;
+  height: 40px;
+  background-color: goldenrod;
 }
-
-button {
-  background-color: #eff5f4;
-  color: rgb(19, 4, 4);
-  padding: auto;
-  border: none;
-  border-radius: 5px;
+.button-container{
+  display: flex;
+  justify-content: space-between;
+}
+.button-session, .button-show{
+  appearance: none;
+  background-color: #FFFFFF;
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: #ADCFFF 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: #000000;
   cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,sans-serif;
+  font-size: 1.17rem;
+  font-weight: 700;
+  letter-spacing: -.24px;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.3rem;
+  quotes: auto;
+  text-align: center;
   text-decoration: none;
+  transition: all .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+.button-sesion:hover {
+  background-color: #FFC229;
+  box-shadow: #FF6314 0 -6px 8px inset;
+  transform: scale(1.125);
+}
+.button-sesion:active {
+  transform: scale(1.025);
 }
 
-button:hover {
-  background-color: #15eedc;
+@media (min-width: 400px)  {
+  .button-session{
+    font-size: 15px;
+    height: 40px;
+  }
 }
+@media (min-width: 100px)  {
+  .button-session{
+    font-size: 20px;
+    height: 40px;
+  }
+}
+

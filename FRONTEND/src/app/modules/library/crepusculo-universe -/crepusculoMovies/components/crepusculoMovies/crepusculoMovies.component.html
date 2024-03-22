@@ -1,0 +1,45 @@
+<div class="crepusculoMovies-container">
+  <div class="crepusculoMovies-container-button"*ngIf="isAdmin"style="
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 5px;
+      gap: 5px;">
+    <button [routerLink]="['/admin/edit-product', crepusculoMovie._id]">Editar</button>
+    <button [routerLink]="['/admin/delete-product', crepusculoMovie._id]">
+      Eliminar
+    </button>
+  </div>
+  <div class="crepusculoMovies-container-deck">
+    <div class="crepusculoMovies-container-deck-card" (click)="clickCard()">
+      <div class="front face" >
+        <img  class="crepusculoMovies-container-img-img"[src]="crepusculoMovie.picture" />
+        <div class="crepusculoMovies-container-text">
+          <h2 class="crepusculoMovies-container-h2">{{ crepusculoMovie.title }}</h2>
+          <p class="crepusculoMovies-container-p"><span>Director:</span> {{ crepusculoMovie.director }}</p>
+          <p class="crepusculoMovies-container-p"><span>Año:</span> {{ crepusculoMovie.year }}</p>
+          <p class="crepusculoMovies-container-p"><span>Duracion:</span> {{ crepusculoMovie.duration }}</p>
+          <p class="crepusculoMovies-container-p"><span>Pais:</span> {{ crepusculoMovie.country }}</p>
+          <p class="crepusculoMovies-container-p"><span>Genero:</span> {{ crepusculoMovie.genre}}</p>
+          <p class="crepusculoMovies-container-p"><span>Clasificacion:</span> {{ crepusculoMovie.clasificarion }}</p>
+          <p class="crepusculoMovies-container-p"><span>Clasificacion:</span> {{ crepusculoMovie.trailer }}</p>
+
+          <!-- Cambié el src a [src] para que se pueda hacer el binding de la propiedad trailer -->
+          <iframe width="560" height="315" [src]="crepusculoMovie.trailer" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+      <div class="back face">
+        <p class="crepusculoMovies-container-resume"><span>Sinopsis:</span> {{ crepusculoMovie.resume }}</p>
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-outline movie-card__button" type="button">Watch Trailer</button>
+</div>
+
+
+
+
+

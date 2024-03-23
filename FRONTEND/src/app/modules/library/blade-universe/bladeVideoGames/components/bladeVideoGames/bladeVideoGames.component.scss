@@ -46,7 +46,9 @@
     text-decoration:overline;
     font-size: 150%;
     text-align: center;
+    display: flex;
     height: 50px;
+    align-items: center;
   }
   &-resume {
     display: -webkit-box;
@@ -54,7 +56,7 @@
     overflow: hidden;
     -webkit-line-clamp: 4;
     font-size: 16px;
-    height: 700px;
+    height: 310px;
     font-family: 'Merienda';
     margin: 2% 2% 0% 2%;
     margin: 1rem auto;
@@ -67,16 +69,16 @@
   }
   &-deck{
     margin:15px;
-    width: 400px;
-    height: 700px;
+    width: 600px;/////
+    height: 325px;/////
     position:relative;
     -webkit-perspective: 1000px;
     perspective: 1000px;
     font-family:verdana;
     border-radius:10px;
     &-card{
-      width: 400px;
-      height: 700px;
+      width: 600px;/////
+      height: 325px;/////
       -webkit-transform-style: preserve-3d;
       transform-style: preserve-3d;
       -webkit-transition: all .5s linear;
@@ -122,11 +124,10 @@
 }
 .front{
   background-image:url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710962516/segundo%20spring/BLADE/clips/giphy_6_nptgys.webp');
-  background: contain;
+  background-size: cover;/////
   z-index:1;
   box-shadow: 5px 5px 5px #aaa;
   display: flex;
-  flex-direction: column;
   text-align: center;
   align-items: center;
  

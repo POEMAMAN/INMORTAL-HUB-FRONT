@@ -1,7 +1,12 @@
 
-.form-group {
+.form-group-user {
   margin-bottom: 15px;
 }
+
+.form-group-password {
+  margin-bottom: 15px;
+}
+
 
 label {
   display: block;
@@ -22,7 +27,7 @@ input {
   display: flex;
   justify-content: space-between;
 }
-.button-session, .button-show{
+.button-session{
   appearance: none;
   background-color: #FFFFFF;
   border-radius: 40em;
@@ -58,6 +63,26 @@ input {
 }
 .button-sesion:active {
   transform: scale(1.025);
+}
+
+.input-pass{
+  position: relative;
+}
+.button-show{
+  position: absolute;
+  top: 10%;
+  right: 3%;
+  width: 8%;
+  visibility: hidden;
+}
+.button-show::after{
+  content: url("https://res.cloudinary.com/dqh5ovfj1/image/upload/v1711188082/Varios/eye-regular_eztye9.svg");
+  visibility: visible;
+  cursor: pointer;
+}
+
+.button-show:checked::after{
+  content: url("https://res.cloudinary.com/dqh5ovfj1/image/upload/v1711188110/Varios/eye-slash-regular_w1maq8.svg");
 }
 
 @media (min-width: 400px)  {

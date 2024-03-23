@@ -1,17 +1,16 @@
 
 <form (ngSubmit)="handleLogin()">
   <p>Acceso a la Web (Login)</p>
-  <div class="form-group">
+  <div class="form-group-user">
     <label for="email">Usuario:</label>
     <input type="text" id="email" name="email" [(ngModel)]="email" required>
   </div>
-  <div class="form-group">
-    <label for="password">Contraseña:</label>
-    <input type="{{ hidePassword ? 'password' : 'text' }}" id="password" name="password" [(ngModel)]="password" required>
-    <label>
-      <input type="checkbox" class="button-show" (click)="togglePasswordVisibility()">
-      Mostrar/ocultar contraseña
-    </label>
+  <div class="form-group-password">
+      <label for="password">Contraseña:</label>
+      <div class="input-pass">
+        <input type="{{ hidePassword ? 'password' : 'text' }}" id="password" name="password" [(ngModel)]="password" required>
+        <input type="checkbox" class="button-show" (click)="togglePasswordVisibility()" >
+      </div>
   </div>
   <div class="button-container">
     <button class="button-session" type="submit">Iniciar sesión</button>

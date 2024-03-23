@@ -12,6 +12,7 @@ const videoGamesSchema = new Schema(
     studio: { type: String, required: false },
     clasification: { type: String, required: false },
     resume: { type: String, required: false },
+    trailer: { type: String, required: false },
   },
   {
     timestamps: true,

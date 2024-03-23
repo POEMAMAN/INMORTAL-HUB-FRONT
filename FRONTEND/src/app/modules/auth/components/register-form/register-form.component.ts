@@ -47,11 +47,11 @@ formHandler() {
     this.registerForm.reset()
   }
 }
-password: string = '';
-hidePassword: boolean = true;
+// password: string = '';
+// hidePassword: boolean = true;
 
-togglePasswordVisibility(): void {
-  this.hidePassword = !this.hidePassword;
-}
+// togglePasswordVisibility(): void {
+//   this.hidePassword = !this.hidePassword;
+// }
 
 }

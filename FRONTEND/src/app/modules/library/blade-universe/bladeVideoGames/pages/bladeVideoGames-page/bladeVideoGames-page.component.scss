@@ -15,7 +15,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 20px auto;
       &-item {
       width: 600px;/////
       margin: 10px;
@@ -67,7 +66,19 @@
     }
   }
 }
-@media (max-width: 600px)  {
+@media only screen and (max-width: 700px) {//////////
+  .bladeVideoGame-container-list-Btn-button{
+    font-size: 10px;
+    height: 10px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+  }
+  .bladeVideoGame-container-list-card-item{
+    width: 350px;
+  }
+}
+@media (max-width: 701px)  {
   .bladeVideoGame-container-list-Btn-button{
     font-size: 15px;
   }

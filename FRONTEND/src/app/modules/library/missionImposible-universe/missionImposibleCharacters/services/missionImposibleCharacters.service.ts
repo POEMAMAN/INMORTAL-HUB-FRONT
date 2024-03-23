@@ -14,6 +14,6 @@ export class missionImposibleCharactersService {
   constructor(private http: HttpClient) { }
 
   getMissionImposibleCharacters(){
-      return this.http.get<MissionImposibleCharacter[]>('http://localhost:8084/universes/missionImposible/characters')
+      return this.http.get<MissionImposibleCharacter[]>('http:/localhost:8084//universes/ImposibleMission/characters')
   }
 }

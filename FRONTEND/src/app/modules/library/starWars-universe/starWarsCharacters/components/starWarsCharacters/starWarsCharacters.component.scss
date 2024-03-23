@@ -57,7 +57,7 @@
         overflow: hidden;
         -webkit-line-clamp: 4;
         font-size: 16px;
-        height: 605px;
+        height: 485px;
         font-family: 'Merienda';
         margin: 2% 2% 0% 2%;
         margin: 1rem auto;
@@ -71,16 +71,16 @@
     }
     &-deck {
         margin: 15px;
-        width: 425px;
-        height: 615px;
+        width: 380px;
+        height: 500px;
         position: relative;
         -webkit-perspective: 1000px;
         perspective: 1000px;
         font-family: verdana;
         border-radius: 10px;
         &-card {
-            width: 425px;
-            height: 615px;
+            width: 380px;
+            height: 500px;
             -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
             -webkit-transition: all .5s linear;
@@ -130,8 +130,10 @@
 }
 
 .front {
-    background-image: url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710583135/Star%20Wars/Background/star-wars-skywalker-saga-wallpaper-1231363_qjytsu.webp');
+    background-image: url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710765102/Star%20Wars/Background/que-orden-ver-peliculas-star-wars_vmithn.webp');
     background-size: cover;
+    background-position-x: -200px;
+    background-position-y: -100px;
     z-index: 1;
     box-shadow: 5px 5px 5px #aaa;
     display: flex;

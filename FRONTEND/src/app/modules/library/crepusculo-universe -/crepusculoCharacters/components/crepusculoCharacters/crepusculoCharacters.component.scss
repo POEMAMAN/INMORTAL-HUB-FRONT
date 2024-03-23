@@ -34,7 +34,7 @@
     overflow: hidden;
     max-height: calc(1.5em * 4);
     -webkit-line-clamp: 4;
-    font-size: 15px;
+    font-size: 27px;
     margin: 15px;  //  
   }
   &-h2 {
@@ -67,7 +67,7 @@
   &-deck{
     margin:15px;
     width: 425px;
-    height: 650px;//
+    height: 500px;//
     position:relative;
     -webkit-perspective: 1000px;
     perspective: 1000px;
@@ -75,7 +75,7 @@
     border-radius:10px;
     &-card{
       width: 425px;
-      height: 650px;//
+      height: 500px;//
       -webkit-transform-style: preserve-3d;
       transform-style: preserve-3d;
       -webkit-transition: all .5s linear;

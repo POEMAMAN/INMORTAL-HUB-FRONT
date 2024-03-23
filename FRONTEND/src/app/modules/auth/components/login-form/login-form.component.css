@@ -49,6 +49,7 @@ input {
   display: flex;
   align-items: center;
   margin: 5px;
+  height: 40px;
 }
 .button-sesion:hover {
   background-color: #FFC229;

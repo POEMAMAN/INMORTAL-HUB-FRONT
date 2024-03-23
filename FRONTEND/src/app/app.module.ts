@@ -18,6 +18,7 @@ import { FavoritesComponent } from './core/favorites/favorites.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,6 +40,7 @@ import { FavoritesComponent } from './core/favorites/favorites.component';
     FormsModule,
     ReactiveFormsModule,
     MatProgressSpinnerModule,
+
     
   ],
   providers: [

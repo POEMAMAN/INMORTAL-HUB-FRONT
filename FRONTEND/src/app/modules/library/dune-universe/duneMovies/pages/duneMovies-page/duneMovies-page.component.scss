@@ -67,9 +67,24 @@
     }
   }
 }
-@media (max-width: 600px)  {
+@media only screen and (max-width: 700px) { ///---///
+  .duneMovie-container-list-Btn-button{///---///
+    font-size: 10px;
+    height: 10px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+  }
+  .duneMovie-container-list-card-item{///---///
+    width: 380px;
+  }
+}
+@media (min-width: 701px)  {
   .duneMovie-container-list-Btn-button{
     font-size: 15px;
+  }
+  .duneMovie-container-list-card-item{///---///
+    width: 600px;
   }
 }
 

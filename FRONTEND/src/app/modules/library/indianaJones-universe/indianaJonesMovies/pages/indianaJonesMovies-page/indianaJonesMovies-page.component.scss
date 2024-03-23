@@ -67,10 +67,23 @@
     }
   }
 }
-@media (max-width: 600px)  {
+@media only screen and (max-width: 700px){ ///---///
+  .indianaJonesMovie-container-list-Btn-button{///---///
+    font-size: 10px;
+    height: 10px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+  }
+  .indianaJonesMovie-container-list-card-item{///---///
+    width: 380px;
+  }
+}
+@media (min-width: 701px)  {
   .indianaJonesMovie-container-list-button{
     font-size: 15px;
-  }  
+  }
+
 }
 
 @media (min-width: 2200px)  {

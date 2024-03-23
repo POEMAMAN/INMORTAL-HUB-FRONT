@@ -45,8 +45,8 @@
     color: black;
     height: 50px;
     text-align: center;
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
   }
   &-resume {
     display: -webkit-box;
@@ -155,12 +155,35 @@ span{
 }
 
 
-@media (min-width: 400px)  {
-
-}
-@media (min-width: 600px)  {
-   
-}
+@media only screen and (max-width: 700px) {///---///
+  .crepusculoMovies-container-img-img{///---///
+   width: 125px;
+   height: 200px;
+   margin: 5px;
+  }
+  .crepusculoMovies-container-deck, .crepusculoMovies-container-deck-card, .front, .face{///---///
+   width: 380px;
+   height: 275px;
+  }
+  .crepusculoMovies-container-resume{///---///
+   height: 260px;
+  }
+  .crepusculoMovies-container-h2{///---///
+   font-size: 100%;
+   height: 35px;
+  }
+  .crepusculoMovies-container-p{///---///
+   font-size: 12px;
+  }
+  .video{///---///
+   width: 285px;
+   height: 225px;
+  }
+  
+ }
+ @media (min-width: 600px)  {///---///
+ 
+ }
 @media (min-width: 800px)  {
 
 }

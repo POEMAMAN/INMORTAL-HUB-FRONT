@@ -157,12 +157,35 @@ span{
 }
 
 
-@media (min-width: 400px)  {
-
-}
-@media (min-width: 600px)  {
-   
-}
+@media only screen and (max-width: 700px)  {///---///
+  .harryPotterMovies-container-img-img{///---///
+   width: 125px;
+   height: 200px;
+   margin: 5px;
+  }
+  .harryPotterMovies-container-deck, .harryPotterMovies-container-deck-card, .front, .face{///---///
+   width: 380px;
+   height: 275px;
+  }
+  .harryPotterMovies-container-resume{///---///
+   height: 260px;
+  }
+  .harryPotterMovies-container-h2{///---///
+   font-size: 90%;
+   height: 50px;
+  }
+  .harryPotterMovies-container-p{///---///
+   font-size: 12px;
+  }
+  .video{///---///
+   width: 285px;
+   height: 225px;
+  }
+  
+ }
+ @media (min-width: 600px)  {///---///
+  
+ }
 @media (min-width: 800px)  {
 
 }

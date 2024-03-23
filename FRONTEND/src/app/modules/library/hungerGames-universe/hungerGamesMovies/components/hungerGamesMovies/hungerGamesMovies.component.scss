@@ -156,12 +156,35 @@ span{
 }
 
 
-@media (min-width: 400px)  {
+@media only screen and (max-width: 700px)  {///---///
+  .hungerGamesMovies-container-img-img{///---///
+   width: 125px;
+   height: 200px;
+   margin: 5px;
+  }
+  .hungerGamesMovies-container-deck, .hungerGamesMovies-container-deck-card, .front, .face{///---///
+   width: 380px;
+   height: 275px;
+  }
+  .hungerGamesMovies-container-resume{///---///
+   height: 260px;
+  }
+  .hungerGamesMovies-container-h2{///---///
+   font-size: 100%;
+   height: 35px;
+  }
+  .hungerGamesMovies-container-p{///---///
+   font-size: 12px;
+  }
+  .video{///---///
+   width: 285px;
+   height: 225px;
+  }
+  
+ }
+ @media (min-width: 600px)  {///---///
 
-}
-@media (min-width: 600px)  {
-   
-}
+ }
 @media (min-width: 800px)  {
 
 }

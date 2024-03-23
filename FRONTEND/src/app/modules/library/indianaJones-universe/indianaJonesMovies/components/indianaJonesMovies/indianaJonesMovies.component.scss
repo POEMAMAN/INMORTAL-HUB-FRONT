@@ -64,6 +64,7 @@
     padding:0 1rem;
     scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
     scrollbar-width:thin;
+    color: black;
   }
   &-deck{
     margin:15px;
@@ -109,7 +110,7 @@
 	  height: 100%;
 	  z-index: -1;
     background-size:100% 100%;
-	  background: url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710931615/IndianaJones/Background/PortadaBN_s6w5y4.jpg');
+	  background-color: rgb(163, 101, 60);
     background-size: cover;
 	  -webkit-transform: rotateY(180deg);
 	  -moz-transform: rotateY(180deg);

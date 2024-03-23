@@ -3,14 +3,14 @@ import { AuthService } from 'src/app/modules/auth/services/auth.service';
 import { Component, Input, OnInit,Renderer2, ElementRef } from '@angular/core';
 
 @Component({
-  selector: 'app-hungerGamesMovies',
-  templateUrl: './hungerGamesMovies.component.html',
-  styleUrls: ['./hungerGamesMovies.component.scss']
+  selector: 'app-hungerGamesCharacters',
+  templateUrl: './hungerGamesCharacters.component.html',
+  styleUrls: ['./hungerGamesCharacters.component.scss']
 })
-export class hungerGamesMoviesComponent implements OnInit {
-@Input() hungerGamesMovie: any
+export class hungerGamesCharactersComponent implements OnInit {
+@Input() hungerGamesCharacter: any
 isAdmin: boolean = false;
-constructor(private renderer: Renderer2, private elementRef: ElementRef,private authService: AuthService ){
+constructor(private renderer: Renderer2, private elementRef: ElementRef, private authService: AuthService ){
 
 }
 ngOnInit(): void {
@@ -26,7 +26,7 @@ ngOnInit(): void {
 }
 tarjetaVolteada: boolean = false;
 clickCard() {
-  const clickcardElement = this.elementRef.nativeElement.querySelector('.hungerGamesMovies-container-deck-card');
+  const clickcardElement = this.elementRef.nativeElement.querySelector('.hungerGamesCharacters-container-deck-card');
   if (this.tarjetaVolteada) {
     this.renderer.removeClass(clickcardElement, 'flipped');
   } else {
@@ -34,12 +34,6 @@ clickCard() {
   }
   this.tarjetaVolteada = !this.tarjetaVolteada;
 }
-trailer: boolean = false;
-
-showTrailer() {
-  this.trailer = !this.trailer;
 }
-}
-
   
 

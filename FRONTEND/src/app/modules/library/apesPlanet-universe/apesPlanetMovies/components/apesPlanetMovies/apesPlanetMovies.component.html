@@ -28,12 +28,13 @@
         <p class="apesPlanetMovies-container-resume"><span>Sinopsis:</span> {{ apesPlanetMovie.resume }}</p>
       </div>
     </div>
-    <div>
-      <button class="btn btn-outline movie-card__button" type="button" (click)="showTrailer()">Mostrar/Ocultar Trailer
-  <div *ngIf="trailer">
-    <video width="640" height="360" controls autoplay>
-      <source [src]="apesPlanetMovie.trailer" type="video/mp4">
-      Tu navegador no admite la reproducción de videos HTML5.
-    </video>
+  </div>
+  <div>
+    <button class="btn btn-outline movie-card__button" type="button" (click)="showTrailer()">Mostrar/Ocultar Trailer
+<div *ngIf="trailer">
+  <video width="640" height="360" controls autoplay>
+    <source [src]="apesPlanetMovie.trailer" type="video/mp4">
+    Tu navegador no admite la reproducción de videos HTML5.
+  </video>
 </div>
 

@@ -67,7 +67,24 @@
         }
       }
     }
+    @media only screen and (max-width: 700px) { ///---///
+  .starWarsMovie-container-list-Btn-button{///---///
+    font-size: 10px;
+    height: 10px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+  }
+  .starWarsMovie-container-list-card-item{///---///
+    width: 380px;
+  }
+}
+@media (min-width: 601px)  {
+  .starWarsMovie-container-list-Btn-button{
+    font-size: 15px;
+  }
 
+}
 
 @media (min-width: 2200px) {
     .starWarsMovie-container-list-button {

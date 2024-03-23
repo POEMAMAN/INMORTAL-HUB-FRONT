@@ -33,7 +33,7 @@
   <div>
     <button class="btn btn-outline movie-card__button" type="button" (click)="showTrailer()">Mostrar/Ocultar Trailer
 <div *ngIf="trailer">
-  <video width="640" height="360" controls autoplay>
+  <video class="video" width="640" height="360" controls autoplay>
     <source [src]="indianaJonesMovie.trailer" type="video/mp4">
     Tu navegador no admite la reproducción de videos HTML5.
   </video>

@@ -159,3 +159,23 @@ p {
   color: white;
   text-decoration: solid;
 }
+@media only screen and (max-width: 700px) {
+  .apesPlanet-container-button{
+    font-size: 10px;
+    height: 10px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+  }
+  .apesPlanet-container-ul-li{
+    width: 230px;
+    height: 210px;
+  }
+  p {
+    font-size: 13px;
+   
+  }
+}
+@media (min-width: 601px)  {
+
+}

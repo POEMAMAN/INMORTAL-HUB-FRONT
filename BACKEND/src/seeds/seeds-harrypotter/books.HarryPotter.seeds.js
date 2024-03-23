@@ -58,7 +58,7 @@ const arrayBooksHarryPotter = [{
         saga_index: 7,
         author: 'J.K. Rowling',
         resume: 'Harry Potter cumple la mayoría de edad y pierde la protección mágica en casa de los Dursley. Después de un intento de emboscada por parte de Voldemort, Harry, Ron y Hermione se refugian en La Madriguera y reciben la herencia de Dumbledore, que incluye la espada de Gryffindor y el libro "Los cuentos de Beedle el Bardo", donde encuentran pistas sobre las Reliquias de la Muerte.Durante la boda de Bill Weasley, notan un extraño símbolo en el colgante de Xenophilius Lovegood, relacionado con las Reliquias de la Muerte. Al escapar de los Mortífagos, el trío busca Horrocruxes por todo el Reino Unido y descubre la verdad sobre las Reliquias.Capturados y llevados a la Mansión Malfoy, escapan y encuentran más Horrocruxes. Luego, participan en la batalla final en Hogwarts, donde Voldemort asesina a Snape, revelando su lealtad. Harry descubre que es un Horrocrux y debe morir para vencer a Voldemort.En un limbo, Dumbledore le revela a Harry que el Horrocrux en él fue destruido y se convierte en el verdadero "señor de la muerte". Harry regresa, reinicia la batalla y Voldemort muere por su propia maldición. El epílogo muestra a los protagonistas 19 años después, llevando a sus hijos a Hogwarts.',
-        picture: 'https://console.cloudinary.com/console/c-19d7767fc54f15bca4427ebedd8a4a/media_library/folders/c71bc5e2d20932339e7427e0cb48b44aa5/asset/f6edbae7f6b2d4ddac4c9cf82e85d9d2/manage?view_mode=mosaic&context=manage',
+        picture: 'https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710329197/HarryPotter/Books/Opcion2/7_book_HPYLasReliquiasDeLaMuerte_qatuad.jpg',
     },
     {
         title: 'Harry Potter y el Legado Maldito',
@@ -66,7 +66,7 @@ const arrayBooksHarryPotter = [{
         saga_index: 8,
         author: 'J.K. Rowling, Jack Thorne, John Tiffany',
         resume: 'Ser Harry Potter nunca ha sido tarea fácil, menos aún desde que se ha convertido en un atareadísimo empleado del Ministerio de Magia, un hombre casado y padre de tres hijos. Y si Harry planta cara a un pasado que se resiste a quedar atrás, su hijo menor, Albus Severus, ha de luchar contra el peso de una herencia familiar de la que él nunca ha querido saber nada. Cuando el destino conecte el pasado con el presente, padre e hijo deberán afrontar una verdad muy incómoda: a veces, la oscuridad surge de los lugares más insospechados. Desde que el primer libro apareciera en librerías en 1997 —en 1999 en castellano—, la saga de Harry Potter se ha traducido a setenta y nueve idiomas en doscientos países y ha sumado más de cuatrocientos cincuenta millones de ejemplares vendidos en todo el mundo, de los cuales más de trece millones en castellano. Un fenómeno que ha aficionado a la lectura a millones de jóvenes de todas las culturas.',
-        picture: 'https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710329197/HarryPotter/Books/Opcion2/7_book_HPYLasReliquiasDeLaMuerte_qatuad.jpg',
+        picture: 'https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710329287/HarryPotter/Books/Opcion2/8_book_HPYElLegadoMaldito_r5lpi0.webp',
     }
 ]
 mongoose

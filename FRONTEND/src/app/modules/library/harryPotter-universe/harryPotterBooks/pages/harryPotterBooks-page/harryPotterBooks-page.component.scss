@@ -17,7 +17,7 @@
     justify-content: center;
     margin: 20px auto;
       &-item {
-      width: 400px;
+      width: 350px;
       margin: 10px;
       border-radius: 8px;
       padding: 15px;
@@ -67,7 +67,20 @@
       }
     }
   }
-  @media (max-width: 600px)  {
+@media only screen and (max-width: 700px) {//////////
+  .harryPotterBook-container-list-Btn-button{
+    font-size: 10px;
+    height: 10px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+  }
+  .harryPotterBook-container-list-card-item{
+    width: 320px;
+  }
+}
+
+  @media (max-width: 700.1px)  {
     .harryPotterBook-container-list-button{
       font-size: 15px;
     }  

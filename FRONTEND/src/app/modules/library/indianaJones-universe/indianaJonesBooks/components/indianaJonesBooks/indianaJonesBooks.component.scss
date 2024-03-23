@@ -12,6 +12,7 @@
       &-img {
     width: 200px;
     height: 300px;
+    margin-bottom: 15px;/////////
     }
   }
   &-description {
@@ -29,7 +30,7 @@
     overflow: hidden;
     max-height: calc(1.5em * 4);
     -webkit-line-clamp: 4;
-    font-size: 20px;
+    font-size: 19px;
     color: white;
     margin: 5px;
   }
@@ -41,9 +42,9 @@
     -webkit-line-clamp: 1;
     font-family: 'Race-guard';
     text-decoration:underline;
-    font-size: 140%;
+    font-size: 120%;
     color: white;
-    height: 82px;
+    height: 50px;
     text-align: center;
 
 
@@ -54,7 +55,7 @@
     overflow: hidden;
     -webkit-line-clamp: 4;
     font-size: 16px;
-    height: 490px;
+    height: 485px;
     font-family: 'Merienda';
     margin: 2% 2% 0% 2%;
     color: black;
@@ -63,7 +64,7 @@
   &-deck{
     margin:15px;
     width: 350px;
-    height: 550px;
+    height: 500px;
     position:relative;
     -webkit-perspective: 1000px;
     perspective: 1000px;
@@ -71,7 +72,7 @@
     border-radius:10px;
     &-card{
       width: 350px;
-      height: 550px;
+      height: 500px;
       -webkit-transform-style: preserve-3d;
       transform-style: preserve-3d;
       -webkit-transition: all .5s linear;

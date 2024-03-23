@@ -8,7 +8,7 @@
     <div class="bladeVideoGames-container-deck-card" (click)="clickCard()">
       <div class="front face" >
         <img  class="bladeVideoGames-container-img-img"[src]="bladeVideoGame.picture" />
-        <div CLASS="bladeVideoGames-container-text">
+        <div class="bladeVideoGames-container-text">
         <h2 class="bladeVideoGames-container-h2">{{ bladeVideoGame.title  }}</h2>
           <p class="bladeVideoGames-container-p"><span>Platform:</span> {{ bladeVideoGame.platform }}</p>
           <p class="bladeVideoGames-container-p"><span>Año de Lanzamiento:</span> {{ bladeVideoGame.year }}</p>
@@ -24,7 +24,7 @@
   <div>
     <button class="btn btn-outline movie-card__button" type="button" (click)="showTrailer()">Mostrar/Ocultar GamePlay
 <div *ngIf="trailer">
-  <video width="640" height="360" controls autoplay>
+  <video class="video" width="640" height="360" controls autoplay>
     <source [src]="bladeVideoGame.trailer" type="video/mp4">
     Tu navegador no admite la reproducción de videos HTML5.
   </video>

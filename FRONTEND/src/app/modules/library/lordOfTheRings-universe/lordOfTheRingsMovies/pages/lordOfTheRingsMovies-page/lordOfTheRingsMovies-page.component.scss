@@ -15,7 +15,6 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin: 20px auto;
         &-item {
             width: 700px;
             margin: 10px;
@@ -76,7 +75,7 @@
     align-items: center;
   }
   .lordOfTheRingsMovie-container-list-card-item{///---///
-    width: 380px;
+    width: 350px;
   }
 }
 @media (min-width: 701px)  {

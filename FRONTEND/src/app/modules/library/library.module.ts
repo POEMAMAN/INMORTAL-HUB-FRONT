@@ -11,7 +11,7 @@ import { HungerGamesUniverseModule } from './hungerGames-universe/hungerGames-un
 import { indianaJonesUniverseModule } from './indianaJones-universe/indianaJones-universe.module';
 import { MissionImposibleUniverseModule } from './missionImposible-universe/missionImposible-universe.module';
 import { starWarsUniverseModule } from './starWars-universe/starWars-universe.module';
-import { lordOfTheRingsMoviesModule } from './lordOfTheRings-universe/lordOfTheRingsMovies/lordOfTheRingsMovies.module';
+import { lordOfTheRingsUniverseModule } from './lordOfTheRings-universe/lordOfTheRings-universe.module';
 
 
 
@@ -36,7 +36,7 @@ import { lordOfTheRingsMoviesModule } from './lordOfTheRings-universe/lordOfTheR
     indianaJonesUniverseModule,
     starWarsUniverseModule,
     MissionImposibleUniverseModule,
-    lordOfTheRingsMoviesModule
+    lordOfTheRingsUniverseModule
   
     
   ],

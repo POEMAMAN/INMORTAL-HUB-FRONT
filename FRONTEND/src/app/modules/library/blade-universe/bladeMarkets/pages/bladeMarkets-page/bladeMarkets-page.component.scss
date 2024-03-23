@@ -17,7 +17,10 @@
   padding:0 1rem;
   scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
   scrollbar-width:thin;
-  &-list-button{
+  &-list{
+    display: flex;
+    flex-direction: row;
+    &-button{
     appearance: none;
     background-color: #FFFFFF;
     border-radius: 40em;
@@ -53,10 +56,23 @@
     &-img{
       width: 18px;
       height: 18px;
+      }
     }
   }
 }
-@media (max-width: 600px)  {
+@media only screen and (max-width: 700px) {//////////
+  .blade-container-list-button{
+    font-size: 10px;
+    height: 10px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+  }
+  .blade-container-list-card-item{
+    width: 320px;
+  }
+}
+@media (max-width: 700.1px)  {
   .blade-container-list-button{
     font-size: 15px;
   }

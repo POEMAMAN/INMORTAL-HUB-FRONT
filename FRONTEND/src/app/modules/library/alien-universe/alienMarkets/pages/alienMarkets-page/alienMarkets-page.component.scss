@@ -166,7 +166,19 @@ a {
   font-family: 'Race-guard';
   color: gold;
 }
-@media (max-width: 600px)  {
+@media only screen and (max-width: 700px) {//////////
+  .alien-container-list-button{
+    font-size: 10px;
+    height: 10px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+  }
+  .alien-container-list-card-item{
+    width: 320px;
+  }
+}
+@media (max-width: 700.1px)  {
   .alien-container-list-button{
     font-size: 15px;
   }

@@ -19,4 +19,11 @@
       </div>
     </div>
   </div>
+  <div>
+    <button class="btn btn-outline movie-card__button" type="button" (click)="showTrailer()">Mostrar/Ocultar GamePlay
+<div *ngIf="trailer">
+  <video width="640" height="360" controls autoplay>
+    <source [src]="bladeVideoGame.trailer" type="video/mp4">
+    Tu navegador no admite la reproducción de videos HTML5.
+  </video>
 </div>

@@ -200,7 +200,8 @@ button {
 .btn-outline {
   background-color: transparent;
   border: 3px solid #ffffff;
-  background-image:url('https://i.imgur.com/W3tra4F.gif');
+  background-color: black;
+  // background-image:url('https://i.imgur.com/W3tra4F.gif');
 }
 .btn::before {
   font-family: 'Material Icons';

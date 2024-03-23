@@ -13,7 +13,7 @@ const UserRoutes = require('./src/api/users/users.routes.js')
 // Rutas Componentes hijos (universos)
 
 // ApesPlanet
-// const videoGamesApesPlanetRoutes = require("./src/api/routes/routes.ApesPlanet/videoGames.ApesPlanet.routes");
+const videoGamesApesPlanetRoutes = require("./src/api/routes/routes.ApesPlanet/videoGames.ApesPlanet.routes.js");
 const charactersApesPlanetRoutes = require("./src/api/routes/routes.ApesPlanet/characters.ApesPlanet.routes");
 const moviesApesPlanetRoutes = require("./src/api/routes/routes.ApesPlanet/movies.ApesPlanet.routes");
 
@@ -124,7 +124,7 @@ app.use('/user', userRouter);
 // Rutas Universos
 
 // ApesPlanet
-// app.use("/universes/apesPlanet/videoGames", videoGamesApesPlanetRoutes)
+app.use("/universes/apesPlanet/videoGames", videoGamesApesPlanetRoutes)
 app.use("/universes/apesPlanet/characters", charactersApesPlanetRoutes)
 app.use("/universes/apesPlanet/movies", moviesApesPlanetRoutes)
 

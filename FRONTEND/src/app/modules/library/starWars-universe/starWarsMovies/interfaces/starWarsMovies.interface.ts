@@ -8,6 +8,7 @@ export interface starWarsMovie {
   genre:  String,
   clasification: String,
   resume: String,
+  trailer: String
 
 }
 

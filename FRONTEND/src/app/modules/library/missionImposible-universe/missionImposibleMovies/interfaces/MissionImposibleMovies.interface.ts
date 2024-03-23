@@ -8,6 +8,7 @@ export interface MissionImposibleMovie {
   genre:  String,
   clasification:   String,
   resume: String,
+  trailer: String
 
 }
 

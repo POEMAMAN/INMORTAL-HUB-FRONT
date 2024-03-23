@@ -30,7 +30,8 @@
     max-height: calc(1.5em * 4);
     -webkit-line-clamp: 4;
     font-size: 20px;
-    color: black;
+    color: white;
+    margin: 5px;
   }
   &-h2 {
     display: -webkit-box;
@@ -40,9 +41,11 @@
     -webkit-line-clamp: 1;
     font-family: 'Race-guard';
     text-decoration:underline;
-    font-size: 90%;
-    color: black;
-    height: 10%;
+    font-size: 140%;
+    color: white;
+    height: 82px;
+    text-align: center;
+
 
   }
   &-resume {
@@ -114,8 +117,9 @@
   transition: all .5s linear;
 }
 .front{
-  background-image:url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710768758/IndianaJones/clips/giphy_rmla6b.webp');
+  background-image:url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710768744/IndianaJones/clips/200_flrczj.webp');
   background-size: cover;
+  background-position-x:-300px;
   z-index:1;
   box-shadow: 5px 5px 5px #aaa;
   display: flex;

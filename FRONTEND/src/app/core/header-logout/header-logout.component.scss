@@ -45,6 +45,10 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+    &-img{
+      width: 30px;
+      height: 30px;
+    }
 }
 
 .header-container-logout-c-button:hover,.header-container-logout-c-p:hover {
@@ -70,6 +74,10 @@
     padding: 16px;
     display: flex;
     align-items: center;
+  }
+  .header-container-logout-c-button-img{
+    width: 20px;
+    height: 20px;
   }
 }
 

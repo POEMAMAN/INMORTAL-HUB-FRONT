@@ -45,7 +45,7 @@ const routes: Routes = [
       path: 'missionImposibleUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./missionImposible-universe/missionImposible-universe.module').then(m => m.MissionImposibleUniverseModule)
     },
     {
-      path: 'lordoftheringsUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./lordOfTheRings-universe/lordOfTheRings-universe.module').then(m => m.lordOfTheRingsUniverseModule)
+      path: 'lordOfTheRingsUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./lordOfTheRings-universe/lordOfTheRings-universe.module').then(m => m.lordOfTheRingsUniverseModule)
     },
     { path: 'favorites', component: FavoritesComponent },
     {

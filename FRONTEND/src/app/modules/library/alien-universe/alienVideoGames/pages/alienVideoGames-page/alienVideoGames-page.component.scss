@@ -9,15 +9,15 @@
     padding:0 1rem;
     scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
     scrollbar-width:thin;
-    background-image: url("https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710572096/Alien/Background/15250_2880x1800_kyhmml.jpg");
+    background-image: url("https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710960171/segundo%20spring/alien/videogames/maxresdefault_vypmi0.jpg");
     background-size: contain;
   &-card {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
       &-item {
-      width: 600px;
-      margin: 10px;
+      width: 600px;/////
+      margin: 0 55px 0 55px;
       border-radius: 8px;
       padding: 15px;
       box-sizing: border-box;
@@ -66,7 +66,7 @@
     }
   }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 700px) {//////////
   .alienVideoGame-container-list-Btn-button{
     font-size: 10px;
     height: 10px;

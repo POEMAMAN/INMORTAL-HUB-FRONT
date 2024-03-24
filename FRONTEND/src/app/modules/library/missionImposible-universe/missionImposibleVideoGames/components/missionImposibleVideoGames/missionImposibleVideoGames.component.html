@@ -7,12 +7,14 @@
   <div class="missionImposibleVideoGames-container-deck">
     <div class="missionImposibleVideoGames-container-deck-card" (click)="clickCard()">
       <div class="front face" >
-        <h2 class="missionImposibleVideoGames-container-h2">{{ missionImposibleVideoGame.title  }}</h2>
         <img  class="missionImposibleVideoGames-container-img-img"[src]="missionImposibleVideoGame.picture" />
-        <p class="missionImposibleVideoGames-container-p"><span>Platform:</span> {{ missionImposibleVideoGame.platform }}</p>
-        <p class="missionImposibleVideoGames-container-p"><span>Año de Lanzamiento:</span> {{ missionImposibleVideoGame.year }}</p>
-        <p class="missionImposibleVideoGames-container-p"><span>Estudio de desarrollo:</span> {{ missionImposibleVideoGame.studio }}</p>
-        <p class="missionImposibleVideoGames-container-p"><span>Año de Clasificacion:</span> {{ missionImposibleVideoGame.clasification }}</p>
+        <div class="missionImposibleVideoGames-container-text">
+        <h2 class="missionImposibleVideoGames-container-h2">{{ missionImposibleVideoGame.title  }}</h2>
+          <p class="missionImposibleVideoGames-container-p"><span>Platform:</span> {{ missionImposibleVideoGame.platform }}</p>
+          <p class="missionImposibleVideoGames-container-p"><span>Año de Lanzamiento:</span> {{ missionImposibleVideoGame.year }}</p>
+          <p class="missionImposibleVideoGames-container-p"><span>Estudio de desarrollo:</span> {{ missionImposibleVideoGame.studio }}</p>
+          <p class="missionImposibleVideoGames-container-p"><span>Año de Clasificacion:</span> {{ missionImposibleVideoGame.clasification }}</p>
+        </div>
       </div>
       <div class="back face">
         <p class="missionImposibleVideoGames-container-resume"><span>Sinopsis:</span> {{ missionImposibleVideoGame.resume }}</p>

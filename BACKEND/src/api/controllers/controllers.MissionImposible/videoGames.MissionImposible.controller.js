@@ -1,62 +1,62 @@
-const BooksMissionImposible = require('../../models/models.MissionImposible/books.MissionImposible.model');
+const VideoGamesMissionImposible = require('../../models/models.MissionImposible/VideoGames.MissionImposible.model');
 
-const getBooksMissionImposible = async (req, res) => {
+const getVideoGamesMissionImposible = async (req, res) => {
   try {
-    const allBooksMissionImposible = await BooksMissionImposible.find();
-    return res.status(200).json(allBooksMissionImposible);
+    const allVideoGamesMissionImposible = await VideoGamesMissionImposible.find();
+    return res.status(200).json(allVideoGamesMissionImposible);
   } catch (error) {
     return res.status(500).json(error);
   }
 };
 
-const getOneBookMissionImposible = async (req, res) => {
+const getOneVideoGameMissionImposible = async (req, res) => {
   try {
     const { id } = req.params;
-    const oneBookMissionImposible = await BooksMissionImposible.findById(id);
-    return res.status(200).json(oneBookMissionImposible);
+    const oneVideoGameMissionImposible = await VideoGamesMissionImposible.findById(id);
+    return res.status(200).json(oneVideoGameMissionImposible);
   } catch (error) {
     return res.status(500).json(error);
   }
 };
 
-const postBookMissionImposible = async (req, res) => {
+const postVideoGameMissionImposible = async (req, res) => {
   try {
-    const newBookMissionImposible = new BooksMissionImposible(req.body);
-    const createdBookMissionImposible = await newBookMissionImposible.save();
-    return res.status(201).json(createdBookMissionImposible);
+    const newVideoGameMissionImposible = new VideoGamesMissionImposible(req.body);
+    const createdVideoGameMissionImposible = await newVideoGameMissionImposible.save();
+    return res.status(201).json(createdVideoGameMissionImposible);
   } catch (error) {
     return res.status(500).json(error);
   }
 };
 
-const putBookMissionImposible = async (req, res) => {
+const putVideoGameMissionImposible = async (req, res) => {
   try {
     const { id } = req.params;
-    const putBooksMissionImposible = new BooksMissionImposible(req.body);
+    const putVideoGamesMissionImposible = new VideoGamesMissionImposible(req.body);
     putvs._id = id;
-    const updateBooksMissionImposible = await BooksMissionImposible.findByIdAndUpdate(id, putBooksMissionImposible, {
+    const updateVideoGamesMissionImposible = await VideoGamesMissionImposible.findByIdAndUpdate(id, putVideoGamesMissionImposible, {
       new: true,
     });
-    if (!updateBooksMissionImposible) {
-      return res.status(404).json({ message: 'Book not found' });
+    if (!updateVideoGamesMissionImposible) {
+      return res.status(404).json({ message: 'VideoGame not found' });
     }
-    return res.status(200).json(updateBooksMissionImposible);
+    return res.status(200).json(updateVideoGamesMissionImposible);
   } catch (error) {
     return res.status(500).json(error);
   }
 };
 
-const deleteBookMissionImposible = async (req, res) => {
+const deleteVideoGameMissionImposible = async (req, res) => {
   try {
     const { id } = req.params;
-    const deleteBookMissionImposible = await BooksMissionImposible.findByIdAndDelete(id);
-    if (!deleteBookMissionImposible) {
-      return res.status(404).json({ message: 'Book not found' });
+    const deleteVideoGameMissionImposible = await VideoGamesMissionImposible.findByIdAndDelete(id);
+    if (!deleteVideoGameMissionImposible) {
+      return res.status(404).json({ message: 'VideoGame not found' });
     }
-    return res.status(200).json(deleteBookMissionImposible);
+    return res.status(200).json(deleteVideoGameMissionImposible);
   } catch (error) {
     return res.status(500).json(error);
   }
 };
 
-module.exports = { getBooksMissionImposible, getOneBookMissionImposible, postBookMissionImposible, putBookMissionImposible, deleteBookMissionImposible };
+module.exports = { getVideoGamesMissionImposible, getOneVideoGameMissionImposible, postVideoGameMissionImposible, putVideoGameMissionImposible, deleteVideoGameMissionImposible };

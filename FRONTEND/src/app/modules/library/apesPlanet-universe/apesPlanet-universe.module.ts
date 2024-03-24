@@ -1,3 +1,4 @@
+import { apesPlanetVideoGamesModule } from './apesPlanetVideoGames/apesPlaneGames.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -8,7 +9,7 @@ import { apesPlanetUniverseRoutingModule } from './apesPlanet-universe-routing.m
 import { ApesPlanetUniverseComponent } from './apesPlanet-universe.component';
 import { apesPlanetMarketsModule } from './apesPlanetMarkets/apesPlanetMarkets.module';
 import { apesPlanetMoviesModule } from './apesPlanetMovies/apesPlanetMovies.module';
-import { apesPlanetVideoGamesModule } from './apesPlanetVideoGames/apesPlanetVideoGames.module';
+
 
 
 

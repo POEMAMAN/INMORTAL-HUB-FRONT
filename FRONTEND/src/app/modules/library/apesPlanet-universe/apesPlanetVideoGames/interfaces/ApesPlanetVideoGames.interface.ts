@@ -8,5 +8,6 @@ export interface ApesPlanetVideoGames {
   resume: String,
   trailer: String,
 
+
 }
 

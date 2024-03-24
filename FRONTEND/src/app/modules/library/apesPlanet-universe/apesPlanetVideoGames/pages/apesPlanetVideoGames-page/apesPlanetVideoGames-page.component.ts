@@ -10,7 +10,7 @@ import { AudioService } from '../../../apesPlanetSoundtrack/soundtrack.service';
 })
 export class apesPlanetVideoGamesPageComponent implements OnInit {
   apesPlanetVideoGames: ApesPlanetVideoGames[] = []
-  constructor(private apesPlanetVideoGamesService: apesPlanetVideoGamesService,private audioService: AudioService ) {}
+  constructor(private apesPlanetVideoGamesService: apesPlanetVideoGamesService, private audioService: AudioService  ) {}
 
 
   ngOnInit(){
@@ -28,3 +28,4 @@ export class apesPlanetVideoGamesPageComponent implements OnInit {
     this.audioService.stopSound();
   }
 };
+

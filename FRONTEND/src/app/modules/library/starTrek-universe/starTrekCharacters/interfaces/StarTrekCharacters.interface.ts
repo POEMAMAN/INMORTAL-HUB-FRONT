@@ -1,10 +1,11 @@
 export interface StarTrekCharacter {
   name: String,
   actor: String,
-  country: String,
-  profession: String,
-  resume: String,
+  rank: String,
+  type: String,
   picture: String,
+  resume: String,
+
 
 }
 

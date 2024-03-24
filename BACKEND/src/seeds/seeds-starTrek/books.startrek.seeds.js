@@ -181,8 +181,8 @@ mongoose
         useUnifiedTopology: true,
     })
     .then(async() => {
-        const allBooksCrespusculo = await BookStartrek.find();
-        if (allBooksCrespusculo.length > 0) {
+        const allBooksStartrek = await BookStartrek.find();
+        if (allBooksStartrek.length > 0) {
             await BookStartrek.collection.drop();
             console.log('Libros borrados');
         }
@@ -191,8 +191,8 @@ mongoose
         console.log('error borrando los Libros', err);
     })
     .then(async() => {
-        const booksCrespusculo = arrayBooksStartrek.map((book) => new BookCrespusculo(book));
-        await BookStartrek.insertMany(booksCrespusculo);
+        const booksStartrek = arrayBooksStartrek.map((book) => new BookStartrek(book));
+        await BookStartrek.insertMany(booksStartrek);
         console.log('Libros insertados');
     })
     .catch((err) => {

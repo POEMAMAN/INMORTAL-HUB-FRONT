@@ -52,8 +52,8 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     -webkit-line-clamp: 4;
-    font-size: 20px;
-    height: 625px;//
+    font-size: 15px;
+    height: 485px;//
     font-family: 'Merienda';
     margin: 2% 2% 0% 2%;
     margin: 1rem auto;//
@@ -146,8 +146,15 @@
 span{
   color: goldenrod;
 }
-@media (min-width: 400px)  {
-
+@media only screen and (max-width: 700px) {
+  .crepusculoCharacters-container-img-img{
+    width: 250px;
+    height: 250px;
+  }
+  .crepusculoCharacters-container-deck, .crepusculoCharacters-container-deck-card, .front, .face{
+    width: 350px;
+   }
+    
 }
 @media (min-width: 600px)  {
    

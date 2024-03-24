@@ -34,7 +34,7 @@
     overflow: hidden;
     max-height: calc(1.5em * 4);
     -webkit-line-clamp: 4;
-    font-size: 26px;
+    font-size: 20px;
   }
   &-h2 {
     display: -webkit-box;
@@ -54,8 +54,8 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     -webkit-line-clamp: 4;
-    font-size: 20px;
-    height: 575px;
+    font-size: 15px;
+    height: 485px;
     font-family: 'Merienda';
     margin: 2% 2% 0% 2%;
     margin: 1rem auto;
@@ -71,7 +71,7 @@
   &-deck{
     margin:15px;
     width: 425px;
-    height: 600px;
+    height: 500px;
     position:relative;
     -webkit-perspective: 1000px;
     perspective: 1000px;
@@ -79,7 +79,7 @@
     border-radius:10px;
     &-card{
       width: 425px;
-      height: 600px;
+      height: 500px;
       -webkit-transform-style: preserve-3d;
       transform-style: preserve-3d;
       -webkit-transition: all .5s linear;
@@ -126,7 +126,7 @@
   transition: all .5s linear;
 }
 .front{
-  background-image:url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710762888/JuegosDelHambre/clips/dibujo_xconl0.webp');
+  background-image:url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710761823/JuegosDelHambre/Backgrounds/1366_2000_1_xjgzbh.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   z-index:1;
@@ -152,8 +152,16 @@
 span{
   color: goldenrod;
 }
-@media (min-width: 400px)  {
+@media only screen and (max-width: 700px) {
+  .hungerGamesCharacters-container-img-img{
+    width: 250px;
+    height: 250px;
+  }
+  .hungerGamesCharacters-container-deck, .hungerGamesCharacters-container-deck-card, .front, .face{
+    width: 350px;
+   }
 
+    
 }
 @media (min-width: 600px)  {
    

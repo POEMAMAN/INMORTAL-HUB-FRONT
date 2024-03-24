@@ -34,8 +34,8 @@
     overflow: hidden;
     max-height: calc(1.5em * 4);
     -webkit-line-clamp: 4;
-    font-size: 30px;
-    margin: 15px;  //  
+    font-size: 20px;
+    margin: 5px;  //  
     text-align: center;
   }
   &-h2 {
@@ -46,16 +46,16 @@
     -webkit-line-clamp: 1;
     font-family: 'Race-guard';
     text-decoration:overline;
-    font-size: 190%;
-    height: 80px;
+    font-size: 130%;
+    height: 60px;
   }
   &-resume {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
     -webkit-line-clamp: 4;
-    font-size: 20px;
-    height: 625px;//
+    font-size: 15px;
+    height: 485px;//
     font-family: 'Merienda';
     margin: 2% 2% 0% 2%;
     margin: 1rem auto;//
@@ -70,7 +70,7 @@
   &-deck{
     margin:15px;
     width: 425px;
-    height: 650px;//
+    height: 500px;//
     position:relative;
     -webkit-perspective: 1000px;
     perspective: 1000px;
@@ -78,7 +78,7 @@
     border-radius:10px;
     &-card{
       width: 425px;
-      height: 650px;//
+      height: 500px;//
       -webkit-transform-style: preserve-3d;
       transform-style: preserve-3d;
       -webkit-transition: all .5s linear;
@@ -124,7 +124,7 @@
   transition: all .5s linear;
 }
 .front{
-  background-image:url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710888635/IndianaJones/clips/giphy_o3y2iv.webp');
+  background-image:url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710768751/IndianaJones/clips/bola_mnrnvc.webp');
   background-size: cover;
   z-index:1;
   box-shadow: 5px 5px 5px #aaa;
@@ -149,8 +149,21 @@
 span{
   color: goldenrod;
 }
-@media (min-width: 400px)  {
-
+@media only screen and (max-width: 700px) {
+  .indianaJonesCharacters-container-img-img{
+    width: 250px;
+    height: 250px;
+  }
+  .indianaJonesCharacters-container-deck, .indianaJonesCharacters-container-deck-card, .front, .face{
+    width: 350px;
+   }
+  .indianaJonesCharacters-container-p{
+    font-size: 20px;
+    margin: 5px;
+  }
+  .indianaJonesCharacters-container-h2{
+    font-size: 160%;
+  }
 }
 @media (min-width: 600px)  {
    

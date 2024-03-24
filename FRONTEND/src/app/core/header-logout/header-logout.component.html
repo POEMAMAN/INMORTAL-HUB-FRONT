@@ -17,7 +17,7 @@
     </div>
     <div class="header-container-logout-c" *ngIf="userData">
       <button class="header-container-logout-c-p" [routerLink]="'/library/favorites'">
-        <img class="header-container-logout-c-p-img" src="https://res.cloudinary.com/dqh5ovfj1/image/upload/v1711272937/Varios/usuario_xtrzhb.png">Nombre: {{ userData.name }}&nbsp;{{ userData.surname}} Email: {{ userData.email }}
+        <img class="header-container-logout-c-p-img" src="https://res.cloudinary.com/dqh5ovfj1/image/upload/v1711272937/Varios/usuario_xtrzhb.png">User: {{ userData.email }}
       </button>
       <app-avatar></app-avatar> 
     </div>

@@ -1,7 +1,7 @@
 *{
   box-sizing:border-box;
 }
-.missionImposibleCharacters-container {
+.jurassicParkCharacters-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,7 +12,6 @@
       width: 300px;
       height: 300px;
       border-radius: 50px;//
-      margin: 15px;
     }
   }
   &-description {
@@ -35,9 +34,9 @@
     overflow: hidden;
     max-height: calc(1.5em * 4);
     -webkit-line-clamp: 4;
-    font-size: 30px;
-    margin: 15px;  //  
-    color: black;
+    font-size: 20px;
+    margin: 5px;  //  
+    text-align: center;
   }
   &-h2 {
     display: -webkit-box;
@@ -47,10 +46,8 @@
     -webkit-line-clamp: 1;
     font-family: 'Race-guard';
     text-decoration:overline;
-    font-size: 160%;
-    text-align: center;
+    font-size: 130%;
     height: 60px;
-    color: rgb(138, 8, 245);
   }
   &-resume {
     display: -webkit-box;
@@ -68,8 +65,7 @@
     padding:0 1rem;//
     scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);//
     scrollbar-width:thin;//
-    color: white;
-    text-decoration: solid;
+    color: black;
   }
   &-deck{
     margin:15px;
@@ -115,7 +111,7 @@
 	  height: 100%;
 	  z-index: -1;
     background-size:100% 100%;
-	  background-color: rgb(0, 0, 15);
+	  background-color: rgb(163, 101, 60);
     background-size: cover;
 	  -webkit-transform: rotateY(180deg);
 	  -moz-transform: rotateY(180deg);
@@ -128,7 +124,7 @@
   transition: all .5s linear;
 }
 .front{
-  background-image:url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1711268000/misionImposible/clips/200_bsfogf.webp');
+  background-image:url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710768901/Jurassic%20Park/clips/giphy_1_hqf5zx.webp');
   background-size: cover;
   z-index:1;
   box-shadow: 5px 5px 5px #aaa;
@@ -154,17 +150,20 @@ span{
   color: goldenrod;
 }
 @media only screen and (max-width: 700px) {
-  .missionImposibleCharacters-container-img-img{
+  .jurassicParkCharacters-container-img-img{
     width: 250px;
     height: 250px;
   }
-  .missionImposibleCharacters-container-deck, .missionImposibleCharacters-container-deck-card, .front, .face{
+  .jurassicParkCharacters-container-deck, .jurassicParkCharacters-container-deck-card, .front, .face{
     width: 350px;
    }
-   .missionImposibleCharacters-container-p{
+  .jurassicParkCharacters-container-p{
+    font-size: 20px;
     margin: 5px;
-   }
-  
+  }
+  .jurassicParkCharacters-container-h2{
+    font-size: 160%;
+  }
 }
 @media (min-width: 600px)  {
    

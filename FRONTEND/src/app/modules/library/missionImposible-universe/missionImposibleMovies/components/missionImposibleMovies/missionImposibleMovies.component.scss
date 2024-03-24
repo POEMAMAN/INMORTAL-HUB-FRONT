@@ -102,6 +102,7 @@
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
   box-sizing: border-box;
+  background-color: black;
   &:before{
     content: "";
 	  position: absolute;
@@ -109,7 +110,6 @@
 	  height: 100%;
 	  z-index: -1;
     background-size:100% 100%;
-	  background: url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710572086/MissionImposible/Background/0ce0f79638ab6907c537aae48181c35c_qqsaqt.jpg');
     background-size: cover;
 	  -webkit-transform: rotateY(180deg);
 	  -moz-transform: rotateY(180deg);
@@ -122,7 +122,7 @@
   transition: all .5s linear;
 }
 .front{
-  background-image:url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1711227182/misionImposible/characters/giphy_2_uvtapp.gif');
+  background-image:url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1711267995/misionImposible/clips/200_1_ctho2q.webp');
   background-size: cover;
   z-index:1;
   box-shadow: 5px 5px 5px #aaa;

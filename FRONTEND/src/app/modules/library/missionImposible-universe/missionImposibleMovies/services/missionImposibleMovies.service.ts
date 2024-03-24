@@ -14,6 +14,6 @@ export class missionImposibleMoviesService {
   constructor(private http: HttpClient) { }
 
   getMissionImposibleMovies(){
-      return this.http.get<MissionImposibleMovie[]>('http://localhost:8084/universes/ImposibleMission/movies')
+      return this.http.get<MissionImposibleMovie[]>('http://localhost:8084/universes/missionImposible/movies')
   }
 }

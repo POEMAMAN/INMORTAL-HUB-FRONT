@@ -21,9 +21,9 @@ import { FavoritesComponent } from './core/favorites/favorites.component';
 
 @NgModule({
   declarations: [
+    HeaderLogoutComponent,
     AppComponent,
     FooterComponent,
-    HeaderLogoutComponent,
     MainComponent,
     LibraryComponent,
     AvatarComponent,

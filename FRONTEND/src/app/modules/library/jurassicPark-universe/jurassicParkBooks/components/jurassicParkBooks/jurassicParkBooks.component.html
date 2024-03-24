@@ -1,0 +1,27 @@
+<div class="jurassicParkBooks-container">
+  <div class="jurassicParkBooks-container-button"*ngIf="isAdmin"style="
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 5px;
+      gap: 5px;">
+    <button [routerLink]="['/admin/edit-product', jurassicParkBook._id]">Editar</button>
+    <button [routerLink]="['/admin/delete-product', jurassicParkBook._id]">
+      Eliminar
+    </button>
+  </div>
+  <div class="jurassicParkBooks-container-deck">
+    <div class="jurassicParkBooks-container-deck-card" (click)="clickCard()">
+      <div class="front face" >
+        <h2 class="jurassicParkBooks-container-h2">{{ jurassicParkBook.title }}</h2>
+        <img  class="jurassicParkBooks-container-img-img"[src]="jurassicParkBook.picture" />
+        <p class="jurassicParkBooks-container-p"><span>Año de publicacion:</span> {{ jurassicParkBook.publication_year }}</p>
+        <p class="jurassicParkBooks-container-p"><span>Ubicacion en la saga:</span> {{ jurassicParkBook.saga_index }}</p>
+        <p class="jurassicParkBooks-container-p"><span>Autor:</span> {{ jurassicParkBook.author }}</p>
+      </div>
+      <div class="back face">
+        <p class="jurassicParkBooks-container-resume"><span>Sinopsis:</span> {{ jurassicParkBook.resume }}</p>
+      </div>
+    </div>
+  </div>
+</div>

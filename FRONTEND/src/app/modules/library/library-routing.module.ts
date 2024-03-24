@@ -39,6 +39,9 @@ const routes: Routes = [
       path: 'indianaJonesUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./indianaJones-universe/indianaJones-universe.module').then(m => m.indianaJonesUniverseModule)
     },
     {
+      path: 'jurassicParkUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./jurassicPark-universe/jurassicPark-universe.module').then(m => m.jurassicParkUniverseModule)
+    },
+    {
       path: 'starWarsUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./starWars-universe/starWars-universe.module').then(m => m.starWarsUniverseModule)
     },
     {

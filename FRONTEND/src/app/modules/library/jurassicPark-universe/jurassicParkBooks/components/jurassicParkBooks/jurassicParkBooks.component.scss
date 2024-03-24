@@ -1,28 +1,23 @@
 *{
   box-sizing:border-box;
 }
-.missionImposibleCharacters-container {
+.jurassicParkBooks-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  &-img{
+  &-img {
     display: flex;
-    &-img {
-      width: 300px;
-      height: 300px;
-      border-radius: 50px;//
-      margin: 15px;
+    justify-content: center;
+      &-img {
+    width: 200px;
+    height: 300px;
+    margin-bottom: 15px;/////////
     }
   }
   &-description {
     text-align: center;
     color: #ffffff;
-  }
-  &-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   &-button {
     display: flex;
@@ -35,9 +30,9 @@
     overflow: hidden;
     max-height: calc(1.5em * 4);
     -webkit-line-clamp: 4;
-    font-size: 30px;
-    margin: 15px;  //  
-    color: black;
+    font-size: 19px;
+    color: white;
+    margin: 5px;
   }
   &-h2 {
     display: -webkit-box;
@@ -46,43 +41,38 @@
     max-height: calc(1.5em * 4);
     -webkit-line-clamp: 1;
     font-family: 'Race-guard';
-    text-decoration:overline;
-    font-size: 160%;
+    text-decoration:underline;
+    font-size: 120%;
+    color: white;
+    height: 50px;
     text-align: center;
-    height: 60px;
-    color: rgb(138, 8, 245);
+
+
   }
   &-resume {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
     -webkit-line-clamp: 4;
-    font-size: 15px;
-    height: 485px;//
+    font-size: 16px;
+    height: 485px;
     font-family: 'Merienda';
     margin: 2% 2% 0% 2%;
-    margin: 1rem auto;//
-    border: 1px solid #aaa;//
-    overflow:auto;//
-    box-sizing: border-box;//
-    padding:0 1rem;//
-    scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);//
-    scrollbar-width:thin;//
-    color: white;
+    color: black;
     text-decoration: solid;
   }
   &-deck{
     margin:15px;
-    width: 425px;
-    height: 500px;//
+    width: 350px;
+    height: 500px;
     position:relative;
     -webkit-perspective: 1000px;
     perspective: 1000px;
     font-family:verdana;
     border-radius:10px;
     &-card{
-      width: 425px;
-      height: 500px;//
+      width: 350px;
+      height: 500px;
       -webkit-transform-style: preserve-3d;
       transform-style: preserve-3d;
       -webkit-transition: all .5s linear;
@@ -115,7 +105,7 @@
 	  height: 100%;
 	  z-index: -1;
     background-size:100% 100%;
-	  background-color: rgb(0, 0, 15);
+	  background-color: rgb(163, 101, 60);
     background-size: cover;
 	  -webkit-transform: rotateY(180deg);
 	  -moz-transform: rotateY(180deg);
@@ -128,8 +118,9 @@
   transition: all .5s linear;
 }
 .front{
-  background-image:url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1711268000/misionImposible/clips/200_bsfogf.webp');
+  background-image:url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710768778/Jurassic%20Park/clips/giphy_fwo4s1.webp');
   background-size: cover;
+  background-position-x:-300px;
   z-index:1;
   box-shadow: 5px 5px 5px #aaa;
   display: flex;
@@ -153,18 +144,9 @@
 span{
   color: goldenrod;
 }
-@media only screen and (max-width: 700px) {
-  .missionImposibleCharacters-container-img-img{
-    width: 250px;
-    height: 250px;
-  }
-  .missionImposibleCharacters-container-deck, .missionImposibleCharacters-container-deck-card, .front, .face{
-    width: 350px;
-   }
-   .missionImposibleCharacters-container-p{
-    margin: 5px;
-   }
-  
+
+@media (min-width: 400px)  {
+
 }
 @media (min-width: 600px)  {
    
@@ -191,3 +173,9 @@ span{
 @media (min-width: 2000px)  {
 
 }
+
+
+
+
+
+

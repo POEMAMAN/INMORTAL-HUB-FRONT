@@ -1,0 +1,27 @@
+<div class="starTrekBooks-container">
+  <div class="starTrekBooks-container-button"*ngIf="isAdmin"style="
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 5px;
+      gap: 5px;">
+    <button [routerLink]="['/admin/edit-product', starTrekBook._id]">Editar</button>
+    <button [routerLink]="['/admin/delete-product', starTrekBook._id]">
+      Eliminar
+    </button>
+  </div>
+  <div class="starTrekBooks-container-deck">
+    <div class="starTrekBooks-container-deck-card" (click)="clickCard()">
+      <div class="front face" >
+        <h2 class="starTrekBooks-container-h2">{{ starTrekBook.title }}</h2>
+        <img  class="starTrekBooks-container-img-img"[src]="starTrekBook.picture" />
+        <p class="starTrekBooks-container-p"><span>Año de publicacion:</span> {{ starTrekBook.publication_year }}</p>
+        <p class="starTrekBooks-container-p"><span>Ubicacion en la saga:</span> {{ starTrekBook.saga_index }}</p>
+        <p class="starTrekBooks-container-p"><span>Autor:</span> {{ starTrekBook.author }}</p>
+      </div>
+      <div class="back face">
+        <p class="starTrekBooks-container-resume"><span>Sinopsis:</span> {{ starTrekBook.resume }}</p>
+      </div>
+    </div>
+  </div>
+</div>

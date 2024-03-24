@@ -1,0 +1,41 @@
+<div class="starTrekMovies-container">
+  <div class="starTrekMovies-container-button"*ngIf="isAdmin"style="
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 5px;
+      gap: 5px;">
+    <button [routerLink]="['/admin/edit-product', starTrekMovie._id]">Editar</button>
+    <button [routerLink]="['/admin/delete-product', starTrekMovie._id]">
+      Eliminar
+    </button>
+  </div>
+  <div class="starTrekMovies-container-deck">
+    <div class="starTrekMovies-container-deck-card" (click)="clickCard()">
+      <div class="front face" >
+        <img  class="starTrekMovies-container-img-img"[src]="starTrekMovie.picture" />
+        <div class="starTrekMovies-container-text">
+          <h2 class="starTrekMovies-container-h2">{{ starTrekMovie.title }}</h2>
+          <p class="starTrekMovies-container-p"><span>Director:</span> {{ starTrekMovie.director }}</p>
+          <p class="starTrekMovies-container-p"><span>Año:</span> {{ starTrekMovie.year }}</p>
+          <p class="starTrekMovies-container-p"><span>Duracion:</span> {{ starTrekMovie.duration }}</p>
+          <p class="starTrekMovies-container-p"><span>Pais:</span> {{ starTrekMovie.country }}</p>
+          <p class="starTrekMovies-container-p"><span>Genero:</span> {{ starTrekMovie.genre}}</p>
+          <p class="starTrekMovies-container-p"><span>Clasificacion:</span> {{ starTrekMovie.clasificarion }}</p>
+        </div>
+      </div>
+      <div class="back face">
+        <p class="starTrekMovies-container-resume"><span>Sinopsis:</span> {{ starTrekMovie.resume }}</p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <button class="btn btn-outline movie-card__button" type="button" (click)="showTrailer()">Mostrar/Ocultar Trailer
+<div *ngIf="trailer">
+  <video class="video" width="640" height="360" controls autoplay>
+    <source [src]="starTrekMovie.trailer" type="video/mp4">
+    Tu navegador no admite la reproducción de videos HTML5.
+  </video>
+</div>
+
+

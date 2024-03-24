@@ -84,6 +84,11 @@ const moviesStarWarsRoutes = require("./src/api/routes/routes.StarWars/movies.St
 // const charactersUnderworldRoutes = require("./src/api/routes/routes.Underworld/characters.Underworld.routes");
 // const moviesUnderworldRoutes = require("./src/api/routes/routes.Underworld/movies.Underworld.routes");
 
+// Terminator
+const videoGamesTerminatorRoutes = require("./src/api/routes/routes.Terminator/videoGames.Terminator.routes");
+// const charactersTerminatorRoutes = require("./src/api/routes/routes.Underworld/characters.Terminator.routes");
+const moviesTerminatorRoutes = require("./src/api/routes/routes.Terminator/movies.Terminator.routes");
+
 //
 
 connect();
@@ -194,6 +199,11 @@ app.use("/universes/StarWars/movies", moviesStarWarsRoutes)
 // app.use("/universes/Underworld/books", booksUnderworldRoutes)
 // app.use("/universes/Underworld/characters", charactersUnderworldRoutes)
 // app.use("/universes/Underworld/movies", moviesUnderworldRoutes)
+
+// Terminator
+app.use("/universes/terminator/videoGames", videoGamesTerminatorRoutes)
+// app.use("/universes/terminator/characters", charactersTerminatorRoutes)
+app.use("/universes/terminator/movies", moviesTerminatorRoutes)
 
 //
 const PORT = process.env.PORT || 8084;

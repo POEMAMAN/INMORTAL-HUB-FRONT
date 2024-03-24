@@ -51,6 +51,9 @@ const routes: Routes = [
     {
       path: 'starTrekUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./starTrek-universe/starTrek-universe.module').then(m => m.starTrekUniverseModule)
     },
+    {
+      path: 'terminatorUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./terminator-universe/terminator-universe.module').then(m => m.terminatorUniverseModule)
+    },
 
     { path: 'favorites', component: FavoritesComponent },
     {

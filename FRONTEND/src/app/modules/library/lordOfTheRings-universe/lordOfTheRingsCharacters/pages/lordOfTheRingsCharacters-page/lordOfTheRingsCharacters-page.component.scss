@@ -15,7 +15,6 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin: 20px auto;
         &-item {
             width: 400px;
             margin: 10px;
@@ -67,11 +66,23 @@
         }
       }
     }
-    @media (max-width: 600px)  {
-      .lordOfTheRingsCharacter-container-list-Btn-button{
-        font-size: 15px;
-      }
-    }
+
+@media only screen and (max-width: 700px) {////
+  .lordOfTheRingsCharacter-container-list-Btn-button{
+    font-size: 10px;
+    height: 10px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+  }
+  .lordOfTheRingsCharacter-container-list-card-item{
+    width: 350px}
+  }
+@media (max-width: 701px)  {
+  .lordOfTheRingsCharacter-container-list-Btn-button{
+    font-size: 15px;
+  }
+}
 
 
 @media (min-width: 2200px) {

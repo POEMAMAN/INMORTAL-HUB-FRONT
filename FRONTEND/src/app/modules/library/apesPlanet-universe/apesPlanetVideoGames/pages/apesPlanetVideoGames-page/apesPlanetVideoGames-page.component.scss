@@ -9,14 +9,14 @@
     padding:0 1rem;
     scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
     scrollbar-width:thin;
-    background-image: url("https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710572096/apesPlanet/Background/15250_2880x1800_kyhmml.jpg");
-    background-size: contain;
+    background-image: url("https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710585168/ApesPlanet/background/1366_2000_emzevx.jpg");
+    background-size: cover;
   &-card {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
       &-item {
-      width: 600px;
+      width: 600px;/////
       margin: 0 55px 0 55px;
       border-radius: 8px;
       padding: 15px;
@@ -66,7 +66,7 @@
     }
   }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 700px) {//////////
   .apesPlanetVideoGame-container-list-Btn-button{
     font-size: 10px;
     height: 10px;

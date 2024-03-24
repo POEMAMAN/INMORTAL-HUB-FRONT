@@ -1,5 +1,3 @@
-import { lordOfTheRingsUniverseModule } from './lordOfTheRings-universe/lordOfTheRings-universe.module';
-
 
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -49,6 +47,9 @@ const routes: Routes = [
     },
     {
       path: 'lordOfTheRingsUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./lordOfTheRings-universe/lordOfTheRings-universe.module').then(m => m.lordOfTheRingsUniverseModule)
+    },
+    {
+      path: 'starTrekUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./starTrek-universe/starTrek-universe.module').then(m => m.starTrekUniverseModule)
     },
 
     { path: 'favorites', component: FavoritesComponent },

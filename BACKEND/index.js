@@ -70,9 +70,9 @@ const moviesMissionImposibleRoutes = require("./src/api/routes/routes.MissionImp
 const videoGamesMissionImposibleRoutes = require("./src/api/routes/routes.MissionImposible/videoGames.MissionImposible.routes.js");
 
 // StarTrek
-// const booksStarTrekRoutes = require("./src/api/routes/routes.StarTrek/books.StarTrek.routes");
-// const charactersStarTrekRoutes = require("./src/api/routes/routes.StarTrek/characters.StarTrek.routes");
-// const moviesStarTrekRoutes = require("./src/api/routes/routes.StarTrek/movies.StarTrek.routes");
+const booksStarTrekRoutes = require("./src/api/routes/routes.StarTrek/books.StarTrek.routes");
+const charactersStarTrekRoutes = require("./src/api/routes/routes.StarTrek/characters.StarTrek.routes");
+const moviesStarTrekRoutes = require("./src/api/routes/routes.StarTrek/movies.StarTrek.routes");
 
 // StarWars
 const booksStarWarsRoutes = require("./src/api/routes/routes.StarWars/books.StarWars.routes");
@@ -181,9 +181,9 @@ app.use("/universes/MissionImposible/movies", moviesMissionImposibleRoutes)
 app.use("/universes/MissionImposible/videoGames", videoGamesMissionImposibleRoutes)
 
 // StarTrek
-// app.use("/universes/StarTrek/books", booksStarTrekRoutes)
-// app.use("/universes/StarTrek/characters", charactersStarTrekRoutes)
-// app.use("/universes/StarTrek/movies", moviesStarTrekRoutes)
+app.use("/universes/StarTrek/books", booksStarTrekRoutes)
+app.use("/universes/StarTrek/characters", charactersStarTrekRoutes)
+app.use("/universes/StarTrek/movies", moviesStarTrekRoutes)
 
 // StarWars
 app.use("/universes/StarWars/books", booksStarWarsRoutes)

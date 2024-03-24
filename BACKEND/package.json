@@ -60,7 +60,11 @@
 
         "booksStarWarsSeed": "node ./src/seeds/seeds-starwars/books.starwars.seeds.js",
         "characterStarWarsSeed": "node ./src/seeds/seeds-starwars/characters.starwars.seeds.js",
-        "moviesStarWarsSeed": "node ./src/seeds/seeds-starwars/movies.starwars.seeds.js"
+        "moviesStarWarsSeed": "node ./src/seeds/seeds-starwars/movies.starwars.seeds.js",
+
+        "videoGamesTerminatorSeed": "node ./src/seeds/seeds-terminator/videoGames.terminator.seeds.js",
+        "characterTerminatorSeed": "node ./src/seeds/seeds-terminator/characters.terminator.seeds.js",
+        "moviesTerminatorSeed": "node ./src/seeds/seeds-terminator/movies.terminator.seeds.js"
   
     },
     "keywords": [

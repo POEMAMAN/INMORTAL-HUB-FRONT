@@ -13,7 +13,7 @@ const UserRoutes = require('./src/api/users/users.routes.js')
 // Rutas Componentes hijos (universos)
 
 // ApesPlanet
-// const videoGamesApesPlanetRoutes = require("./src/api/routes/routes.ApesPlanet/videoGames.ApesPlanet.routes.js");
+const videoGamesApesPlanetRoutes = require("./src/api/routes/routes.ApesPlanet/videoGames.ApesPlanet.routes.js");
 const charactersApesPlanetRoutes = require("./src/api/routes/routes.ApesPlanet/characters.ApesPlanet.routes");
 const moviesApesPlanetRoutes = require("./src/api/routes/routes.ApesPlanet/movies.ApesPlanet.routes");
 
@@ -65,10 +65,9 @@ const charactersLordOfTheRingsRoutes = require("./src/api/routes/routes.LordOfTh
 const moviesLordOfTheRingsRoutes = require("./src/api/routes/routes.LordOfTheRings/movies.LordOfTheRings.routes");
 
 // MissionImposible
-// const booksMissionImposibleRoutes = require("./src/api/routes/routes.MissionImposible/books.MissionImposible.routes");
 const charactersMissionImposibleRoutes = require("./src/api/routes/routes.MissionImposible/characters.MissionImposible.routes");
 const moviesMissionImposibleRoutes = require("./src/api/routes/routes.MissionImposible/movies.MissionImposible.routes");
-// const videoGamesMissionImposibleRoutes = require("./src/api/routes/routes.MissionImposible/videoGames.MissionImposible.routes.js");
+const videoGamesMissionImposibleRoutes = require("./src/api/routes/routes.MissionImposible/videoGames.MissionImposible.routes.js");
 
 // StarTrek
 // const booksStarTrekRoutes = require("./src/api/routes/routes.StarTrek/books.StarTrek.routes");
@@ -125,7 +124,7 @@ app.use('/user', userRouter);
 // Rutas Universos
 
 // ApesPlanet
-// app.use("/universes/apesPlanet/videoGames", videoGamesApesPlanetRoutes)
+app.use("/universes/apesPlanet/videoGames", videoGamesApesPlanetRoutes)
 app.use("/universes/apesPlanet/characters", charactersApesPlanetRoutes)
 app.use("/universes/apesPlanet/movies", moviesApesPlanetRoutes)
 
@@ -176,11 +175,10 @@ app.use("/universes/JurassicPark/books", booksJurassicParkRoutes)
 app.use("/universes/JurassicPark/characters", charactersJurassicParkRoutes)
 app.use("/universes/JurassicPark/movies", moviesJurassicParkRoutes)
 
-// ImposibleMission
-// app.use("/universes/ImposibleMission/books", booksImposibleMissionRoutes)
-app.use("/universes/ImposibleMission/characters", charactersMissionImposibleRoutes)
-app.use("/universes/ImposibleMission/movies", moviesMissionImposibleRoutes)
-// app.use("/universes/ImposibleMission/videoGames", videoGamesMissionImposibleRoutes)
+// MissionImposible
+app.use("/universes/MissionImposible/characters", charactersMissionImposibleRoutes)
+app.use("/universes/MissionImposible/movies", moviesMissionImposibleRoutes)
+app.use("/universes/MissionImposible/videoGames", videoGamesMissionImposibleRoutes)
 
 // StarTrek
 // app.use("/universes/StarTrek/books", booksStarTrekRoutes)

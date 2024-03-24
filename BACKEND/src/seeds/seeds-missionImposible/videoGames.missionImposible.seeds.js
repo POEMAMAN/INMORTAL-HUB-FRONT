@@ -78,10 +78,10 @@ const arrayVideoGamesMissionImposible = [
     },
     {
         title: "Mission: Impossible",
-        picture: "",
+        picture: "https://res.cloudinary.com/dqh5ovfj1/image/upload/v1711265762/misionImposible/VideoGames/Mission_Impossible_-_GBC_Longplay_Walkthrough_50_720p60_BQ_duwe4n.jpg",
         platform: "GameBoy Color",
         year: "2000",
-        studio: "	Rebellion Developments",
+        studio: "Rebellion Developments",
         clasification: "PEGI12",
         resume: 'Misión: Imposible es un videojuego de aventuras desarrollado por Rebellion Developments basado en la serie de películas Misión: Imposible. Fue lanzado para el Game Boy Color en el año 2000. Misión: Imposible es un juego de aventuras en el que el jugador debe controlar al personaje de la serie de películas, Ethan Hunt, a través de diez niveles. El juego también contiene una serie de programas de utilidad que incluyen una calculadora, una agenda de direcciones y un cuaderno que puede imprimir entradas cuando se conecta a una Game Boy Printer. Las utilidades también incluyen un transmisor de mensajes y un control remoto universal que utilizan el puerto infrarrojo del sistema.Misión: Imposible recibió críticas mixtas según el agregador de reseñas de videojuegos GameRankings. Los críticos lo compararon negativamente con Metal Gear: Ghost Babel, pero elogiaron las características adicionales del juego. La revista N64 lo describió como un juego "dolorosamente promedio", afirmando que los oponentes deambulan en patrones establecidos y que no son lo suficientemente inteligentes como para notar al jugador.',
         trailer: "",

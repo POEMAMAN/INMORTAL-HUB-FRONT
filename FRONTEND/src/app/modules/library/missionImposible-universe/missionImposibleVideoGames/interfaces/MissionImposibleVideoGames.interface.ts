@@ -6,6 +6,7 @@ export interface MissionImposibleVideoGames {
   studio: String,
   clasification: String,
   resume: String,
+  trailer: String,
 
 }
 

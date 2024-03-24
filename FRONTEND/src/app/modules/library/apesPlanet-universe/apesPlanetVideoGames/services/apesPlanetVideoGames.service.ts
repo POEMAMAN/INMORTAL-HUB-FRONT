@@ -14,7 +14,7 @@ export class apesPlanetVideoGamesService {
   constructor(private http: HttpClient) { }
 
   getApesPlanetVideoGames(){
-      return this.http.get<ApesPlanetVideoGames[]>('http://localhost:8084/universes/apesPlanet/videogames')
+      return this.http.get<ApesPlanetVideoGames[]>('http://localhost:8084/universes/apesPlanet/videoGames')
   }
 
 }

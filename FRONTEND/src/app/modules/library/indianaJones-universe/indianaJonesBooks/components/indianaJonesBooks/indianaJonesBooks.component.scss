@@ -12,6 +12,7 @@
       &-img {
     width: 200px;
     height: 300px;
+    margin-bottom: 15px;/////////
     }
   }
   &-description {
@@ -29,8 +30,9 @@
     overflow: hidden;
     max-height: calc(1.5em * 4);
     -webkit-line-clamp: 4;
-    font-size: 20px;
-    color: black;
+    font-size: 19px;
+    color: white;
+    margin: 5px;
   }
   &-h2 {
     display: -webkit-box;
@@ -40,9 +42,11 @@
     -webkit-line-clamp: 1;
     font-family: 'Race-guard';
     text-decoration:underline;
-    font-size: 90%;
-    color: black;
-    height: 10%;
+    font-size: 120%;
+    color: white;
+    height: 50px;
+    text-align: center;
+
 
   }
   &-resume {
@@ -51,7 +55,7 @@
     overflow: hidden;
     -webkit-line-clamp: 4;
     font-size: 16px;
-    height: 490px;
+    height: 485px;
     font-family: 'Merienda';
     margin: 2% 2% 0% 2%;
     color: black;
@@ -60,7 +64,7 @@
   &-deck{
     margin:15px;
     width: 350px;
-    height: 550px;
+    height: 500px;
     position:relative;
     -webkit-perspective: 1000px;
     perspective: 1000px;
@@ -68,7 +72,7 @@
     border-radius:10px;
     &-card{
       width: 350px;
-      height: 550px;
+      height: 500px;
       -webkit-transform-style: preserve-3d;
       transform-style: preserve-3d;
       -webkit-transition: all .5s linear;
@@ -101,7 +105,7 @@
 	  height: 100%;
 	  z-index: -1;
     background-size:100% 100%;
-	  background: url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710768758/IndianaJones/clips/giphy_rmla6b.webp');
+	  background-color: rgb(163, 101, 60);
     background-size: cover;
 	  -webkit-transform: rotateY(180deg);
 	  -moz-transform: rotateY(180deg);
@@ -114,8 +118,9 @@
   transition: all .5s linear;
 }
 .front{
-  background-image:url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710768758/IndianaJones/clips/giphy_rmla6b.webp');
+  background-image:url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710768744/IndianaJones/clips/200_flrczj.webp');
   background-size: cover;
+  background-position-x:-300px;
   z-index:1;
   box-shadow: 5px 5px 5px #aaa;
   display: flex;

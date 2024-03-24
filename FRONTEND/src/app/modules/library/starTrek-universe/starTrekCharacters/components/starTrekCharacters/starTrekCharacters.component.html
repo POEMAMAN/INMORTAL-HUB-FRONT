@@ -1,0 +1,22 @@
+
+<div class="starTrekCharacters-container">
+  <div class="starTrekCharacters-container-button" *ngIf="isAdmin" style="display: flex; justify-content: flex-end; align-items: center; margin-bottom: 5px; gap: 5px">
+      <button [routerLink]="['/admin/edit-product',starTrekCharacter._id]" >Editar</button>
+      <button [routerLink]="['/admin/delete-product', starTrekCharacter._id]" >Eliminar</button>
+  </div>
+  <div class="starTrekCharacters-container-deck">
+    <div class="starTrekCharacters-container-deck-card" (click)="clickCard()">
+      <div class="front face" >
+        <h2 class="starTrekCharacters-container-h2">{{ starTrekCharacter.name  }}</h2>
+        <img  class="starTrekCharacters-container-img-img"[src]="starTrekCharacter.picture" />
+        <p class="starTrekCharacters-container-p"><span>actor:</span> {{ starTrekCharacter.actor }}</p>
+        <p class="starTrekCharacters-container-p"><span>Pais:</span> {{ starTrekCharacter.country }}</p>
+        <p class="starTrekCharacters-container-p"><span>Profesion:</span> {{ starTrekCharacter.profession }}</p>
+      </div>
+      <div class="back face">
+        <p class="starTrekCharacters-container-resume"><span>Sinopsis:</span> {{ starTrekCharacter.resume }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+

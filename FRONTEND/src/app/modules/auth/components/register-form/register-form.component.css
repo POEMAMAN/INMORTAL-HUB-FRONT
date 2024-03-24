@@ -54,6 +54,7 @@ input {
   display: flex;
   align-items: center;
   margin: 5px;
+  height: 40px;
 }
 .button-register:hover {
   background-color: #FFC229;

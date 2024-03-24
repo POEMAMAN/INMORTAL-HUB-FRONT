@@ -12,6 +12,7 @@
       &-img {
     width: 200px;
     height: 300px;
+    margin-bottom: 15px;/////////
     }
   }
   &-description {
@@ -30,6 +31,7 @@
     max-height: calc(1.5em * 4);
     -webkit-line-clamp: 4;
     font-size: 20px;
+    margin: 5px;/////////
   }
   &-h2 {
     display: -webkit-box;
@@ -39,7 +41,7 @@
     -webkit-line-clamp: 1;
     font-family: 'Race-guard';
     text-decoration:underline;
-    font-size: 125%;
+    font-size: 130%;
     color: goldenrod;
     text-align: center;
     height: 60px;
@@ -51,7 +53,7 @@
     overflow: hidden;
     -webkit-line-clamp: 4;
     font-size: 16px;
-    height: 610px;
+    height: 500px;
     font-family: 'Merienda';
     margin: 2% 2% 0% 2%;
     margin: 1rem auto;
@@ -61,21 +63,21 @@
     padding:0 1rem;
     scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
     scrollbar-width:thin;
-    color: black;
+    color: white;
     text-decoration: solid;
   }
   &-deck{
     margin:15px;
-    width: 405px;
-    height: 625px;
+    width: 350px;
+    height: 520px;
     position:relative;
     -webkit-perspective: 1000px;
     perspective: 1000px;
     font-family:verdana;
     border-radius:10px;
     &-card{
-      width: 405px;
-      height: 625px;
+      width: 350px;
+      height: 520px;
       -webkit-transform-style: preserve-3d;
       transform-style: preserve-3d;
       -webkit-transition: all .5s linear;
@@ -108,7 +110,7 @@
 	  height: 100%;
 	  z-index: -1;
     background-size:100% 100%;
-	  background: url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710930152/HarryPotter/Backgrounds/91C055skR2L._AC_UF1000_1000_QL80__yp5nsr.jpg');
+	  background-color: rgb(58, 10, 10);
 	  -webkit-transform: rotateY(180deg);
 	  -moz-transform: rotateY(180deg);
 	  -ms-transform: rotateY(180deg);

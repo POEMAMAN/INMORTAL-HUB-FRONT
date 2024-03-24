@@ -53,14 +53,30 @@
             &:active{
             transform: scale(1.025);
                 }
+            &-img{
+                width: 18px;
+                height: 18px;
+            }
             }
         }
         }
-    @media (max-width: 600px)  {
-      .starWars-container-list-button{
+@media only screen and (max-width: 700px) {//////////
+    .starWars-container-list-button{
+        font-size: 10px;
+        height: 10px;
+        padding: 16px;
+        display: flex;
+        align-items: center;
+    }
+    .starWars-container-list-card-item{
+        width: 320px;
+    }
+    }
+    @media (max-width: 700.1px)  {
+    .starWars-container-list-button{
         font-size: 15px;
-      }  
-  }
+    }
+    }
 
 
 .starWars-container-ul-wrapper {
@@ -69,6 +85,7 @@
     flex-direction: row;
     width: 90%;
     justify-content: space-around;
+    margin-left: -40px;
 }
 
 .starWars-container-ul-li {

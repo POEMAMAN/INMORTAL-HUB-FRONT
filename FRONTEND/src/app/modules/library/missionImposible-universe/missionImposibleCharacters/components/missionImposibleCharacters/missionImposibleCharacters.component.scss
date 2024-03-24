@@ -12,6 +12,7 @@
       width: 300px;
       height: 300px;
       border-radius: 50px;//
+      margin: 15px;
     }
   }
   &-description {
@@ -36,6 +37,7 @@
     -webkit-line-clamp: 4;
     font-size: 30px;
     margin: 15px;  //  
+    color: black;
   }
   &-h2 {
     display: -webkit-box;
@@ -48,14 +50,15 @@
     font-size: 160%;
     text-align: center;
     height: 60px;
+    color: rgb(138, 8, 245);
   }
   &-resume {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
     -webkit-line-clamp: 4;
-    font-size: 20px;
-    height: 625px;//
+    font-size: 15px;
+    height: 485px;//
     font-family: 'Merienda';
     margin: 2% 2% 0% 2%;
     margin: 1rem auto;//
@@ -65,11 +68,13 @@
     padding:0 1rem;//
     scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);//
     scrollbar-width:thin;//
+    color: white;
+    text-decoration: solid;
   }
   &-deck{
     margin:15px;
     width: 425px;
-    height: 650px;//
+    height: 500px;//
     position:relative;
     -webkit-perspective: 1000px;
     perspective: 1000px;
@@ -77,7 +82,7 @@
     border-radius:10px;
     &-card{
       width: 425px;
-      height: 650px;//
+      height: 500px;//
       -webkit-transform-style: preserve-3d;
       transform-style: preserve-3d;
       -webkit-transition: all .5s linear;
@@ -110,7 +115,7 @@
 	  height: 100%;
 	  z-index: -1;
     background-size:100% 100%;
-	  background: url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710572060/MissionImposible/Background/538920_guho4m.jpg');
+	  background-color: rgb(0, 0, 15);
     background-size: cover;
 	  -webkit-transform: rotateY(180deg);
 	  -moz-transform: rotateY(180deg);
@@ -123,7 +128,7 @@
   transition: all .5s linear;
 }
 .front{
-  background-image:url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710693063/MissionImposible/Background/giphy_oj6nvu.gif');
+  background-image:url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1711268000/misionImposible/clips/200_bsfogf.webp');
   background-size: cover;
   z-index:1;
   box-shadow: 5px 5px 5px #aaa;
@@ -148,8 +153,18 @@
 span{
   color: goldenrod;
 }
-@media (min-width: 400px)  {
-
+@media only screen and (max-width: 700px) {
+  .missionImposibleCharacters-container-img-img{
+    width: 250px;
+    height: 250px;
+  }
+  .missionImposibleCharacters-container-deck, .missionImposibleCharacters-container-deck-card, .front, .face{
+    width: 350px;
+   }
+   .missionImposibleCharacters-container-p{
+    margin: 5px;
+   }
+  
 }
 @media (min-width: 600px)  {
    

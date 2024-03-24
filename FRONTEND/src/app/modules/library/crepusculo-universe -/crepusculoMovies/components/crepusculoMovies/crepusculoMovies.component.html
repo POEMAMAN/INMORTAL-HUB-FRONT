@@ -21,14 +21,7 @@
           <p class="crepusculoMovies-container-p"><span>Duracion:</span> {{ crepusculoMovie.duration }}</p>
           <p class="crepusculoMovies-container-p"><span>Pais:</span> {{ crepusculoMovie.country }}</p>
           <p class="crepusculoMovies-container-p"><span>Genero:</span> {{ crepusculoMovie.genre}}</p>
-          <p class="crepusculoMovies-container-p"><span>Clasificacion:</span> {{ crepusculoMovie.clasificarion }}</p>
-          <p class="crepusculoMovies-container-p"><span>Clasificacion:</span> {{ crepusculoMovie.trailer }}</p>
-
-          <!-- Cambié el src a [src] para que se pueda hacer el binding de la propiedad trailer -->
-          <iframe width="560" height="315" [src]="crepusculoMovie.trailer" title="YouTube video player" 
-            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen>
-          </iframe>
+          <p class="crepusculoMovies-container-p"><span>Clasificacion:</span> {{ crepusculoMovie.clasification }}</p>
         </div>
       </div>
       <div class="back face">
@@ -36,7 +29,12 @@
       </div>
     </div>
   </div>
-  <button class="btn btn-outline movie-card__button" type="button">Watch Trailer</button>
+  <button class="btn btn-outline movie-card__button" type="button" (click)="showTrailer()">Mostrar/Ocultar Trailer
+    <div *ngIf="trailer">
+      <video class="video" width="640" height="360" controls autoplay>
+        <source [src]="crepusculoMovie.trailer" type="video/mp4">
+        Tu navegador no admite la reproducción de videos HTML5.
+      </video>
 </div>
 
 

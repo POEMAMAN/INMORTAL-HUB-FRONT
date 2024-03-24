@@ -21,7 +21,7 @@
           <p class="alienMovies-container-p"><span>Duracion:</span> {{ alienMovie.duration }}</p>
           <p class="alienMovies-container-p"><span>Pais:</span> {{ alienMovie.country }}</p>
           <p class="alienMovies-container-p"><span>Genero:</span> {{ alienMovie.genre}}</p>
-          <p class="alienMovies-container-p"><span>Clasificacion:</span> {{ alienMovie.clasificarion }}</p>
+          <p class="alienMovies-container-p"><span>Clasificacion:</span> {{ alienMovie.clasification }}</p>
         </div>
       </div>
       <div class="back face">
@@ -29,6 +29,14 @@
       </div>
     </div>
   </div>
-  <button class="btn btn-outline movie-card__button" type="button">Watch Trailer</button>
-</div>
+  <div>
+      <button class="btn btn-outline movie-card__button" type="button" (click)="showTrailer()">Mostrar/Ocultar Trailer
+  <div *ngIf="trailer">
+    <video class="video" width="640" height="360" controls autoplay>
+      <source [src]="alienMovie.trailer" type="video/mp4">
+      Tu navegador no admite la reproducción de videos HTML5.
+    </video>
+</div> 
+
+
 

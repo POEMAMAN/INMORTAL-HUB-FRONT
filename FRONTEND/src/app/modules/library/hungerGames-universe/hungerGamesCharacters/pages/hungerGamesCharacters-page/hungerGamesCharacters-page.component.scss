@@ -9,13 +9,12 @@
     padding: 0 1rem;
     scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
     scrollbar-width: thin;
-    background-image: url("https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710762238/JuegosDelHambre/Backgrounds/regresa-saga-trilogia-los-juegos-del-hambre-a-cinepolis5-jpg_xzoqph.webp");
+    background-image: url("https://res.cloudinary.com/dqh5ovfj1/image/upload/v1711271831/JuegosDelHambre/clips/juegos_jghzxa.gif");
     background-size: contain;
     &-card {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin: 20px auto;
         &-item {
             width: 425px;
             margin: 10px;
@@ -60,14 +59,29 @@
         &:active{
           transform: scale(1.025);
         }
+        &-img{
+          width: 18px;
+          height: 18px;
+        }
       }
     }
   }
-    @media (max-width: 600px)  {
-      .hungerGamesCharacter-container-list-button{
-        font-size: 15px;
-      }  
+@media only screen and (max-width: 700px) {////
+  .hungerGamesCharacter-container-list-Btn-button{
+    font-size: 10px;
+    height: 10px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
   }
+  .hungerGamesCharacter-container-list-card-item{
+    width: 350px}
+  }
+  @media (max-width: 701px)  {
+    .hungerGamesCharacter-container-list-button{
+      font-size: 15px;
+    }  
+}
 
 
 @media (min-width: 2200px) {

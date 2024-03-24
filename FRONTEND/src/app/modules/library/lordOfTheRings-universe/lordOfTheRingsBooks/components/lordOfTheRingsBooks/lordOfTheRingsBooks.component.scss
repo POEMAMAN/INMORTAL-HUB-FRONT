@@ -13,6 +13,7 @@
         &-img {
             width: 200px;
             height: 300px;
+            margin-bottom: 15px;/////////
         }
     }
     &-description {
@@ -30,7 +31,8 @@
         overflow: hidden;
         max-height: calc(1.5em * 4);
         -webkit-line-clamp: 4;
-        font-size: 20px;
+        font-size: 18px;
+        margin: 5px;
     }
     &-h2 {
         display: -webkit-box;
@@ -42,6 +44,11 @@
         text-decoration: underline;
         font-size: 120%;
         color: black;
+        height: 80px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        margin: 5px;
     }
     &-resume {
         display: -webkit-box;
@@ -49,14 +56,22 @@
         overflow: hidden;
         -webkit-line-clamp: 4;
         font-size: 16px;
-        height: 490px;
+        height: 485px;
         font-family: 'Merienda';
         margin: 2% 2% 0% 2%;
+        color: white;
+        margin: 1rem auto;//
+        border: 1px solid #aaa;//
+        overflow:auto;//
+        box-sizing: border-box;//
+        padding:0 1rem;//
+        scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);//
+        scrollbar-width:thin;//
     }
     &-deck {
         margin: 15px;
         width: 350px;
-        height: 550px;
+        height: 500px;
         position: relative;
         -webkit-perspective: 1000px;
         perspective: 1000px;
@@ -64,7 +79,7 @@
         border-radius: 10px;
         &-card {
             width: 350px;
-            height: 550px;
+            height: 500px;
             -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
             -webkit-transition: all .5s linear;
@@ -98,7 +113,9 @@
         height: 100%;
         z-index: -1;
         background-size: 100% 100%;
-        background: url('https://i.imgur.com/W3tra4F.gif');
+        background-color: rgb(0, 0, 15);
+        background-repeat: no-repeat;
+        background-size: cover;
         -webkit-transform: rotateY(180deg);
         -moz-transform: rotateY(180deg);
         -ms-transform: rotateY(180deg);
@@ -113,7 +130,9 @@
 }
 
 .front {
-    background-image: url('https://i.imgur.com/W3tra4F.gif');
+    background-image: url('https://media.giphy.com/media/yk5PJiIfFSgUM/giphy.gif?cid=790b7611wpxle5gzn2vzen3qcv9dwbp2xtjkneon93i58hgr&ep=v1_gifs_search&rid=giphy.gif&ct=g');
+    background-repeat: no-repeat;
+    background-size: cover;
     z-index: 1;
     box-shadow: 5px 5px 5px #aaa;
     display: flex;

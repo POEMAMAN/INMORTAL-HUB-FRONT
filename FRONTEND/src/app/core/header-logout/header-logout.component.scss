@@ -45,6 +45,14 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+    &-img{
+      width: 30px;
+      height: 30px;
+    }
+}
+.header-container-logout-c-p-img{
+  width: 40px;
+  height: 40px;
 }
 
 .header-container-logout-c-button:hover,.header-container-logout-c-p:hover {
@@ -63,7 +71,10 @@
     box-shadow: 0px 0px 2px 2px goldenrod; 
     border-radius: 50px; 
 }
-@media (min-width: 100px)  {
+@media only screen and (max-width: 700px) {
+  .header{
+    height: 15vh;
+  }
   .header-container-logout-c-button, .header-container-logout-c-p{
     font-size: 10px;
     height: 10px;
@@ -71,52 +82,30 @@
     display: flex;
     align-items: center;
   }
+  .header-container-logout-c-button-img{
+    width: 20px;
+    height: 20px;
+  }
 }
 
-@media (min-width: 600px)  {
+@media (min-width: 700.1px)  and (max-width: 2500px)  {
   .header-container-logout-c-button, .header-container-logout-c-p{
-    font-size: 15px;
-    height: 50px;
-    padding: 20px;
+    font-size: 12px;
+    height: 20px;
+    padding: 27px;
+    display: flex;
+    align-items: center;
   }
   .header-title{
     font-size: 45px;
   }
-}
-
-@media (min-width: 800px)  {
-
-}
-@media (min-width: 1000px)  {
-  .header-container-logout-c-button, .header-container-logout-c-p{
-    font-size:20px;
+  .header-container-logout-c-button-img{
+    width: 25px;
+    height: 25px;
   }
-  .header-title{
-    font-size: 60px;
-  }
-}
-@media (min-width: 1200px)  {
-
-}
-@media (min-width: 1400px)  {
-
-}
-@media (min-width: 1600px)  {
-  .header-container-logout-c-button, .header-container-logout-c-p{
-    font-size: 5px;
-  }
-  .header-title{
-    font-size: 80px;
-  }
-}
-
-@media (min-width: 1800px)  {
 
 }
 
-@media (min-width: 2000px)  {
-/////
-}
 
 
   

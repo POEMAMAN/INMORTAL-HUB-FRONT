@@ -15,7 +15,6 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin: 20px auto;
         &-item {
             width: 425px;
             margin: 10px;
@@ -60,14 +59,29 @@
         &:active{
           transform: scale(1.025);
         }
+        &-img{
+          width: 18px;
+          height: 18px;
+        }
       }
     }
   }
-    @media (max-width: 600px)  {
-      .starWarsCharacter-container-list-button{
-        font-size: 15px;
-      }  
+@media only screen and (max-width: 700px) {////
+  .starWarsCharacter-container-list-Btn-button{
+    font-size: 10px;
+    height: 10px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
   }
+  .starWarsCharacter-container-list-card-item{
+    width: 350px}
+  }
+  @media (max-width: 701px)  {
+    .starWarsCharacter-container-list-button{
+      font-size: 15px;
+    }  
+}
 
 
 @media (min-width: 2200px) {

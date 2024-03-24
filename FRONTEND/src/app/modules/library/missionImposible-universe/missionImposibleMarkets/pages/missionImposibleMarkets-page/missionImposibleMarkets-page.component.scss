@@ -53,6 +53,10 @@
       &:active{
         transform: scale(1.025);
         }
+      &-img{
+        width: 18px;
+        height: 18px;
+      }
       }
     }
   }
@@ -63,6 +67,7 @@ flex-wrap: wrap;
 flex-direction: row;
 width: 90%;
 justify-content: space-around;
+margin-left: -40px;
 }
 
 .missionImposible-container-ul-li {
@@ -162,7 +167,19 @@ a {
   font-family: 'Race-guard';
   color: gold;
 }
-@media (max-width: 600px)  {
+@media only screen and (max-width: 700px) {//////////
+  .missionImposible-container-list-button{
+    font-size: 10px;
+    height: 10px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+  }
+  .missionImposible-container-list-card-item{
+    width: 320px;
+  }
+}
+@media (max-width: 700.1px)  {
   .missionImposible-container-list-button{
     font-size: 15px;
   }

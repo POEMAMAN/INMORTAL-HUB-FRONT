@@ -45,8 +45,8 @@
     color: goldenrod;
     height: 70px;
     text-align: center;
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
   }
   &-resume {
     display: -webkit-box;
@@ -109,7 +109,7 @@
 	  height: 100%;
 	  z-index: -1;
     background-size:100% 100%;
-	  background: url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710572086/Alien/Background/0ce0f79638ab6907c537aae48181c35c_qqsaqt.jpg');
+	  background-color: rgb(42, 39, 39);
     background-size: cover;
 	  -webkit-transform: rotateY(180deg);
 	  -moz-transform: rotateY(180deg);
@@ -155,9 +155,32 @@ span{
 }
 
 
-@media (min-width: 400px)  {
-
-}
+@media only screen and (max-width: 700px)  {
+  .alienMovies-container-img-img{
+   width: 125px;
+   height: 200px;
+   margin: 5px;
+  }
+  .alienMovies-container-deck, .alienMovies-container-deck-card, .front, .face{
+   width: 350px;
+   height: 275px;
+  }
+  .alienMovies-container-resume{
+   height: 260px;
+  }
+  .alienMovies-container-h2{
+   font-size: 100%;
+   height: 55px;
+  }
+  .alienMovies-container-p{
+   font-size: 12px;
+  }
+  .video{
+   width: 285px;
+   height: 225px;
+  }
+  
+ }
 @media (min-width: 600px)  {
    
 }
@@ -165,17 +188,8 @@ span{
 
 }
 @media (min-width: 1000px)  {
-
 }
-@media (min-width: 1200px)  {
 
-}
-@media (min-width: 1400px)  {
-
-}
-@media (min-width: 1600px)  {
-
-}
 @media (min-width: 1800px)  {
 
 }
@@ -200,7 +214,8 @@ button {
 .btn-outline {
   background-color: transparent;
   border: 3px solid #ffffff;
-  background-image:url('https://i.imgur.com/W3tra4F.gif');
+  background-color: black;
+  // background-image:url('https://i.imgur.com/W3tra4F.gif');
 }
 .btn::before {
   font-family: 'Material Icons';

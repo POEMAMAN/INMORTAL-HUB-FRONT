@@ -8,6 +8,7 @@ export interface HungerGamesMovie {
   genre:  String,
   clasification:   String,
   resume: String,
+  trailer: String,
 
 }
 

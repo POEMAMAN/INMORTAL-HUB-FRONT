@@ -45,8 +45,9 @@
     color: black;
     height: 50px;
     text-align: center;
-    display: flex;
-    align-items: center;
+    color: white;
+    // display: flex;
+    // align-items: center;
   }
   &-resume {
     display: -webkit-box;
@@ -109,7 +110,7 @@
 	  height: 100%;
 	  z-index: -1;
     background-size:100% 100%;
-	  background: url('https://i.imgur.com/W3tra4F.gif');
+	  background-color: rgb(0, 0, 15);
     background-size: cover;
 	  -webkit-transform: rotateY(180deg);
 	  -moz-transform: rotateY(180deg);
@@ -122,7 +123,7 @@
   transition: all .5s linear;
 }
 .front{
-  background-image:url('https://i.imgur.com/W3tra4F.gif');
+  background-image:url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710768567/Crepusculo/clips/giphy_uqlmxv.webp');
   background-size: cover;
   z-index:1;
   box-shadow: 5px 5px 5px #aaa;
@@ -155,12 +156,35 @@ span{
 }
 
 
-@media (min-width: 400px)  {
-
-}
-@media (min-width: 600px)  {
-   
-}
+@media only screen and (max-width: 700px) {///---///
+  .crepusculoMovies-container-img-img{///---///
+   width: 125px;
+   height: 200px;
+   margin: 5px;
+  }
+  .crepusculoMovies-container-deck, .crepusculoMovies-container-deck-card, .front, .face{///---///
+   width: 350px;
+   height: 275px;
+  }
+  .crepusculoMovies-container-resume{///---///
+   height: 260px;
+  }
+  .crepusculoMovies-container-h2{///---///
+   font-size: 110%;
+   height: 35px;
+  }
+  .crepusculoMovies-container-p{///---///
+   font-size: 12px;
+  }
+  .video{///---///
+   width: 285px;
+   height: 225px;
+  }
+  
+ }
+ @media (min-width: 600px)  {///---///
+ 
+ }
 @media (min-width: 800px)  {
 
 }
@@ -200,7 +224,7 @@ button {
 .btn-outline {
   background-color: transparent;
   border: 3px solid #ffffff;
-  background-image:url('https://i.imgur.com/W3tra4F.gif');
+  background-color: black;
 }
 .btn::before {
   font-family: 'Material Icons';

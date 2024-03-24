@@ -1,17 +1,25 @@
 <header class="header" *ngIf="isTokenPresent()">
   <h2 class="header-title">Inmortal`s Movies Hub</h2>
-  <div  class="header-container">
+  <div class="header-container">
     <div class="header-container-logout">
-      <form class="header-container-logout-c"(ngSubmit)="logout()" *ngIf="isTokenPresent()">
-        <button class="header-container-logout-c-button"type="submit">Logout</button>
+      <form
+        class="header-container-logout-c"
+        (ngSubmit)="logout()"
+       
+      >
+        <button class="header-container-logout-c-button" type="submit">
+          Logout&nbsp;<img class="header-container-logout-c-button-img" src="https://res.cloudinary.com/dqh5ovfj1/image/upload/v1711189682/Varios/boton-de-encendido-apagado_lovql3.png">
+        </button>
       </form>
-      <div class="header-container-logout-c" *ngIf="isTokenPresent()"> 
-        <button class="header-container-logout-c-button"[routerLink]="'/library'">Volver a Libreria</button>
+      <div class="header-container-logout-c">
+        <button class="header-container-logout-c-button" [routerLink]="'/library'">Volver a Libreria&nbsp;<img class="header-container-logout-c-button-img" src="https://res.cloudinary.com/dqh5ovfj1/image/upload/v1711189670/Varios/casa_rufufx.png"></button>
       </div>
+    </div>
+    <div class="header-container-logout-c" *ngIf="userData">
+      <button class="header-container-logout-c-p" [routerLink]="'/library/favorites'">
+        <img class="header-container-logout-c-p-img" src="https://res.cloudinary.com/dqh5ovfj1/image/upload/v1711272937/Varios/usuario_xtrzhb.png">User: {{ userData.email }}
+      </button>
+      <app-avatar></app-avatar> 
+    </div>
   </div>
-  <div class="header-container-logout-c" *ngIf="isTokenPresent() && userData">
-    <button class="header-container-logout-c-p" [routerLink]="'/library/favorites'">Menu Personal: {{ userData.email }}</button>
-    <app-avatar></app-avatar>
-  </div>
-  </div>
-</header> 
+</header>

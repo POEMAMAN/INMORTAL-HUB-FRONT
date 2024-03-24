@@ -22,7 +22,6 @@
           <p class="indianaJonesMovies-container-p"><span>Pais:</span> {{ indianaJonesMovie.country }}</p>
           <p class="indianaJonesMovies-container-p"><span>Genero:</span> {{ indianaJonesMovie.genre}}</p>
           <p class="indianaJonesMovies-container-p"><span>Clasificacion:</span> {{ indianaJonesMovie.clasificarion }}</p>
-          <p class="indianaJonesMovies-container-p"><span>Clasificacion:</span> {{ indianaJonesMovie.trailer }}</p>
         </div>
       </div>
       <div class="back face">
@@ -30,7 +29,13 @@
       </div>
     </div>
   </div>
-  <button class="btn btn-outline movie-card__button" type="button">Watch Trailer</button>
+  <div>
+    <button class="btn btn-outline movie-card__button" type="button" (click)="showTrailer()">Mostrar/Ocultar Trailer
+<div *ngIf="trailer">
+  <video class="video" width="640" height="360" controls autoplay>
+    <source [src]="indianaJonesMovie.trailer" type="video/mp4">
+    Tu navegador no admite la reproducción de videos HTML5.
+  </video>
 </div>
 
 

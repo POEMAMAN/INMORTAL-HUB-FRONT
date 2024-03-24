@@ -71,8 +71,8 @@ const confirm = async (req, res, next) => {
     }
 }
 
-const login = async (req, res, next) => {
-
+const login = async (req, res) => {
+    console.log(req.body);
     try {
         // Comprobamos que existe el email para logarse
         const user = await User.findOne({ email: req.body.email });
@@ -99,10 +99,10 @@ const login = async (req, res, next) => {
             // Devolvemos el Token al Frontal
             return res.json(user);
         } else {
-            const error = new Error("El correo electronico o la contraseña no son correctos, revisalos e intenta nuevamente");
+            const error = new Error("El correo electronico o ***************** no son correctos, revisalos e intenta nuevamente");
             return res.status(401).json({msg: error.message})
         }
-           
+  
 
     } catch (error) {
         const err = new Error("Ha ocurrido un error con el inicio de sesión.");

@@ -34,7 +34,8 @@
     overflow: hidden;
     max-height: calc(1.5em * 4);
     -webkit-line-clamp: 4;
-    font-size: 19px;
+    font-size: 18px;
+    margin: 10px;
   }
   &-h2 {
     display: -webkit-box;
@@ -46,7 +47,9 @@
     text-decoration:overline;
     font-size: 150%;
     text-align: center;
-    height: 50px;
+    display: flex;
+    height: 70px;
+    align-items: center;
   }
   &-resume {
     display: -webkit-box;
@@ -54,7 +57,7 @@
     overflow: hidden;
     -webkit-line-clamp: 4;
     font-size: 16px;
-    height: 700px;
+    height: 310px;
     font-family: 'Merienda';
     margin: 2% 2% 0% 2%;
     margin: 1rem auto;
@@ -67,16 +70,16 @@
   }
   &-deck{
     margin:15px;
-    width: 400px;
-    height: 700px;
+    width: 600px;/////
+    height: 325px;/////
     position:relative;
     -webkit-perspective: 1000px;
     perspective: 1000px;
     font-family:verdana;
     border-radius:10px;
     &-card{
-      width: 400px;
-      height: 700px;
+      width: 600px;/////
+      height: 325px;/////
       -webkit-transform-style: preserve-3d;
       transform-style: preserve-3d;
       -webkit-transition: all .5s linear;
@@ -84,6 +87,11 @@
       border-radius:10px;
       }
   }
+}
+.apesPlanetVideoGames-container-text{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 .face {
@@ -109,7 +117,7 @@
 	  height: 100%;
 	  z-index: -1;
     background-size:100% 100%;
-	  background: url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710691383/apesPlanet/VIDEOGAME/apesPlanetisolation_hvqv54.gif');
+	  background-color: rgb(0, 0, 15);
 	  -webkit-transform: rotateY(180deg);
 	  -moz-transform: rotateY(180deg);
 	  -ms-transform: rotateY(180deg);
@@ -121,11 +129,11 @@
   transition: all .5s linear;
 }
 .front{
-  background-image:url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710691383/apesPlanet/VIDEOGAME/apesPlanetisolation_hvqv54.gif');
+  background-image:url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710853117/ApesPlanet/clips/100_zvteaw.webp');
+  background-size: cover;/////
   z-index:1;
   box-shadow: 5px 5px 5px #aaa;
   display: flex;
-  flex-direction: column;
   text-align: center;
   align-items: center;
  
@@ -146,8 +154,27 @@
 span{
   color: goldenrod;
 }
-@media (min-width: 400px)  {
-
+@media only screen and (max-width: 700px) {
+  .apesPlanetVideoGames-container-img-img{
+    width: 150px;
+    height: 150px;
+  }
+  .apesPlanetVideoGames-container-deck, .apesPlanetVideoGames-container-deck-card, .front, .face{///---///
+    width: 350px;
+    height: 275px;
+   }
+   .apesPlanetVideoGames-container-p{
+    margin: 5px;
+    font-size: 14px;
+   }
+   .apesPlanetVideoGames-container-h2{
+    height: 90px;
+    font-size: 110%;
+   }
+  .video{///---///
+   width: 285px;
+   height: 225px;
+  }
 }
 @media (min-width: 600px)  {
    
@@ -173,5 +200,37 @@ span{
 
 @media (min-width: 2000px)  {
 
+  button {
+    font-family: inherit;
+    border: 0;
+    cursor: pointer;
+    &:focus {
+      outline: 0;
+    }
+  }
+}
+.btn {
+  padding: .5rem 2rem;
+  background-color: rgba(255,255,255,.4);
+  color: rgba(255,255,255,1);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 3px solid #ffffff;
+  background-color: black;
+}
+.btn::before {
+  font-family: 'Material Icons';
+  content:'\e037';
+  vertical-align: middle;
+  font-size: 1.5em;
+  padding-right:.5em;
+}
+
+.btn-outline:hover {
+  border-color: goldenrod;
+  color: goldenrod;
+  box-shadow: 0px 1px 8px 0px rgba(245,199,0,.2);
 }
 

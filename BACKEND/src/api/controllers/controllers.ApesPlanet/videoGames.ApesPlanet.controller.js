@@ -9,6 +9,7 @@ const getVideoGamesApesPlanet = async (req, res) => {
   }
 };
 
+
 const getOneVideoGameApesPlanet = async (req, res) => {
   try {
     const { id } = req.params;

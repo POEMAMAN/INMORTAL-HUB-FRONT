@@ -9,13 +9,12 @@
     padding:0 1rem;
     scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
     scrollbar-width:thin;
-    background-image: url("https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710585164/ApesPlanet/background/propiedades-fox-que-va-adquirir-disney-su-compra_7_awmfi9.webp");
+    background-image: url("https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710585161/ApesPlanet/background/guerra-planeta-simios_g0uaiu.webp");
     background-size: contain;
   &-card {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin: 20px auto;
       &-item {
       width: 400px;
       margin: 10px;
@@ -60,11 +59,26 @@
       &:active{
         transform: scale(1.025);
       }
+      &-img{
+        width: 18px;
+        height: 18px;
+      }
     }
   }
 }
-@media (max-width: 600px)  {
-  .apesPlanetCharacter-container-list-button{
+@media only screen and (max-width: 700px) {////
+  .apesPlanetCharacter-container-list-Btn-button{
+    font-size: 10px;
+    height: 10px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+  }
+  .apesPlanetCharacter-container-list-card-item{
+    width: 350px}
+  }
+@media (max-width: 701px)  {
+  .apesPlanetCharacter-container-list-Btn-button{
     font-size: 15px;
   }
 }

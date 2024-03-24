@@ -1,0 +1,31 @@
+
+<div class="terminatorVideoGames-container">
+  <div class="terminatorVideoGames-container-button" *ngIf="isAdmin" style="display: flex; justify-content: flex-end; align-items: center; margin-bottom: 5px; gap: 5px">
+      <button [routerLink]="['/admin/edit-product',terminatorVideoGame._id]" >Editar</button>
+      <button [routerLink]="['/admin/delete-product', terminatorVideoGame._id]" >Eliminar</button>
+  </div>
+  <div class="terminatorVideoGames-container-deck">
+    <div class="terminatorVideoGames-container-deck-card" (click)="clickCard()">
+      <div class="front face" >
+        <img  class="terminatorVideoGames-container-img-img"[src]="terminatorVideoGame.picture" />
+        <div class="terminatorVideoGames-container-text">
+        <h2 class="terminatorVideoGames-container-h2">{{ terminatorVideoGame.title  }}</h2>
+          <p class="terminatorVideoGames-container-p"><span>Platform:</span> {{ terminatorVideoGame.platform }}</p>
+          <p class="terminatorVideoGames-container-p"><span>Año de Lanzamiento:</span> {{ terminatorVideoGame.year }}</p>
+          <p class="terminatorVideoGames-container-p"><span>Estudio de desarrollo:</span> {{ terminatorVideoGame.studio }}</p>
+          <p class="terminatorVideoGames-container-p"><span>Año de Clasificacion:</span> {{ terminatorVideoGame.clasification }}</p>
+        </div>
+      </div>
+      <div class="back face">
+        <p class="terminatorVideoGames-container-resume"><span>Sinopsis:</span> {{ terminatorVideoGame.resume }}</p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <button class="btn btn-outline movie-card__button" type="button" (click)="showTrailer()">Mostrar/Ocultar GamePlay
+<div *ngIf="trailer">
+  <video class="video" width="640" height="360" controls autoplay>
+    <source [src]="terminatorVideoGame.trailer" type="video/mp4">
+    Tu navegador no admite la reproducción de videos HTML5.
+  </video>
+</div>

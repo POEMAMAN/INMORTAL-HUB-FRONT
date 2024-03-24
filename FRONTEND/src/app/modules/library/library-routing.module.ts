@@ -1,5 +1,3 @@
-import { lordOfTheRingsUniverseModule } from './lordOfTheRings-universe/lordOfTheRings-universe.module';
-
 
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -39,14 +37,24 @@ const routes: Routes = [
       path: 'indianaJonesUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./indianaJones-universe/indianaJones-universe.module').then(m => m.indianaJonesUniverseModule)
     },
     {
+      path: 'jurassicParkUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./jurassicPark-universe/jurassicPark-universe.module').then(m => m.jurassicParkUniverseModule)
+    },
+    {
       path: 'starWarsUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./starWars-universe/starWars-universe.module').then(m => m.starWarsUniverseModule)
     },
     {
       path: 'missionImposibleUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./missionImposible-universe/missionImposible-universe.module').then(m => m.MissionImposibleUniverseModule)
     },
     {
-      path: 'lordoftheringsUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./lordOfTheRings-universe/lordOfTheRings-universe.module').then(m => m.lordOfTheRingsUniverseModule)
+      path: 'lordOfTheRingsUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./lordOfTheRings-universe/lordOfTheRings-universe.module').then(m => m.lordOfTheRingsUniverseModule)
     },
+    {
+      path: 'starTrekUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./starTrek-universe/starTrek-universe.module').then(m => m.starTrekUniverseModule)
+    },
+    {
+      path: 'terminatorUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./terminator-universe/terminator-universe.module').then(m => m.terminatorUniverseModule)
+    },
+
     { path: 'favorites', component: FavoritesComponent },
     {
       path: '**', redirectTo: 'library', pathMatch: 'full'

@@ -6,6 +6,7 @@ export interface ApesPlanetVideoGames {
   studio: String,
   clasification: String,
   resume: String,
+  trailer: String,
 
 
 }

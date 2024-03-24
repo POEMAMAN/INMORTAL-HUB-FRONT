@@ -9,13 +9,12 @@
     padding:0 1rem;
     scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
     scrollbar-width:thin;
-    background-image: url("https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710963022/segundo%20spring/BLADE/BACKGROUND/Blade-Reboot-Will-Be-Better-Than-The-Original-For-Being-In-The-MCU_hm6rln.webp");
+    background-image: url("https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710962490/segundo%20spring/BLADE/clips/giphy_5_twwaae.webp");
     background-size: contain;
   &-card {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin: 20px auto;
       &-item {
       width: 400px;
       margin: 10px;
@@ -60,10 +59,25 @@
       &:active{
         transform: scale(1.025);
       }
+      &-img{
+        width: 18px;
+        height: 18px;
+      }
     }
   }
 }
-@media (max-width: 600px)  {
+@media only screen and (max-width: 700px) {////
+  .bladeCharacter-container-list-Btn-button{
+    font-size: 10px;
+    height: 10px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+  }
+  .bladeCharacter-container-list-card-item{
+    width: 350px}
+  }
+@media (max-width: 701px)  {
   .bladeCharacter-container-list-Btn-button{
     font-size: 15px;
   }

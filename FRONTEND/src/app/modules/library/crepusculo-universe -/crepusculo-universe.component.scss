@@ -1,5 +1,5 @@
 .crepusculo-container {
-  background-image: url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710359236/crepusculo/Backgrounds/GUSANO_DE_ARENA_k67s9g_otyiru.jpg');
+  background-image: url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710446567/Crepusculo/Backgrounds/Backgroound_Characters_pwy2w2.jpg');
   background-repeat: repeat;
   background-size: cover;
   display: flex;
@@ -50,6 +50,10 @@
     &:active{
       transform: scale(1.025);
     }
+    &-img{
+      width: 17px;
+      height: 17px;
+    }
     }
   }
 
@@ -66,6 +70,7 @@ flex-wrap: wrap;
 flex-direction: row;
 width: 90%;
 justify-content: space-around;
+margin-left: -40px;
 }
 
 .crepusculo-container-ul-li {
@@ -154,4 +159,24 @@ p {
   font-size: medium;
   color: white;
   text-decoration: solid;
+}
+@media only screen and (max-width: 700px) {
+  .crepusculo-container-button{
+    font-size: 10px;
+    height: 10px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+  }
+  .crepusculo-container-ul-li{
+    width: 230px;
+    height: 210px;
+  }
+  p {
+    font-size: 13px;
+   
+  }
+}
+@media (min-width: 701px)  {
+
 }

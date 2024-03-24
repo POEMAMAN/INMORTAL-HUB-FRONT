@@ -33,6 +33,11 @@ clickCard() {
   }
   this.tarjetaVolteada = !this.tarjetaVolteada;
 }
+trailer: boolean = false;
+
+showTrailer() {
+  this.trailer = !this.trailer;
+}
 }
   
 

@@ -14,7 +14,7 @@ export class AudioService {
 
   playSound(): void {
     // Carga el archivo de audio
-    fetch('https://res.cloudinary.com/dqh5ovfj1/video/upload/v1711116018/soundtrack/Banda_Sonora_-_El_Se%C3%B1or_de_los_Anillos_480p_25fps_H264-128kbit_AAC_rckj8m.mp4')
+    fetch('https://res.cloudinary.com/dqh5ovfj1/video/upload/v1711217034/LordOfTheRings/sound/20MIND_1_flgk8v.mp4')
       .then(response => response.arrayBuffer())
       .then(buffer => this.audioContext.decodeAudioData(buffer))
       .then(decodedData => {

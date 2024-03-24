@@ -21,7 +21,7 @@
           <p class="apesPlanetMovies-container-p"><span>Duracion:</span> {{ apesPlanetMovie.duration }}</p>
           <p class="apesPlanetMovies-container-p"><span>Pais:</span> {{ apesPlanetMovie.country }}</p>
           <p class="apesPlanetMovies-container-p"><span>Genero:</span> {{ apesPlanetMovie.genre}}</p>
-          <p class="apesPlanetMovies-container-p"><span>Clasificacion:</span> {{ apesPlanetMovie.clasificarion }}</p>
+          <p class="apesPlanetMovies-container-p"><span>Clasificacion:</span> {{ apesPlanetMovie.clasification }}</p>
         </div>
       </div>
       <div class="back face">
@@ -29,6 +29,12 @@
       </div>
     </div>
   </div>
-  <button class="btn btn-outline movie-card__button" type="button">Watch Trailer</button>
+  <div>
+    <button class="btn btn-outline movie-card__button" type="button" (click)="showTrailer()">Mostrar/Ocultar Trailer
+<div *ngIf="trailer">
+  <video class="video" width="640" height="360" controls autoplay>
+    <source [src]="apesPlanetMovie.trailer" type="video/mp4">
+    Tu navegador no admite la reproducción de videos HTML5.
+  </video>
 </div>
 

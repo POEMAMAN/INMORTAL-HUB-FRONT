@@ -11,7 +11,7 @@ const routes: Routes = [
     path: '',canActivate: [verifyTokenGuard], component: ApesPlanetUniverseComponent,
   },
   {
-    path: 'videoGames', canActivate: [verifyTokenGuard],loadChildren: () => import('./apesPlanetVideoGames/apesPlanetVideoGames.module').then(m => m.apesPlanetVideoGamesModule),
+    path: 'videoGames', canActivate: [verifyTokenGuard],loadChildren: () => import('./apesPlanetVideoGames/apesPlaneGames.module').then(m => m.apesPlanetVideoGamesModule),
   },
   {
     path: 'characters', canActivate: [verifyTokenGuard],loadChildren: () => import('./apesPlanetCharacters/apesPlanetCharacters.module').then(m => m.apesPlanetCharactersModule),

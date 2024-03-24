@@ -45,8 +45,8 @@
     color: goldenrod;
     height: 70px;
     text-align: center;
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
   }
   &-resume {
     display: -webkit-box;
@@ -109,7 +109,7 @@
 	  height: 100%;
 	  z-index: -1;
     background-size:100% 100%;
-	  background: url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710768403/ApesPlanet/clips/paisaje_cdvzzq.webp');
+	  background-color: rgb(20, 14, 50);
     background-size: cover;
 	  -webkit-transform: rotateY(180deg);
 	  -moz-transform: rotateY(180deg);
@@ -155,12 +155,35 @@ span{
 }
 
 
-@media (min-width: 400px)  {
+@media only screen and (max-width: 700px)  {///---///
+  .apesPlanetMovies-container-img-img{///---///
+   width: 125px;
+   height: 200px;
+   margin: 5px;
+  }
+  .apesPlanetMovies-container-deck, .apesPlanetMovies-container-deck-card, .front, .face{///---///
+   width: 350px;
+   height: 275px;
+  }
+  .apesPlanetMovies-container-resume{///---///
+   height: 260px;
+  }
+  .apesPlanetMovies-container-h2{///---///
+   font-size: 100%;
+   height: 55px;
+  }
+  .apesPlanetMovies-container-p{///---///
+   font-size: 12px;
+  }
+  .video{///---///
+   width: 285px;
+   height: 225px;
+  }
+  
+ }
+ @media (min-width: 600px)  {///---///
 
-}
-@media (min-width: 600px)  {
-   
-}
+ }
 @media (min-width: 800px)  {
 
 }
@@ -200,7 +223,7 @@ button {
 .btn-outline {
   background-color: transparent;
   border: 3px solid #ffffff;
-  background-image:url('https://i.imgur.com/W3tra4F.gif');
+  background-color: black;
 }
 .btn::before {
   font-family: 'Material Icons';

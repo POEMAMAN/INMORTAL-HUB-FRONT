@@ -1,0 +1,41 @@
+<div class="jurassicParkMovies-container">
+  <div class="jurassicParkMovies-container-button"*ngIf="isAdmin"style="
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 5px;
+      gap: 5px;">
+    <button [routerLink]="['/admin/edit-product', jurassicParkMovie._id]">Editar</button>
+    <button [routerLink]="['/admin/delete-product', jurassicParkMovie._id]">
+      Eliminar
+    </button>
+  </div>
+  <div class="jurassicParkMovies-container-deck">
+    <div class="jurassicParkMovies-container-deck-card" (click)="clickCard()">
+      <div class="front face" >
+        <img  class="jurassicParkMovies-container-img-img"[src]="jurassicParkMovie.picture" />
+        <div class="jurassicParkMovies-container-text">
+          <h2 class="jurassicParkMovies-container-h2">{{ jurassicParkMovie.title }}</h2>
+          <p class="jurassicParkMovies-container-p"><span>Director:</span> {{ jurassicParkMovie.director }}</p>
+          <p class="jurassicParkMovies-container-p"><span>Año:</span> {{ jurassicParkMovie.year }}</p>
+          <p class="jurassicParkMovies-container-p"><span>Duracion:</span> {{ jurassicParkMovie.duration }}</p>
+          <p class="jurassicParkMovies-container-p"><span>Pais:</span> {{ jurassicParkMovie.country }}</p>
+          <p class="jurassicParkMovies-container-p"><span>Genero:</span> {{ jurassicParkMovie.genre}}</p>
+          <p class="jurassicParkMovies-container-p"><span>Clasificacion:</span> {{ jurassicParkMovie.clasificarion }}</p>
+        </div>
+      </div>
+      <div class="back face">
+        <p class="jurassicParkMovies-container-resume"><span>Sinopsis:</span> {{ jurassicParkMovie.resume }}</p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <button class="btn btn-outline movie-card__button" type="button" (click)="showTrailer()">Mostrar/Ocultar Trailer
+<div *ngIf="trailer">
+  <video class="video" width="640" height="360" controls autoplay>
+    <source [src]="jurassicParkMovie.trailer" type="video/mp4">
+    Tu navegador no admite la reproducción de videos HTML5.
+  </video>
+</div>
+
+

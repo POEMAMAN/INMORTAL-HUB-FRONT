@@ -34,8 +34,8 @@
     overflow: hidden;
     max-height: calc(1.5em * 4);
     -webkit-line-clamp: 4;
-    font-size: 15px;
-    margin: 15px;  //  
+    font-size: 16px;
+    margin: 5px;
   }
   &-h2 {
     display: -webkit-box;
@@ -45,15 +45,16 @@
     -webkit-line-clamp: 1;
     font-family: 'Race-guard';
     text-decoration:overline;
-    font-size: 140%;
+    font-size: 120%;
+    height: 50px;
   }
   &-resume {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
     -webkit-line-clamp: 4;
-    font-size: 20px;
-    height: 625px;//
+    font-size: 15px;
+    height: 485px;//
     font-family: 'Merienda';
     margin: 2% 2% 0% 2%;
     margin: 1rem auto;//
@@ -67,7 +68,7 @@
   &-deck{
     margin:15px;
     width: 425px;
-    height: 650px;//
+    height: 500px;//
     position:relative;
     -webkit-perspective: 1000px;
     perspective: 1000px;
@@ -75,7 +76,7 @@
     border-radius:10px;
     &-card{
       width: 425px;
-      height: 650px;//
+      height: 500px;//
       -webkit-transform-style: preserve-3d;
       transform-style: preserve-3d;
       -webkit-transition: all .5s linear;
@@ -108,7 +109,7 @@
 	  height: 100%;
 	  z-index: -1;
     background-size:100% 100%;
-	  background: url('https://i.imgur.com/W3tra4F.gif');
+	  background-color: rgb(15, 15, 44);
     background-size: cover;
 	  -webkit-transform: rotateY(180deg);
 	  -moz-transform: rotateY(180deg);
@@ -146,8 +147,18 @@
 span{
   color: goldenrod;
 }
-@media (min-width: 400px)  {
-
+@media only screen and (max-width: 700px) {
+  .duneCharacters-container-img-img{
+    width: 250px;
+    height: 250px;
+  }
+  .duneCharacters-container-deck, .duneCharacters-container-deck-card, .front, .face{
+    width: 350px;
+   }
+   .duneCharacters-container-p{
+    margin: 5px;
+   }
+  
 }
 @media (min-width: 600px)  {
    

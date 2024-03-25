@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+}
+
+.transformersVideoGames-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &-img {
+        display: flex;
+        &-img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50px;
+        }
+    }
+    &-description {
+        text-align: center;
+        color: #ffffff;
+    }
+    &-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &-p {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        max-height: calc(1.5em * 4);
+        -webkit-line-clamp: 4;
+        font-size: 19px;
+    }
+    &-h2 {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        max-height: calc(1.5em * 4);
+        -webkit-line-clamp: 1;
+        font-family: 'Race-guard';
+        text-decoration: overline;
+        font-size: 150%;
+        text-align: center;
+        display: flex;
+        height: 50px;
+        align-items: center;
+    }
+    &-resume {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        -webkit-line-clamp: 4;
+        font-size: 16px;
+        height: 310px;
+        font-family: 'Merienda';
+        margin: 2% 2% 0% 2%;
+        margin: 1rem auto;
+        border: 1px solid #aaa;
+        overflow: auto;
+        box-sizing: border-box;
+        padding: 0 1rem;
+        scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
+        scrollbar-width: thin;
+    }
+    &-deck {
+        margin: 15px;
+        width: 600px; /////
+        height: 325px; /////
+        position: relative;
+        -webkit-perspective: 1000px;
+        perspective: 1000px;
+        font-family: verdana;
+        border-radius: 10px;
+        &-card {
+            width: 600px; /////
+            height: 325px; /////
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            -webkit-transition: all .5s linear;
+            transition: all .5s linear;
+            border-radius: 10px;
+        }
+    }
+}
+
+.transformersVideoGames-container-text {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+.back {
+    overflow: hidden;
+    z-index: -1;
+    display: block;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    box-sizing: border-box;
+    &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-size: 100% 100%;
+        background-color: rgb(0, 0, 15);
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    }
+}
+
+.front,
+.back {
+    transition: all .5s linear;
+}
+
+.front {
+    background-image: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGtiOGd0OWg4aDVqcGc3Zzc5bjFpNGF0Y2t5cGdhbTNibHgxd293OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/CWx3Qijmkf4746TtGu/giphy.gif');
+    background-size: cover; /////
+    z-index: 1;
+    box-shadow: 5px 5px 5px #aaa;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.back {
+    box-shadow: 0 0 0 #aaa;
+}
+
+.flipped,
+.hovercard:hover {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    .front {
+        box-shadow: 0 0 0 #aaa;
+    }
+    .back {
+        box-shadow: 5px 5px 5px #aaa;
+    }
+}
+
+span {
+    color: goldenrod;
+}
+
+@media only screen and (max-width: 700px) {
+    .transformersVideoGames-container-img-img {
+        width: 150px;
+        height: 150px;
+    }
+    .transformersVideoGames-container-deck,
+    .transformersVideoGames-container-deck-card,
+    .front,
+    .face {
+        ///---///
+        width: 350px;
+        height: 275px;
+    }
+    .transformersVideoGames-container-p {
+        margin: 5px;
+        font-size: 14px;
+    }
+    .transformersVideoGames-container-h2 {
+        height: 70px;
+        font-size: 130%;
+    }
+    .video {
+        ///---///
+        width: 285px;
+        height: 225px;
+    }
+}
+
+@media (min-width: 600px) {}
+
+@media (min-width: 800px) {}
+
+@media (min-width: 1000px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
+
+@media (min-width: 1600px) {}
+
+@media (min-width: 1800px) {}
+
+@media (min-width: 2000px) {
+    button {
+        font-family: inherit;
+        border: 0;
+        cursor: pointer;
+        &:focus {
+            outline: 0;
+        }
+    }
+}
+
+.btn {
+    padding: .5rem 2rem;
+    background-color: rgba(255, 255, 255, .4);
+    color: rgba(255, 255, 255, 1);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 3px solid #ffffff;
+    background-color: black;
+}
+
+.btn::before {
+    font-family: 'Material Icons';
+    content: '\e037';
+    vertical-align: middle;
+    font-size: 1.5em;
+    padding-right: .5em;
+}
+
+.btn-outline:hover {
+    border-color: goldenrod;
+    color: goldenrod;
+    box-shadow: 0px 1px 8px 0px rgba(245, 199, 0, .2);
+}

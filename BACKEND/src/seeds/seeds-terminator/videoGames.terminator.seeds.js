@@ -6,7 +6,7 @@ const Terminator = require('../../api/models/models.Terminator/videoGames.Termin
 
 const arrayVideoGamesTerminator = [
     {
-        title: "The Terinator: Dawn of Fate",
+        title: "The Terminator: Dawn of Fate",
         picture: "https://res.cloudinary.com/dqh5ovfj1/image/upload/v1711303029/segundo%20spring/terminator/videogame/The_Terminator-_Dawn_of_Fate_hzfhnn.jpg",
         platform: "	PlayStation 2, Xbox",
         year: "2002",

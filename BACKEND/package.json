@@ -17,14 +17,14 @@
         "charactersApesPlanetSeed": "node ./src/seeds/seeds-apesPlanet/characters.apesPlanet.seeds.js",
         "moviesApesPlanetSeed": "node ./src/seeds/seeds-apesPlanet/movies.apesPlanet.seeds.js",
 
-        "videoGamesBladeSeed": "node ./src/seeds/seeds-blade/videoGames.blade.seeds.js", 
+        "videoGamesBladeSeed": "node ./src/seeds/seeds-blade/videoGames.blade.seeds.js",
         "charactersBladeSeed": "node ./src/seeds/seeds-blade/characters.blade.seeds.js",
         "moviesBladeSeed": "node ./src/seeds/seeds-blade/movies.blade.seeds.js",
 
-        "booksCrepusculoSeed": "node ./src/seeds/seeds-crepusculo/books.crepusculo.seeds.js", 
+        "booksCrepusculoSeed": "node ./src/seeds/seeds-crepusculo/books.crepusculo.seeds.js",
         "charactersCrepusculoSeed": "node ./src/seeds/seeds-crepusculo/characters.crepusculo.seeds.js",
         "moviesCrepusculoSeed": "node ./src/seeds/seeds-crepusculo/movies.crepusculo.seeds.js",
-        
+
         "booksDuneSeed": "node ./src/seeds/seeds-dune/books.dune.seeds.js",
         "characterDuneSeed": "node ./src/seeds/seeds-dune/characters.dune.seeds.js",
         "countriesDuneSeed": "node ./src/seeds/seeds-dune/countries.dune.seeds.js",
@@ -33,7 +33,7 @@
         "booksHarryPotterSeed": "node ./src/seeds/seeds-harryPotter/books.harryPotter.seeds.js",
         "charactersHarryPotterSeed": "node ./src/seeds/seeds-harryPotter/characters.harryPotter.seeds.js",
         "moviesHarryPotterSeed": "node ./src/seeds/seeds-harryPotter/movies.harryPotter.seeds.js",
-        
+
         "booksHungerGamesSeed": "node ./src/seeds/seeds-HungerGames/books.HungerGames.seeds.js",
         "charactersHungerGamesSeed": "node ./src/seeds/seeds-HungerGames/characters.HungerGames.seeds.js",
         "moviesHungerGamesSeed": "node ./src/seeds/seeds-HungerGames/movies.HungerGames.seeds.js",
@@ -64,8 +64,12 @@
 
         "videoGamesTerminatorSeed": "node ./src/seeds/seeds-terminator/videoGames.terminator.seeds.js",
         "characterTerminatorSeed": "node ./src/seeds/seeds-terminator/characters.terminator.seeds.js",
-        "moviesTerminatorSeed": "node ./src/seeds/seeds-terminator/movies.terminator.seeds.js"
-  
+        "moviesTerminatorSeed": "node ./src/seeds/seeds-terminator/movies.terminator.seeds.js",
+
+        "videoGamesTransformersSeed": "node ./src/seeds/seeds-transformers/videoGames.transformers.seeds.js",
+        "characterTransformersSeed": "node ./src/seeds/seeds-transformers/characters.transformers.seeds.js",
+        "moviesTransformersSeed": "node ./src/seeds/seeds-transformers/movies.transformers.seeds.js"
+
     },
     "keywords": [
         "Node",

@@ -1,0 +1,39 @@
+<div class="transformersMovies-container">
+    <div class="transformersMovies-container-button" *ngIf="isAdmin" style="
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 5px;
+      gap: 5px;">
+        <button [routerLink]="['/admin/edit-product', transformersMovie._id]">Editar</button>
+        <button [routerLink]="['/admin/delete-product', transformersMovie._id]">
+      Eliminar
+    </button>
+    </div>
+    <div class="transformersMovies-container-deck">
+        <div class="transformersMovies-container-deck-card" (click)="clickCard()">
+            <div class="front face">
+                <img class="transformersMovies-container-img-img" [src]="transformersMovie.picture" />
+                <div class="transformersMovies-container-text">
+                    <h2 class="transformersMovies-container-h2">{{ transformersMovie.title }}</h2>
+                    <p class="transformersMovies-container-p"><span>Director:</span> {{ transformersMovie.director }}</p>
+                    <p class="transformersMovies-container-p"><span>Año:</span> {{ transformersMovie.year }}</p>
+                    <p class="transformersMovies-container-p"><span>Duracion:</span> {{ transformersMovie.duration }}</p>
+                    <p class="transformersMovies-container-p"><span>Pais:</span> {{ transformersMovie.country }}</p>
+                    <p class="transformersMovies-container-p"><span>Genero:</span> {{ transformersMovie.genre}}</p>
+                    <p class="transformersMovies-container-p"><span>Clasificacion:</span> {{ transformersMovie.clasification }}</p>
+                </div>
+            </div>
+            <div class="back face">
+                <p class="transformersMovies-container-resume"><span>Sinopsis:</span> {{ transformersMovie.resume }}</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <button class="btn btn-outline movie-card__button" type="button" (click)="showTrailer()">Mostrar/Ocultar Trailer
+  <div *ngIf="trailer">
+    <video class="video" width="640" height="360" controls autoplay>
+      <source [src]="transformersMovie.trailer" type="video/mp4">
+      Tu navegador no admite la reproducción de videos HTML5.
+    </video>
+</div>

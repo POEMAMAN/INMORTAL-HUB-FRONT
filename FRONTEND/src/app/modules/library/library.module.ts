@@ -12,6 +12,7 @@ import { indianaJonesUniverseModule } from './indianaJones-universe/indianaJones
 import { MissionImposibleUniverseModule } from './missionImposible-universe/missionImposible-universe.module';
 import { starWarsUniverseModule } from './starWars-universe/starWars-universe.module';
 import { lordOfTheRingsUniverseModule } from './lordOfTheRings-universe/lordOfTheRings-universe.module';
+import { transformersUniverseModule } from './transformers-universe/transformers-universe.module';
 
 
 
@@ -36,8 +37,8 @@ import { lordOfTheRingsUniverseModule } from './lordOfTheRings-universe/lordOfTh
     indianaJonesUniverseModule,
     starWarsUniverseModule,
     MissionImposibleUniverseModule,
-    lordOfTheRingsUniverseModule
-  
+    lordOfTheRingsUniverseModule,
+    transformersUniverseModule
     
   ],
   exports: [

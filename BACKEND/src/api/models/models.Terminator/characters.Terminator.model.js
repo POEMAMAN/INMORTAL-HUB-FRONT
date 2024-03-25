@@ -7,6 +7,7 @@ const charactersSchema = new Schema({
     actor: { type: String, required: true },
     race: { type: String, required: true },
     profession: { type: String, required: false },
+    movie: { type: String, required: false },
     picture: { type: String },
     resume: { type: String, required: false },
 }, {

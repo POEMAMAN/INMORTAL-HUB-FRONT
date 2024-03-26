@@ -12,60 +12,46 @@
         "charactersAlienSeed": "node ./src/seeds/seeds-Alien/characters.Alien.seeds.js",
         "moviesAlienSeed": "node ./src/seeds/seeds-Alien/movies.Alien.seeds.js",
         "videoGamesAlienSeed": "node ./src/seeds/seeds-Alien/videoGames.Alien.seeds.js",
-
         "videoGamesApesPlanetSeed": "node ./src/seeds/seeds-apesPlanet/videoGames.apesPlanet.seeds.js",
         "charactersApesPlanetSeed": "node ./src/seeds/seeds-apesPlanet/characters.apesPlanet.seeds.js",
         "moviesApesPlanetSeed": "node ./src/seeds/seeds-apesPlanet/movies.apesPlanet.seeds.js",
-
-        "videoGamesBladeSeed": "node ./src/seeds/seeds-blade/videoGames.blade.seeds.js", 
+        "videoGamesBladeSeed": "node ./src/seeds/seeds-blade/videoGames.blade.seeds.js",
         "charactersBladeSeed": "node ./src/seeds/seeds-blade/characters.blade.seeds.js",
         "moviesBladeSeed": "node ./src/seeds/seeds-blade/movies.blade.seeds.js",
-
-        "booksCrepusculoSeed": "node ./src/seeds/seeds-crepusculo/books.crepusculo.seeds.js", 
+        "booksCrepusculoSeed": "node ./src/seeds/seeds-crepusculo/books.crepusculo.seeds.js",
         "charactersCrepusculoSeed": "node ./src/seeds/seeds-crepusculo/characters.crepusculo.seeds.js",
         "moviesCrepusculoSeed": "node ./src/seeds/seeds-crepusculo/movies.crepusculo.seeds.js",
-        
         "booksDuneSeed": "node ./src/seeds/seeds-dune/books.dune.seeds.js",
         "characterDuneSeed": "node ./src/seeds/seeds-dune/characters.dune.seeds.js",
         "countriesDuneSeed": "node ./src/seeds/seeds-dune/countries.dune.seeds.js",
         "moviesDuneSeed": "node ./src/seeds/seeds-dune/movies.dune.seeds.js",
-
         "booksHarryPotterSeed": "node ./src/seeds/seeds-harryPotter/books.harryPotter.seeds.js",
         "charactersHarryPotterSeed": "node ./src/seeds/seeds-harryPotter/characters.harryPotter.seeds.js",
         "moviesHarryPotterSeed": "node ./src/seeds/seeds-harryPotter/movies.harryPotter.seeds.js",
-        
         "booksHungerGamesSeed": "node ./src/seeds/seeds-HungerGames/books.HungerGames.seeds.js",
         "charactersHungerGamesSeed": "node ./src/seeds/seeds-HungerGames/characters.HungerGames.seeds.js",
         "moviesHungerGamesSeed": "node ./src/seeds/seeds-HungerGames/movies.HungerGames.seeds.js",
-
         "booksIndianaJonesSeed": "node ./src/seeds/seeds-IndianaJones/books.IndianaJones.seeds.js",
         "charactersIndianaJonesSeed": "node ./src/seeds/seeds-IndianaJones/characters.IndianaJones.seeds.js",
         "moviesIndianaJonesSeed": "node ./src/seeds/seeds-IndianaJones/movies.IndianaJones.seeds.js",
-
         "booksJurassicParkSeed": "node ./src/seeds/seeds-JurassicPark/books.JurassicPark.seeds.js",
         "charactersJurassicParkSeed": "node ./src/seeds/seeds-JurassicPark/characters.JurassicPark.seeds.js",
         "moviesJurassicParkSeed": "node ./src/seeds/seeds-JurassicPark/movies.JurassicPark.seeds.js",
-
         "booksLordOfTheRingsSeed": "node ./src/seeds/seeds-LordOfTheRings/books.LordOfTheRings.seeds.js",
         "charactersLordOfTheRingsSeed": "node ./src/seeds/seeds-LordOfTheRings/characters.LordOfTheRings.seeds.js",
         "moviesLordOfTheRingsSeed": "node ./src/seeds/seeds-LordOfTheRings/movies.LordOfTheRings.seeds.js",
-
         "videoGamesMissionImposibleSeed": "node ./src/seeds/seeds-missionImposible/videoGames.missionImposible.seeds.js",
         "charactersMissionImposibleSeed": "node ./src/seeds/seeds-missionImposible/characters.missionImposible.seeds.js",
         "moviesMissionImposibleSeed": "node ./src/seeds/seeds-missionImposible/movies.missionImposible.seeds.js",
-
         "booksStarTrekSeed": "node ./src/seeds/seeds-starTrek/books.starTrek.seeds.js",
         "charactersStarTrekSeed": "node ./src/seeds/seeds-starTrek/characters.starTrek.seeds.js",
         "moviesStarTrekSeed": "node ./src/seeds/seeds-starTrek/movies.starTrek.seeds.js",
-
         "booksStarWarsSeed": "node ./src/seeds/seeds-starwars/books.starwars.seeds.js",
         "characterStarWarsSeed": "node ./src/seeds/seeds-starwars/characters.starwars.seeds.js",
         "moviesStarWarsSeed": "node ./src/seeds/seeds-starwars/movies.starwars.seeds.js",
-
         "videoGamesTerminatorSeed": "node ./src/seeds/seeds-terminator/videoGames.terminator.seeds.js",
         "characterTerminatorSeed": "node ./src/seeds/seeds-terminator/characters.terminator.seeds.js",
         "moviesTerminatorSeed": "node ./src/seeds/seeds-terminator/movies.terminator.seeds.js"
-  
     },
     "keywords": [
         "Node",
@@ -91,6 +77,7 @@
         "multer": "^1.4.5-lts.1",
         "multer-storage-cloudinary": "^4.0.0",
         "nodemailer": "^6.9.12",
+        "socket.io": "^4.7.5",
         "swagger-jsdoc": "^6.2.8",
         "swagger-ui-express": "^5.0.0"
     },

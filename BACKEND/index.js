@@ -84,6 +84,11 @@ const moviesStarWarsRoutes = require("./src/api/routes/routes.StarWars/movies.St
 // const charactersUnderworldRoutes = require("./src/api/routes/routes.Underworld/characters.Underworld.routes");
 // const moviesUnderworldRoutes = require("./src/api/routes/routes.Underworld/movies.Underworld.routes");
 
+// Transformers
+const videoGamesTransformersRoutes = require("./src/api/routes/routes.Transformers/videoGames.Transformers.routes");
+const charactersTransformersRoutes = require("./src/api/routes/routes.Transformers/characters.Transformers.routes");
+const moviesTransformersRoutes = require("./src/api/routes/routes.Transformers/movies.Transformers.routes");
+
 // Terminator
 const videoGamesTerminatorRoutes = require("./src/api/routes/routes.Terminator/videoGames.Terminator.routes");
 const charactersTerminatorRoutes = require("./src/api/routes/routes.Terminator/characters.Terminator.routes");
@@ -97,25 +102,25 @@ const dotenv = require('dotenv');
 
 // Ejecutamos método para usar .env
 dotenv.config();
- 
+
 // Ejecutar la configuación de cloudinary
 configCloudinary();
 
 const app = express();
 app.use(express.json());
 app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Methods", "GET, PUT, POST, DELETE, PATCH");
-  res.header("Access-Control-Allow-Credentials", true);
-  res.header("Access-Control-Allow-Headers", "Content-Type");
-  res.header("Access-Control-Allow-Origin", "*");
-  next();
+    res.header("Access-Control-Allow-Methods", "GET, PUT, POST, DELETE, PATCH");
+    res.header("Access-Control-Allow-Credentials", true);
+    res.header("Access-Control-Allow-Headers", "Content-Type");
+    res.header("Access-Control-Allow-Origin", "*");
+    next();
 });
 
 
 app.use(
-  cors({
-    origin: ["*"],
-  })
+    cors({
+        origin: ["*"],
+    })
 );
 
 //Routes
@@ -146,8 +151,8 @@ app.use("/universes/Blade/movies", moviesBladeRoutes)
 // Dune
 app.use("/universes/dune/books", booksDuneRoutes)
 app.use("/universes/dune/characters", charactersDuneRoutes)
-// app.use("/universes/dune/planets", planetsDuneRoutes)
-// app.use("/universes/dune/countries", countriesDuneRoutes)
+    // app.use("/universes/dune/planets", planetsDuneRoutes)
+    // app.use("/universes/dune/countries", countriesDuneRoutes)
 app.use("/universes/dune/movies", moviesDuneRoutes)
 
 // HarryPotter
@@ -200,6 +205,11 @@ app.use("/universes/StarWars/movies", moviesStarWarsRoutes)
 // app.use("/universes/Underworld/characters", charactersUnderworldRoutes)
 // app.use("/universes/Underworld/movies", moviesUnderworldRoutes)
 
+// Transformers
+app.use("/universes/Transformers/videoGames", videoGamesTransformersRoutes)
+app.use("/universes/Transformers/characters", charactersTransformersRoutes)
+app.use("/universes/Transformers/movies", moviesTransformersRoutes)
+
 // Terminator
 app.use("/universes/terminator/videoGames", videoGamesTerminatorRoutes)
 app.use("/universes/terminator/characters", charactersTerminatorRoutes)
@@ -209,19 +219,19 @@ app.use("/universes/terminator/movies", moviesTerminatorRoutes)
 const PORT = process.env.PORT || 8084;
 
 const server = app.listen(PORT, () => {
-  console.log(`Server listening on port 🙈: ${PORT}`);
+    console.log(`Server listening on port 🙈: ${PORT}`);
 });
 
 app.use((req, res, next) => {
-  setImmediate(() => {
-    next(new Error("Something went wrong"));
-  });
+    setImmediate(() => {
+        next(new Error("Something went wrong"));
+    });
 });
 
 app.disable('x-powered-by')
 
-app.use(function (err, req, res, next) {
-  console.error(err.message);
-  if (!err.statusCode) err.statusCode = 500;
-  res.status(err.statusCode).send(err.message);
+app.use(function(err, req, res, next) {
+    console.error(err.message);
+    if (!err.statusCode) err.statusCode = 500;
+    res.status(err.statusCode).send(err.message);
 });

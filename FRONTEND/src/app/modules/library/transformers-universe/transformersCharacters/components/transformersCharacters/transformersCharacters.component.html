@@ -1,0 +1,19 @@
+<div class="transformersCharacters-container">
+    <div class="transformersCharacters-container-button" *ngIf="isAdmin" style="display: flex; justify-content: flex-end; align-items: center; margin-bottom: 5px; gap: 5px">
+        <button [routerLink]="['/admin/edit-product',transformersCharacter._id]">Editar</button>
+        <button [routerLink]="['/admin/delete-product', transformersCharacter._id]">Eliminar</button>
+    </div>
+    <div class="transformersCharacters-container-deck">
+        <div class="transformersCharacters-container-deck-card" (click)="clickCard()">
+            <div class="front face">
+                <h2 class="transformersCharacters-container-h2">{{ transformersCharacter.name }}</h2>
+                <img class="transformersCharacters-container-img-img" [src]="transformersCharacter.picture" />
+                <p class="transformersCharacters-container-p"><span>Actor:</span> {{ transformersCharacter.actor }}</p>
+                <p class="transformersCharacters-container-p"><span>Profession:</span> {{ transformersCharacter.profession }}</p>
+            </div>
+            <div class="back face">
+                <p class="transformersCharacters-container-resume"><span>Sinopsis:</span> {{ transformersCharacter.resume }}</p>
+            </div>
+        </div>
+    </div>
+</div>

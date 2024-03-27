@@ -86,7 +86,7 @@ const moviesStarWarsRoutes = require("./src/api/routes/routes.StarWars/movies.St
 
 // Terminator
 const videoGamesTerminatorRoutes = require("./src/api/routes/routes.Terminator/videoGames.Terminator.routes");
-// const charactersTerminatorRoutes = require("./src/api/routes/routes.Underworld/characters.Terminator.routes");
+const charactersTerminatorRoutes = require("./src/api/routes/routes.Terminator/characters.Terminator.routes");
 const moviesTerminatorRoutes = require("./src/api/routes/routes.Terminator/movies.Terminator.routes");
 
 //
@@ -202,7 +202,7 @@ app.use("/universes/StarWars/movies", moviesStarWarsRoutes)
 
 // Terminator
 app.use("/universes/terminator/videoGames", videoGamesTerminatorRoutes)
-// app.use("/universes/terminator/characters", charactersTerminatorRoutes)
+app.use("/universes/terminator/characters", charactersTerminatorRoutes)
 app.use("/universes/terminator/movies", moviesTerminatorRoutes)
 
 //

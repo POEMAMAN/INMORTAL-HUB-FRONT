@@ -13,6 +13,7 @@ import { MissionImposibleUniverseModule } from './missionImposible-universe/miss
 import { starWarsUniverseModule } from './starWars-universe/starWars-universe.module';
 import { lordOfTheRingsUniverseModule } from './lordOfTheRings-universe/lordOfTheRings-universe.module';
 import { transformersUniverseModule } from './transformers-universe/transformers-universe.module';
+import { xmenUniverseModule } from './xmen-universe/xmen-universe.module';
 
 
 
@@ -38,7 +39,9 @@ import { transformersUniverseModule } from './transformers-universe/transformers
     starWarsUniverseModule,
     MissionImposibleUniverseModule,
     lordOfTheRingsUniverseModule,
-    transformersUniverseModule
+    transformersUniverseModule,
+    xmenUniverseModule
+
     
   ],
   exports: [

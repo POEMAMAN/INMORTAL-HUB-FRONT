@@ -57,6 +57,9 @@ const routes: Routes = [
     {
       path: 'transformersUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./transformers-universe/transformers-universe.module').then(m => m.transformersUniverseModule)
     },
+    {
+      path: 'xmenUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./xmen-universe/xmen-universe.module').then(m => m.xmenUniverseModule)
+    },
 
     { path: 'favorites', component: FavoritesComponent },
     {

@@ -4,8 +4,8 @@ const Schema = mongoose.Schema;
 
 const charactersSchema = new Schema({
     name: { type: String, required: true },
-    actor: { type: String, required: true },
-    profession: { type: String, required: false },
+    profession: { type: String, required: true },
+    species: { type: String, required: false },
     picture: { type: String },
     resume: { type: String, required: false },
 }, {

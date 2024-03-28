@@ -54,7 +54,10 @@
         "moviesTerminatorSeed": "node ./src/seeds/seeds-terminator/movies.terminator.seeds.js",
         "videoGamesTransformersSeed": "node ./src/seeds/seeds-transformers/videoGames.transformers.seeds.js",
         "characterTransformersSeed": "node ./src/seeds/seeds-transformers/characters.transformers.seeds.js",
-        "moviesTransformersSeed": "node ./src/seeds/seeds-transformers/movies.transformers.seeds.js"
+        "moviesTransformersSeed": "node ./src/seeds/seeds-transformers/movies.transformers.seeds.js",
+        "videoGamesXmenSeed": "node ./src/seeds/seeds-Xmen/videoGames.Xmen.seeds.js",
+        "characterXmenSeed": "node ./src/seeds/seeds-Xmen/characters.Xmen.seeds.js",
+        "moviesXmenSeed": "node ./src/seeds/seeds-Xmen/movies.Xmen.seeds.js"
 
     },
     "keywords": [

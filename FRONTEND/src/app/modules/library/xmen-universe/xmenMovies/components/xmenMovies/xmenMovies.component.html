@@ -1,0 +1,36 @@
+<div class="xmenMovies-container">
+    <div class="xmenMovies-container-button" *ngIf="isAdmin" style="
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 5px;
+      gap: 5px;">
+
+    </div>
+    <div class="xmenMovies-container-deck">
+        <div class="xmenMovies-container-deck-card" (click)="clickCard()">
+            <div class="front face">
+                <img class="xmenMovies-container-img-img" [src]="xmenMovie.picture" />
+                <div class="xmenMovies-container-text">
+                    <h2 class="xmenMovies-container-h2">{{ xmenMovie.title }}</h2>
+                    <p class="xmenMovies-container-p"><span>Director:</span> {{ xmenMovie.director }}</p>
+                    <p class="xmenMovies-container-p"><span>Año:</span> {{ xmenMovie.year }}</p>
+                    <p class="xmenMovies-container-p"><span>Duracion:</span> {{ xmenMovie.duration }}</p>
+                    <p class="xmenMovies-container-p"><span>Pais:</span> {{ xmenMovie.country }}</p>
+                    <p class="xmenMovies-container-p"><span>Genero:</span> {{ xmenMovie.genre}}</p>
+                    <p class="xmenMovies-container-p"><span>Clasificacion:</span> {{ xmenMovie.clasification }}</p>
+                </div>
+            </div>
+            <div class="back face">
+                <p class="xmenMovies-container-resume"><span>Sinopsis:</span> {{ xmenMovie.resume }}</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <button class="btn btn-outline movie-card__button" type="button" (click)="showTrailer()">Mostrar/Ocultar Trailer
+  <div *ngIf="trailer">
+    <video class="video" width="640" height="360" controls autoplay>
+      <source [src]="xmenMovie.trailer" type="video/mp4">
+      Tu navegador no admite la reproducción de videos HTML5.
+    </video>
+</div>

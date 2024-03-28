@@ -1,0 +1,30 @@
+<div class="xmenVideoGames-container">
+    <div class="xmenVideoGames-container-button" *ngIf="isAdmin" style="display: flex; justify-content: flex-end; align-items: center; margin-bottom: 5px; gap: 5px">
+        <button [routerLink]="['/admin/edit-product',xmenVideoGame._id]">Editar</button>
+        <button [routerLink]="['/admin/delete-product', xmenVideoGame._id]">Eliminar</button>
+    </div>
+    <div class="xmenVideoGames-container-deck">
+        <div class="xmenVideoGames-container-deck-card" (click)="clickCard()">
+            <div class="front face">
+                <img class="xmenVideoGames-container-img-img" [src]="xmenVideoGame.picture" />
+                <div class="xmenVideoGames-container-text">
+                    <h2 class="xmenVideoGames-container-h2">{{ xmenVideoGame.title }}</h2>
+                    <p class="xmenVideoGames-container-p"><span>Platform:</span> {{ xmenVideoGame.platform }}</p>
+                    <p class="xmenVideoGames-container-p"><span>Año de Lanzamiento:</span> {{ xmenVideoGame.year }}</p>
+                    <p class="xmenVideoGames-container-p"><span>Estudio de desarrollo:</span> {{ xmenVideoGame.studio }}</p>
+                    <p class="xmenVideoGames-container-p"><span>Año de Clasificacion:</span> {{ xmenVideoGame.clasification }}</p>
+                </div>
+            </div>
+            <div class="back face">
+                <p class="xmenVideoGames-container-resume"><span>Sinopsis:</span> {{ xmenVideoGame.resume }}</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <button class="btn btn-outline movie-card__button" type="button" (click)="showTrailer()">Mostrar/Ocultar GamePlay
+<div *ngIf="trailer">
+  <video class="video" width="640" height="360" controls autoplay>
+    <source [src]="xmenVideoGame.trailer" type="video/mp4">
+    Tu navegador no admite la reproducción de videos HTML5.
+  </video>
+</div>

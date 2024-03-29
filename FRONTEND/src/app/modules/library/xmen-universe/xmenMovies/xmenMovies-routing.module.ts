@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { verifyTokenGuard } from 'src/app/modules/auth/guards/verify-token.guard';
-import { xmenPageComponent } from './pages/xmen-page/xmen-page.component';
+import { xmenMoviesPageComponent } from './pages/xmenMovies-page/xmenMovies-page.component';
 
 const routes: Routes = [
   {
     path: '', children: [
       {
-      path: '', canActivate: [verifyTokenGuard],component: xmenPageComponent
+      path: '', canActivate: [verifyTokenGuard],component: xmenMoviesPageComponent
       },
       {
         path: '**', redirectTo: '', pathMatch: 'full'
@@ -20,4 +20,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class xmenRoutingModule { }
+export class xmenMoviesRoutingModule { }

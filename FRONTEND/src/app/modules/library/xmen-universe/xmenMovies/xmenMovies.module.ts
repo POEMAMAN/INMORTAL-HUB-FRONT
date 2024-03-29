@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-// import { xmenMoviesRoutingModule } from './xmenMovies-routing.module';
-import { xmenMoviesComponent } from './components/xmenMovies/xmenMovies.component';
+import { xmenMoviesRoutingModule } from './xmenMovies-routing.module';
 import { xmenMoviesPageComponent } from './pages/xmenMovies-page/xmenMovies-page.component';
+import { xmenMoviesComponent } from './components/xmenMovies/xmenMovies.component';
 
 
 @NgModule({
@@ -12,7 +12,7 @@ import { xmenMoviesPageComponent } from './pages/xmenMovies-page/xmenMovies-page
   ],
   imports: [
     CommonModule,
-    // xmenMoviesRoutingModule
+    xmenMoviesRoutingModule
   ]
 })
 export class xmenMoviesModule { }

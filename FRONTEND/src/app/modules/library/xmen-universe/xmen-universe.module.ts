@@ -6,8 +6,8 @@ import { xmenMarketsModule } from './xmenMarkets/xmenMarkets.module';
 import { xmenVideoGamesModule } from './xmenVideoGames/xmenVideoGames.module';
 import { xmenUniverseRoutingModule } from './xmen-universe-routing.module';
 import { HeaderLogoutComponent } from 'src/app/core/header-logout/header-logout.component';
-import { xmenMoviesModule } from './xmenMovies/xmenMovies.module';
 import { xmenVideoGamesComponent } from './xmenVideoGames/components/xmenVideoGames/xmenVideoGames.component';
+import { xmenMoviesModule } from './xmenMovies/xmenMovies.module';
 
 
 
@@ -25,8 +25,8 @@ import { xmenVideoGamesComponent } from './xmenVideoGames/components/xmenVideoGa
     xmenUniverseRoutingModule,
     xmenCharactersModule,
     xmenMarketsModule,
-    xmenMoviesModule,
     xmenVideoGamesModule,
+    xmenMoviesModule
 
   ]
 })

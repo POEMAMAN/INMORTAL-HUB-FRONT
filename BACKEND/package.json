@@ -43,6 +43,9 @@
         "videoGamesMissionImposibleSeed": "node ./src/seeds/seeds-missionImposible/videoGames.missionImposible.seeds.js",
         "charactersMissionImposibleSeed": "node ./src/seeds/seeds-missionImposible/characters.missionImposible.seeds.js",
         "moviesMissionImposibleSeed": "node ./src/seeds/seeds-missionImposible/movies.missionImposible.seeds.js",
+        "videoGamesresidentEvilSeed": "node ./src/seeds/seeds-residentEvil/videoGames.residentEvil.seeds.js",
+        "characterresidentEvileed": "node ./src/seeds/seeds-residentEvil/characters.residentEvil.seeds.js",
+        "moviesresidentEvilSed": "node ./src/seeds/seeds-residentEvil/movies.residentEvil.seeds.js",
         "booksStarTrekSeed": "node ./src/seeds/seeds-starTrek/books.starTrek.seeds.js",
         "charactersStarTrekSeed": "node ./src/seeds/seeds-starTrek/characters.starTrek.seeds.js",
         "moviesStarTrekSeed": "node ./src/seeds/seeds-starTrek/movies.starTrek.seeds.js",
@@ -58,7 +61,6 @@
         "videoGamesXmenSeed": "node ./src/seeds/seeds-Xmen/videoGames.Xmen.seeds.js",
         "characterXmenSeed": "node ./src/seeds/seeds-Xmen/characters.Xmen.seeds.js",
         "moviesXmenSeed": "node ./src/seeds/seeds-Xmen/movies.Xmen.seeds.js"
-
     },
     "keywords": [
         "Node",

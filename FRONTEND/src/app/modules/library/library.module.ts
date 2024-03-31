@@ -14,6 +14,7 @@ import { starWarsUniverseModule } from './starWars-universe/starWars-universe.mo
 import { lordOfTheRingsUniverseModule } from './lordOfTheRings-universe/lordOfTheRings-universe.module';
 import { transformersUniverseModule } from './transformers-universe/transformers-universe.module';
 import { xmenUniverseModule } from './xmen-universe/xmen-universe.module';
+import { residentEvilUniverseModule } from './residentEvil-universe/residentEvil-universe.module';
 
 
 
@@ -40,9 +41,8 @@ import { xmenUniverseModule } from './xmen-universe/xmen-universe.module';
     MissionImposibleUniverseModule,
     lordOfTheRingsUniverseModule,
     transformersUniverseModule,
-    xmenUniverseModule
-
-    
+    xmenUniverseModule,
+    residentEvilUniverseModule
   ],
   exports: [
 

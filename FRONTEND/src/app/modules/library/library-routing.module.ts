@@ -60,6 +60,9 @@ const routes: Routes = [
     {
       path: 'xmenUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./xmen-universe/xmen-universe.module').then(m => m.xmenUniverseModule)
     },
+    {
+      path: 'residentEvilUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./residentEvil-universe/residentEvil-universe.module').then(m => m.residentEvilUniverseModule)
+    },
 
     { path: 'favorites', component: FavoritesComponent },
     {

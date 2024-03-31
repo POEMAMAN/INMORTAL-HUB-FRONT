@@ -1,0 +1,16 @@
+<div class="residentEvilVideoGame-container-list">
+    <div class="residentEvilVideoGame-container-list-Btn">
+        <button class="residentEvilVideoGame-container-list-Btn-button" (click)="playSound()">Escuchar Banda Sonora <img class="residentEvilVideoGame-container-list-Btn-button-img" src="https://res.cloudinary.com/dqh5ovfj1/image/upload/v1711184782/Varios/musica_m4oz69.png"></button>
+        <button class="residentEvilVideoGame-container-list-Btn-button" (click)="stopSound()">Stop&nbsp;<img class="residentEvilVideoGame-container-list-Btn-button-img" src="https://res.cloudinary.com/dqh5ovfj1/image/upload/v1711189659/Varios/boton-detener_lkbju9.png"></button>
+    </div>
+    <button class="residentEvilVideoGame-container-list-Btn-button" [routerLink]="'/library/residentEvilUniverse'">Universo residentEvil&nbsp;<img class="residentEvilVideoGame-container-list-Btn-button-img" src="https://res.cloudinary.com/dqh5ovfj1/image/upload/v1711189688/Varios/boton-de-retorno_q9svmw.png">
+</button>
+    <div style="margin-top: 5px;" class="container">
+    </div>
+    <div class="residentEvilVideoGame-container-list-card">
+        <div *ngFor="let residentEvilVideoGame of residentEvilVideoGames" class="residentEvilVideoGame-container-list-card-item">
+            <app-residentEvilVideoGames [residentEvilVideoGame]="residentEvilVideoGame">
+            </app-residentEvilVideoGames>
+        </div>
+    </div>
+</div>

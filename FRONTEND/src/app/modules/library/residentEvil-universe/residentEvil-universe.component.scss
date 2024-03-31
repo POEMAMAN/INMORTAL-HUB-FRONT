@@ -1,0 +1,179 @@
+.residentEvil-container {
+    background-image: url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1711710424/segundo%20spring/residentevil/background/logo2_lkgude.jpg');
+    background-size: cover;
+    display: flex;
+    padding: 0 0 0 25%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    ///BARRA DESLIZADORA
+    margin: 1rem auto;
+    border: 1px solid #aaa;
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 0 1rem;
+    scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
+    scrollbar-width: thin;
+    &-button {
+        appearance: none;
+        background-color: #FFFFFF;
+        border-radius: 40em;
+        border-style: none;
+        box-shadow: #ADCFFF 0 -12px 6px inset;
+        box-sizing: border-box;
+        color: #000000;
+        cursor: pointer;
+        display: inline-block;
+        font-family: -apple-system, sans-serif;
+        font-size: 1.2rem;
+        font-weight: 700;
+        letter-spacing: -.24px;
+        margin: 0;
+        outline: none;
+        padding: 1rem 1.3rem;
+        quotes: auto;
+        text-align: center;
+        text-decoration: none;
+        transition: all .15s;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        margin: 5px;
+        &:hover {
+            background-color: #FFC229;
+            box-shadow: #FF6314 0 -6px 8px inset;
+            transform: scale(1.125);
+        }
+        &:active {
+            transform: scale(1.025);
+        }
+        &-img {
+            width: 17px;
+            height: 17px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .residentEvil-container-list-button {
+        font-size: 15px;
+    }
+}
+
+.residentEvil-container-ul-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-around;
+    margin-left: -40px;
+}
+
+.residentEvil-container-ul-li {
+    width: 280px;
+    height: 300px;
+    border-radius: 15px;
+    padding: 1.5rem;
+    background: white;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    transition: 0.4s ease-out;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+.residentEvil-container-ul-li:hover {
+    transform: translateY(20px);
+}
+
+.residentEvil-container-ul-li:hover:before {
+    opacity: 1;
+}
+
+.residentEvil-container-ul-li:hover .residentEvil-container-ul-li-info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.residentEvil-container-ul-li:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.residentEvil-container-ul-li-img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+}
+
+.residentEvil-container-ul-li .residentEvil-container-ul-li-info {
+    position: relative;
+    z-index: 3;
+    color: white;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s;
+}
+
+.residentEvil-container-ul-li .residentEvil-container-ul-li-info h3 {
+    margin: 0px;
+}
+
+.residentEvil-container-ul-li-button {
+    padding: 0.6rem;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.residentEvil-container-ul-li .residentEvil-container-ul-li-button {
+    background: goldenrod;
+    color: white;
+}
+
+p {
+    font-size: medium;
+    color: wheat;
+    text-decoration: solid;
+}
+
+@media only screen and (max-width: 700px) {
+    .residentEvil-container-button {
+        font-size: 10px;
+        height: 10px;
+        padding: 16px;
+        display: flex;
+        align-items: center;
+    }
+    .residentEvil-container-ul-li {
+        width: 230px;
+        height: 210px;
+    }
+    p {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 601px) {}

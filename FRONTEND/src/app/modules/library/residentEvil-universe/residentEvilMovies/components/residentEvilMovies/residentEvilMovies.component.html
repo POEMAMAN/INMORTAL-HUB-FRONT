@@ -1,0 +1,39 @@
+<div class="residentEvilMovies-container">
+    <div class="residentEvilMovies-container-button" *ngIf="isAdmin" style="
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 5px;
+      gap: 5px;">
+        <button [routerLink]="['/admin/edit-product', residentEvilMovie._id]">Editar</button>
+        <button [routerLink]="['/admin/delete-product', residentEvilMovie._id]">
+      Eliminar
+    </button>
+    </div>
+    <div class="residentEvilMovies-container-deck">
+        <div class="residentEvilMovies-container-deck-card" (click)="clickCard()">
+            <div class="front face">
+                <img class="residentEvilMovies-container-img-img" [src]="residentEvilMovie.picture" />
+                <div class="residentEvilMovies-container-text">
+                    <h2 class="residentEvilMovies-container-h2">{{ residentEvilMovie.title }}</h2>
+                    <p class="residentEvilMovies-container-p"><span>Director:</span> {{ residentEvilMovie.director }}</p>
+                    <p class="residentEvilMovies-container-p"><span>Año:</span> {{ residentEvilMovie.year }}</p>
+                    <p class="residentEvilMovies-container-p"><span>Duracion:</span> {{ residentEvilMovie.duration }}</p>
+                    <p class="residentEvilMovies-container-p"><span>Pais:</span> {{ residentEvilMovie.country }}</p>
+                    <p class="residentEvilMovies-container-p"><span>Genero:</span> {{ residentEvilMovie.genre}}</p>
+                    <p class="residentEvilMovies-container-p"><span>Clasificacion:</span> {{ residentEvilMovie.clasification }}</p>
+                </div>
+            </div>
+            <div class="back face">
+                <p class="residentEvilMovies-container-resume"><span>Sinopsis:</span> {{ residentEvilMovie.resume }}</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <button class="btn btn-outline movie-card__button" type="button" (click)="showTrailer()">Mostrar/Ocultar Trailer
+  <div *ngIf="trailer">
+    <video class="video" width="640" height="360" controls autoplay>
+      <source [src]="residentEvilMovie.trailer" type="video/mp4">
+      Tu navegador no admite la reproducción de videos HTML5.
+    </video>
+</div>

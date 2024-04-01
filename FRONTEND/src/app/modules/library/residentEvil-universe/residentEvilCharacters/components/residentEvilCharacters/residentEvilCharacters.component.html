@@ -1,0 +1,19 @@
+<div class="residentEvilCharacters-container">
+    <div class="residentEvilCharacters-container-button" *ngIf="isAdmin" style="display: flex; justify-content: flex-end; align-items: center; margin-bottom: 5px; gap: 5px">
+        <button [routerLink]="['/admin/edit-product',residentEvilCharacter._id]">Editar</button>
+        <button [routerLink]="['/admin/delete-product', residentEvilCharacter._id]">Eliminar</button>
+    </div>
+    <div class="residentEvilCharacters-container-deck">
+        <div class="residentEvilCharacters-container-deck-card" (click)="clickCard()">
+            <div class="front face">
+                <h2 class="residentEvilCharacters-container-h2">{{ residentEvilCharacter.name }}</h2>
+                <img class="residentEvilCharacters-container-img-img" [src]="residentEvilCharacter.picture" />
+                <p class="residentEvilCharacters-container-p"><span>Actor:</span> {{ residentEvilCharacter.actor }}</p>
+                <p class="residentEvilCharacters-container-p"><span>Profession:</span> {{ residentEvilCharacter.profession }}</p>
+            </div>
+            <div class="back face">
+                <p class="residentEvilCharacters-container-resume"><span>Sinopsis:</span> {{ residentEvilCharacter.resume }}</p>
+            </div>
+        </div>
+    </div>
+</div>

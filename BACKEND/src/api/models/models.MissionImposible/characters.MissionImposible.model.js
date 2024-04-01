@@ -11,6 +11,8 @@ const charactersSchema = new Schema({
     timestamps: true,
 });
 
-const charactersMissionImposibleMap = mongoose.model('characterMissionImposiblecharactersMissionImposibleMap', charactersSchema);
+const charactersMissionImposible = mongoose.model('characterMissionImposible', charactersSchema);
 
-module.exports = charactersMissionImposibleMap;
+module.exports = charactersMissionImposible;
+
+

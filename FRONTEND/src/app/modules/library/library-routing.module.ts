@@ -43,6 +43,9 @@ const routes: Routes = [
       path: 'starWarsUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./starWars-universe/starWars-universe.module').then(m => m.starWarsUniverseModule)
     },
     {
+      path: 'matrixUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./matrix-universe/matrix-universe.module').then(m => m.matrixUniverseModule)
+    },
+    {
       path: 'missionImposibleUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./missionImposible-universe/missionImposible-universe.module').then(m => m.MissionImposibleUniverseModule)
     },
     {
@@ -53,6 +56,15 @@ const routes: Routes = [
     },
     {
       path: 'terminatorUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./terminator-universe/terminator-universe.module').then(m => m.terminatorUniverseModule)
+    },
+    {
+      path: 'transformersUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./transformers-universe/transformers-universe.module').then(m => m.transformersUniverseModule)
+    },
+    {
+      path: 'xmenUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./xmen-universe/xmen-universe.module').then(m => m.xmenUniverseModule)
+    },
+    {
+      path: 'residentEvilUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./residentEvil-universe/residentEvil-universe.module').then(m => m.residentEvilUniverseModule)
     },
 
     { path: 'favorites', component: FavoritesComponent },

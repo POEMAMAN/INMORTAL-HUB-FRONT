@@ -64,10 +64,20 @@ const booksLordOfTheRingsRoutes = require("./src/api/routes/routes.LordOfTheRing
 const charactersLordOfTheRingsRoutes = require("./src/api/routes/routes.LordOfTheRings/characters.LordOfTheRings.routes");
 const moviesLordOfTheRingsRoutes = require("./src/api/routes/routes.LordOfTheRings/movies.LordOfTheRings.routes");
 
+// Matrix
+const charactersMatrixRoutes = require("./src/api/routes/routes.Matrix/characters.Matrix.routes.js");
+const moviesMatrixRoutes = require("./src/api/routes/routes.Matrix/movies.Matrix.routes");
+const videoGamesMatrixRoutes = require("./src/api/routes/routes.Matrix/videoGames.Matrix.routes.js");
+
 // MissionImposible
 const charactersMissionImposibleRoutes = require("./src/api/routes/routes.MissionImposible/characters.MissionImposible.routes.js");
 const moviesMissionImposibleRoutes = require("./src/api/routes/routes.MissionImposible/movies.MissionImposible.routes");
 const videoGamesMissionImposibleRoutes = require("./src/api/routes/routes.MissionImposible/videoGames.MissionImposible.routes.js");
+
+// ResidentEvil
+const videoGamesresidentEvilRoutes = require("./src/api/routes/routes.residentEvil/videoGames.residentEvil.routes");
+const charactersresidentEvilRoutes = require("./src/api/routes/routes.residentEvil/characters.residentEvil.routes");
+const moviesresidentEvilRoutes = require("./src/api/routes/routes.residentEvil/movies.residentEvil.routes");
 
 // StarTrek
 const booksStarTrekRoutes = require("./src/api/routes/routes.StarTrek/books.StarTrek.routes");
@@ -84,10 +94,20 @@ const moviesStarWarsRoutes = require("./src/api/routes/routes.StarWars/movies.St
 // const charactersUnderworldRoutes = require("./src/api/routes/routes.Underworld/characters.Underworld.routes");
 // const moviesUnderworldRoutes = require("./src/api/routes/routes.Underworld/movies.Underworld.routes");
 
+// Transformers
+const videoGamesTransformersRoutes = require("./src/api/routes/routes.Transformers/videoGames.Transformers.routes");
+const charactersTransformersRoutes = require("./src/api/routes/routes.Transformers/characters.Transformers.routes");
+const moviesTransformersRoutes = require("./src/api/routes/routes.Transformers/movies.Transformers.routes");
+
 // Terminator
 const videoGamesTerminatorRoutes = require("./src/api/routes/routes.Terminator/videoGames.Terminator.routes");
-const charactersTerminatorRoutes = require("./src/api/routes/routes.Terminator/characters.Terminator.routes.js");
+const charactersTerminatorRoutes = require("./src/api/routes/routes.Terminator/characters.Terminator.routes");
 const moviesTerminatorRoutes = require("./src/api/routes/routes.Terminator/movies.Terminator.routes");
+
+// Xmen
+const videoGamesXmenRoutes = require("./src/api/routes/routes.Xmen/videoGames.Xmen.routes");
+const charactersXmenRoutes = require("./src/api/routes/routes.Xmen/characters.Xmen.routes");
+const moviesXmenRoutes = require("./src/api/routes/routes.Xmen/movies.Xmen.routes");
 
 //
 
@@ -97,25 +117,25 @@ const dotenv = require('dotenv');
 
 // Ejecutamos método para usar .env
 dotenv.config();
- 
+
 // Ejecutar la configuación de cloudinary
 configCloudinary();
 
 const app = express();
 app.use(express.json());
 app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Methods", "GET, PUT, POST, DELETE, PATCH");
-  res.header("Access-Control-Allow-Credentials", true);
-  res.header("Access-Control-Allow-Headers", "Content-Type");
-  res.header("Access-Control-Allow-Origin", "*");
-  next();
+    res.header("Access-Control-Allow-Methods", "GET, PUT, POST, DELETE, PATCH");
+    res.header("Access-Control-Allow-Credentials", true);
+    res.header("Access-Control-Allow-Headers", "Content-Type");
+    res.header("Access-Control-Allow-Origin", "*");
+    next();
 });
 
 
 app.use(
-  cors({
-    origin: ["*"],
-  })
+    cors({
+        origin: ["*"],
+    })
 );
 
 //Routes
@@ -146,8 +166,8 @@ app.use("/universes/Blade/movies", moviesBladeRoutes)
 // Dune
 app.use("/universes/dune/books", booksDuneRoutes)
 app.use("/universes/dune/characters", charactersDuneRoutes)
-// app.use("/universes/dune/planets", planetsDuneRoutes)
-// app.use("/universes/dune/countries", countriesDuneRoutes)
+    // app.use("/universes/dune/planets", planetsDuneRoutes)
+    // app.use("/universes/dune/countries", countriesDuneRoutes)
 app.use("/universes/dune/movies", moviesDuneRoutes)
 
 // HarryPotter
@@ -180,10 +200,21 @@ app.use("/universes/JurassicPark/books", booksJurassicParkRoutes)
 app.use("/universes/JurassicPark/characters", charactersJurassicParkRoutes)
 app.use("/universes/JurassicPark/movies", moviesJurassicParkRoutes)
 
+// Matrix
+app.use("/universes/Matrix/characters", charactersMatrixRoutes)
+app.use("/universes/Matrix/movies", moviesMatrixRoutes)
+app.use("/universes/Matrix/videoGames", videoGamesMatrixRoutes)
+
+
 // MissionImposible
 app.use("/universes/MissionImposible/characters", charactersMissionImposibleRoutes)
 app.use("/universes/MissionImposible/movies", moviesMissionImposibleRoutes)
 app.use("/universes/MissionImposible/videoGames", videoGamesMissionImposibleRoutes)
+
+// ResidentEvil
+app.use("/universes/residentEvil/videoGames", videoGamesresidentEvilRoutes)
+app.use("/universes/residentEvil/characters", charactersresidentEvilRoutes)
+app.use("/universes/residentEvil/movies", moviesresidentEvilRoutes)
 
 // StarTrek
 app.use("/universes/StarTrek/books", booksStarTrekRoutes)
@@ -200,28 +231,38 @@ app.use("/universes/StarWars/movies", moviesStarWarsRoutes)
 // app.use("/universes/Underworld/characters", charactersUnderworldRoutes)
 // app.use("/universes/Underworld/movies", moviesUnderworldRoutes)
 
+// Transformers
+app.use("/universes/Transformers/videoGames", videoGamesTransformersRoutes)
+app.use("/universes/Transformers/characters", charactersTransformersRoutes)
+app.use("/universes/Transformers/movies", moviesTransformersRoutes)
+
 // Terminator
 app.use("/universes/terminator/videoGames", videoGamesTerminatorRoutes)
 app.use("/universes/terminator/characters", charactersTerminatorRoutes)
 app.use("/universes/terminator/movies", moviesTerminatorRoutes)
 
+// Xmen
+app.use("/universes/Xmen/videoGames", videoGamesXmenRoutes)
+app.use("/universes/Xmen/characters", charactersXmenRoutes)
+app.use("/universes/Xmen/movies", moviesXmenRoutes)
+
 //
 const PORT = process.env.PORT || 8084;
 
 const server = app.listen(PORT, () => {
-  console.log(`Server listening on port 🙈: ${PORT}`);
+    console.log(`Server listening on port 🙈: ${PORT}`);
 });
 
 app.use((req, res, next) => {
-  setImmediate(() => {
-    next(new Error("Something went wrong"));
-  });
+    setImmediate(() => {
+        next(new Error("Something went wrong"));
+    });
 });
 
 app.disable('x-powered-by')
 
-app.use(function (err, req, res, next) {
-  console.error(err.message);
-  if (!err.statusCode) err.statusCode = 500;
-  res.status(err.statusCode).send(err.message);
+app.use(function(err, req, res, next) {
+    console.error(err.message);
+    if (!err.statusCode) err.statusCode = 500;
+    res.status(err.statusCode).send(err.message);
 });

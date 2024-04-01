@@ -1,0 +1,15 @@
+<div class="transformersMovie-container-list">
+    <div class="transformersMovie-container-list-Btn">
+        <button class="transformersMovie-container-list-Btn-button" (click)="playSound()">Escuchar Banda Sonora <img class="transformersMovie-container-list-Btn-button-img" src="https://res.cloudinary.com/dqh5ovfj1/image/upload/v1711184782/Varios/musica_m4oz69.png"></button>
+        <button class="transformersMovie-container-list-Btn-button" (click)="stopSound()">Stop&nbsp;<img class="transformersMovie-container-list-Btn-button-img" src="https://res.cloudinary.com/dqh5ovfj1/image/upload/v1711189659/Varios/boton-detener_lkbju9.png"></button>
+    </div>
+    <button class="transformersMovie-container-list-Btn-button" [routerLink]="'/library/transformersUniverse'">Universo transformers&nbsp;<img class="transformersMovie-container-list-Btn-button-img" src="https://res.cloudinary.com/dqh5ovfj1/image/upload/v1711189688/Varios/boton-de-retorno_q9svmw.png">
+</button>
+    <div style="margin-top: 5px;" class="container">
+    </div>
+    <div class="transformersMovie-container-list-card">
+        <div *ngFor="let transformersMovie of transformersMovies" class="transformersMovie-container-list-card-item">
+            <app-transformersMovies [transformersMovie]="transformersMovie"></app-transformersMovies>
+        </div>
+    </div>
+</div>

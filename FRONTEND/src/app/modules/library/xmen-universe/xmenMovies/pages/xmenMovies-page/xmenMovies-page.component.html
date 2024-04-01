@@ -1,0 +1,15 @@
+<div class="xmenMovie-container-list">
+    <div class="xmenMovie-container-list-Btn">
+        <button class="xmenMovie-container-list-Btn-button" (click)="playSound()">Escuchar Banda Sonora <img class="xmenMovie-container-list-Btn-button-img" src="https://res.cloudinary.com/dqh5ovfj1/image/upload/v1711184782/Varios/musica_m4oz69.png"></button>
+        <button class="xmenMovie-container-list-Btn-button" (click)="stopSound()">Stop&nbsp;<img class="xmenMovie-container-list-Btn-button-img" src="https://res.cloudinary.com/dqh5ovfj1/image/upload/v1711189659/Varios/boton-detener_lkbju9.png"></button>
+    </div>
+    <button class="xmenMovie-container-list-Btn-button" [routerLink]="'/library/xmenUniverse'">Universo XMen&nbsp;<img class="xmenMovie-container-list-Btn-button-img" src="https://res.cloudinary.com/dqh5ovfj1/image/upload/v1711189688/Varios/boton-de-retorno_q9svmw.png">
+</button>
+    <div style="margin-top: 5px;" class="container">
+    </div>
+    <div class="xmenMovie-container-list-card">
+        <div *ngFor="let xmenMovie of xmenMovies" class="xmenMovie-container-list-card-item">
+            <app-xmenMovies [xmenMovie]="xmenMovie"></app-xmenMovies>
+        </div>
+    </div>
+</div>

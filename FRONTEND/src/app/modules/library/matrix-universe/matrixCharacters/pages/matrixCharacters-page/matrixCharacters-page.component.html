@@ -1,0 +1,22 @@
+<div class="matrixCharacter-container-list">
+  <div class="matrixCharacter-container-list-Btn">
+    <button class="matrixCharacter-container-list-Btn-button" (click)="playSound()">Escuchar Banda Sonora&nbsp;<img class="matrixCharacter-container-list-Btn-button-img" src="https://res.cloudinary.com/dqh5ovfj1/image/upload/v1711184782/Varios/musica_m4oz69.png"></button>
+    <button class="matrixCharacter-container-list-Btn-button" (click)="stopSound()">Stop&nbsp;<img class="matrixCharacter-container-list-Btn-button-img" src="https://res.cloudinary.com/dqh5ovfj1/image/upload/v1711189659/Varios/boton-detener_lkbju9.png"></button>
+  </div>
+  <button
+        class="matrixCharacter-container-list-Btn-button"
+        [routerLink]="'/library/matrixUniverse'"
+      >Universo Mision Imposible&nbsp;<img class="matrixCharacter-container-list-Btn-button-img" src="https://res.cloudinary.com/dqh5ovfj1/image/upload/v1711189688/Varios/boton-de-retorno_q9svmw.png">
+    </button>
+  <div style="margin-top: 5px;" class="container">
+  </div>
+  <div class="matrixCharacter-container-list-card">
+      <div *ngFor="let matrixCharacter of matrixCharacters"  class="matrixCharacter-container-list-card-item">
+        <app-matrixCharacters
+        [matrixCharacter]="matrixCharacter"></app-matrixCharacters>
+      </div>
+    </div>
+  </div>
+
+
+

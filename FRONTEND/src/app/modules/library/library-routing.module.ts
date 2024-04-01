@@ -43,6 +43,9 @@ const routes: Routes = [
       path: 'starWarsUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./starWars-universe/starWars-universe.module').then(m => m.starWarsUniverseModule)
     },
     {
+      path: 'matrixUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./matrix-universe/matrix-universe.module').then(m => m.matrixUniverseModule)
+    },
+    {
       path: 'missionImposibleUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./missionImposible-universe/missionImposible-universe.module').then(m => m.MissionImposibleUniverseModule)
     },
     {

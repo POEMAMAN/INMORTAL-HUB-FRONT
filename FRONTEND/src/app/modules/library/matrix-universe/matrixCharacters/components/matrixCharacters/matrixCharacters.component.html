@@ -1,0 +1,21 @@
+
+<div class="matrixCharacters-container">
+  <div class="matrixCharacters-container-button" *ngIf="isAdmin" style="display: flex; justify-content: flex-end; align-items: center; margin-bottom: 5px; gap: 5px">
+      <button [routerLink]="['/admin/edit-product',matrixCharacter._id]" >Editar</button>
+      <button [routerLink]="['/admin/delete-product', matrixCharacter._id]" >Eliminar</button>
+  </div>
+  <div class="matrixCharacters-container-deck">
+    <div class="matrixCharacters-container-deck-card" (click)="clickCard()">
+      <div class="front face" >
+        <h2 class="matrixCharacters-container-h2">{{ matrixCharacter.name  }}</h2>
+        <img  class="matrixCharacters-container-img-img"[src]="matrixCharacter.picture" />
+        <p class="matrixCharacters-container-p"><span>Actor:</span> {{ matrixCharacter.actor }}</p>
+      </div>
+      <div class="back face">
+        <p class="matrixCharacters-container-resume"><span>Sinopsis:</span> {{ matrixCharacter.resume }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+

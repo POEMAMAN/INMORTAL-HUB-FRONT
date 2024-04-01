@@ -11,8 +11,6 @@ const charactersSchema = new Schema({
     timestamps: true,
 });
 
-const charactersMissionImposible = mongoose.model('characterMissionImposible', charactersSchema);
+const charactersMatrix = mongoose.model('characterMatrix', charactersSchema);
 
-module.exports = charactersMissionImposible;
-
-
+module.exports = charactersMatrix;

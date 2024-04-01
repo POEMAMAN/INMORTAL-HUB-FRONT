@@ -1,0 +1,40 @@
+<div class="matrixMovies-container">
+  <div class="matrixMovies-container-button"*ngIf="isAdmin"style="
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 5px;
+      gap: 5px;">
+    <button [routerLink]="['/admin/edit-product', matrixMovie._id]">Editar</button>
+    <button [routerLink]="['/admin/delete-product', matrixMovie._id]">
+      Eliminar
+    </button>
+  </div>
+  <div class="matrixMovies-container-deck">
+    <div class="matrixMovies-container-deck-card" (click)="clickCard()">
+      <div class="front face" >
+        <img  class="matrixMovies-container-img-img"[src]="matrixMovie.picture" />
+        <div class="matrixMovies-container-text">
+          <h2 class="matrixMovies-container-h2">{{ matrixMovie.title }}</h2>
+          <p class="matrixMovies-container-p"><span>Director:</span> {{ matrixMovie.director }}</p>
+          <p class="matrixMovies-container-p"><span>Año:</span> {{ matrixMovie.year }}</p>
+          <p class="matrixMovies-container-p"><span>Duracion:</span> {{ matrixMovie.duration }}</p>
+          <p class="matrixMovies-container-p"><span>Pais:</span> {{ matrixMovie.country }}</p>
+          <p class="matrixMovies-container-p"><span>Genero:</span> {{ matrixMovie.genre}}</p>
+          <p class="matrixMovies-container-p"><span>Clasificacion:</span> {{ matrixMovie.clasification }}</p>
+        </div>
+      </div>
+      <div class="back face">
+        <p class="matrixMovies-container-resume"><span>Sinopsis:</span> {{ matrixMovie.resume }}</p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <button class="btn btn-outline movie-card__button" type="button" (click)="showTrailer()">Mostrar/Ocultar Trailer
+  <div *ngIf="trailer">
+  <video class="video" width="640" height="360" controls autoplay>
+    <source [src]="matrixMovie.trailer" type="video/mp4">
+    Tu navegador no admite la reproducción de videos HTML5.
+  </video>
+</div>
+

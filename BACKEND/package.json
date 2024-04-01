@@ -60,7 +60,10 @@
         "moviesTransformersSeed": "node ./src/seeds/seeds-transformers/movies.transformers.seeds.js",
         "videoGamesXmenSeed": "node ./src/seeds/seeds-Xmen/videoGames.Xmen.seeds.js",
         "characterXmenSeed": "node ./src/seeds/seeds-Xmen/characters.Xmen.seeds.js",
-        "moviesXmenSeed": "node ./src/seeds/seeds-Xmen/movies.Xmen.seeds.js"
+        "moviesXmenSeed": "node ./src/seeds/seeds-Xmen/movies.Xmen.seeds.js",
+        "videoGamesMatrixSeed": "node ./src/seeds/seeds-Matrix/videoGames.Matrix.seeds.js",
+        "characterMatrixSeed": "node ./src/seeds/seeds-Matrix/characters.Matrix.seeds.js",
+        "moviesMatrixSeed": "node ./src/seeds/seeds-Matrix/movies.Matrix.seeds.js"
     },
     "keywords": [
         "Node",

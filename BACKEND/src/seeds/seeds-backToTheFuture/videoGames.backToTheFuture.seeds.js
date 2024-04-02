@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 dotenv.config();
-const VideoGamebackToTheFuture = require('../../api/models/models.backToTheFuture/videoGames.backToTheFuture.model');
+const VideoGamebackToTheFuture = require('../../api/models/models.BackToTheFuture/videoGames.BackToTheFuture.model');
 
 
 const arrayVideoGamesbackToTheFuture = [

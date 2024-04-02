@@ -22,6 +22,11 @@ const videoGamesAlienRoutes = require("./src/api/routes/routes.Alien/videoGames.
 const charactersAlienRoutes = require("./src/api/routes/routes.Alien/characters.Alien.routes");
 const moviesAlienRoutes = require("./src/api/routes/routes.Alien/movies.Alien.routes");
 
+// BackToTheFuture
+const videoGamesBackToTheFutureRoutes = require("./src/api/routes/routes.BackToTheFuture/videoGames.BackToTheFuture.routes.js");
+const charactersBackToTheFutureRoutes = require("./src/api/routes/routes.BackToTheFuture/characters.BackToTheFuture.routes.js");
+const moviesBackToTheFutureRoutes = require("./src/api/routes/routes.BackToTheFuture/movies.BackToTheFuture.routes.js");
+
 // Blade
 const videoGamesBladeRoutes = require("./src/api/routes/routes.Blade/videoGames.Blade.routes.js");
 const charactersBladeRoutes = require("./src/api/routes/routes.Blade/characters.Blade.routes.js");
@@ -157,6 +162,11 @@ app.use("/universes/apesPlanet/movies", moviesApesPlanetRoutes)
 app.use("/universes/Alien/videoGames", videoGamesAlienRoutes)
 app.use("/universes/Alien/characters", charactersAlienRoutes)
 app.use("/universes/Alien/movies", moviesAlienRoutes)
+
+// BackToTheFuture
+app.use("/universes/BackToTheFuture/videoGames", videoGamesBackToTheFutureRoutes)
+app.use("/universes/BackToTheFuture/characters", charactersBackToTheFutureRoutes)
+app.use("/universes/BackToTheFuture/movies", moviesBackToTheFutureRoutes)
 
 // Blade
 app.use("/universes/Blade/videoGames", videoGamesBladeRoutes)

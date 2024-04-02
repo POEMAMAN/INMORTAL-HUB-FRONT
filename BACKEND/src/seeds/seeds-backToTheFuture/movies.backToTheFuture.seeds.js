@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 dotenv.config();
-const MoviebackToTheFuture = require('../../api/models/models.backToTheFuture/movies.backToTheFuture.model');
+const MoviebackToTheFuture = require('../../api/models/models.BackToTheFuture/movies.BackToTheFuture.model');
 
 const arrayMoviesbackToTheFuture = [
     {
@@ -13,7 +13,6 @@ const arrayMoviesbackToTheFuture = [
         country: "",
         genre: "",
         clasification: "",
-        id: 1,
         resume: "",
         trailer: ""
     },
@@ -26,7 +25,6 @@ const arrayMoviesbackToTheFuture = [
         country: "",
         genre: "",
         clasification: "",
-        id: 2,
         resume: "",
         trailer: ""
     },
@@ -39,7 +37,6 @@ const arrayMoviesbackToTheFuture = [
         country: "",
         genre: "",
         clasification: "",
-        id: 3,
         resume: "",
         trailer: ""
     },

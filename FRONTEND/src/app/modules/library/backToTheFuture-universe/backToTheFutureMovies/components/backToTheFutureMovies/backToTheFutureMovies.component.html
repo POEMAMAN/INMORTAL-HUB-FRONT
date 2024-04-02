@@ -1,0 +1,42 @@
+<div class="backToTheFutureMovies-container">
+  <div class="backToTheFutureMovies-container-button"*ngIf="isAdmin"style="
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 5px;
+      gap: 5px;">
+    <button [routerLink]="['/admin/edit-product', backToTheFutureMovie._id]">Editar</button>
+    <button [routerLink]="['/admin/delete-product', backToTheFutureMovie._id]">
+      Eliminar
+    </button>
+  </div>
+  <div class="backToTheFutureMovies-container-deck">
+    <div class="backToTheFutureMovies-container-deck-card" (click)="clickCard()">
+      <div class="front face" >
+        <img  class="backToTheFutureMovies-container-img-img"[src]="backToTheFutureMovie.picture" />
+        <div class="backToTheFutureMovies-container-text">
+          <h2 class="backToTheFutureMovies-container-h2">{{ backToTheFutureMovie.title }}</h2>
+          <p class="backToTheFutureMovies-container-p"><span>Director:</span> {{ backToTheFutureMovie.director }}</p>
+          <p class="backToTheFutureMovies-container-p"><span>Año:</span> {{ backToTheFutureMovie.year }}</p>
+          <p class="backToTheFutureMovies-container-p"><span>Duracion:</span> {{ backToTheFutureMovie.duration }}</p>
+          <p class="backToTheFutureMovies-container-p"><span>Pais:</span> {{ backToTheFutureMovie.country }}</p>
+          <p class="backToTheFutureMovies-container-p"><span>Genero:</span> {{ backToTheFutureMovie.genre}}</p>
+          <p class="backToTheFutureMovies-container-p"><span>Clasificacion:</span> {{ backToTheFutureMovie.clasification }}</p>
+        </div>
+      </div>
+      <div class="back face">
+        <p class="backToTheFutureMovies-container-resume"><span>Sinopsis:</span> {{ backToTheFutureMovie.resume }}</p>
+      </div>
+    </div>
+  </div>
+  <div>
+      <button class="btn btn-outline movie-card__button" type="button" (click)="showTrailer()">Mostrar/Ocultar Trailer
+  <div *ngIf="trailer">
+    <video class="video" width="640" height="360" controls autoplay>
+      <source [src]="backToTheFutureMovie.trailer" type="video/mp4">
+      Tu navegador no admite la reproducción de videos HTML5.
+    </video>
+</div> 
+
+
+

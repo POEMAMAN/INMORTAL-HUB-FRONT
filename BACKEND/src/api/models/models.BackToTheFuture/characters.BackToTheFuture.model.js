@@ -5,11 +5,11 @@ const Schema = mongoose.Schema;
 const charactersSchema = new Schema(
   {
     name: { type: String, required: true },
-    acthor: { type: String, required: true },
-    race: { type: String, required: false },
-    movie: { type: String, required: false },
-    resume: {type:String, required:false},
+    actor: { type: String, required: true },
+    profession: { type: String, required: false },
     picture: { type: String },
+    resume: {type:String, required:false},
+
   },
   {
     timestamps: true,

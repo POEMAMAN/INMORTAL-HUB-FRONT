@@ -66,7 +66,10 @@
         "moviesMatrixSeed": "node ./src/seeds/seeds-Matrix/movies.Matrix.seeds.js",
         "booksUnderworldSeed": "node ./src/seeds/seeds-underworld/books.underworld.seeds.js",
         "characterUnderworldSeed": "node ./src/seeds/seeds-underworld/characters.underworld.seeds.js",
-        "moviesUnderworldSeed": "node ./src/seeds/seeds-underworld/movies.underworld.seeds.js"
+        "moviesUnderworldSeed": "node ./src/seeds/seeds-underworld/movies.underworld.seeds.js",
+        "videoGamesBackToTheFutureSeed": "node ./src/seeds/seeds-backToTheFuture/videoGames.backToTheFuture.seeds.js",
+        "characterBackToTheFutureSeed": "node ./src/seeds/seeds-backToTheFuture/characters.backToTheFuture.seeds.js",
+        "moviesBackToTheFutureSeed": "node ./src/seeds/seeds-backToTheFuture/movies.backToTheFuture.seeds.js"
     },
     "keywords": [
         "Node",

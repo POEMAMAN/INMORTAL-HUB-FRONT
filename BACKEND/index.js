@@ -22,6 +22,11 @@ const videoGamesAlienRoutes = require("./src/api/routes/routes.Alien/videoGames.
 const charactersAlienRoutes = require("./src/api/routes/routes.Alien/characters.Alien.routes");
 const moviesAlienRoutes = require("./src/api/routes/routes.Alien/movies.Alien.routes");
 
+// BackToTheFuture
+const videoGamesBackToTheFutureRoutes = require("./src/api/routes/routes.BackToTheFuture/videoGames.BackToTheFuture.routes.js");
+const charactersBackToTheFutureRoutes = require("./src/api/routes/routes.BackToTheFuture/characters.BackToTheFuture.routes.js");
+const moviesBackToTheFutureRoutes = require("./src/api/routes/routes.BackToTheFuture/movies.BackToTheFuture.routes.js");
+
 // Blade
 const videoGamesBladeRoutes = require("./src/api/routes/routes.Blade/videoGames.Blade.routes.js");
 const charactersBladeRoutes = require("./src/api/routes/routes.Blade/characters.Blade.routes.js");
@@ -90,9 +95,9 @@ const charactersStarWarsRoutes = require("./src/api/routes/routes.StarWars/chara
 const moviesStarWarsRoutes = require("./src/api/routes/routes.StarWars/movies.StarWars.routes");
 
 // Underworld
-// const booksUnderworldRoutes = require("./src/api/routes/routes.Underworld/books.Underworld.routes");
-// const charactersUnderworldRoutes = require("./src/api/routes/routes.Underworld/characters.Underworld.routes");
-// const moviesUnderworldRoutes = require("./src/api/routes/routes.Underworld/movies.Underworld.routes");
+const booksUnderworldRoutes = require("./src/api/routes/routes.Underworld/books.Underworld.routes");
+const charactersUnderworldRoutes = require("./src/api/routes/routes.Underworld/characters.Underworld.routes");
+const moviesUnderworldRoutes = require("./src/api/routes/routes.Underworld/movies.Underworld.routes");
 
 // Transformers
 const videoGamesTransformersRoutes = require("./src/api/routes/routes.Transformers/videoGames.Transformers.routes");
@@ -157,6 +162,11 @@ app.use("/universes/apesPlanet/movies", moviesApesPlanetRoutes)
 app.use("/universes/Alien/videoGames", videoGamesAlienRoutes)
 app.use("/universes/Alien/characters", charactersAlienRoutes)
 app.use("/universes/Alien/movies", moviesAlienRoutes)
+
+// BackToTheFuture
+app.use("/universes/BackToTheFuture/videoGames", videoGamesBackToTheFutureRoutes)
+app.use("/universes/BackToTheFuture/characters", charactersBackToTheFutureRoutes)
+app.use("/universes/BackToTheFuture/movies", moviesBackToTheFutureRoutes)
 
 // Blade
 app.use("/universes/Blade/videoGames", videoGamesBladeRoutes)
@@ -227,9 +237,9 @@ app.use("/universes/StarWars/characters", charactersStarWarsRoutes)
 app.use("/universes/StarWars/movies", moviesStarWarsRoutes)
 
 // Underworld
-// app.use("/universes/Underworld/books", booksUnderworldRoutes)
-// app.use("/universes/Underworld/characters", charactersUnderworldRoutes)
-// app.use("/universes/Underworld/movies", moviesUnderworldRoutes)
+app.use("/universes/Underworld/books", booksUnderworldRoutes)
+app.use("/universes/Underworld/characters", charactersUnderworldRoutes)
+app.use("/universes/Underworld/movies", moviesUnderworldRoutes)
 
 // Transformers
 app.use("/universes/Transformers/videoGames", videoGamesTransformersRoutes)

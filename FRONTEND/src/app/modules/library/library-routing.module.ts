@@ -66,6 +66,9 @@ const routes: Routes = [
     {
       path: 'residentEvilUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./residentEvil-universe/residentEvil-universe.module').then(m => m.residentEvilUniverseModule)
     },
+    {
+      path: 'underworldUniverse', canActivate: [verifyTokenGuard],loadChildren: () => import('./underworld-universe/underworld-universe.module').then(m => m.underworldUniverseModule)
+    },
 
     { path: 'favorites', component: FavoritesComponent },
     {

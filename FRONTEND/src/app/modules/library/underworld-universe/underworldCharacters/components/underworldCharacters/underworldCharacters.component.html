@@ -1,0 +1,20 @@
+<div class="underworldCharacters-container">
+    <div class="underworldCharacters-container-button" *ngIf="isAdmin" style="display: flex; justify-content: flex-end; align-items: center; margin-bottom: 5px; gap: 5px">
+        <button [routerLink]="['/admin/edit-product',underworldCharacter._id]">Editar</button>
+        <button [routerLink]="['/admin/delete-product', underworldCharacter._id]">Eliminar</button>
+    </div>
+    <div class="underworldCharacters-container-deck">
+        <div class="underworldCharacters-container-deck-card" (click)="clickCard()">
+            <div class="front face">
+                <h2 class="underworldCharacters-container-h2">{{ underworldCharacter.name }}</h2>
+                <img class="underworldCharacters-container-img-img" [src]="underworldCharacter.picture" />
+                <p class="underworldCharacters-container-p"><span>Nombre:</span> {{ underworldCharacter.name }}</p>
+                <p class="underworldCharacters-container-p"><span>Actor:</span> {{ underworldCharacter.acthor }}</p>
+                <p class="underworldCharacters-container-p"><span>Tipo:</span> {{ underworldCharacter.type }}</p>
+            </div>
+            <div class="back face">
+                <p class="underworldCharacters-container-resume"><span>Sinopsis:</span> {{ underworldCharacter.resume }}</p>
+            </div>
+        </div>
+    </div>
+</div>

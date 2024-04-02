@@ -1,0 +1,31 @@
+
+<div class="backToTheFutureVideoGames-container">
+  <div class="backToTheFutureVideoGames-container-button" *ngIf="isAdmin" style="display: flex; justify-content: flex-end; align-items: center; margin-bottom: 5px; gap: 5px">
+      <button [routerLink]="['/admin/edit-product',backToTheFutureVideoGame._id]" >Editar</button>
+      <button [routerLink]="['/admin/delete-product', backToTheFutureVideoGame._id]" >Eliminar</button>
+  </div>
+  <div class="backToTheFutureVideoGames-container-deck">
+    <div class="backToTheFutureVideoGames-container-deck-card" (click)="clickCard()">
+      <div class="front face" >
+        <img  class="backToTheFutureVideoGames-container-img-img"[src]="backToTheFutureVideoGame.picture" />
+        <div class="backToTheFutureVideoGames-container-text">
+        <h2 class="backToTheFutureVideoGames-container-h2">{{ backToTheFutureVideoGame.title  }}</h2>
+          <p class="backToTheFutureVideoGames-container-p"><span>Platform:</span> {{ backToTheFutureVideoGame.platform }}</p>
+          <p class="backToTheFutureVideoGames-container-p"><span>Año de Lanzamiento:</span> {{ backToTheFutureVideoGame.year }}</p>
+          <p class="backToTheFutureVideoGames-container-p"><span>Estudio de desarrollo:</span> {{ backToTheFutureVideoGame.studio }}</p>
+          <p class="backToTheFutureVideoGames-container-p"><span>Año de Clasificacion:</span> {{ backToTheFutureVideoGame.clasification }}</p>
+        </div>
+      </div>
+      <div class="back face">
+        <p class="backToTheFutureVideoGames-container-resume"><span>Sinopsis:</span> {{ backToTheFutureVideoGame.resume }}</p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <button class="btn btn-outline movie-card__button" type="button" (click)="showTrailer()">Mostrar/Ocultar GamePlay
+<div *ngIf="trailer">
+  <video class="video" width="640" height="360" controls autoplay>
+    <source [src]="backToTheFutureVideoGame.trailer" type="video/mp4">
+    Tu navegador no admite la reproducción de videos HTML5.
+  </video>
+</div>

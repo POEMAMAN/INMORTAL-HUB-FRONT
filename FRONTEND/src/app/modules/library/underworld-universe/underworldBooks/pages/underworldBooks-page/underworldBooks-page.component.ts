@@ -1,7 +1,7 @@
 import { underworldBooksService } from './../../services/underworldBooks.service';
 import { underworldBook } from '../../interfaces/underworldBooks.interface';
 import { Component, OnInit } from '@angular/core';
-import { AudioService } from './../../../../dune-universe/duneSoundtrack/soundtrack.service';
+import { AudioService } from './../../../../underworld-universe/underworldSoundtrack/soundtrack.service';
 
 @Component({
   selector: 'app-underworldBooks-page',

@@ -13,7 +13,7 @@ export class underworldMoviesService {
   constructor(private http: HttpClient) { }
 
   getunderworldMovies(): Observable<underworldMovie[]> {
-    return this.http.get<underworldMovie[]>('http://localhost:8084/universes/underworld/movies');
+    return this.http.get<underworldMovie[]>('http://localhost:8084/universes/Underworld/movies');
   }
 }
 

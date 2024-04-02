@@ -14,7 +14,7 @@ export class underworldBooksService {
   constructor(private http: HttpClient) { }
 
   getunderworldBooks(){
-      return this.http.get<underworldBook[]>('http://localhost:8084/universes/underworld/books')
+      return this.http.get<underworldBook[]>('http://localhost:8084/universes/Underworld/books')
   }
 
 }

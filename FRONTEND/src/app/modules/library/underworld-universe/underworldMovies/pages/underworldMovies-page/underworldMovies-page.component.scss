@@ -1,4 +1,4 @@
-.underworld-container-list {
+.underworldMovie-container-list {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,7 +9,7 @@
     padding: 0 1rem;
     scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
     scrollbar-width: thin;
-    background-image: url("https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710336011/LordOfTheRings/background/thering1_w6qdji.jpg");
+    background-image: url("https://res.cloudinary.com/dqh5ovfj1/image/upload/v1710582802/underworld/Background/DF-04873-2_evdha5.jpg");
     background-size: contain;
     &-card {
         display: flex;
@@ -67,19 +67,19 @@
       }
     }
 @media only screen and (max-width: 700px) { ///---///
-  .underworld-container-list-Btn-button{///---///
+  .underworldMovie-container-list-Btn-button{///---///
     font-size: 10px;
     height: 10px;
     padding: 16px;
     display: flex;
     align-items: center;
   }
-  .underworld-container-list-card-item{///---///
+  .underworldMovie-container-list-card-item{///---///
     width: 350px;
   }
 }
 @media (min-width: 701px)  {
-  .underworld-container-list-Btn-button{
+  .underworldMovie-container-list-Btn-button{
     font-size: 15px;
   }
 
@@ -87,7 +87,7 @@
 
 
 @media (min-width: 2200px) {
-    .underworld-container-list-button {
+    .underworldMovie-container-list-button {
         font-size: 300%;
     }
 }

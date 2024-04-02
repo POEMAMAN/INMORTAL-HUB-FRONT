@@ -1,4 +1,4 @@
-import { AudioService } from './../../../../dune-universe/duneSoundtrack/soundtrack.service';
+import { AudioService } from './../../../../underworld-universe/underworldSoundtrack/soundtrack.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({

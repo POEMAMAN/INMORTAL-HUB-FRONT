@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 dotenv.config();
-const Charactertransformers = require('../../api/models/models.Transformers/characters.Transformers.model');
+const Characterunderworld = require('../../api/models/models.Underworld/characters.Underworld.model');
 
-const arrayCharacterstransformers = [
+const arrayCharactersunderworld = [
     {
         name: "Selene",
         actor: "Kate Beckinsale",
@@ -62,9 +62,9 @@ mongoose
         useUnifiedTopology: true,
     })
     .then(async() => {
-        const allCharacterstransformers = await Charactertransformers.find();
-        if (allCharacterstransformers.length > 0) {
-            await Charactertransformers.collection.drop();
+        const allCharactersunderworld = await Characterunderworld.find();
+        if (allCharactersunderworld.length > 0) {
+            await Characterunderworld.collection.drop();
             console.log('Personajes borrados');
         }
     })
@@ -72,10 +72,10 @@ mongoose
         console.log('error borrando los Personajes', err);
     })
     .then(async() => {
-        const characterstransformersMap = arrayCharacterstransformers.map(
-            (character) => new Charactertransformers(character)
+        const charactersunderworldMap = arrayCharactersunderworld.map(
+            (character) => new Characterunderworld(character)
         );
-        await Charactertransformers.insertMany(characterstransformersMap);
+        await Characterunderworld.insertMany(charactersunderworldMap);
         console.log('Personajes insertados');
     })
     .catch((err) => {

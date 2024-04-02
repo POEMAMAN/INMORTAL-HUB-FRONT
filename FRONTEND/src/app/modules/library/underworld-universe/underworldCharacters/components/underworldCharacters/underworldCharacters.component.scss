@@ -38,7 +38,7 @@
         -webkit-line-clamp: 4;
         font-size: 19px;
         margin: 5px;
-        color: black;
+        color: whitesmoke;
 
     }
     &-h2 {
@@ -49,12 +49,12 @@
         -webkit-line-clamp: 1;
         font-family: 'Race-guard';
         text-decoration: overline;
-        font-size: 130%;
+        font-size: 160%;
         height: 35px;
         display: flex;
         text-align: center;
         align-items: center;
-        color: black;
+        color: white;
     }
     &-resume {
         display: -webkit-box;
@@ -137,7 +137,7 @@
 }
 
 .front {
-    background-image: url('https://media.giphy.com/media/zg92oefUzKfWU/giphy.gif?cid=ecf05e47fiioj2zvrbp7xcq32k0ggdk8uw66ahv8uzjm8upp&ep=v1_gifs_search&rid=giphy.gif&ct=g');
+    background-image: url('https://res.cloudinary.com/dqh5ovfj1/image/upload/v1711284217/underworld/clips/200_1_o6q639.webp');
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;

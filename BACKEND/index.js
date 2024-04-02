@@ -95,9 +95,9 @@ const charactersStarWarsRoutes = require("./src/api/routes/routes.StarWars/chara
 const moviesStarWarsRoutes = require("./src/api/routes/routes.StarWars/movies.StarWars.routes");
 
 // Underworld
-// const booksUnderworldRoutes = require("./src/api/routes/routes.Underworld/books.Underworld.routes");
-// const charactersUnderworldRoutes = require("./src/api/routes/routes.Underworld/characters.Underworld.routes");
-// const moviesUnderworldRoutes = require("./src/api/routes/routes.Underworld/movies.Underworld.routes");
+const booksUnderworldRoutes = require("./src/api/routes/routes.Underworld/books.Underworld.routes");
+const charactersUnderworldRoutes = require("./src/api/routes/routes.Underworld/characters.Underworld.routes");
+const moviesUnderworldRoutes = require("./src/api/routes/routes.Underworld/movies.Underworld.routes");
 
 // Transformers
 const videoGamesTransformersRoutes = require("./src/api/routes/routes.Transformers/videoGames.Transformers.routes");
@@ -237,9 +237,9 @@ app.use("/universes/StarWars/characters", charactersStarWarsRoutes)
 app.use("/universes/StarWars/movies", moviesStarWarsRoutes)
 
 // Underworld
-// app.use("/universes/Underworld/books", booksUnderworldRoutes)
-// app.use("/universes/Underworld/characters", charactersUnderworldRoutes)
-// app.use("/universes/Underworld/movies", moviesUnderworldRoutes)
+app.use("/universes/Underworld/books", booksUnderworldRoutes)
+app.use("/universes/Underworld/characters", charactersUnderworldRoutes)
+app.use("/universes/Underworld/movies", moviesUnderworldRoutes)
 
 // Transformers
 app.use("/universes/Transformers/videoGames", videoGamesTransformersRoutes)

@@ -2,7 +2,7 @@
 import { underworldCharacter } from '../../interfaces/underworldCharacters.interface';
 import { underworldCharactersService } from '../../services/underworldCharacters.service';
 import { Component, OnInit } from '@angular/core';
-import { AudioService } from './../../../../dune-universe/duneSoundtrack/soundtrack.service';
+import { AudioService } from './../../../../underworld-universe/underworldSoundtrack/soundtrack.service';
 
 @Component({
   selector: 'app-underworldCharacters-page',

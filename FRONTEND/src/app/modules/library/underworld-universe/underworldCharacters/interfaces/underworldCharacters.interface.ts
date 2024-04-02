@@ -1,7 +1,7 @@
 export interface underworldCharacter {
   name: String,
-  acthor: String,
-  type: String,
+  actor: String,
+  profession: String,
   resume: String,
   picture: String,
 

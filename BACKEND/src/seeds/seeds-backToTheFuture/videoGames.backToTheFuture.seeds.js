@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 dotenv.config();
-const VideoGameresidentEvil = require('../../api/models/models.residentEvil/videoGames.residentEvil.model');
+const VideoGamebackToTheFuture = require('../../api/models/models.backToTheFuture/videoGames.backToTheFuture.model');
 
 
-const arrayVideoGamesresidentEvil = [
+const arrayVideoGamesbackToTheFuture = [
     {
         title: "",
         picture: "",
@@ -123,9 +123,9 @@ mongoose
         useUnifiedTopology: true,
     })
     .then(async() => {
-        const allVideoGamesresidentEvil = await VideoGameresidentEvil.find();
-        if (allVideoGamesresidentEvil.length > 0) {
-            await VideoGameresidentEvil.collection.drop();
+        const allVideoGamesbackToTheFuture = await VideoGamebackToTheFuture.find();
+        if (allVideoGamesbackToTheFuture.length > 0) {
+            await VideoGamebackToTheFuture.collection.drop();
             console.log('Videojuegos borrados');
         }
     })
@@ -133,8 +133,8 @@ mongoose
         console.log('error borrando los Videojuegos', err);
     })
     .then(async() => {
-        const VideoGamesresidentEvilMap = arrayVideoGamesresidentEvil.map((VideoGame) => new VideoGameresidentEvil(VideoGame));
-        await VideoGameresidentEvil.insertMany(VideoGamesresidentEvilMap);
+        const VideoGamesbackToTheFutureMap = arrayVideoGamesbackToTheFuture.map((VideoGame) => new VideoGamebackToTheFuture(VideoGame));
+        await VideoGamebackToTheFuture.insertMany(VideoGamesbackToTheFutureMap);
         console.log('Videojuegos insertados');
     })
     .catch((err) => {

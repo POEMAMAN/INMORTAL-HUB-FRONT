@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 dotenv.config();
-const CharacterBackToTheFuture = require('../../api/models/models.BackToTheFuture/characters.BackToTheFuture.model');
+const CharacterbackToTheFuture = require('../../api/models/models.backToTheFuture/characters.backToTheFuture.model');
 
-const arrayCharactersBackToTheFuture = [
+const arrayCharactersbackToTheFuture = [
     {
         name: "",
         actor: "",
@@ -137,7 +137,7 @@ const arrayCharactersBackToTheFuture = [
         picture: "",
         resume: ""
     },
-    {
+        {
         name: "",
         actor: "",
         profession: "",
@@ -152,9 +152,9 @@ mongoose
         useUnifiedTopology: true,
     })
     .then(async() => {
-        const allCharactersBackToTheFuture = await CharacterBackToTheFuture.find();
-        if (allCharactersBackToTheFuture.length > 0) {
-            await CharacterBackToTheFuture.collection.drop();
+        const allCharactersbackToTheFuture = await CharacterbackToTheFuture.find();
+        if (allCharactersbackToTheFuture.length > 0) {
+            await CharacterbackToTheFuture.collection.drop();
             console.log('Personajes borrados');
         }
     })
@@ -162,10 +162,10 @@ mongoose
         console.log('error borrando los Personajes', err);
     })
     .then(async() => {
-        const charactersBackToTheFutureMap = arrayCharactersBackToTheFuture.map(
-            (character) => new CharacterBackToTheFuture(character)
+        const charactersbackToTheFutureMap = arrayCharactersbackToTheFuture.map(
+            (character) => new CharacterbackToTheFuture(character)
         );
-        await CharacterBackToTheFuture.insertMany(charactersBackToTheFutureMap);
+        await CharacterbackToTheFuture.insertMany(charactersbackToTheFutureMap);
         console.log('Personajes insertados');
     })
     .catch((err) => {

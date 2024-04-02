@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 dotenv.config();
-const MovieresidentEvil = require('../../api/models/models.residentEvil/movies.residentEvil.model');
+const MoviebackToTheFuture = require('../../api/models/models.backToTheFuture/movies.backToTheFuture.model');
 
-const arrayMoviesresidentEvil = [
+const arrayMoviesbackToTheFuture = [
     {
         title: "",
         picture: "",
@@ -51,9 +51,9 @@ mongoose
         useUnifiedTopology: true,
     })
     .then(async() => {
-        const allMoviesresidentEvil = await MovieresidentEvil.find();
-        if (allMoviesresidentEvil.length > 0) {
-            await MovieresidentEvil.collection.drop();
+        const allMoviesbackToTheFuture = await MoviebackToTheFuture.find();
+        if (allMoviesbackToTheFuture.length > 0) {
+            await MoviebackToTheFuture.collection.drop();
             console.log('Películas borradas');
         }
     })
@@ -61,8 +61,8 @@ mongoose
         console.log('error borrando las películas', err);
     })
     .then(async() => {
-        const moviesresidentEvilMap = arrayMoviesresidentEvil.map((movie) => new MovieresidentEvil(movie));
-        await MovieresidentEvil.insertMany(moviesresidentEvilMap);
+        const moviesbackToTheFutureMap = arrayMoviesbackToTheFuture.map((movie) => new MoviebackToTheFuture(movie));
+        await MoviebackToTheFuture.insertMany(moviesbackToTheFutureMap);
         console.log('películas insertadas');
     })
     .catch((err) => {

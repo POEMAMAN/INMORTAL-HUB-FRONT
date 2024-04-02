@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 dotenv.config();
-const CharacterbackToTheFuture = require('../../api/models/models.backToTheFuture/characters.backToTheFuture.model');
+const CharacterbackToTheFuture = require('../../api/models/models.BackToTheFuture/characters.BackToTheFuture.model');
 
 const arrayCharactersbackToTheFuture = [
     {

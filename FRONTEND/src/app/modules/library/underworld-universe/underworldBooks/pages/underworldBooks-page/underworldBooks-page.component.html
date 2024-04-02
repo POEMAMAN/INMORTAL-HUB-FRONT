@@ -1,0 +1,19 @@
+<div class="underworldBook-container-list">
+    <div class="underworldBook-container-list-Btn">
+        <button class="underworldBook-container-list-Btn-button" (click)="playSound()">Escuchar Banda Sonora&nbsp;<img class="underworldBook-container-list-Btn-button-img" src="https://res.cloudinary.com/dqh5ovfj1/image/upload/v1711184782/Varios/musica_m4oz69.png"></button>
+        <button class="underworldBook-container-list-Btn-button" (click)="stopSound()">Stop&nbsp;<img class="underworldBook-container-list-Btn-button-img" src="https://res.cloudinary.com/dqh5ovfj1/image/upload/v1711189659/Varios/boton-detener_lkbju9.png"></button>
+    </div>
+    <button class="underworldBook-container-list-Btn-button" [routerLink]="'/library/underworldUniverse'">Universo underworld&nbsp;<img class="underworldBook-container-list-Btn-button-img" src="https://res.cloudinary.com/dqh5ovfj1/image/upload/v1711189688/Varios/boton-de-retorno_q9svmw.png">
+</button>
+    <div style="margin-top: 5px;" class="container">
+    </div>
+    <div class="underworldBook-container-list-card">
+        <!-- {{i+1}} {{underworldBook}}  -->
+        <div *ngFor="let underworldBook of underworldBooks" class="underworldBook-container-list-card-item">
+            <app-underworldBooks [underworldBook]="underworldBook">
+                <!-- Object.keys(underworldBooks)[i] -->
+
+            </app-underworldBooks>
+        </div>
+    </div>
+</div>

@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { adminGuard } from './modules/auth/guards/admin.guard';
 import { verifyTokenGuard } from './modules/auth/guards/verify-token.guard';
 import { MainComponent } from './core/main/main.component';
+import { SoundtrackComponent } from './core/soundtrack/soundtrack.component';
 
 
 

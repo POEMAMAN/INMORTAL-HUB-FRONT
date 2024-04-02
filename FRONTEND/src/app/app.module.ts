@@ -12,6 +12,8 @@ import { MainComponent } from './core/main/main.component';
 import { LibraryComponent } from './modules/library/library.component';
 import { AvatarComponent } from './core/avatar/avatar.component';
 import { FavoritesComponent } from './core/favorites/favorites.component';
+import { SountrackComponent } from './core/sountrack/sountrack.component';
+import { SoundtrackComponent } from './core/soundtrack/soundtrack.component';
 
 
 
@@ -28,6 +30,8 @@ import { FavoritesComponent } from './core/favorites/favorites.component';
     LibraryComponent,
     AvatarComponent,
     FavoritesComponent,
+    SountrackComponent,
+    SoundtrackComponent,
 
 
 

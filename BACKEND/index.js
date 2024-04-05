@@ -4,6 +4,9 @@ const cors = require("cors");
 // Método de config cloudinary
 const { configCloudinary } = require('./src/utils/cloudinary/config.js');
 const { connect } = require("./src/utils/db.js");
+// Configuracion Chat
+const http = require('http');
+const socketIO = require('socket.io');
 
 //Rutas Componentes Principales
 const userRouter = require("./src/api/users/users.routes.js");
@@ -114,6 +117,9 @@ const videoGamesXmenRoutes = require("./src/api/routes/routes.Xmen/videoGames.Xm
 const charactersXmenRoutes = require("./src/api/routes/routes.Xmen/characters.Xmen.routes");
 const moviesXmenRoutes = require("./src/api/routes/routes.Xmen/movies.Xmen.routes");
 
+//Chat
+const chatRoutes = require("./src/api/chat/chat.routes.js");
+
 //
 
 connect();
@@ -142,6 +148,8 @@ app.use(
         origin: ["*"],
     })
 );
+
+
 
 //Routes
 //Rutas Principales
@@ -256,6 +264,9 @@ app.use("/universes/Xmen/videoGames", videoGamesXmenRoutes)
 app.use("/universes/Xmen/characters", charactersXmenRoutes)
 app.use("/universes/Xmen/movies", moviesXmenRoutes)
 
+//Chat
+app.use("/chat", chatRoutes)
+
 //
 const PORT = process.env.PORT || 8084;
 
@@ -275,4 +286,50 @@ app.use(function(err, req, res, next) {
     console.error(err.message);
     if (!err.statusCode) err.statusCode = 500;
     res.status(err.statusCode).send(err.message);
+});
+
+//CHAT
+
+const serverChat = http.createServer(app);
+const io = socketIO(serverChat);
+const activeUsers = new Set();
+
+// Manejar conexiones de socket
+io.on('connection', socket => {
+  console.log('Usuario conectado');
+
+    // Manejar errores
+  socket.on('error', error => {
+    console.error('Error en el socket:', error);
+  });
+
+  // Manejar nuevos mensajes
+  socket.on('chat message', async msg => {
+    console.log('Mensaje recibido:', msg);
+    const chatMessage = new Chat({ ...msg, id: messageCounter++ }); // Asignamos un ID único a cada mensaje
+    await chatMessage.save();
+    io.emit('chat message', msg);
+  });
+
+  // Manejar desconexiones de socket
+  socket.on('disconnect', () => {
+    console.log('Usuario desconectado');
+    if (activeUsers.has(socket.id)) {
+      const username = activeUsers.get(socket.id);
+      activeUsers.delete(socket.id);
+      io.emit('active users', Array.from(activeUsers.values()));
+      console.log(`El usuario ${username} se ha desconectado`);
+    }
+  });
+
+  // Actualizar lista de usuarios en línea
+  activeUsers.add(socket.id);
+  io.emit('active users', Array.from(activeUsers));
+
+  // Manejar inicio de sesión de usuario
+  socket.on('login', username => {
+    console.log(`El usuario ${username} se ha conectado`);
+    activeUsers.set(socket.id, username);
+    io.emit('active users', Array.from(activeUsers.values()));
+  });
 });

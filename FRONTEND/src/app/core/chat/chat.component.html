@@ -1,9 +1,23 @@
+<!-- chat.component.html -->
+
 <div>
+  <h1>Chat en línea</h1>
+  
+  <!-- Lista de usuarios en línea -->
+  <div *ngIf="activeUsers.length > 0">
+    <h3>Usuarios en línea:</h3>
     <ul>
-      <li *ngFor="let msg of messages">
-        <strong>{{ msg.userId }}</strong>: {{ msg.message }}
-      </li>
+      <li *ngFor="let user of activeUsers">{{ user }}</li>
     </ul>
-    <input type="text" [(ngModel)]="message" (keyup.enter)="sendMessage()" placeholder="Type a message...">
-    <button (click)="sendMessage()">Send</button>
   </div>
+
+  <!-- Mensajes del chat -->
+  <div *ngIf="activeUsers.length > 0">
+    <div *ngFor="let msg of messages">
+      <p>{{ msg.sender }}: {{ msg.message }}</p>
+    </div>
+    <input type="text" ngModel="messageInput">
+    <button (click)="sendMessage()">Enviar</button>
+  </div>
+</div>
+

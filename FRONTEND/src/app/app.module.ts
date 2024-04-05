@@ -12,6 +12,7 @@ import { MainComponent } from './core/main/main.component';
 import { LibraryComponent } from './modules/library/library.component';
 import { AvatarComponent } from './core/avatar/avatar.component';
 import { FavoritesComponent } from './core/favorites/favorites.component';
+import { ChatComponent } from './core/chat/chat.component';
 
 
 
@@ -28,6 +29,7 @@ import { FavoritesComponent } from './core/favorites/favorites.component';
     LibraryComponent,
     AvatarComponent,
     FavoritesComponent,
+    ChatComponent
 
 
 

@@ -1,8 +1,8 @@
-const Chat = require('./chat.model');
+const ChatSchema = require('./chat.model');
 
 exports.getChats = async (req, res) => {
   try {
-    const chats = await Chat.find();
+    const chats = await ChatSchema.find();
     if (chats.length > 0) {
       res.json(chats);
     } else {

@@ -1,5 +1,5 @@
 
-import { backToTheFutureVideoGames } from '../interfaces/backToTheFutureVideoGames.interface';
+import { backToTheFutureVideoGames } from '../interfaces/BackToTheFutureVideoGames.interface';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 

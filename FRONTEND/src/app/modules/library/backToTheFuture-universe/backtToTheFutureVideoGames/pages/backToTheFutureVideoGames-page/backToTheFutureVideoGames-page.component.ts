@@ -1,4 +1,4 @@
-import { backToTheFutureVideoGames } from '../../interfaces/backToTheFutureVideoGames.interface';
+import { backToTheFutureVideoGames } from '../../interfaces/BackToTheFutureVideoGames.interface';
 import { backToTheFutureVideoGamesService } from '../../services/backToTheFutureVideoGames.service';
 import { Component, OnInit } from '@angular/core';
 import { AudioService } from '../../../backToTheFutureSoundtrack/soundtrack.service';

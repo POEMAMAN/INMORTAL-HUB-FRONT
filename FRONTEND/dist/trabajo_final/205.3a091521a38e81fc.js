@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktrabajo_final=self.webpackChunktrabajo_final||[]).push([[205],{205:(c,o,t)=>{t.r(o),t.d(o,{backToTheFutureMoviesModule:()=>e});var s=t(6814),n=t(5017),u=t(4946);let e=(()=>{class a{static#t=this.\u0275fac=function(i){return new(i||a)};static#a=this.\u0275mod=u.oAB({type:a});static#o=this.\u0275inj=u.cJS({imports:[s.ez,n.i]})}return a})()}}]);

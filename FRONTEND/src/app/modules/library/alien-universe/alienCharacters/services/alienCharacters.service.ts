@@ -14,6 +14,6 @@ export class alienCharactersService {
   constructor(private http: HttpClient) { }
 
   getAlienCharacters(){
-      return this.http.get<AlienCharacter[]>('http://localhost:8084/universes/alien/characters')
+      return this.http.get<AlienCharacter[]>('https://importal-hub-back-a54zucve2-inmortal-hubs-projects.vercel.app/universes/alien/characters')
   }
 }

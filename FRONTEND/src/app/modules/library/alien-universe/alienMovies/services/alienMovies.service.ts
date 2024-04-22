@@ -14,6 +14,6 @@ export class alienMoviesService {
   constructor(private http: HttpClient) { }
 
   getAlienMovies(){
-      return this.http.get<AlienMovie[]>('http://localhost:8084/universes/alien/Movies')
+      return this.http.get<AlienMovie[]>('https://importal-hub-back-a54zucve2-inmortal-hubs-projects.vercel.app//universes/alien/Movies')
   }
 }
